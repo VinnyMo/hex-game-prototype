@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* For canvas positioning */
+}
+
+#loginContainer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+#loginContainer h2 {
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+#loginContainer input {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 15px;
+    width: 250px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1em;
+}
+
+#loginContainer input::placeholder {
+    color: #aaa;
+}
+
+#loginContainer button {
+    padding: 12px 30px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+#loginContainer button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: #ff6b6b;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+#rightPanel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    pointer-events: none; /* Allow clicks to pass through */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between stats and leaderboard */
+}
+
+#statsContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+#leaderboardContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+#leaderboardContainer h3, #leaderboardContainer h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#leaderboardContainer ol {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+#leaderboardContainer li {
+    margin-bottom: 2px;
+}
+
+canvas {
+    display: block;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensure canvas is behind other UI elements */
+}
+
+#recenterButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 100;
+}

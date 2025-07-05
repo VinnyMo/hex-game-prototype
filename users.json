@@ -1,0 +1,26 @@
+{
+  "ilikpie": {
+    "username": "ilikpie",
+    "password": "123mypassword",
+    "color": "#fe4bf7",
+    "capitol": "7,46"
+  },
+  "ulikpie": {
+    "username": "ulikpie",
+    "password": "123mypassword",
+    "color": "#17080f",
+    "capitol": "33,3"
+  },
+  "welikpie": {
+    "username": "welikpie",
+    "password": "123mypassword",
+    "color": "#9e6f92",
+    "capitol": "48,31"
+  },
+  "Bloopy": {
+    "username": "Bloopy",
+    "password": "123mypassword",
+    "color": "#3c7fe3",
+    "capitol": "8,21"
+  }
+}
