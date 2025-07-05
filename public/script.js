@@ -145,6 +145,8 @@ function hexDistance(q1, r1, q2, r2) {
     return (Math.abs(q1 - q2) + Math.abs(q1 + r1 - q2 - r2) + Math.abs(r1 - r2)) / 2;
 }
 
+let flashState = false;
+
 function drawHex(q, r) {
     const { cx: x, cy: y } = hexToPixel(q, r);
 
@@ -163,7 +165,13 @@ function drawHex(q, r) {
 
     const key = `${q},${r}`;
     const tile = hexStates[key];
-    const hexColor = tile && users[tile.owner] ? users[tile.owner].color : 'white';
+    let hexColor = tile && users[tile.owner] ? users[tile.owner].color : 'white';
+
+    // Flashing red for disconnected tiles
+    if (tile && tile.isDisconnected && flashState) {
+        hexColor = 'red';
+    }
+
     ctx.fillStyle = hexColor;
     ctx.fill();
 
@@ -184,6 +192,12 @@ function drawHex(q, r) {
         ctx.fillText(tile.population, x, y);
     }
 }
+
+// Toggle flashState every 500ms and re-render
+setInterval(() => {
+    flashState = !flashState;
+    renderGrid();
+}, 500);
 
 function drawStar(cx, cy, outerRadius, numPoints, innerRadiusRatio) {
     const innerRadius = outerRadius * innerRadiusRatio;
@@ -242,6 +256,7 @@ function renderGrid() {
     }
     if (currentUser) {
         drawEnemyArrows();
+        drawDisconnectedArrow();
     }
 }
 
@@ -440,6 +455,65 @@ function drawEnemyArrows() {
 
         ctx.restore();
     });
+}
+
+function drawDisconnectedArrow() {
+    if (!currentUser || !flashState) return; // Only draw if flashState is true
+
+    const myCapitolQ = parseInt(currentUser.capitol.split(',')[0]);
+    const myCapitolR = parseInt(currentUser.capitol.split(',')[1]);
+
+    let closestDisconnectedTile = null;
+    let minDistance = Infinity;
+
+    for (const key in hexStates) {
+        const tile = hexStates[key];
+        if (tile.owner === currentUser.username && tile.isDisconnected) {
+            const [tq, tr] = key.split(',').map(Number);
+            const distance = hexDistance(myCapitolQ, myCapitolR, tq, tr);
+            if (distance < minDistance) {
+                minDistance = distance;
+                closestDisconnectedTile = { q: tq, r: tr };
+            }
+        }
+    }
+
+    if (closestDisconnectedTile) {
+        const { cx: tilePixelX, cy: tilePixelY } = hexToPixel(closestDisconnectedTile.q, closestDisconnectedTile.r);
+
+        // Check if the disconnected tile is currently visible on screen
+        if (tilePixelX > 0 && tilePixelX < canvas.width && tilePixelY > 0 && tilePixelY < canvas.height) {
+            return; // Skip drawing arrow if tile is visible
+        }
+
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+
+        const angle = Math.atan2(tilePixelY - centerY, tilePixelX - centerX);
+        const arrowLength = 50;
+        const arrowHeadSize = 15;
+
+        ctx.save();
+        ctx.translate(centerX + Math.cos(angle) * (Math.min(centerX, centerY) - 20), centerY + Math.sin(angle) * (Math.min(centerX, centerY) - 20));
+        ctx.rotate(angle);
+
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(-arrowHeadSize, arrowHeadSize / 2);
+        ctx.lineTo(-arrowHeadSize, -arrowHeadSize / 2);
+        ctx.closePath();
+        ctx.fillStyle = 'red'; // Disconnected arrow is red
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(-arrowLength, 0);
+        ctx.strokeStyle = 'red'; // Disconnected arrow is red
+        ctx.lineWidth = 5;
+        ctx.stroke();
+
+        ctx.restore();
+    }
 }
 
 // Initial render of the grid (for login screen)

@@ -689,7 +689,7 @@
   },
   "32,8": {
     "owner": "ilikpie",
-    "population": 1
+    "population": 3
   },
   "32,7": {
     "owner": "ilikpie",
@@ -697,15 +697,18 @@
   },
   "32,6": {
     "owner": "ilikpie",
-    "population": 1
+    "population": 6,
+    "isDisconnected": false
   },
   "32,5": {
     "owner": "ilikpie",
-    "population": 1
+    "population": 16,
+    "isDisconnected": false
   },
   "31,5": {
     "owner": "ilikpie",
-    "population": 9
+    "population": 14,
+    "isDisconnected": false
   },
   "34,3": {
     "owner": "ulikpie",
@@ -713,10 +716,36 @@
   },
   "33,4": {
     "owner": "ulikpie",
-    "population": 1
+    "population": 2
   },
   "32,4": {
     "owner": "ulikpie",
-    "population": 4
+    "population": 3
+  },
+  "31,6": {
+    "owner": "ilikpie",
+    "population": 23,
+    "isDisconnected": false
+  },
+  "33,5": {
+    "owner": "ulikpie",
+    "population": 2
+  },
+  "34,5": {
+    "owner": "ulikpie",
+    "population": 1
+  },
+  "31,7": {
+    "owner": "ilikpie",
+    "population": 2,
+    "isDisconnected": false
+  },
+  "33,6": {
+    "owner": "ulikpie",
+    "population": 1
+  },
+  "33,7": {
+    "owner": "ilikpie",
+    "population": 1
   }
 }

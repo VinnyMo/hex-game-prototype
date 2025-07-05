@@ -88,6 +88,15 @@ function getConnectedTiles(startQ, startR, owner) {
 
 function applyDisconnectionPenalty() {
     let stateChanged = false;
+
+    // First, clear all isDisconnected flags
+    for (const key in gridState) {
+        if (gridState[key].isDisconnected) {
+            gridState[key].isDisconnected = false;
+            stateChanged = true; // Mark as changed if any flag was cleared
+        }
+    }
+
     for (const username in users) {
         const user = users[username];
         const [capitolQ, capitolR] = user.capitol.split(',').map(Number);
@@ -95,22 +104,31 @@ function applyDisconnectionPenalty() {
 
         for (const key in gridState) {
             const tile = gridState[key];
-            if (tile.owner === username && !connectedTiles.has(key)) {
-                // This tile is disconnected
-                if (tile.population > 1) {
-                    tile.population--;
+            if (tile.owner === username) {
+                if (!connectedTiles.has(key)) {
+                    // This tile is disconnected
+                    tile.isDisconnected = true;
                     stateChanged = true;
-                    console.log(`Server: Disconnected tile ${key} for ${username} lost population. New population: ${tile.population}`);
-                } else if (tile.population === 1) {
-                    // If population drops to 0, the tile becomes neutral
-                    delete gridState[key];
+
+                    if (tile.population > 1) {
+                        tile.population--;
+                        console.log(`Server: Disconnected tile ${key} for ${username} lost population. New population: ${tile.population}`);
+                    } else if (tile.population === 1) {
+                        // If population drops to 0, the tile becomes neutral
+                        delete gridState[key];
+                        stateChanged = true;
+                        console.log(`Server: Disconnected tile ${key} for ${username} lost all population and became neutral.`);
+                    }
+                } else if (tile.isDisconnected) {
+                    // Tile reconnected, clear the flag
+                    tile.isDisconnected = false;
                     stateChanged = true;
-                    console.log(`Server: Disconnected tile ${key} for ${username} lost all population and became neutral.`);
                 }
             }
         }
     }
 
+    // Always emit gameState and save if any change occurred (population or isDisconnected flag)
     if (stateChanged) {
         io.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
         fs.writeFileSync(GRID_STATE_FILE, JSON.stringify(gridState, null, 2));
