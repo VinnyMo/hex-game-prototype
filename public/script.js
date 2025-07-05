@@ -245,6 +245,9 @@ function renderGrid() {
     }
 }
 
+let lastClickTime = 0;
+const CLICK_DEBOUNCE_TIME = 300; // milliseconds
+
 const handlePointerDown = (e) => {
     if (currentUser) { // Only allow dragging if logged in
         isDragging = false;
@@ -295,8 +298,11 @@ const handlePointerUp = (e) => {
     const upX = e.clientX !== undefined ? e.clientX : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientX : undefined);
     const upY = e.clientY !== undefined ? e.clientY : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientY : undefined);
 
-    if (!isDragging) {
+    const currentTime = new Date().getTime();
+
+    if (!isDragging && (currentTime - lastClickTime > CLICK_DEBOUNCE_TIME)) {
         handleHexClick(upX, upY);
+        lastClickTime = currentTime;
     }
     isDragging = false;
     pointerDownX = undefined;

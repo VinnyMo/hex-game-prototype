@@ -51,6 +51,75 @@ try {
     console.warn('Server: No existing users file found. Initializing new users object.');
 }
 
+function getHexNeighbors(q, r) {
+    const neighbors = [
+        { dq: 1, dr: 0 }, { dq: 1, dr: -1 }, { dq: 0, dr: -1 },
+        { dq: -1, dr: 0 }, { dq: -1, dr: 1 }, { dq: 0, dr: 1 }
+    ];
+    return neighbors.map(n => ({ q: q + n.dq, r: r + n.dr }));
+}
+
+function getConnectedTiles(startQ, startR, owner) {
+    const visited = new Set();
+    const queue = [`${startQ},${startR}`];
+    const connectedTiles = new Set();
+
+    while (queue.length > 0) {
+        const currentKey = queue.shift();
+        if (visited.has(currentKey)) continue;
+        visited.add(currentKey);
+
+        const [q, r] = currentKey.split(',').map(Number);
+        const tile = gridState[currentKey];
+
+        if (tile && tile.owner === owner) {
+            connectedTiles.add(currentKey);
+            const neighbors = getHexNeighbors(q, r);
+            for (const neighbor of neighbors) {
+                const neighborKey = `${neighbor.q},${neighbor.r}`;
+                if (!visited.has(neighborKey) && gridState[neighborKey] && gridState[neighborKey].owner === owner) {
+                    queue.push(neighborKey);
+                }
+            }
+        }
+    }
+    return connectedTiles;
+}
+
+function applyDisconnectionPenalty() {
+    let stateChanged = false;
+    for (const username in users) {
+        const user = users[username];
+        const [capitolQ, capitolR] = user.capitol.split(',').map(Number);
+        const connectedTiles = getConnectedTiles(capitolQ, capitolR, username);
+
+        for (const key in gridState) {
+            const tile = gridState[key];
+            if (tile.owner === username && !connectedTiles.has(key)) {
+                // This tile is disconnected
+                if (tile.population > 1) {
+                    tile.population--;
+                    stateChanged = true;
+                    console.log(`Server: Disconnected tile ${key} for ${username} lost population. New population: ${tile.population}`);
+                } else if (tile.population === 1) {
+                    // If population drops to 0, the tile becomes neutral
+                    delete gridState[key];
+                    stateChanged = true;
+                    console.log(`Server: Disconnected tile ${key} for ${username} lost all population and became neutral.`);
+                }
+            }
+        }
+    }
+
+    if (stateChanged) {
+        io.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
+        fs.writeFileSync(GRID_STATE_FILE, JSON.stringify(gridState, null, 2));
+    }
+}
+
+// Run disconnection penalty every 30 seconds
+setInterval(applyDisconnectionPenalty, 30 * 1000);
+
 io.on('connection', (socket) => {
     console.log('Server: A user connected');
 
@@ -173,15 +242,10 @@ function hexDistance(q1, r1, q2, r2) {
 }
 
 function isAdjacentToUserTerritory(q, r, username) {
-    const neighbors = [
-        { dq: 1, dr: 0 }, { dq: 1, dr: -1 }, { dq: 0, dr: -1 },
-        { dq: -1, dr: 0 }, { dq: -1, dr: 1 }, { dq: 0, dr: 1 }
-    ];
+    const neighbors = getHexNeighbors(q, r);
 
     for (const neighbor of neighbors) {
-        const nq = q + neighbor.dq;
-        const nr = r + neighbor.dr;
-        const neighborKey = `${nq},${nr}`;
+        const neighborKey = `${neighbor.q},${neighbor.r}`;
         const neighborTile = gridState[neighborKey];
         if (neighborTile && neighborTile.owner === username) {
             return true;
