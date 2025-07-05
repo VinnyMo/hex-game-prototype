@@ -22,5 +22,11 @@
     "password": "123mypassword",
     "color": "#3c7fe3",
     "capitol": "8,21"
+  },
+  "[AI]TheBeast": {
+    "username": "[AI]TheBeast",
+    "password": "AI_PASSWORD",
+    "color": "#800080",
+    "capitol": "-163,-963"
   }
 }

@@ -3,6 +3,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 const fs = require('fs');
 const path = require('path');
+const ai = require('./server_ai'); // Import the AI module
 
 const app = express();
 const server = http.createServer(app);
@@ -34,29 +35,37 @@ app.use(express.static(path.join(__dirname, 'public')));
 let gridState = {};
 let users = {};
 
-// Load grid state and users from files
-try {
-    const gridData = fs.readFileSync(GRID_STATE_FILE, 'utf8');
-    gridState = JSON.parse(gridData);
-    console.log('Server: Grid state loaded from file.');
-} catch (err) {
-    console.warn('Server: No existing grid state file found. Initializing new state.');
-}
-
-try {
-    const usersData = fs.readFileSync(USERS_FILE, 'utf8');
-    users = JSON.parse(usersData);
-    console.log('Server: Users loaded from file.');
-} catch (err) {
-    console.warn('Server: No existing users file found. Initializing new users object.');
-}
-
+// Helper functions (moved to global scope for AI access)
 function getHexNeighbors(q, r) {
     const neighbors = [
         { dq: 1, dr: 0 }, { dq: 1, dr: -1 }, { dq: 0, dr: -1 },
         { dq: -1, dr: 0 }, { dq: -1, dr: 1 }, { dq: 0, dr: 1 }
     ];
     return neighbors.map(n => ({ q: q + n.dq, r: r + n.dr }));
+}
+
+function hexDistance(q1, r1, q2, r2) {
+    return (Math.abs(q1 - q2) + Math.abs(q1 + r1 - q2 - r2) + Math.abs(r1 - r2)) / 2;
+}
+
+function calculateLeaderboard() {
+    const playerStats = {};
+
+    for (const key in gridState) {
+        const tile = gridState[key];
+        if (tile.owner) {
+            if (!playerStats[tile.owner]) {
+                playerStats[tile.owner] = { username: tile.owner, population: 0, area: 0 };
+            }
+            playerStats[tile.owner].population += tile.population;
+            playerStats[tile.owner].area++;
+        }
+    }
+
+    const sortedByPopulation = Object.values(playerStats).sort((a, b) => b.population - a.population).slice(0, 5);
+    const sortedByArea = Object.values(playerStats).sort((a, b) => b.area - a.area).slice(0, 5);
+
+    return { population: sortedByPopulation, area: sortedByArea };
 }
 
 function getConnectedTiles(startQ, startR, owner) {
@@ -84,6 +93,19 @@ function getConnectedTiles(startQ, startR, owner) {
         }
     }
     return connectedTiles;
+}
+
+function isAdjacentToUserTerritory(q, r, username) {
+    const neighbors = getHexNeighbors(q, r);
+
+    for (const neighbor of neighbors) {
+        const neighborKey = `${neighbor.q},${neighbor.r}`;
+        const neighborTile = gridState[neighborKey];
+        if (neighborTile && neighborTile.owner === username) {
+            return true;
+        }
+    }
+    return false;
 }
 
 function applyDisconnectionPenalty() {
@@ -135,6 +157,23 @@ function applyDisconnectionPenalty() {
     }
 }
 
+// Load grid state and users from files
+try {
+    const gridData = fs.readFileSync(GRID_STATE_FILE, 'utf8');
+    gridState = JSON.parse(gridData);
+    console.log('Server: Grid state loaded from file.');
+} catch (err) {
+    console.warn('Server: No existing grid state file found. Initializing new state.');
+}
+
+try {
+    const usersData = fs.readFileSync(USERS_FILE, 'utf8');
+    users = JSON.parse(usersData);
+    console.log('Server: Users loaded from file.');
+} catch (err) {
+    console.warn('Server: No existing users file found. Initializing new users object.');
+}
+
 // Run disconnection penalty every 30 seconds
 setInterval(applyDisconnectionPenalty, 30 * 1000);
 
@@ -169,7 +208,7 @@ io.on('connection', (socket) => {
                 username,
                 password, // In a real app, hash this!
                 color: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
-                capitol: findSafeSpawn(),
+                capitol: ai.findDistantSpawn(gridState, users, hexDistance), // Use AI's spawn function
             };
             users[username] = newUser;
             gridState[newUser.capitol] = { owner: username, population: 1 };
@@ -227,71 +266,10 @@ io.on('connection', (socket) => {
     });
 });
 
-function findSafeSpawn() {
-    const existingCapitols = Object.values(users).map(u => u.capitol);
-    let q, r, key;
-    let isSafe = false;
-
-    while (!isSafe) {
-        q = Math.floor(Math.random() * 100) - 50;
-        r = Math.floor(Math.random() * 100) - 50;
-        key = `${q},${r}`;
-        isSafe = true;
-
-        if (gridState[key]) {
-            isSafe = false;
-            continue;
-        }
-
-        for (const capitol of existingCapitols) {
-            const [cq, cr] = capitol.split(',').map(Number);
-            const distance = hexDistance(q, r, cq, cr);
-            if (distance < 25 || distance > 50) {
-                isSafe = false;
-                break;
-            }
-        }
-    }
-    return key;
-}
-
-function hexDistance(q1, r1, q2, r2) {
-    return (Math.abs(q1 - q2) + Math.abs(q1 + r1 - q2 - r2) + Math.abs(r1 - r2)) / 2;
-}
-
-function isAdjacentToUserTerritory(q, r, username) {
-    const neighbors = getHexNeighbors(q, r);
-
-    for (const neighbor of neighbors) {
-        const neighborKey = `${neighbor.q},${neighbor.r}`;
-        const neighborTile = gridState[neighborKey];
-        if (neighborTile && neighborTile.owner === username) {
-            return true;
-        }
-    }
-    return false;
-}
-
-function calculateLeaderboard() {
-    const playerStats = {};
-
-    for (const key in gridState) {
-        const tile = gridState[key];
-        if (tile.owner) {
-            if (!playerStats[tile.owner]) {
-                playerStats[tile.owner] = { username: tile.owner, population: 0, area: 0 };
-            }
-            playerStats[tile.owner].population += tile.population;
-            playerStats[tile.owner].area++;
-        }
-    }
-
-    const sortedByPopulation = Object.values(playerStats).sort((a, b) => b.population - a.population).slice(0, 5);
-    const sortedByArea = Object.values(playerStats).sort((a, b) => b.area - a.area).slice(0, 5);
-
-    return { population: sortedByPopulation, area: sortedByArea };
-}
-
 server.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
+
+    // Initialize and start AI
+    ai.init(io, gridState, users, fs, calculateLeaderboard, getHexNeighbors, hexDistance, GRID_STATE_FILE, USERS_FILE);
+    ai.startAI();
 });

@@ -68,10 +68,9 @@ body {
 
 #rightPanel {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 2vh;
+    right: 2vw;
     z-index: 100;
-    pointer-events: none; /* Allow clicks to pass through */
     display: flex;
     flex-direction: column;
     gap: 10px; /* Space between stats and leaderboard */
@@ -120,8 +119,8 @@ canvas {
 
 #recenterButton {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 2vh;
+    left: 2vw;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
