@@ -585,6 +585,10 @@ let mapCameraY = 0;
 let isMapDragging = false;
 let lastMapPointerX;
 let lastMapPointerY;
+let mapPointerDownX;
+let mapPointerDownY;
+let targetWorldX = null;
+let targetWorldY = null;
 
 mapButton.addEventListener('click', () => {
     if (currentUser) {
@@ -599,6 +603,13 @@ mapButton.addEventListener('click', () => {
 });
 
 closeMapButton.addEventListener('click', () => {
+    if (targetWorldX !== null && targetWorldY !== null) {
+        cameraX = -targetWorldX;
+        cameraY = -targetWorldY;
+        targetWorldX = null; // Reset target
+        targetWorldY = null; // Reset target
+        renderGrid();
+    }
     mapOverlay.style.display = 'none';
 });
 
@@ -614,9 +625,11 @@ mapCanvas.addEventListener('touchmove', handleMapPointerMove, { passive: false }
 mapCanvas.addEventListener('touchend', handleMapPointerUp, { passive: false });
 
 function handleMapPointerDown(e) {
-    isMapDragging = true;
+    isMapDragging = false; // Assume it's a click until proven a drag
     lastMapPointerX = e.clientX !== undefined ? e.clientX : (e.touches && e.touches[0] ? e.touches[0].clientX : undefined);
+    mapPointerDownX = lastMapPointerX; // Store initial position for click detection
     lastMapPointerY = e.clientY !== undefined ? e.clientY : (e.touches && e.touches[0] ? e.touches[0].clientY : undefined);
+    mapPointerDownY = lastMapPointerY; // Store initial position for click detection
 }
 
 let mapAnimationFrameId = null;
@@ -644,8 +657,29 @@ function handleMapPointerMove(e) {
     lastMapPointerY = currentY;
 }
 
-function handleMapPointerUp() {
+function handleMapPointerUp(e) {
     isMapDragging = false;
+    const upX = e.clientX !== undefined ? e.clientX : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientX : undefined);
+    const upY = e.clientY !== undefined ? e.clientY : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientY : undefined);
+
+    // If it was a click (not a drag)
+    if (Math.abs(upX - mapPointerDownX) < DRAG_THRESHOLD && Math.abs(upY - mapPointerDownY) < DRAG_THRESHOLD) {
+        handleMapClick(e);
+    }
+}
+
+function handleMapClick(e) {
+    const mapClickX = e.clientX - mapCanvas.getBoundingClientRect().left;
+    const mapClickY = e.clientY - mapCanvas.getBoundingClientRect().top;
+
+    // Convert map canvas coordinates to world coordinates
+    const worldX = (mapClickX - (mapCanvas.width / 2 + mapCameraX)) / MAP_SCALE;
+    const worldY = (mapClickY - (mapCanvas.height / 2 + mapCameraY)) / MAP_SCALE;
+
+    targetWorldX = worldX;
+    targetWorldY = worldY;
+
+    drawMap(); // Redraw map to show the X
 }
 
 function drawMap() {
@@ -713,6 +747,23 @@ function drawMap() {
         if (Object.values(users).some(user => user.capitol === key)) {
             drawStarOnMap(mapX, mapY, scaledHexSize * 0.4, 5, 0.5);
         }
+    }
+
+    // Draw the target X if set
+    if (targetWorldX !== null && targetWorldY !== null) {
+        const targetMapX = targetWorldX * MAP_SCALE + offsetX;
+        const targetMapY = targetWorldY * MAP_SCALE + offsetY;
+
+        mapCtx.strokeStyle = 'cyan';
+        mapCtx.lineWidth = 3;
+
+        const xSize = 10;
+        mapCtx.beginPath();
+        mapCtx.moveTo(targetMapX - xSize, targetMapY - xSize);
+        mapCtx.lineTo(targetMapX + xSize, targetMapY + xSize);
+        mapCtx.moveTo(targetMapX + xSize, targetMapY - xSize);
+        mapCtx.lineTo(targetMapX - xSize, targetMapY + xSize);
+        mapCtx.stroke();
     }
 }
 
