@@ -1,32 +1,14 @@
 {
-  "ilikpie": {
-    "username": "ilikpie",
-    "password": "123mypassword",
-    "color": "#fe4bf7",
-    "capitol": "7,46"
-  },
-  "ulikpie": {
-    "username": "ulikpie",
-    "password": "123mypassword",
-    "color": "#17080f",
-    "capitol": "33,3"
-  },
-  "welikpie": {
-    "username": "welikpie",
-    "password": "123mypassword",
-    "color": "#9e6f92",
-    "capitol": "48,31"
-  },
-  "Bloopy": {
-    "username": "Bloopy",
-    "password": "123mypassword",
-    "color": "#3c7fe3",
-    "capitol": "8,21"
-  },
   "[AI]TheBeast": {
     "username": "[AI]TheBeast",
     "password": "AI_PASSWORD",
     "color": "#800080",
-    "capitol": "-163,-963"
+    "capitol": "918,-171"
+  },
+  "ilikpie": {
+    "username": "ilikpie",
+    "password": "123mypassword",
+    "color": "#1075c3",
+    "capitol": "470,-848"
   }
 }

@@ -124,8 +124,33 @@ function aiTurn() {
     }
 
     if (potentialNewTiles.size === 0) {
-        console.log('AI: No neutral bordering tiles to expand into.');
-        return;
+        console.log('AI: [AI]TheBeast is surrounded! Resetting capitol.');
+
+        // Create a new grid state without the AI's tiles
+        const newGridState = {};
+        for (const key in gridState) {
+            if (gridState[key].owner !== AI_USERNAME) {
+                newGridState[key] = gridState[key];
+            } else {
+                // For the AI's own tiles, ensure they are broadcast as removed
+                broadcastTileUpdate(key, null);
+            }
+        }
+        gridState = newGridState;
+
+        // Find a new capitol location and reset the AI
+        const newCapitol = findDistantSpawn();
+        aiUser.capitol = newCapitol;
+        gridState[newCapitol] = { owner: AI_USERNAME, population: 1 };
+        broadcastTileUpdate(newCapitol);
+        io.emit('userUpdate', { users }); // Notify clients of the new capitol location
+
+        // Save the updated state to files
+        fs.writeFileSync(GRID_STATE_FILE, JSON.stringify(gridState, null, 2));
+        fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2));
+
+        console.log(`AI: [AI]TheBeast has been reset at a new capitol: ${newCapitol}`);
+        return; // End the current turn
     }
 
     let bestTileToCapture = null;
