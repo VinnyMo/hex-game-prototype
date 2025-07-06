@@ -126,3 +126,41 @@ canvas {
     cursor: pointer;
     z-index: 100;
 }
+
+#mapButton {
+    position: absolute;
+    top: calc(2vh + 50px); /* Adjust based on recenterButton height */
+    left: 2vw;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#mapOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapCanvas {
+    border: 1px solid white;
+    background-color: #000;
+}
+
+#closeMapButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 201;
+}

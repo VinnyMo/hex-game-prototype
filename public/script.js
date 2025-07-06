@@ -60,13 +60,16 @@ socket.on('loginSuccess', ({ user }) => {
     currentUser = user;
     loginContainer.style.display = 'none';
     gameContainer.style.display = 'block';
-    recenterCapitol();
+    // The 'gameState' event will handle the rest
 });
 
 socket.on('loginError', (message) => {
     loginError.textContent = message;
 });
 
+// --- Start of Optimized Event Handlers ---
+
+// This event now only fires once on login
 socket.on('gameState', (state) => {
     hexStates = state.gridState;
     users = state.users;
@@ -75,8 +78,55 @@ socket.on('gameState', (state) => {
     if (currentUser) {
         updateStats();
         updateLeaderboard();
+        recenterCapitol();
     }
 });
+
+// Handle single tile updates
+socket.on('tileUpdate', ({ key, tile }) => {
+    if (tile) {
+        hexStates[key] = tile;
+    } else {
+        delete hexStates[key];
+    }
+    // We could optimize rendering to only redraw the affected hex, but for now, a full rerender is simpler.
+    renderGrid(); 
+    if (currentUser) {
+        updateStats();
+    }
+});
+
+// Handle batch tile updates (e.g., from disconnection penalty)
+socket.on('batchTileUpdate', ({ changedTiles }) => {
+    for (const key in changedTiles) {
+        const tile = changedTiles[key];
+        if (tile) {
+            hexStates[key] = tile;
+        } else {
+            delete hexStates[key];
+        }
+    }
+    renderGrid();
+    if (currentUser) {
+        updateStats();
+    }
+});
+
+// Handle leaderboard updates
+socket.on('leaderboardUpdate', (newLeaderboard) => {
+    leaderboard = newLeaderboard;
+    if (currentUser) {
+        updateLeaderboard();
+    }
+});
+
+// Handle user list updates (e.g., new player joins)
+socket.on('userUpdate', (data) => {
+    users = data.users;
+    renderGrid(); // Rerender to show new user's colors
+});
+
+// --- End of Optimized Event Handlers ---
 
 function hexToWorld(q, r) {
     const x = HEX_SIZE * 3 / 2 * q;
@@ -369,24 +419,28 @@ function updateLeaderboard() {
     populationLeaderboard.innerHTML = '';
     areaLeaderboard.innerHTML = '';
 
-    leaderboard.population.forEach(entry => {
-        const li = document.createElement('li');
-        li.textContent = `${entry.username}: ${entry.population}`;
-        populationLeaderboard.appendChild(li);
-    });
+    if (leaderboard.population) {
+        leaderboard.population.forEach(entry => {
+            const li = document.createElement('li');
+            li.textContent = `${entry.username}: ${entry.population}`;
+            populationLeaderboard.appendChild(li);
+        });
+    }
 
-    leaderboard.area.forEach(entry => {
-        const li = document.createElement('li');
-        li.textContent = `${entry.username}: ${entry.area}`;
-        areaLeaderboard.appendChild(li);
-    });
+    if (leaderboard.area) {
+        leaderboard.area.forEach(entry => {
+            const li = document.createElement('li');
+            li.textContent = `${entry.username}: ${entry.area}`;
+            areaLeaderboard.appendChild(li);
+        });
+    }
 }
 
 const recenterButton = document.getElementById('recenterButton');
 recenterButton.addEventListener('click', recenterCapitol);
 
 function recenterCapitol() {
-    if (!currentUser) return;
+    if (!currentUser || !currentUser.capitol) return;
     const [q, r] = currentUser.capitol.split(',').map(Number);
     const { x: capitolWorldX, y: capitolWorldY } = hexToWorld(q, r);
     cameraX = -capitolWorldX;
@@ -517,3 +571,176 @@ function drawDisconnectedArrow() {
 }
 
 // Initial render of the grid (for login screen)
+
+const mapButton = document.getElementById('mapButton');
+const mapOverlay = document.getElementById('mapOverlay');
+const closeMapButton = document.getElementById('closeMapButton');
+const mapCanvas = document.getElementById('mapCanvas');
+const mapCtx = mapCanvas.getContext('2d');
+
+const MAP_SCALE = 0.01; // 1/100 scale
+
+let mapCameraX = 0;
+let mapCameraY = 0;
+let isMapDragging = false;
+let lastMapPointerX;
+let lastMapPointerY;
+
+mapButton.addEventListener('click', () => {
+    if (currentUser) {
+        mapOverlay.style.display = 'flex';
+        mapCanvas.width = window.innerWidth;
+        mapCanvas.height = window.innerHeight;
+        // Center the map based on the current camera position
+        mapCameraX = cameraX * MAP_SCALE;
+        mapCameraY = cameraY * MAP_SCALE;
+        drawMap();
+    }
+});
+
+closeMapButton.addEventListener('click', () => {
+    mapOverlay.style.display = 'none';
+});
+
+mapCanvas.addEventListener('mousedown', handleMapPointerDown);
+mapCanvas.addEventListener('mousemove', handleMapPointerMove);
+mapCanvas.addEventListener('mouseup', handleMapPointerUp);
+mapCanvas.addEventListener('mouseout', () => {
+    isMapDragging = false;
+});
+
+mapCanvas.addEventListener('touchstart', handleMapPointerDown, { passive: false });
+mapCanvas.addEventListener('touchmove', handleMapPointerMove, { passive: false });
+mapCanvas.addEventListener('touchend', handleMapPointerUp, { passive: false });
+
+function handleMapPointerDown(e) {
+    isMapDragging = true;
+    lastMapPointerX = e.clientX !== undefined ? e.clientX : (e.touches && e.touches[0] ? e.touches[0].clientX : undefined);
+    lastMapPointerY = e.clientY !== undefined ? e.clientY : (e.touches && e.touches[0] ? e.touches[0].clientY : undefined);
+}
+
+let mapAnimationFrameId = null;
+
+function handleMapPointerMove(e) {
+    if (!isMapDragging) return;
+
+    const currentX = e.clientX !== undefined ? e.clientX : (e.touches && e.touches[0] ? e.touches[0].clientX : undefined);
+    const currentY = e.clientY !== undefined ? e.clientY : (e.touches && e.touches[0] ? e.touches[0].clientY : undefined);
+
+    const dx = currentX - lastMapPointerX;
+    const dy = currentY - lastMapPointerY;
+
+    mapCameraX += dx;
+    mapCameraY += dy;
+
+    if (!mapAnimationFrameId) {
+        mapAnimationFrameId = requestAnimationFrame(() => {
+            drawMap();
+            mapAnimationFrameId = null;
+        });
+    }
+
+    lastMapPointerX = currentX;
+    lastMapPointerY = currentY;
+}
+
+function handleMapPointerUp() {
+    isMapDragging = false;
+}
+
+function drawMap() {
+    mapCtx.clearRect(0, 0, mapCanvas.width, mapCanvas.height);
+    mapCtx.fillStyle = 'white';
+    mapCtx.fillRect(0, 0, mapCanvas.width, mapCanvas.height);
+
+    const scaledHexSize = HEX_SIZE * MAP_SCALE;
+
+    // Find min/max q and r values from hexStates to determine map bounds
+    let minQ = Infinity, maxQ = -Infinity, minR = Infinity, maxR = -Infinity;
+    for (const key in hexStates) {
+        const [q, r] = key.split(',').map(Number);
+        minQ = Math.min(minQ, q);
+        maxQ = Math.max(maxQ, q);
+        minR = Math.min(minR, r);
+        maxR = Math.max(maxR, r);
+    }
+
+    // Calculate world dimensions of the entire map
+    const worldMinX = hexToWorld(minQ, minR).x;
+    const worldMaxX = hexToWorld(maxQ, maxR).x;
+    const worldMinY = hexToWorld(minQ, minR).y;
+    const worldMaxY = hexToWorld(maxQ, maxR).y;
+
+    const worldWidth = worldMaxX - worldMinX + HEX_WIDTH;
+    const worldHeight = worldMaxY - worldMinY + HEX_HEIGHT;
+
+    // Calculate offset to center the entire map in the mapCanvas initially
+    // This is adjusted by mapCameraX/Y for panning
+    const offsetX = mapCanvas.width / 2 + mapCameraX;
+    const offsetY = mapCanvas.height / 2 + mapCameraY;
+
+    for (const key in hexStates) {
+        const [q, r] = key.split(',').map(Number);
+        const tile = hexStates[key];
+
+        const { x: worldX, y: worldY } = hexToWorld(q, r);
+
+        // Scale and translate to map canvas coordinates
+        const mapX = worldX * MAP_SCALE + offsetX;
+        const mapY = worldY * MAP_SCALE + offsetY;
+
+        mapCtx.beginPath();
+        for (let i = 0; i < 6; i++) {
+            const angle = Math.PI / 3 * i;
+            const hx = mapX + scaledHexSize * Math.cos(angle);
+            const hy = mapY + scaledHexSize * Math.sin(angle);
+            if (i === 0) {
+                mapCtx.moveTo(hx, hy);
+            } else {
+                mapCtx.lineTo(hx, hy);
+            }
+        }
+        mapCtx.closePath();
+
+        let hexColor = tile && users[tile.owner] ? users[tile.owner].color : 'white';
+        mapCtx.fillStyle = hexColor;
+        mapCtx.fill();
+        mapCtx.strokeStyle = 'black';
+        mapCtx.lineWidth = 0.5;
+        mapCtx.stroke();
+
+        // Draw capitol stars on the map
+        if (Object.values(users).some(user => user.capitol === key)) {
+            drawStarOnMap(mapX, mapY, scaledHexSize * 0.4, 5, 0.5);
+        }
+    }
+}
+
+function drawStarOnMap(cx, cy, outerRadius, numPoints, innerRadiusRatio) {
+    const innerRadius = outerRadius * innerRadiusRatio;
+    let rot = Math.PI / 2 * 3;
+    let x = cx;
+    let y = cy;
+    let step = Math.PI / numPoints;
+
+    mapCtx.beginPath();
+    mapCtx.moveTo(cx, cy - outerRadius);
+    for (let i = 0; i < numPoints; i++) {
+        x = cx + Math.cos(rot) * outerRadius;
+        y = cy + Math.sin(rot) * outerRadius;
+        mapCtx.lineTo(x, y);
+        rot += step;
+
+        x = cx + Math.cos(rot) * innerRadius;
+        y = cy + Math.sin(rot) * innerRadius;
+        mapCtx.lineTo(x, y);
+        rot += step;
+    }
+    mapCtx.lineTo(cx, cy - outerRadius);
+    mapCtx.closePath();
+    mapCtx.fillStyle = 'gold';
+    mapCtx.strokeStyle = 'darkgoldenrod';
+    mapCtx.lineWidth = 1;
+    mapCtx.fill();
+    mapCtx.stroke();
+}

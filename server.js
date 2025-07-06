@@ -35,6 +35,46 @@ app.use(express.static(path.join(__dirname, 'public')));
 let gridState = {};
 let users = {};
 
+// --- Start of Optimizations ---
+
+function broadcastTileUpdate(key) {
+    const tile = gridState[key];
+    io.emit('tileUpdate', { key, tile: tile || null }); // Send null if tile is deleted
+    console.log(`Server: Broadcasted update for tile ${key}`);
+}
+
+function broadcastLeaderboard() {
+    const leaderboard = calculateLeaderboard();
+    io.emit('leaderboardUpdate', leaderboard);
+}
+
+let isSaving = false;
+function saveGameState() {
+    if (isSaving) return;
+    isSaving = true;
+    console.log('Server: Saving game state...');
+    const gridStateString = JSON.stringify(gridState, null, 2);
+    fs.writeFile(GRID_STATE_FILE, gridStateString, (err) => {
+        if (err) {
+            console.error('Error saving grid state:', err);
+        }
+        isSaving = false;
+    });
+    const usersString = JSON.stringify(users, null, 2);
+    fs.writeFile(USERS_FILE, usersString, (err) => {
+        if (err) {
+            console.error('Error saving users:', err);
+        }
+    });
+}
+
+// Periodic saving and leaderboard broadcasts
+setInterval(saveGameState, 30 * 1000); // Save every 30 seconds
+setInterval(broadcastLeaderboard, 5000); // Broadcast leaderboard every 5 seconds
+
+// --- End of Optimizations ---
+
+
 // Helper functions (moved to global scope for AI access)
 function getHexNeighbors(q, r) {
     const neighbors = [
@@ -110,12 +150,14 @@ function isAdjacentToUserTerritory(q, r, username) {
 
 function applyDisconnectionPenalty() {
     let stateChanged = false;
+    const changedTilesForBroadcast = {};
 
     // First, clear all isDisconnected flags
     for (const key in gridState) {
         if (gridState[key].isDisconnected) {
             gridState[key].isDisconnected = false;
-            stateChanged = true; // Mark as changed if any flag was cleared
+            stateChanged = true;
+            changedTilesForBroadcast[key] = gridState[key];
         }
     }
 
@@ -129,31 +171,37 @@ function applyDisconnectionPenalty() {
             if (tile.owner === username) {
                 if (!connectedTiles.has(key)) {
                     // This tile is disconnected
-                    tile.isDisconnected = true;
-                    stateChanged = true;
+                    if (!tile.isDisconnected) {
+                        tile.isDisconnected = true;
+                        stateChanged = true;
+                        changedTilesForBroadcast[key] = tile;
+                    }
 
                     if (tile.population > 1) {
                         tile.population--;
                         console.log(`Server: Disconnected tile ${key} for ${username} lost population. New population: ${tile.population}`);
+                        changedTilesForBroadcast[key] = tile;
                     } else if (tile.population === 1) {
                         // If population drops to 0, the tile becomes neutral
                         delete gridState[key];
                         stateChanged = true;
+                        changedTilesForBroadcast[key] = null; // Mark for deletion on client
                         console.log(`Server: Disconnected tile ${key} for ${username} lost all population and became neutral.`);
                     }
                 } else if (tile.isDisconnected) {
                     // Tile reconnected, clear the flag
                     tile.isDisconnected = false;
                     stateChanged = true;
+                    changedTilesForBroadcast[key] = tile;
                 }
             }
         }
     }
 
-    // Always emit gameState and save if any change occurred (population or isDisconnected flag)
     if (stateChanged) {
-        io.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
-        fs.writeFileSync(GRID_STATE_FILE, JSON.stringify(gridState, null, 2));
+        // Sending a batch of updates is better than the whole state
+        io.emit('batchTileUpdate', { changedTiles: changedTilesForBroadcast });
+        console.log('Server: Broadcasted batch tile update due to disconnection penalty.');
     }
 }
 
@@ -170,7 +218,8 @@ try {
     const usersData = fs.readFileSync(USERS_FILE, 'utf8');
     users = JSON.parse(usersData);
     console.log('Server: Users loaded from file.');
-} catch (err) {
+} catch (err)
+{
     console.warn('Server: No existing users file found. Initializing new users object.');
 }
 
@@ -182,7 +231,6 @@ io.on('connection', (socket) => {
 
     socket.on('login', ({ username, password }) => {
         console.log(`Server: Login attempt for username: ${username}`);
-        // Basic alphanumeric validation for username
         if (!/^[a-zA-Z0-9]+$/.test(username)) {
             console.log(`Server: Login error - Username "${username}" is not alphanumeric.`);
             socket.emit('loginError', 'Username must be alphanumeric.');
@@ -193,9 +241,9 @@ io.on('connection', (socket) => {
             if (users[username].password === password) {
                 console.log(`Server: Password for "${username}" matched. Login successful.`);
                 socket.emit('loginSuccess', { user: users[username] });
-                console.log('Server: Preparing to emit gameState after login success.');
-                io.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
-                console.log('Server: Emitted gameState after login success.');
+                // Send full state to the connecting user ONLY
+                socket.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
+                console.log(`Server: Emitted initial gameState to ${username}.`);
                 socket.username = username;
             } else {
                 console.log(`Server: Invalid password for "${username}".`);
@@ -203,20 +251,22 @@ io.on('connection', (socket) => {
             }
         } else {
             console.log(`Server: User "${username}" not found. Creating new user.`);
-            // Create new user
             const newUser = {
                 username,
                 password, // In a real app, hash this!
                 color: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
-                capitol: ai.findDistantSpawn(gridState, users, hexDistance), // Use AI's spawn function
+                capitol: ai.findDistantSpawn(gridState, users, hexDistance),
             };
             users[username] = newUser;
             gridState[newUser.capitol] = { owner: username, population: 1 };
-            fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2));
-            fs.writeFileSync(GRID_STATE_FILE, JSON.stringify(gridState, null, 2));
+            
             console.log(`Server: New user "${username}" created and logged in.`);
             socket.emit('loginSuccess', { user: newUser });
-            io.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
+            // Send full state to the new user
+            socket.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
+            // Announce the new user's color and capitol to others
+            io.emit('userUpdate', { users });
+            broadcastTileUpdate(newUser.capitol);
             socket.username = username;
         }
     });
@@ -256,9 +306,7 @@ io.on('connection', (socket) => {
             }
         }
 
-        io.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
-        fs.writeFileSync(GRID_STATE_FILE, JSON.stringify(gridState, null, 2));
-        console.log('Server: Emitted gameState after hexClick.');
+        broadcastTileUpdate(key);
     });
 
     socket.on('disconnect', () => {
@@ -270,6 +318,6 @@ server.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 
     // Initialize and start AI
-    ai.init(io, gridState, users, fs, calculateLeaderboard, getHexNeighbors, hexDistance, GRID_STATE_FILE, USERS_FILE);
+    ai.init(io, gridState, users, fs, calculateLeaderboard, getHexNeighbors, hexDistance, GRID_STATE_FILE, USERS_FILE, broadcastTileUpdate);
     ai.startAI();
 });

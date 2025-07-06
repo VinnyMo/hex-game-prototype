@@ -9,13 +9,14 @@ let getHexNeighbors;
 let hexDistance;
 let GRID_STATE_FILE;
 let USERS_FILE;
+let broadcastTileUpdate;
 
 const AI_USERNAME = '[AI]TheBeast';
 const AI_COLOR = '#800080'; // Purple color for the AI
 const AI_SPAWN_DISTANCE = 1000; // Approximately 1000 hexes away
 const AI_TURN_INTERVAL = 60 * 1000; // Every minute
 
-function init(socketIo, currentGridState, currentUsers, fileSystem, leaderboardCalculator, hexNeighborGetter, hexDistCalculator, gridStateFile, usersFile) {
+function init(socketIo, currentGridState, currentUsers, fileSystem, leaderboardCalculator, hexNeighborGetter, hexDistCalculator, gridStateFile, usersFile, tileUpdater) {
     io = socketIo;
     gridState = currentGridState;
     users = currentUsers;
@@ -24,6 +25,7 @@ function init(socketIo, currentGridState, currentUsers, fileSystem, leaderboardC
     hexDistance = hexDistCalculator;
     GRID_STATE_FILE = gridStateFile;
     USERS_FILE = usersFile;
+    broadcastTileUpdate = tileUpdater;
 }
 
 function findDistantSpawn() {
@@ -92,8 +94,7 @@ function aiTurn() {
         console.log('AI: [AI]TheBeast has no tiles. Re-spawning capitol.');
         aiUser.capitol = findDistantSpawn();
         gridState[aiUser.capitol] = { owner: AI_USERNAME, population: 1 };
-        fs.writeFileSync(GRID_STATE_FILE, JSON.stringify(gridState, null, 2));
-        io.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
+        broadcastTileUpdate(aiUser.capitol);
         return;
     }
 
@@ -149,8 +150,7 @@ function aiTurn() {
     if (bestTileToCapture) {
         const captureKey = `${bestTileToCapture.q},${bestTileToCapture.r}`;
         gridState[captureKey] = { owner: AI_USERNAME, population: 1 };
-        fs.writeFileSync(GRID_STATE_FILE, JSON.stringify(gridState, null, 2));
-        io.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
+        broadcastTileUpdate(captureKey);
         console.log(`AI: [AI]TheBeast captured tile ${captureKey}`);
     } else {
         console.log('AI: No suitable tile found for capture.');
@@ -171,9 +171,8 @@ function startAI() {
             capitol: aiCapitol,
         };
         gridState[aiCapitol] = { owner: AI_USERNAME, population: 1 };
-        fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2));
-        fs.writeFileSync(GRID_STATE_FILE, JSON.stringify(gridState, null, 2));
-        io.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
+        io.emit('userUpdate', { users });
+        broadcastTileUpdate(aiCapitol);
     }
 
     aiInterval = setInterval(aiTurn, AI_TURN_INTERVAL);
@@ -191,5 +190,6 @@ module.exports = {
     init,
     startAI,
     stopAI,
+    findDistantSpawn,
     AI_USERNAME // Export for external reference if needed
 };

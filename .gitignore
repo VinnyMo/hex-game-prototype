@@ -1,3 +1,4 @@
 node_modules/
 client.log
 server.log
+grid_state.json
