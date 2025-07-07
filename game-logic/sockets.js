@@ -9,7 +9,7 @@ function initializeSocket(io) {
 
         socket.on('login', ({ username, password }) => {
             log(`Server: Login attempt for username: ${username}`);
-            if (!/^[a-zA-Z0-9]+$/.test(username)) {
+            if (!/^[a-zA-Z0-9_]+$/.test(username)) {
                 log(`Server: Login error - Username "${username}" is not alphanumeric.`);
                 socket.emit('loginError', 'Username must be alphanumeric.');
                 return;

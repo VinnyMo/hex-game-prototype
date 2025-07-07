@@ -200,6 +200,14 @@ function applyExclamationEffect(q, r, username, visited, io) {
             // Own tile, increase population
             gridState[neighborKey].population = (neighborTile.population || 0) + 1;
         } else {
+            // Check if the neighbor tile is a capitol
+            const isNeighborCapitol = Object.values(getUsers()).some(u => u.capitol === neighborKey);
+
+            if (isNeighborCapitol) {
+                log(`Server: Exclamation effect skipped for capitol tile at ${neighborKey}.`);
+                continue; // Skip processing this tile if it's a capitol
+            }
+
             // Enemy tile, decrease population or capture
             if ((neighborTile.population || 0) > 1) {
                 gridState[neighborKey].population = (neighborTile.population || 0) - 1;
