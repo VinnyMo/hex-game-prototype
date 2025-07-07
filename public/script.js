@@ -240,6 +240,12 @@ function drawHex(q, r) {
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText(tile.population, x, y);
+    } else if (tile && tile.hasExclamation) {
+        ctx.fillStyle = 'red'; // Color for the exclamation mark
+        ctx.font = 'bold 30px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('!', x, y);
     }
 }
 
@@ -630,27 +636,42 @@ function handleMapPointerDown(e) {
     mapPointerDownX = lastMapPointerX; // Store initial position for click detection
     lastMapPointerY = e.clientY !== undefined ? e.clientY : (e.touches && e.touches[0] ? e.touches[0].clientY : undefined);
     mapPointerDownY = lastMapPointerY; // Store initial position for click detection
+
+    // Clear target when a new interaction starts
+    targetWorldX = null;
+    targetWorldY = null;
+    drawMap(); // Redraw to remove the X immediately
 }
 
 let mapAnimationFrameId = null;
 
 function handleMapPointerMove(e) {
-    if (!isMapDragging) return;
-
     const currentX = e.clientX !== undefined ? e.clientX : (e.touches && e.touches[0] ? e.touches[0].clientX : undefined);
     const currentY = e.clientY !== undefined ? e.clientY : (e.touches && e.touches[0] ? e.touches[0].clientY : undefined);
 
-    const dx = currentX - lastMapPointerX;
-    const dy = currentY - lastMapPointerY;
+    if (mapPointerDownX === undefined) return; // No pointer down event recorded
 
-    mapCameraX += dx;
-    mapCameraY += dy;
+    if (!isMapDragging) {
+        const dx = Math.abs(currentX - mapPointerDownX);
+        const dy = Math.abs(currentY - mapPointerDownY);
+        if (dx > DRAG_THRESHOLD || dy > DRAG_THRESHOLD) {
+            isMapDragging = true;
+        }
+    }
 
-    if (!mapAnimationFrameId) {
-        mapAnimationFrameId = requestAnimationFrame(() => {
-            drawMap();
-            mapAnimationFrameId = null;
-        });
+    if (isMapDragging) {
+        const dx = currentX - lastMapPointerX;
+        const dy = currentY - lastMapPointerY;
+
+        mapCameraX += dx;
+        mapCameraY += dy;
+
+        if (!mapAnimationFrameId) {
+            mapAnimationFrameId = requestAnimationFrame(() => {
+                drawMap();
+                mapAnimationFrameId = null;
+            });
+        }
     }
 
     lastMapPointerX = currentX;
@@ -658,14 +679,16 @@ function handleMapPointerMove(e) {
 }
 
 function handleMapPointerUp(e) {
-    isMapDragging = false;
     const upX = e.clientX !== undefined ? e.clientX : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientX : undefined);
     const upY = e.clientY !== undefined ? e.clientY : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientY : undefined);
 
     // If it was a click (not a drag)
-    if (Math.abs(upX - mapPointerDownX) < DRAG_THRESHOLD && Math.abs(upY - mapPointerDownY) < DRAG_THRESHOLD) {
+    if (!isMapDragging && (Math.abs(upX - mapPointerDownX) < DRAG_THRESHOLD && Math.abs(upY - mapPointerDownY) < DRAG_THRESHOLD)) {
         handleMapClick(e);
     }
+    isMapDragging = false;
+    mapPointerDownX = undefined;
+    mapPointerDownY = undefined;
 }
 
 function handleMapClick(e) {
@@ -736,7 +759,7 @@ function drawMap() {
         }
         mapCtx.closePath();
 
-        let hexColor = tile && users[tile.owner] ? users[tile.owner].color : 'white';
+        let hexColor = tile && users[tile.owner] ? users[tile.owner].color : '#FFFFFF'; // Default to white for unowned tiles
         mapCtx.fillStyle = hexColor;
         mapCtx.fill();
         mapCtx.strokeStyle = 'black';
@@ -746,6 +769,15 @@ function drawMap() {
         // Draw capitol stars on the map
         if (Object.values(users).some(user => user.capitol === key)) {
             drawStarOnMap(mapX, mapY, scaledHexSize * 0.4, 5, 0.5);
+        }
+
+        // Draw exclamation mark on the map
+        if (tile && tile.hasExclamation) {
+            mapCtx.fillStyle = 'red'; // Color for the exclamation mark
+            mapCtx.font = 'bold ' + (scaledHexSize * 0.8) + 'px Arial';
+            mapCtx.textAlign = 'center';
+            mapCtx.textBaseline = 'middle';
+            mapCtx.fillText('!', mapX, mapY);
         }
     }
 

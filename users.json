@@ -1,20 +1,14 @@
 {
-  "[AI]TheBeast": {
-    "username": "[AI]TheBeast",
-    "password": "AI_PASSWORD",
-    "color": "#800080",
-    "capitol": "693,350"
-  },
   "ilikpie": {
     "username": "ilikpie",
     "password": "123mypassword",
-    "color": "#1075c3",
-    "capitol": "470,-848"
+    "color": "#e81c6a",
+    "capitol": "-3,-94"
   },
-  "ilikpie2": {
-    "username": "ilikpie2",
-    "password": "$2b$10$ssIMVaX.C/T2c97XHPIaJe/7LLjpnuK6bwWgM23M9kD1P1bwHDbgi",
-    "color": "#5cca2d",
-    "capitol": "-366,498"
+  "Bloopy": {
+    "username": "Bloopy",
+    "password": "123mypassword",
+    "color": "#c41bf9",
+    "capitol": "107,100"
   }
 }

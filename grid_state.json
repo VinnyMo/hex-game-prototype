@@ -1,7302 +1,2100 @@
 {
-  "470,-848": {
+  "-3,-94": {
     "owner": "ilikpie",
-    "population": 1
+    "population": 4
   },
-  "470,-847": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "471,-848": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "471,-849": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "470,-849": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "469,-848": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "469,-847": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "919,-171": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "919,-172": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "918,-172": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "917,-171": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "917,-170": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "918,-170": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "471,-847": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "472,-848": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "472,-849": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "472,-850": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "471,-850": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "470,-850": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "469,-849": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "468,-848": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "468,-847": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "468,-846": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "469,-846": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "470,-846": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "918,-173": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "917,-172": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "917,-173": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "471,-846": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "472,-846": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "472,-845": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "473,-845": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "474,-845": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "473,-844": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "474,-844": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "475,-844": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "475,-843": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "475,-842": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "475,-841": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "476,-841": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "477,-841": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "477,-840": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "477,-839": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "477,-838": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "477,-837": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "477,-836": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "477,-835": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "478,-835": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "478,-834": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "478,-833": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "478,-832": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "478,-831": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "478,-830": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "479,-830": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "479,-829": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "479,-828": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "479,-827": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "480,-827": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "480,-826": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "480,-825": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "481,-825": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "481,-824": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "481,-823": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "481,-822": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "481,-821": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "481,-820": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "482,-820": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "482,-819": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "483,-819": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "483,-818": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "483,-817": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "484,-817": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "484,-816": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "485,-816": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "485,-815": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "485,-814": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "485,-813": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "485,-812": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "485,-811": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "485,-810": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "485,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "916,-173": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "915,-173": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "914,-173": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "914,-174": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "914,-175": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "913,-175": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "912,-175": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "911,-175": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "910,-175": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "909,-175": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "909,-176": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "486,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "487,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "488,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "489,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "490,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "491,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "492,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "493,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "494,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "495,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "496,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "497,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "498,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "499,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "500,-809": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "500,-808": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "500,-807": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "500,-806": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "501,-806": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "502,-806": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "503,-806": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "504,-806": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "505,-806": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "506,-806": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "506,-805": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "506,-804": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "506,-803": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "507,-803": {
+  "-4,-94": {
     "owner": "ilikpie",
     "population": 2
   },
-  "507,-802": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "508,-802": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "508,-801": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "509,-801": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "509,-800": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "510,-800": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "510,-799": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "511,-799": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "512,-799": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "512,-798": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "512,-797": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "512,-796": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "512,-795": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "512,-794": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "513,-794": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "514,-794": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "515,-794": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "516,-794": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "517,-794": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "518,-794": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "519,-794": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "519,-793": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "520,-793": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "521,-793": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "522,-793": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "522,-792": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "523,-792": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "523,-791": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "524,-791": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "525,-791": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "525,-790": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "526,-790": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "526,-789": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "527,-789": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "527,-788": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "528,-788": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "529,-788": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "529,-787": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "530,-787": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "530,-786": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "531,-786": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "531,-785": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "532,-785": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "533,-785": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "533,-784": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "534,-784": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "535,-784": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "535,-783": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "536,-783": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "537,-783": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "537,-782": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "538,-782": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "538,-781": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "539,-781": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "540,-781": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "541,-781": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "541,-780": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "541,-779": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "541,-778": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "541,-777": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "542,-777": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "543,-777": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "544,-777": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "545,-777": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "546,-777": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "546,-776": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "546,-775": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "547,-775": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "548,-775": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "548,-774": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "549,-774": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "549,-773": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "550,-773": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "550,-772": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "551,-772": {
+  "-3,-95": {
     "owner": "ilikpie",
     "population": 2
   },
-  "552,-772": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "552,-771": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "552,-770": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "553,-770": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "554,-770": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "554,-769": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "555,-769": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "555,-768": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "556,-768": {
-    "owner": "ilikpie",
-    "population": 7
-  },
-  "556,-767": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "557,-767": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "557,-766": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "557,-765": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "558,-765": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "558,-764": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "559,-764": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "559,-763": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "560,-763": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "560,-762": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "561,-762": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "562,-762": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "563,-762": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "563,-761": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "564,-761": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "564,-760": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "565,-760": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "565,-759": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "566,-759": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "566,-758": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "567,-758": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "567,-757": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "568,-757": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "569,-757": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "569,-756": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "570,-756": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "570,-755": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "571,-755": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "572,-755": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "572,-754": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "573,-754": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "571,-754": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "574,-754": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "574,-753": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "575,-753": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "575,-752": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "576,-752": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "576,-751": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "577,-751": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "577,-750": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "578,-750": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "578,-749": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "578,-748": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "578,-747": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "579,-747": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "579,-746": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "580,-746": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "580,-745": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "581,-745": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "581,-744": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "582,-744": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "583,-744": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "583,-743": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "583,-742": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "584,-742": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "584,-741": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "585,-741": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "585,-740": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "586,-740": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "586,-739": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "586,-738": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "587,-738": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "587,-737": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "587,-736": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "587,-735": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "588,-735": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "589,-735": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "589,-734": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "590,-734": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "591,-734": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "592,-734": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "592,-733": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "593,-733": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "593,-732": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "594,-732": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "594,-731": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "594,-730": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "595,-730": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "595,-729": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "596,-729": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "596,-728": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "597,-728": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "597,-727": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "597,-726": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "598,-726": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "598,-725": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "598,-724": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "599,-724": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "599,-723": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "600,-723": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "600,-722": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "601,-722": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "602,-722": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "602,-721": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "603,-721": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "603,-720": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "604,-720": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "604,-719": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "605,-719": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "605,-718": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "606,-718": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "606,-717": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "607,-717": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "608,-717": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "608,-716": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "608,-715": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "608,-714": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "608,-713": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "609,-713": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "610,-713": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "610,-712": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "610,-711": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "610,-710": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "610,-709": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "611,-709": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "611,-708": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "611,-707": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "611,-706": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "612,-706": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "613,-706": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "613,-705": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "613,-704": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "613,-703": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "613,-702": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "613,-701": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "613,-700": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "614,-700": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "614,-699": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "615,-699": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "616,-699": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "617,-699": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "618,-699": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "618,-698": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "618,-697": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "618,-696": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "619,-696": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "619,-695": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "620,-695": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "621,-695": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "622,-695": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "623,-695": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "623,-694": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "623,-693": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "623,-692": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "623,-691": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "623,-690": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "624,-690": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "624,-689": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "625,-689": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "626,-689": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "627,-689": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "627,-688": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "627,-687": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "627,-686": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "627,-685": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "627,-684": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "628,-684": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "629,-684": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "630,-684": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "631,-684": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "632,-684": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "633,-684": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "633,-683": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "634,-683": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "634,-682": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "635,-682": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "635,-681": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "636,-681": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "636,-680": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "637,-680": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "638,-680": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "639,-680": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "639,-679": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "640,-679": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "640,-678": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "641,-678": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "641,-677": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "642,-677": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "642,-676": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "643,-676": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "644,-676": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "645,-676": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "645,-675": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "645,-674": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "646,-674": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "646,-673": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "647,-673": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "647,-672": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "648,-672": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "649,-672": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "649,-671": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "650,-671": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "650,-670": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "651,-670": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "651,-669": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "652,-669": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "652,-668": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "653,-668": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "653,-667": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "654,-667": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "655,-667": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "655,-666": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "656,-666": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "656,-665": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "657,-665": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "657,-664": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "658,-664": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "658,-663": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "659,-663": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "660,-663": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "661,-663": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "661,-662": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "662,-662": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "662,-661": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "663,-661": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "663,-660": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "664,-660": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "665,-660": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "665,-659": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "666,-659": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "667,-659": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "668,-659": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "668,-658": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "668,-657": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "669,-657": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "669,-656": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "670,-656": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "670,-655": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "671,-655": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "672,-655": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "673,-655": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "674,-655": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "675,-655": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "675,-654": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "676,-654": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "676,-653": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "677,-653": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "677,-652": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "678,-652": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "679,-652": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "680,-652": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "681,-652": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "681,-651": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "681,-650": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "681,-649": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "682,-649": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "682,-648": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "683,-648": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "684,-648": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "685,-648": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "686,-648": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "686,-647": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "687,-647": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "688,-647": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "688,-646": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "689,-646": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "690,-646": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "691,-646": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "691,-645": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "692,-645": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "692,-644": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "692,-643": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "693,-643": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "693,-642": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "694,-642": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "695,-642": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "696,-642": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "696,-641": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "697,-641": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "697,-640": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "698,-640": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "698,-639": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "699,-639": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "700,-639": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "701,-639": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "701,-638": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "702,-638": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "703,-638": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "703,-637": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "704,-637": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "704,-636": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "705,-636": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "705,-635": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "706,-635": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "707,-636": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "708,-636": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "708,-635": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "708,-634": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "708,-633": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "708,-632": {
+  "-2,-95": {
     "owner": "ilikpie",
     "population": 2
   },
-  "709,-632": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "709,-631": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "710,-631": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "711,-631": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "711,-630": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "712,-630": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "712,-629": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "713,-629": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "714,-629": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "715,-629": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "715,-628": {
+  "-2,-94": {
     "owner": "ilikpie",
     "population": 2
   },
-  "716,-628": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "717,-628": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "717,-627": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "718,-627": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "719,-627": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "719,-626": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "720,-626": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "721,-626": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "721,-625": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "722,-625": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "722,-624": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "723,-624": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "723,-623": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "724,-623": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "725,-623": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "726,-623": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "726,-622": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "727,-622": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "727,-621": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "727,-620": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "727,-619": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "728,-619": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "729,-619": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "730,-619": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "730,-618": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "731,-618": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "732,-618": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "733,-618": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "734,-618": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "735,-618": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "735,-617": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "735,-616": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "736,-616": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "737,-616": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "738,-616": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "738,-615": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "738,-614": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "738,-613": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "739,-613": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "740,-613": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "741,-613": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "742,-613": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "742,-612": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "742,-611": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "742,-610": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "743,-610": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "743,-609": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "744,-609": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "745,-609": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "746,-609": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "746,-608": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "746,-607": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "746,-606": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "746,-605": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "746,-604": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "747,-604": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "748,-604": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "749,-604": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "750,-604": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "750,-603": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "751,-603": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "751,-602": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "752,-602": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "752,-601": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "753,-601": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "753,-600": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "754,-600": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "754,-599": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "755,-599": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "755,-598": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-598": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-597": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-596": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-595": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-594": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-593": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-592": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-591": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-590": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-589": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-588": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-587": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-586": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-585": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-584": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-583": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-582": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-581": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "756,-580": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "757,-580": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "758,-580": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "759,-580": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "760,-580": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "760,-579": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "760,-578": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "761,-578": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "761,-577": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "761,-576": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "762,-576": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "762,-575": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "763,-575": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "763,-574": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "764,-574": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "764,-573": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "764,-572": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "764,-571": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "764,-570": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "765,-570": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "766,-570": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "767,-570": {
+  "-3,-93": {
     "owner": "ilikpie",
     "population": 2
   },
-  "768,-570": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "768,-569": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "768,-568": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "769,-568": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "769,-567": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "769,-566": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "770,-566": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "770,-565": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "771,-565": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "772,-565": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "773,-565": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "773,-564": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "773,-563": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "773,-562": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "773,-561": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "774,-561": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "775,-561": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "776,-561": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "776,-560": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "777,-560": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "778,-560": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "779,-560": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "779,-559": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "779,-558": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "779,-557": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "779,-556": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "779,-555": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "780,-555": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "781,-555": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "782,-555": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "783,-555": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "783,-554": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "784,-554": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "784,-553": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "784,-552": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "784,-551": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "784,-550": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "784,-549": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "784,-548": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "785,-548": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "786,-548": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "787,-548": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "788,-548": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "789,-548": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "789,-547": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "789,-546": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "789,-545": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "790,-545": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "791,-545": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "791,-544": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "791,-543": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "792,-543": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "793,-543": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "794,-543": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "795,-543": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "795,-542": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "795,-541": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "795,-540": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "796,-540": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "797,-540": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "798,-540": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "799,-540": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "800,-540": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "801,-540": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "801,-539": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "801,-538": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "801,-537": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "801,-536": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "801,-535": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "801,-534": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "801,-533": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "802,-533": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "803,-533": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "804,-533": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "804,-532": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "805,-532": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "805,-531": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "806,-531": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "806,-530": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "807,-530": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "807,-529": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "808,-529": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "809,-529": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "809,-528": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "810,-528": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "811,-528": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "811,-527": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "812,-527": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "813,-527": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "814,-527": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "815,-527": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "815,-526": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "815,-525": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "815,-524": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "815,-523": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "815,-522": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "815,-521": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "815,-520": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "815,-519": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "815,-518": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "816,-518": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "817,-518": {
+  "-4,-93": {
     "owner": "ilikpie",
     "population": 2
   },
-  "817,-517": {
+  "-4,-95": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,-516": {
+  "-3,-96": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,-515": {
+  "-2,-96": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,-514": {
+  "-1,-96": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,-513": {
+  "-1,-95": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,-512": {
+  "-1,-94": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,-511": {
+  "-2,-93": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,-510": {
+  "-3,-92": {
     "owner": "ilikpie",
     "population": 1
   },
-  "818,-510": {
+  "-4,-92": {
     "owner": "ilikpie",
     "population": 1
   },
-  "819,-510": {
+  "-5,-92": {
     "owner": "ilikpie",
     "population": 1
   },
-  "820,-510": {
+  "-5,-93": {
     "owner": "ilikpie",
     "population": 1
   },
-  "821,-510": {
+  "-5,-94": {
     "owner": "ilikpie",
     "population": 1
   },
-  "822,-510": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "822,-509": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "823,-509": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "823,-508": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "823,-507": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "823,-506": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "823,-505": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "823,-504": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "824,-504": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "825,-504": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "826,-504": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "827,-504": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "827,-503": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "827,-502": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "827,-501": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "827,-500": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "827,-499": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "827,-498": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "827,-497": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "828,-497": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "829,-497": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "830,-497": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "830,-496": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "830,-495": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "830,-494": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "830,-493": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "830,-492": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "830,-491": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "830,-490": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "831,-490": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "832,-490": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "832,-489": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "832,-488": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "832,-487": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "832,-486": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "832,-485": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "832,-484": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "832,-483": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "832,-482": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,-482": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "834,-482": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "834,-481": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "834,-480": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "834,-479": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "834,-478": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "834,-477": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "835,-477": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "836,-477": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "837,-477": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "837,-476": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "837,-475": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "837,-474": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "837,-473": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "837,-472": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "838,-472": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "838,-471": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "838,-470": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "839,-470": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "839,-469": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "840,-469": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "840,-468": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "840,-467": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "840,-466": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "840,-465": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "840,-464": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "841,-464": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "842,-464": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "843,-464": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "843,-463": {
-    "owner": "ilikpie",
-    "population": 1
+  "-44,-114": {
+    "hasExclamation": true
   },
-  "844,-463": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "844,-462": {
-    "owner": "ilikpie",
-    "population": 1
+  "14,-48": {
+    "hasExclamation": true
   },
-  "845,-462": {
-    "owner": "ilikpie",
-    "population": 1
+  "-66,-88": {
+    "hasExclamation": true
   },
-  "845,-461": {
+  "-11,-64": {
     "owner": "ilikpie",
     "population": 1
   },
-  "845,-460": {
+  "-3,-91": {
     "owner": "ilikpie",
     "population": 2
   },
-  "845,-459": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "845,-458": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "846,-458": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "846,-457": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "847,-457": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,-457": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,-456": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,-455": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,-454": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,-453": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,-452": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,-451": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "849,-451": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "849,-450": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "850,-450": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "851,-450": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "852,-450": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "852,-449": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "852,-448": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "852,-447": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "852,-446": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "852,-445": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "852,-444": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "853,-444": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "854,-444": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "855,-444": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "855,-443": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "856,-443": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "856,-442": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "856,-441": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "857,-441": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "857,-440": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "857,-439": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "857,-438": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "857,-437": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "857,-436": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "858,-436": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "859,-436": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "860,-436": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "860,-435": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "861,-435": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "861,-434": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "861,-433": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "861,-432": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "861,-431": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "861,-430": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "862,-430": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "863,-430": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "864,-430": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "864,-429": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "864,-428": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "864,-427": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "865,-427": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "865,-426": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "865,-425": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "866,-425": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "867,-425": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "867,-424": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "868,-424": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "868,-423": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "868,-422": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "868,-421": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "868,-420": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "868,-419": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "868,-418": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "869,-418": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-418": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-417": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-416": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-415": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-414": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-413": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-412": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-411": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-410": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "871,-410": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "872,-410": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "873,-410": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "873,-409": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "873,-408": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "873,-407": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "873,-406": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "873,-405": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "873,-404": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "873,-403": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "873,-402": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "874,-402": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "875,-402": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "875,-401": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "875,-400": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "875,-399": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "875,-398": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "875,-397": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "875,-396": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "875,-395": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "875,-394": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "875,-393": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "876,-393": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "876,-392": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "876,-391": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "876,-390": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "876,-389": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "876,-388": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "876,-387": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "876,-386": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "877,-386": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "877,-385": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "877,-384": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "877,-383": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "877,-382": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "877,-381": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "877,-380": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "877,-379": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "878,-379": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "878,-378": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "878,-377": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "878,-376": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "878,-375": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "878,-374": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "878,-373": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "878,-372": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "878,-371": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "878,-370": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-370": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-369": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-368": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-367": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-366": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-365": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-364": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-363": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-362": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-361": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-360": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-359": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-358": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-357": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-356": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-355": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-354": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-353": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "880,-353": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "880,-352": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "880,-351": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "880,-350": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "880,-349": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "880,-348": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "880,-347": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "880,-346": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "880,-345": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-345": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-344": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-343": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-342": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-341": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-340": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-339": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-338": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "882,-338": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "882,-337": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "882,-336": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "882,-335": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "882,-334": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "882,-333": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "882,-332": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "882,-331": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "882,-330": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "882,-329": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-329": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-328": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-327": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-326": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-325": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-324": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-323": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-322": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-321": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-320": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "884,-320": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "884,-319": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "884,-318": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "884,-317": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "884,-316": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "884,-315": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "884,-314": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "884,-313": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "884,-312": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "884,-311": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "885,-311": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "885,-310": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "885,-309": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "885,-308": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "885,-307": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "885,-306": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "885,-305": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "885,-304": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "885,-303": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "885,-302": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "886,-302": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "886,-301": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "886,-300": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "886,-299": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "886,-298": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "886,-297": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "886,-296": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "886,-295": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "886,-294": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "886,-293": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "887,-293": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "887,-292": {
-    "owner": "ilikpie",
-    "population": 1
+  "-17,-157": {
+    "hasExclamation": true
   },
-  "887,-291": {
+  "-3,-90": {
     "owner": "ilikpie",
-    "population": 1
+    "population": 3
   },
-  "887,-290": {
+  "-3,-89": {
     "owner": "ilikpie",
     "population": 2
   },
-  "887,-289": {
+  "-3,-88": {
     "owner": "ilikpie",
     "population": 1
   },
-  "887,-288": {
+  "-3,-87": {
     "owner": "ilikpie",
     "population": 1
   },
-  "887,-287": {
+  "-3,-86": {
     "owner": "ilikpie",
     "population": 1
   },
-  "887,-286": {
+  "-3,-85": {
     "owner": "ilikpie",
     "population": 1
   },
-  "887,-285": {
+  "-3,-84": {
     "owner": "ilikpie",
     "population": 1
   },
-  "888,-285": {
+  "-3,-83": {
     "owner": "ilikpie",
     "population": 1
   },
-  "888,-284": {
+  "-3,-82": {
     "owner": "ilikpie",
     "population": 1
   },
-  "888,-283": {
+  "-3,-81": {
     "owner": "ilikpie",
     "population": 1
   },
-  "888,-282": {
+  "-3,-80": {
     "owner": "ilikpie",
     "population": 1
   },
-  "888,-281": {
+  "-3,-79": {
     "owner": "ilikpie",
     "population": 1
   },
-  "888,-280": {
+  "-3,-78": {
     "owner": "ilikpie",
     "population": 1
   },
-  "888,-279": {
+  "-3,-77": {
     "owner": "ilikpie",
     "population": 1
   },
-  "888,-278": {
+  "-3,-76": {
     "owner": "ilikpie",
     "population": 1
   },
-  "888,-277": {
+  "-3,-75": {
     "owner": "ilikpie",
     "population": 1
   },
-  "889,-277": {
+  "-3,-74": {
     "owner": "ilikpie",
     "population": 1
   },
-  "889,-276": {
+  "-3,-73": {
     "owner": "ilikpie",
     "population": 1
   },
-  "889,-275": {
+  "-3,-72": {
     "owner": "ilikpie",
     "population": 1
   },
-  "889,-274": {
+  "-4,-71": {
     "owner": "ilikpie",
     "population": 1
   },
-  "889,-273": {
+  "-5,-70": {
     "owner": "ilikpie",
     "population": 1
   },
-  "889,-272": {
+  "-6,-69": {
     "owner": "ilikpie",
     "population": 1
   },
-  "889,-271": {
+  "-7,-68": {
     "owner": "ilikpie",
     "population": 1
   },
-  "889,-270": {
+  "-8,-67": {
     "owner": "ilikpie",
     "population": 1
   },
-  "889,-269": {
+  "-9,-66": {
     "owner": "ilikpie",
     "population": 1
   },
-  "889,-268": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "889,-267": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "889,-266": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "889,-265": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "889,-264": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "889,-263": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "889,-262": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "889,-261": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "889,-260": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "889,-259": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "890,-259": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "890,-258": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "890,-257": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "890,-256": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "890,-255": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "890,-254": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "890,-253": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "890,-252": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "890,-251": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "890,-250": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-250": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-249": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-248": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-247": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-246": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-245": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-244": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-243": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-242": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-241": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-241": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-240": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-239": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-238": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-237": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-236": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-235": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-234": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-233": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-232": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-231": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-230": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-229": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-228": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-227": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-226": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-225": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-224": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-223": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-222": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "893,-222": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "893,-221": {
+  "-10,-65": {
     "owner": "ilikpie",
     "population": 2
   },
-  "893,-220": {
+  "-10,-64": {
     "owner": "ilikpie",
     "population": 1
   },
-  "893,-219": {
+  "-11,-65": {
     "owner": "ilikpie",
     "population": 1
   },
-  "893,-218": {
+  "-12,-64": {
     "owner": "ilikpie",
     "population": 1
   },
-  "893,-217": {
+  "-12,-63": {
     "owner": "ilikpie",
     "population": 1
   },
-  "893,-216": {
+  "-11,-63": {
     "owner": "ilikpie",
     "population": 1
   },
-  "893,-215": {
-    "owner": "ilikpie",
-    "population": 1
+  "65,-114": {
+    "hasExclamation": true
   },
-  "893,-214": {
-    "owner": "ilikpie",
-    "population": 1
+  "-67,-136": {
+    "hasExclamation": true
   },
-  "893,-213": {
-    "owner": "ilikpie",
-    "population": 1
+  "58,-47": {
+    "hasExclamation": true
   },
-  "894,-213": {
-    "owner": "ilikpie",
-    "population": 1
+  "32,-141": {
+    "hasExclamation": true
   },
-  "894,-212": {
-    "owner": "ilikpie",
-    "population": 1
+  "-9,-91": {
+    "hasExclamation": true
   },
-  "894,-211": {
-    "owner": "ilikpie",
-    "population": 1
+  "-56,-102": {
+    "hasExclamation": true
   },
-  "894,-210": {
-    "owner": "ilikpie",
-    "population": 1
+  "-45,-79": {
+    "hasExclamation": true
   },
-  "894,-209": {
-    "owner": "ilikpie",
-    "population": 1
+  "-20,-64": {
+    "hasExclamation": true
   },
-  "894,-208": {
-    "owner": "ilikpie",
-    "population": 1
+  "46,-107": {
+    "hasExclamation": true
   },
-  "894,-207": {
-    "owner": "ilikpie",
-    "population": 1
+  "-53,-98": {
+    "hasExclamation": true
   },
-  "894,-206": {
-    "owner": "ilikpie",
-    "population": 1
+  "-12,-113": {
+    "hasExclamation": true
   },
-  "894,-205": {
+  "-2,-91": {
     "owner": "ilikpie",
     "population": 2
   },
-  "895,-205": {
+  "-31,-97": {
+    "hasExclamation": true
+  },
+  "4,-162": {
+    "hasExclamation": true
+  },
+  "14,-190": {
+    "hasExclamation": true
+  },
+  "-30,-88": {
+    "hasExclamation": true
+  },
+  "-21,-155": {
+    "hasExclamation": true
+  },
+  "4,-96": {
     "owner": "ilikpie",
     "population": 1
   },
-  "895,-204": {
+  "49,-179": {
+    "hasExclamation": true
+  },
+  "-91,-70": {
+    "hasExclamation": true
+  },
+  "-20,-115": {
+    "hasExclamation": true
+  },
+  "13,-53": {
+    "hasExclamation": true
+  },
+  "37,-89": {
+    "hasExclamation": true
+  },
+  "-22,-95": {
+    "hasExclamation": true
+  },
+  "93,-82": {
+    "hasExclamation": true
+  },
+  "-20,-54": {
+    "hasExclamation": true
+  },
+  "20,-73": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "38,-10": {
+    "hasExclamation": true
+  },
+  "22,-93": {
+    "hasExclamation": true
+  },
+  "-3,-194": {
+    "hasExclamation": true
+  },
+  "-15,-171": {
+    "hasExclamation": true
+  },
+  "20,-6": {
+    "hasExclamation": true
+  },
+  "23,-184": {
+    "hasExclamation": true
+  },
+  "12,-95": {
+    "hasExclamation": true
+  },
+  "40,-95": {
+    "hasExclamation": true
+  },
+  "54,-125": {
+    "hasExclamation": true
+  },
+  "-18,-43": {
+    "hasExclamation": true
+  },
+  "28,-131": {
+    "hasExclamation": true
+  },
+  "28,-40": {
+    "hasExclamation": true
+  },
+  "-4,-98": {
     "owner": "ilikpie",
     "population": 1
   },
-  "895,-203": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "895,-202": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "895,-201": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "895,-200": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "895,-199": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "895,-198": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "896,-198": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "896,-197": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "896,-196": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "896,-195": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "896,-194": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "896,-193": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "896,-192": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "896,-191": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "896,-190": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-190": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-189": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-188": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-187": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-186": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-185": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-184": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-183": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-182": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "898,-182": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "898,-181": {
+  "-6,-103": {
     "owner": "ilikpie",
     "population": 2
   },
-  "898,-180": {
+  "-97,-89": {
+    "hasExclamation": true
+  },
+  "-9,-117": {
+    "hasExclamation": true
+  },
+  "1,-74": {
     "owner": "ilikpie",
     "population": 1
   },
-  "898,-179": {
+  "-88,-71": {
+    "hasExclamation": true
+  },
+  "-21,-25": {
+    "hasExclamation": true
+  },
+  "8,-62": {
+    "hasExclamation": true
+  },
+  "40,-83": {
+    "hasExclamation": true
+  },
+  "32,-67": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "49,-164": {
+    "hasExclamation": true
+  },
+  "19,-91": {
+    "hasExclamation": true
+  },
+  "-6,-104": {
     "owner": "ilikpie",
     "population": 1
   },
-  "898,-178": {
+  "56,-159": {
+    "hasExclamation": true
+  },
+  "7,-101": {
     "owner": "ilikpie",
     "population": 1
   },
-  "898,-177": {
-    "owner": "ilikpie",
-    "population": 1
+  "-70,-44": {
+    "hasExclamation": true
   },
-  "898,-176": {
-    "owner": "ilikpie",
-    "population": 1
+  "27,-133": {
+    "hasExclamation": true
   },
-  "899,-176": {
-    "owner": "ilikpie",
-    "population": 1
+  "43,-84": {
+    "hasExclamation": true
   },
-  "899,-175": {
-    "owner": "ilikpie",
-    "population": 1
+  "70,-89": {
+    "hasExclamation": true
   },
-  "900,-176": {
-    "owner": "ilikpie",
-    "population": 1
+  "19,-123": {
+    "hasExclamation": true
   },
-  "901,-176": {
-    "owner": "ilikpie",
-    "population": 1
+  "-89,-57": {
+    "hasExclamation": true
   },
-  "902,-176": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "903,-176": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "904,-176": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "905,-176": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "906,-176": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "907,-176": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "908,-176": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "918,-171": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "916,-171": {
+  "-3,-97": {
     "owner": "ilikpie",
     "population": 2
   },
-  "916,-172": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "915,-172": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "913,-173": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "913,-174": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "912,-174": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "911,-174": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "467,-846": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "466,-845": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "465,-844": {
+  "-4,-97": {
     "owner": "ilikpie",
     "population": 2
   },
-  "464,-844": {
+  "-3,-98": {
     "owner": "ilikpie",
     "population": 1
   },
-  "464,-843": {
+  "-3,-99": {
     "owner": "ilikpie",
     "population": 1
   },
-  "463,-843": {
+  "-4,-99": {
     "owner": "ilikpie",
     "population": 1
   },
-  "467,-847": {
+  "-5,-98": {
     "owner": "ilikpie",
     "population": 1
   },
-  "466,-846": {
+  "-5,-97": {
     "owner": "ilikpie",
     "population": 1
   },
-  "465,-845": {
+  "0,-95": {
     "owner": "ilikpie",
     "population": 1
   },
-  "467,-845": {
+  "1,-95": {
     "owner": "ilikpie",
     "population": 1
   },
-  "468,-845": {
+  "2,-95": {
     "owner": "ilikpie",
     "population": 1
   },
-  "469,-845": {
+  "3,-96": {
     "owner": "ilikpie",
     "population": 2
   },
-  "466,-844": {
+  "5,-96": {
     "owner": "ilikpie",
     "population": 1
   },
-  "463,-842": {
+  "5,-97": {
     "owner": "ilikpie",
     "population": 1
   },
-  "462,-842": {
+  "4,-97": {
     "owner": "ilikpie",
     "population": 1
   },
-  "693,350": {
-    "owner": "[AI]TheBeast",
-    "population": 1
-  },
-  "694,350": {
-    "owner": "[AI]TheBeast",
-    "population": 1
-  },
-  "694,349": {
-    "owner": "ilikpie",
-    "population": 6
-  },
-  "693,349": {
-    "owner": "ilikpie",
-    "population": 6
-  },
-  "692,350": {
-    "owner": "ilikpie",
-    "population": 6
-  },
-  "692,351": {
-    "owner": "ilikpie",
-    "population": 6
-  },
-  "693,351": {
-    "owner": "ilikpie",
-    "population": 6
-  },
-  "694,348": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "916,-169": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "915,-168": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "914,-167": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "913,-166": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "912,-165": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "911,-164": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "910,-163": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "909,-162": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "908,-161": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "907,-160": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "906,-159": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "905,-158": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "905,-157": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "905,-156": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "905,-155": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "904,-154": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "903,-153": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "902,-152": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "902,-151": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "902,-150": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "902,-149": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "902,-148": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "901,-147": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "900,-146": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "900,-145": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "900,-144": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "900,-143": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "900,-142": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "900,-141": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "900,-140": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "899,-139": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "898,-138": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-137": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-136": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-135": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-134": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-133": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-132": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-131": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-130": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "897,-129": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "896,-128": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "895,-127": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "895,-126": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "895,-125": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "894,-124": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "893,-123": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "892,-122": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-121": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-120": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-119": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-118": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-117": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-116": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-115": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-114": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-113": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "891,-112": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "890,-111": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "889,-110": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "888,-109": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "888,-108": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "888,-107": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "888,-106": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "888,-105": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "887,-104": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "886,-103": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "885,-102": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "885,-101": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "884,-100": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-99": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-98": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-97": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "883,-96": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "882,-95": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "882,-94": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-93": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-92": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-91": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-90": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-89": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "881,-88": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "880,-87": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-86": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-85": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-84": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-83": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-82": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-81": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "879,-80": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "878,-79": {
+  "3,-95": {
     "owner": "ilikpie",
     "population": 1
   },
-  "878,-78": {
+  "4,-95": {
     "owner": "ilikpie",
     "population": 1
   },
-  "877,-77": {
-    "owner": "ilikpie",
+  "44,-51": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "877,-76": {
+  "5,-98": {
     "owner": "ilikpie",
     "population": 1
   },
-  "877,-75": {
+  "6,-99": {
     "owner": "ilikpie",
     "population": 1
   },
-  "877,-74": {
+  "7,-100": {
     "owner": "ilikpie",
     "population": 2
   },
-  "877,-73": {
+  "8,-101": {
     "owner": "ilikpie",
     "population": 1
   },
-  "877,-72": {
+  "8,-102": {
     "owner": "ilikpie",
     "population": 1
   },
-  "877,-71": {
+  "7,-102": {
     "owner": "ilikpie",
     "population": 1
   },
-  "876,-70": {
+  "6,-101": {
     "owner": "ilikpie",
     "population": 1
   },
-  "876,-69": {
+  "6,-100": {
     "owner": "ilikpie",
     "population": 1
   },
-  "876,-68": {
+  "-4,-100": {
     "owner": "ilikpie",
     "population": 1
   },
-  "876,-67": {
+  "-5,-100": {
     "owner": "ilikpie",
     "population": 1
   },
-  "875,-66": {
+  "-5,-101": {
     "owner": "ilikpie",
     "population": 1
   },
-  "875,-65": {
+  "-6,-101": {
     "owner": "ilikpie",
     "population": 1
   },
-  "875,-64": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "874,-63": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "874,-62": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "874,-61": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "874,-60": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "874,-59": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "874,-58": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "873,-57": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "872,-56": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "872,-55": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "872,-54": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "872,-53": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "872,-52": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "872,-51": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "872,-50": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "871,-49": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-48": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-45": {
+  "-6,-102": {
     "owner": "ilikpie",
     "population": 2
   },
-  "870,-44": {
+  "-5,-103": {
     "owner": "ilikpie",
     "population": 1
   },
-  "870,-43": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-42": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "870,-41": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "869,-40": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "869,-39": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "869,-38": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "869,-37": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "869,-36": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "869,-35": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "869,-34": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "869,-33": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "869,-32": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "868,-31": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "867,-30": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "867,-29": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "867,-28": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "867,-27": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "867,-26": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "867,-25": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "867,-24": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "866,-23": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "866,-22": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "866,-21": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "866,-20": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "866,-19": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "865,-18": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "865,-17": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "864,-16": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "864,-15": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "864,-14": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "864,-13": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "864,-12": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "864,-11": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "864,-10": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "864,-9": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "863,-8": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "863,-7": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "863,-6": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "863,-5": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "863,-4": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "863,-3": {
+  "-5,-104": {
     "owner": "ilikpie",
     "population": 2
   },
-  "863,-2": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "863,-1": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "862,0": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "862,1": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "862,2": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "862,3": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "862,4": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "862,5": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "862,6": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "862,7": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "861,8": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "861,9": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "861,10": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "861,11": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "861,12": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "861,13": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "860,14": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "860,15": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "859,16": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "858,17": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "858,18": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "858,19": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "858,20": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "857,21": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "857,22": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "857,23": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "857,24": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "856,25": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "856,26": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "856,27": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "855,28": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "854,29": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "853,30": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "853,31": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "852,32": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "852,33": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "852,34": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "851,35": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "850,36": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "850,37": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "849,38": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "849,39": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "849,40": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "849,41": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "849,42": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "849,43": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "849,44": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "849,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "849,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,48": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,49": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,50": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,51": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,52": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,53": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "848,54": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "847,55": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "847,56": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "847,57": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "847,58": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "847,59": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "847,60": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "847,61": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "847,62": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "847,63": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "846,64": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "846,65": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "846,66": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "846,67": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "846,68": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "846,69": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "846,70": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "846,71": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "845,72": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "844,73": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "843,74": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "842,75": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "841,76": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "840,77": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "839,78": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "838,79": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "837,80": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "836,81": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "835,82": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "834,83": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,84": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,85": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,86": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,87": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,88": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,89": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,90": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,91": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,92": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,93": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,94": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,95": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "833,96": {
+  "-7,-103": {
     "owner": "ilikpie",
     "population": 2
   },
-  "833,97": {
+  "-7,-102": {
     "owner": "ilikpie",
     "population": 1
   },
-  "832,98": {
+  "-5,-105": {
     "owner": "ilikpie",
     "population": 1
   },
-  "831,99": {
+  "-6,-105": {
     "owner": "ilikpie",
     "population": 1
   },
-  "830,100": {
+  "-7,-104": {
     "owner": "ilikpie",
     "population": 1
   },
-  "829,101": {
+  "9,-103": {
     "owner": "ilikpie",
     "population": 1
   },
-  "828,102": {
+  "10,-104": {
     "owner": "ilikpie",
     "population": 1
   },
-  "827,103": {
+  "11,-105": {
     "owner": "ilikpie",
     "population": 1
   },
-  "827,104": {
+  "11,-106": {
     "owner": "ilikpie",
     "population": 1
   },
-  "827,105": {
+  "12,-107": {
     "owner": "ilikpie",
     "population": 1
   },
-  "827,106": {
+  "13,-108": {
     "owner": "ilikpie",
     "population": 1
   },
-  "826,107": {
+  "14,-109": {
     "owner": "ilikpie",
     "population": 1
   },
-  "825,108": {
+  "15,-110": {
     "owner": "ilikpie",
     "population": 1
   },
-  "824,109": {
+  "16,-111": {
     "owner": "ilikpie",
     "population": 1
   },
-  "823,110": {
+  "17,-112": {
     "owner": "ilikpie",
     "population": 1
   },
-  "822,111": {
+  "17,-113": {
     "owner": "ilikpie",
     "population": 1
   },
-  "821,112": {
+  "18,-114": {
     "owner": "ilikpie",
     "population": 1
   },
-  "820,113": {
+  "19,-115": {
     "owner": "ilikpie",
     "population": 1
   },
-  "819,114": {
+  "20,-116": {
     "owner": "ilikpie",
     "population": 1
   },
-  "819,115": {
+  "21,-117": {
     "owner": "ilikpie",
     "population": 1
   },
-  "819,116": {
+  "21,-118": {
     "owner": "ilikpie",
     "population": 1
   },
-  "819,117": {
+  "22,-119": {
     "owner": "ilikpie",
     "population": 1
   },
-  "819,118": {
+  "23,-120": {
     "owner": "ilikpie",
     "population": 1
   },
-  "819,119": {
+  "23,-121": {
     "owner": "ilikpie",
     "population": 1
   },
-  "819,120": {
+  "-20,-71": {
+    "hasExclamation": true
+  },
+  "23,-122": {
     "owner": "ilikpie",
     "population": 1
   },
-  "819,121": {
+  "-2,-75": {
     "owner": "ilikpie",
     "population": 1
   },
-  "819,122": {
+  "-1,-75": {
     "owner": "ilikpie",
     "population": 1
   },
-  "819,123": {
+  "0,-76": {
     "owner": "ilikpie",
     "population": 1
   },
-  "818,124": {
+  "1,-76": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,125": {
+  "2,-76": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,126": {
+  "3,-77": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,127": {
+  "4,-77": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,128": {
+  "5,-78": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,129": {
+  "6,-79": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,130": {
+  "7,-79": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,131": {
+  "8,-79": {
     "owner": "ilikpie",
     "population": 1
   },
-  "817,132": {
+  "9,-80": {
     "owner": "ilikpie",
     "population": 1
   },
-  "816,133": {
+  "10,-80": {
     "owner": "ilikpie",
     "population": 1
   },
-  "815,134": {
+  "11,-81": {
     "owner": "ilikpie",
     "population": 1
   },
-  "814,135": {
+  "12,-81": {
     "owner": "ilikpie",
     "population": 1
   },
-  "813,136": {
+  "13,-81": {
     "owner": "ilikpie",
     "population": 1
   },
-  "812,137": {
+  "14,-82": {
     "owner": "ilikpie",
     "population": 1
   },
-  "811,138": {
+  "15,-82": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "16,-83": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "-2,-90": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "-1,-91": {
     "owner": "ilikpie",
     "population": 2
   },
-  "811,139": {
+  "-1,-92": {
     "owner": "ilikpie",
     "population": 1
   },
-  "811,140": {
+  "-2,-92": {
     "owner": "ilikpie",
     "population": 1
   },
-  "811,141": {
+  "-1,-90": {
     "owner": "ilikpie",
     "population": 1
   },
-  "811,142": {
+  "-2,-89": {
     "owner": "ilikpie",
-    "population": 5
+    "population": 1
   },
-  "811,143": {
-    "owner": "ilikpie",
+  "22,-158": {
+    "hasExclamation": true
+  },
+  "107,100": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "810,142": {
-    "owner": "ilikpie",
+  "106,100": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "810,144": {
-    "owner": "ilikpie",
+  "106,99": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "810,145": {
-    "owner": "ilikpie",
+  "105,99": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "810,146": {
-    "owner": "ilikpie",
+  "105,98": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "809,147": {
-    "owner": "ilikpie",
+  "105,97": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "808,148": {
-    "owner": "ilikpie",
+  "104,97": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "808,149": {
-    "owner": "ilikpie",
+  "104,96": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "807,150": {
-    "owner": "ilikpie",
+  "104,95": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "807,151": {
-    "owner": "ilikpie",
+  "103,95": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "807,152": {
-    "owner": "ilikpie",
+  "103,94": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "806,153": {
-    "owner": "ilikpie",
+  "103,93": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "806,154": {
-    "owner": "ilikpie",
+  "102,93": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "805,155": {
-    "owner": "ilikpie",
+  "102,92": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "805,156": {
-    "owner": "ilikpie",
+  "102,91": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "804,157": {
-    "owner": "ilikpie",
+  "102,90": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "804,158": {
-    "owner": "ilikpie",
+  "101,90": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "803,159": {
-    "owner": "ilikpie",
+  "101,89": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "803,160": {
-    "owner": "ilikpie",
+  "101,88": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "802,161": {
-    "owner": "ilikpie",
+  "100,88": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "802,162": {
-    "owner": "ilikpie",
+  "100,87": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "801,163": {
-    "owner": "ilikpie",
+  "100,86": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "801,164": {
-    "owner": "ilikpie",
+  "100,85": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "800,165": {
-    "owner": "ilikpie",
+  "99,85": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "800,166": {
-    "owner": "ilikpie",
+  "99,84": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "800,167": {
-    "owner": "ilikpie",
+  "99,83": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "799,168": {
-    "owner": "ilikpie",
+  "99,82": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "799,169": {
-    "owner": "ilikpie",
+  "98,82": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "798,170": {
-    "owner": "ilikpie",
+  "98,81": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "798,171": {
-    "owner": "ilikpie",
+  "98,80": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "797,172": {
-    "owner": "ilikpie",
+  "98,79": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "797,173": {
-    "owner": "ilikpie",
+  "97,79": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "796,174": {
-    "owner": "ilikpie",
+  "97,78": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "795,175": {
-    "owner": "ilikpie",
+  "97,77": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "794,176": {
-    "owner": "ilikpie",
+  "97,76": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "794,177": {
-    "owner": "ilikpie",
+  "96,76": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "793,178": {
-    "owner": "ilikpie",
+  "96,75": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "793,179": {
-    "owner": "ilikpie",
+  "96,74": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "792,180": {
-    "owner": "ilikpie",
+  "96,73": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "791,181": {
-    "owner": "ilikpie",
+  "96,72": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "790,182": {
-    "owner": "ilikpie",
+  "96,71": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "790,183": {
-    "owner": "ilikpie",
+  "95,71": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "789,184": {
-    "owner": "ilikpie",
+  "95,70": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "788,185": {
-    "owner": "ilikpie",
+  "95,69": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "787,186": {
-    "owner": "ilikpie",
+  "94,69": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "787,187": {
-    "owner": "ilikpie",
+  "94,68": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "787,188": {
-    "owner": "ilikpie",
+  "94,67": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "787,189": {
-    "owner": "ilikpie",
+  "93,67": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "786,190": {
-    "owner": "ilikpie",
+  "93,66": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "785,191": {
-    "owner": "ilikpie",
+  "92,66": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "785,192": {
-    "owner": "ilikpie",
+  "65,-53": {
+    "hasExclamation": true
+  },
+  "92,65": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "784,193": {
-    "owner": "ilikpie",
+  "91,65": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "783,194": {
-    "owner": "ilikpie",
+  "91,64": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "782,195": {
-    "owner": "ilikpie",
+  "91,63": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "781,196": {
-    "owner": "ilikpie",
+  "91,62": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "781,197": {
-    "owner": "ilikpie",
+  "90,62": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "781,198": {
-    "owner": "ilikpie",
+  "90,61": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "780,199": {
-    "owner": "ilikpie",
+  "90,60": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "779,200": {
-    "owner": "ilikpie",
+  "89,60": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "779,201": {
-    "owner": "ilikpie",
+  "89,59": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "779,202": {
-    "owner": "ilikpie",
+  "89,58": {
+    "owner": "Bloopy",
+    "population": 2
+  },
+  "88,58": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "778,203": {
-    "owner": "ilikpie",
+  "88,57": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "777,204": {
-    "owner": "ilikpie",
+  "88,56": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "776,205": {
-    "owner": "ilikpie",
+  "87,56": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "776,206": {
-    "owner": "ilikpie",
+  "87,55": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "776,207": {
-    "owner": "ilikpie",
+  "87,54": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "775,208": {
-    "owner": "ilikpie",
+  "87,53": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "775,209": {
-    "owner": "ilikpie",
+  "86,53": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "774,210": {
-    "owner": "ilikpie",
+  "86,52": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "774,211": {
-    "owner": "ilikpie",
+  "85,52": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "774,212": {
-    "owner": "ilikpie",
+  "85,51": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "773,213": {
-    "owner": "ilikpie",
+  "85,50": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "773,214": {
-    "owner": "ilikpie",
+  "84,50": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "772,215": {
-    "owner": "ilikpie",
+  "84,49": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "771,216": {
-    "owner": "ilikpie",
+  "84,48": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "770,217": {
-    "owner": "ilikpie",
+  "84,47": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "770,218": {
-    "owner": "ilikpie",
+  "83,47": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "770,219": {
-    "owner": "ilikpie",
+  "83,46": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "769,220": {
-    "owner": "ilikpie",
+  "83,45": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "769,221": {
-    "owner": "ilikpie",
+  "82,45": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "769,222": {
-    "owner": "ilikpie",
+  "82,44": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "768,223": {
-    "owner": "ilikpie",
+  "82,43": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "768,224": {
-    "owner": "ilikpie",
+  "82,42": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "768,225": {
-    "owner": "ilikpie",
+  "81,42": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "767,226": {
-    "owner": "ilikpie",
+  "81,41": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "767,227": {
-    "owner": "ilikpie",
+  "81,40": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "766,228": {
-    "owner": "ilikpie",
+  "80,40": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "766,229": {
-    "owner": "ilikpie",
+  "80,39": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "765,230": {
-    "owner": "ilikpie",
+  "80,38": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "764,231": {
-    "owner": "ilikpie",
+  "79,38": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "763,232": {
-    "owner": "ilikpie",
+  "79,37": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "763,233": {
-    "owner": "ilikpie",
+  "78,37": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "762,234": {
-    "owner": "ilikpie",
+  "78,36": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "762,235": {
-    "owner": "ilikpie",
+  "78,35": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "761,236": {
-    "owner": "ilikpie",
+  "77,35": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "761,237": {
-    "owner": "ilikpie",
+  "77,34": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "760,238": {
-    "owner": "ilikpie",
+  "77,33": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "760,239": {
-    "owner": "ilikpie",
+  "76,33": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "759,240": {
-    "owner": "ilikpie",
+  "76,32": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "759,241": {
-    "owner": "ilikpie",
+  "75,32": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "758,242": {
-    "owner": "ilikpie",
+  "75,31": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "758,243": {
-    "owner": "ilikpie",
+  "75,30": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "757,244": {
-    "owner": "ilikpie",
+  "74,30": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "757,245": {
-    "owner": "ilikpie",
+  "74,29": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "756,246": {
-    "owner": "ilikpie",
+  "74,28": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "756,247": {
-    "owner": "ilikpie",
+  "73,28": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "755,248": {
-    "owner": "ilikpie",
+  "73,27": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "755,249": {
-    "owner": "ilikpie",
+  "73,26": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "754,250": {
-    "owner": "ilikpie",
+  "72,26": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "754,251": {
-    "owner": "ilikpie",
+  "72,25": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "753,252": {
-    "owner": "ilikpie",
+  "71,25": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "753,253": {
-    "owner": "ilikpie",
+  "71,24": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "752,254": {
-    "owner": "ilikpie",
+  "71,23": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "752,255": {
-    "owner": "ilikpie",
+  "71,22": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "751,256": {
-    "owner": "ilikpie",
+  "71,21": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "751,257": {
-    "owner": "ilikpie",
+  "70,21": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "750,258": {
-    "owner": "ilikpie",
+  "70,20": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "750,259": {
-    "owner": "ilikpie",
+  "69,20": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "749,260": {
-    "owner": "ilikpie",
+  "69,19": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "749,261": {
-    "owner": "ilikpie",
+  "69,18": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "748,262": {
-    "owner": "ilikpie",
+  "68,18": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "748,263": {
-    "owner": "ilikpie",
+  "68,17": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "747,264": {
-    "owner": "ilikpie",
+  "68,16": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "747,265": {
-    "owner": "ilikpie",
+  "67,16": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "747,266": {
-    "owner": "ilikpie",
+  "67,15": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "747,267": {
-    "owner": "ilikpie",
+  "67,14": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "746,268": {
-    "owner": "ilikpie",
+  "67,13": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "745,269": {
-    "owner": "ilikpie",
+  "66,13": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "745,270": {
-    "owner": "ilikpie",
+  "66,12": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "744,271": {
-    "owner": "ilikpie",
+  "66,11": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "743,272": {
-    "owner": "ilikpie",
+  "65,11": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "742,273": {
-    "owner": "ilikpie",
+  "65,10": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "742,274": {
-    "owner": "ilikpie",
+  "-73,-102": {
+    "hasExclamation": true
+  },
+  "65,9": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "742,275": {
-    "owner": "ilikpie",
+  "64,9": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "742,276": {
-    "owner": "ilikpie",
+  "64,8": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "741,277": {
-    "owner": "ilikpie",
+  "64,7": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "740,278": {
-    "owner": "ilikpie",
+  "63,7": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "740,279": {
-    "owner": "ilikpie",
+  "63,6": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "739,280": {
-    "owner": "ilikpie",
+  "63,5": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "739,281": {
-    "owner": "ilikpie",
+  "62,5": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "739,282": {
-    "owner": "ilikpie",
+  "62,4": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "739,283": {
-    "owner": "ilikpie",
+  "62,3": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "738,284": {
-    "owner": "ilikpie",
+  "62,2": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "738,285": {
-    "owner": "ilikpie",
+  "61,2": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "737,286": {
-    "owner": "ilikpie",
+  "61,1": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "736,287": {
-    "owner": "ilikpie",
+  "61,0": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "735,288": {
-    "owner": "ilikpie",
+  "60,0": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "734,289": {
-    "owner": "ilikpie",
+  "60,-1": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "734,290": {
-    "owner": "ilikpie",
+  "59,-1": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "733,291": {
-    "owner": "ilikpie",
+  "59,-2": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "732,292": {
-    "owner": "ilikpie",
+  "59,-3": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "731,293": {
-    "owner": "ilikpie",
+  "58,-3": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "730,294": {
-    "owner": "ilikpie",
+  "58,-4": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "729,295": {
-    "owner": "ilikpie",
+  "58,-5": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "728,296": {
-    "owner": "ilikpie",
+  "57,-5": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "727,297": {
-    "owner": "ilikpie",
+  "57,-6": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "726,298": {
-    "owner": "ilikpie",
+  "57,-7": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "725,299": {
-    "owner": "ilikpie",
+  "57,-8": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "724,300": {
-    "owner": "ilikpie",
+  "57,-9": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "723,301": {
-    "owner": "ilikpie",
+  "56,-9": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "722,302": {
-    "owner": "ilikpie",
+  "56,-10": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "721,303": {
-    "owner": "ilikpie",
+  "56,-11": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "720,304": {
-    "owner": "ilikpie",
+  "55,-11": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "720,305": {
-    "owner": "ilikpie",
+  "55,-12": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "55,-13": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "54,-13": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "54,-14": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "54,-15": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "54,-16": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "53,-16": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "53,-17": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "53,-18": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "53,-19": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "52,-19": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "52,-20": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "52,-21": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "52,-22": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "51,-22": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "51,-23": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "51,-24": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "50,-24": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "50,-25": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "50,-26": {
+    "owner": "Bloopy",
+    "population": 2
+  },
+  "50,-27": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "49,-27": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "49,-28": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "49,-29": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "49,-30": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "48,-30": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "48,-31": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "48,-32": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "48,-33": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "47,-33": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "47,-34": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "47,-35": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "46,-35": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "46,-36": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "46,-37": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "45,-37": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "45,-38": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "45,-39": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "44,-39": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "720,306": {
+  "44,-40": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "44,-41": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "44,-42": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "43,-42": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "43,-43": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "43,-44": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "43,-45": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "42,-45": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "42,-46": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "42,-47": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "41,-47": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "47,95": {
+    "hasExclamation": true
+  },
+  "41,-48": {
+    "owner": "Bloopy",
+    "population": 2
+  },
+  "42,-49": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "43,-50": {
+    "owner": "Bloopy",
+    "population": 2
+  },
+  "45,-51": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "45,-52": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "44,-52": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "43,-51": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "44,-50": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "42,-51": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "41,-51": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "40,-51": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "40,-52": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "39,-52": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "39,-53": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "38,-53": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "38,-54": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "37,-54": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "37,-55": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "37,-56": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "36,-56": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "36,-57": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "35,-57": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "35,-58": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "35,-59": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "34,-59": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "34,-60": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "33,-60": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "33,-61": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "33,-62": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "32,-62": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "32,-63": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "32,-64": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "32,-65": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "32,-66": {
+    "owner": "Bloopy",
+    "population": 2
+  },
+  "33,-67": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "33,-68": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "32,-68": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "31,-67": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "31,-66": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "31,-68": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "30,-68": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "29,-68": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "29,-69": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "28,-69": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "28,-70": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "27,-70": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "27,-71": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "26,-71": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "26,-72": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "25,-72": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "25,-73": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "24,-73": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "23,-73": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "22,-73": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "21,-73": {
+    "owner": "Bloopy",
+    "population": 2
+  },
+  "21,-74": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "20,-74": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "19,-73": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "19,-72": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "20,-72": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "21,-75": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "21,-76": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "20,-76": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "20,-77": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "20,-78": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "19,-78": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "19,-79": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "19,-80": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "18,-80": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "18,-81": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "18,-82": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "18,-83": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "17,-82": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "16,-82": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "15,-83": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "15,-84": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "14,-84": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "13,-84": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "13,-85": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "13,-86": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "12,-86": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "11,-86": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "11,-87": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "10,-87": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "6,-24": {
+    "hasExclamation": true
+  },
+  "9,-87": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "8,-87": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "7,-87": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "6,-87": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "5,-87": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "4,-87": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "3,-87": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "2,-87": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "1,-87": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "1,-88": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "1,-89": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "1,-90": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "1,-91": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "1,-92": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "15,-81": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "14,-81": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "13,-80": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "12,-80": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "11,-80": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "10,-79": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "9,-79": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "8,-78": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "7,-78": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "6,-78": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "5,-77": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "4,-76": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "3,-76": {
+    "owner": "Bloopy",
+    "population": 1
+  },
+  "2,-75": {
     "owner": "ilikpie",
+    "population": 1
+  },
+  "3,-75": {
+    "owner": "Bloopy",
     "population": 1
   },
-  "720,307": {
+  "2,-74": {
     "owner": "ilikpie",
     "population": 1
   },
-  "719,308": {
+  "1,-73": {
     "owner": "ilikpie",
     "population": 1
   },
-  "718,309": {
+  "0,-73": {
     "owner": "ilikpie",
     "population": 1
   },
-  "717,310": {
+  "0,-74": {
     "owner": "ilikpie",
     "population": 1
+  },
+  "62,91": {
+    "hasExclamation": true
   },
-  "716,311": {
+  "1,-75": {
     "owner": "ilikpie",
     "population": 2
   },
-  "715,312": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "714,313": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "713,314": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "713,315": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "713,316": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "713,317": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "713,318": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "713,319": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "712,320": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "711,321": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "710,322": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "710,323": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "709,324": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "709,325": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "708,326": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "707,327": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "707,328": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "706,329": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "705,330": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "705,331": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "705,332": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "704,333": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "703,334": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "703,335": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "702,336": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "701,337": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "701,338": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "700,339": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "699,340": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "699,341": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "698,342": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "697,343": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "697,344": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "696,345": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "695,346": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "694,347": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "695,349": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "695,350": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "693,348": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "692,349": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "467,-844": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "468,-844": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "469,-844": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "470,-845": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "471,-845": {
+  "0,-75": {
     "owner": "ilikpie",
     "population": 2
   },
-  "470,-844": {
+  "-1,-74": {
     "owner": "ilikpie",
     "population": 1
   },
-  "471,-844": {
+  "-2,-74": {
     "owner": "ilikpie",
-    "population": 1
-  },
-  "-366,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-365,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-364,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-363,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-362,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-361,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-360,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-359,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-358,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-357,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-356,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-355,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-354,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-353,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-352,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-351,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-350,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-349,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-348,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-347,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-346,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-345,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-344,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-343,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-342,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-341,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-340,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-339,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-338,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-337,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-336,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-335,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-334,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-333,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-332,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-331,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-330,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-329,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-328,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-327,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-326,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-325,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-324,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-323,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-322,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-321,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-320,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-319,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-318,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-317,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-316,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-315,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-314,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-313,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-312,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-311,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-310,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-309,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-308,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-307,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-306,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-305,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-304,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-303,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-302,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-301,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-300,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-299,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-298,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-297,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-296,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-295,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-294,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-293,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-292,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-291,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-290,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-289,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-288,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-287,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-286,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-285,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-284,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-283,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-282,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-281,498": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-280,497": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-279,497": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-278,497": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-277,497": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-276,497": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-275,496": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-274,496": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-273,496": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-272,496": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-271,496": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-270,496": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-269,496": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-268,495": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-267,495": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-266,495": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-265,495": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-264,495": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-263,495": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-262,495": {
-    "owner": "ilikpie2",
-    "population": 2
-  },
-  "-261,495": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-260,495": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-259,495": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-258,494": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-257,494": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-256,494": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-255,494": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-254,494": {
-    "owner": "ilikpie2",
-    "population": 1
-  },
-  "-253,494": {
-    "owner": "ilikpie2",
     "population": 1
   }
 }

@@ -3,7 +3,7 @@ const http = require('http');
 const socketIo = require('socket.io');
 const fs = require('fs');
 const path = require('path');
-const ai = require('./server_ai'); // Import the AI module
+
 
 const app = express();
 const server = http.createServer(app);
@@ -43,6 +43,14 @@ function broadcastTileUpdate(key) {
     console.log(`Server: Broadcasted update for tile ${key}`);
 }
 
+function generateRandomColor() {
+    let color;
+    do {
+        color = `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+    } while (color.toLowerCase() === '#ffffff'); // Ensure the color is not white
+    return color;
+}
+
 function broadcastLeaderboard() {
     const leaderboard = calculateLeaderboard();
     io.emit('leaderboardUpdate', leaderboard);
@@ -72,10 +80,95 @@ function saveGameState() {
 setInterval(saveGameState, 30 * 1000); // Save every 30 seconds
 setInterval(broadcastLeaderboard, 5000); // Broadcast leaderboard every 5 seconds
 
+const EXCLAMATION_SPAWN_INTERVAL = 60 * 1000; // 1 minute
+const EXCLAMATION_SPAWN_RADIUS = 100; // Radius in hexes
+
+function generateExclamationMark() {
+    const activeUsers = Object.values(users).filter(user => user.capitol); // Only consider users with a capitol
+    if (activeUsers.length === 0) {
+        return; // No users to spawn around
+    }
+
+    // Pick a random user to spawn near
+    const randomUser = activeUsers[Math.floor(Math.random() * activeUsers.length)];
+    const [userCapitolQ, userCapitolR] = randomUser.capitol.split(',').map(Number);
+
+    let attempts = 0;
+    const MAX_ATTEMPTS = 50; // Limit attempts to find a suitable tile
+
+    while (attempts < MAX_ATTEMPTS) {
+        // Generate random coordinates within the radius
+        const angle = Math.random() * 2 * Math.PI;
+        const distance = Math.random() * EXCLAMATION_SPAWN_RADIUS;
+
+        // Convert polar to hexagonal coordinates (approximate)
+        const q = userCapitolQ + Math.round(distance * Math.cos(angle));
+        const r = userCapitolR + Math.round(distance * Math.sin(angle));
+        const key = `${q},${r}`;
+
+        // Check if the tile is unoccupied and doesn't already have an exclamation mark
+        if (!gridState[key] || (!gridState[key].owner && !gridState[key].hasExclamation)) {
+            gridState[key] = { hasExclamation: true };
+            broadcastTileUpdate(key);
+            console.log(`Server: Spawned '!' at ${key}`);
+            return; // Successfully spawned
+        }
+        attempts++;
+    }
+    console.log(`Server: Failed to spawn '!' after multiple attempts.`);
+}
+
+setInterval(generateExclamationMark, EXCLAMATION_SPAWN_INTERVAL);
+
 // --- End of Optimizations ---
 
 
 // Helper functions (moved to global scope for AI access)
+const MIN_SPAWN_DISTANCE = 150;
+
+function findRandomSpawn() {
+    let q, r, key;
+    let attempts = 0;
+    const MAX_ATTEMPTS = 10000; // Prevent infinite loops
+
+    while (attempts < MAX_ATTEMPTS) {
+        q = Math.floor(Math.random() * 400) - 200; // Increased range for better distribution
+        r = Math.floor(Math.random() * 400) - 200; // Increased range for better distribution
+        key = `${q},${r}`;
+
+        // Check if the tile is occupied or has an exclamation mark
+        if (gridState[key] && (gridState[key].owner || gridState[key].hasExclamation)) {
+            attempts++;
+            continue;
+        }
+
+        let tooClose = false;
+        for (const existingKey in gridState) {
+            const existingTile = gridState[existingKey];
+            if (existingTile.owner || existingTile.hasExclamation) {
+                const [eq, er] = existingKey.split(',').map(Number);
+                if (hexDistance(q, r, eq, er) < MIN_SPAWN_DISTANCE) {
+                    tooClose = true;
+                    break;
+                }
+            }
+        }
+
+        if (!tooClose) {
+            return key;
+        }
+        attempts++;
+    }
+    console.warn('Server: Could not find a suitable spawn point after many attempts. Spawning at a less ideal location.');
+    // Fallback to original random spawn if no ideal spot is found
+    do {
+        q = Math.floor(Math.random() * 200) - 100;
+        r = Math.floor(Math.random() * 200) - 100;
+        key = `${q},${r}`;
+    } while (gridState[key]);
+    return key;
+}
+
 function getHexNeighbors(q, r) {
     const neighbors = [
         { dq: 1, dr: 0 }, { dq: 1, dr: -1 }, { dq: 0, dr: -1 },
@@ -177,11 +270,11 @@ function applyDisconnectionPenalty() {
                         changedTilesForBroadcast[key] = tile;
                     }
 
-                    if (tile.population > 1) {
-                        tile.population--;
+                    if ((tile.population || 0) > 1) {
+                        tile.population = (tile.population || 0) - 1;
                         console.log(`Server: Disconnected tile ${key} for ${username} lost population. New population: ${tile.population}`);
                         changedTilesForBroadcast[key] = tile;
-                    } else if (tile.population === 1) {
+                    } else if ((tile.population || 0) === 1) {
                         // If population drops to 0, the tile becomes neutral
                         delete gridState[key];
                         stateChanged = true;
@@ -202,6 +295,50 @@ function applyDisconnectionPenalty() {
         // Sending a batch of updates is better than the whole state
         io.emit('batchTileUpdate', { changedTiles: changedTilesForBroadcast });
         console.log('Server: Broadcasted batch tile update due to disconnection penalty.');
+    }
+}
+
+function applyExclamationEffect(q, r, username, visited) {
+    const key = `${q},${r}`;
+    if (visited.has(key)) {
+        return; // Already processed this tile in the current cascade
+    }
+    visited.add(key);
+
+    const tile = gridState[key];
+
+    // Capture the exclamation tile itself
+    gridState[key] = { owner: username, population: 1 };
+    broadcastTileUpdate(key); // Update the clicked tile
+
+    // Process neighbors
+    const neighbors = getHexNeighbors(q, r);
+    for (const neighbor of neighbors) {
+        const neighborKey = `${neighbor.q},${neighbor.r}`;
+        const neighborTile = gridState[neighborKey];
+
+        if (!neighborTile) {
+            // Empty tile, capture it
+            gridState[neighborKey] = { owner: username, population: 1 };
+        } else if (neighborTile.owner === username) {
+            // Own tile, increase population
+            gridState[neighborKey].population = (neighborTile.population || 0) + 1;
+        } else {
+            // Enemy tile, decrease population or capture
+            if ((neighborTile.population || 0) > 1) {
+                gridState[neighborKey].population = (neighborTile.population || 0) - 1;
+            } else {
+                gridState[neighborKey].owner = username;
+                gridState[neighborKey].population = 1;
+            }
+        }
+        broadcastTileUpdate(neighborKey); // Update affected neighbor
+
+        // If the neighbor also has an exclamation mark, trigger its effect recursively
+        if (gridState[neighborKey] && gridState[neighborKey].hasExclamation) {
+            delete gridState[neighborKey].hasExclamation; // Remove exclamation mark to prevent re-triggering
+            applyExclamationEffect(neighbor.q, neighbor.r, username, visited);
+        }
     }
 }
 
@@ -254,8 +391,8 @@ io.on('connection', (socket) => {
             const newUser = {
                 username,
                 password, // In a real app, hash this!
-                color: `#${Math.floor(Math.random() * 16777215).toString(16)}`,
-                capitol: ai.findDistantSpawn(gridState, users, hexDistance),
+                color: generateRandomColor(),
+                capitol: findRandomSpawn(),
             };
             users[username] = newUser;
             gridState[newUser.capitol] = { owner: username, population: 1 };
@@ -280,7 +417,9 @@ io.on('connection', (socket) => {
 
         const isCapitol = Object.values(users).some(u => u.capitol === key);
 
-        if (tile && tile.owner !== user.username) { // Attack an enemy tile
+        if (tile && tile.hasExclamation) {
+            applyExclamationEffect(q, r, user.username, new Set());
+        } else if (tile && tile.owner !== user.username) { // Attack an enemy tile
             if (!isAdjacentToUserTerritory(q, r, user.username)) {
                 socket.emit('actionError', 'You can only attack tiles adjacent to your territory.');
                 return;
@@ -317,7 +456,5 @@ io.on('connection', (socket) => {
 server.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 
-    // Initialize and start AI
-    ai.init(io, gridState, users, fs, calculateLeaderboard, getHexNeighbors, hexDistance, GRID_STATE_FILE, USERS_FILE, broadcastTileUpdate);
-    ai.startAI();
+    
 });
