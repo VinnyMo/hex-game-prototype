@@ -472,7 +472,7 @@
     "population": 1
   },
   "84,34": {
-    "owner": "Smithy",
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
     "population": 1
   },
   "83,34": {
@@ -492,7 +492,7 @@
     "population": 1
   },
   "84,35": {
-    "owner": "Smithy",
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
     "population": 1
   },
   "83,36": {
@@ -504,7 +504,7 @@
     "population": 1
   },
   "81,36": {
-    "owner": "Smithy",
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
     "population": 1
   },
   "81,37": {
@@ -516,7 +516,7 @@
     "population": 1
   },
   "81,35": {
-    "owner": "Smithy",
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
     "population": 1
   },
   "81,34": {
@@ -528,7 +528,7 @@
     "population": 1
   },
   "82,32": {
-    "owner": "Smithy",
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
     "population": 1
   },
   "81,33": {
@@ -826,7 +826,8 @@
     "hasExclamation": true
   },
   "102,31": {
-    "hasExclamation": true
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
   },
   "-49,36": {
     "hasExclamation": true
@@ -1227,7 +1228,8 @@
     "hasExclamation": true
   },
   "91,28": {
-    "hasExclamation": true
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
   },
   "-64,58": {
     "hasExclamation": true
@@ -1299,7 +1301,8 @@
     "hasExclamation": true
   },
   "80,36": {
-    "hasExclamation": true
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
   },
   "-20,32": {
     "owner": "cosmo",
@@ -1614,7 +1617,8 @@
     "hasExclamation": true
   },
   "95,28": {
-    "hasExclamation": true
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
   },
   "-59,34": {
     "hasExclamation": true
@@ -1687,7 +1691,8 @@
     "hasExclamation": true
   },
   "82,31": {
-    "hasExclamation": true
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
   },
   "-38,55": {
     "hasExclamation": true
@@ -1712,7 +1717,8 @@
     "hasExclamation": true
   },
   "89,31": {
-    "hasExclamation": true
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
   },
   "-44,52": {
     "hasExclamation": true
@@ -3187,7 +3193,8 @@
     "hasExclamation": true
   },
   "-7,69": {
-    "hasExclamation": true
+    "owner": "Tim",
+    "population": 1
   },
   "-9,38": {
     "hasExclamation": true
@@ -3351,7 +3358,8 @@
     "hasExclamation": true
   },
   "-8,66": {
-    "hasExclamation": true
+    "owner": "Tim",
+    "population": 1
   },
   "2,77": {
     "hasExclamation": true
@@ -6579,7 +6587,8 @@
     "hasExclamation": true
   },
   "88,29": {
-    "hasExclamation": true
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
   },
   "77,44": {
     "hasExclamation": true
@@ -6595,7 +6604,8 @@
     "hasExclamation": true
   },
   "88,28": {
-    "hasExclamation": true
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
   },
   "78,-9": {
     "owner": "ilikpie",
@@ -8026,7 +8036,8 @@
     "hasExclamation": true
   },
   "-6,67": {
-    "hasExclamation": true
+    "owner": "Tim",
+    "population": 1
   },
   "23,42": {
     "hasExclamation": true
@@ -10694,7 +10705,8 @@
     "hasExclamation": true
   },
   "85,34": {
-    "hasExclamation": true
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
   },
   "-52,9": {
     "hasExclamation": true
@@ -10703,7 +10715,8 @@
     "hasExclamation": true
   },
   "-15,69": {
-    "hasExclamation": true
+    "owner": "Tim",
+    "population": 2
   },
   "13,12": {
     "owner": "cosmo",
@@ -12248,7 +12261,8 @@
     "hasExclamation": true
   },
   "101,29": {
-    "hasExclamation": true
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 3
   },
   "-68,-5": {
     "hasExclamation": true
@@ -14436,5 +14450,1343 @@
   "-13,32": {
     "owner": "cosmo",
     "population": 1
+  },
+  "92,18": {
+    "hasExclamation": true
+  },
+  "164,18": {
+    "hasExclamation": true
+  },
+  "-106,140": {
+    "hasExclamation": true
+  },
+  "-187,39": {
+    "hasExclamation": true
+  },
+  "147,156": {
+    "hasExclamation": true
+  },
+  "77,48": {
+    "hasExclamation": true
+  },
+  "-37,32": {
+    "hasExclamation": true
+  },
+  "61,-15": {
+    "hasExclamation": true
+  },
+  "-54,38": {
+    "hasExclamation": true
+  },
+  "-20,-5": {
+    "hasExclamation": true
+  },
+  "5,72": {
+    "hasExclamation": true
+  },
+  "32,84": {
+    "hasExclamation": true
+  },
+  "29,59": {
+    "hasExclamation": true
+  },
+  "76,35": {
+    "hasExclamation": true
+  },
+  "-99,10": {
+    "hasExclamation": true
+  },
+  "-49,62": {
+    "hasExclamation": true
+  },
+  "-96,-40": {
+    "hasExclamation": true
+  },
+  "-25,-49": {
+    "hasExclamation": true
+  },
+  "96,-67": {
+    "hasExclamation": true
+  },
+  "200,27": {
+    "hasExclamation": true
+  },
+  "-97,187": {
+    "hasExclamation": true
+  },
+  "-204,94": {
+    "hasExclamation": true
+  },
+  "184,162": {
+    "hasExclamation": true
+  },
+  "100,36": {
+    "hasExclamation": true
+  },
+  "-49,43": {
+    "hasExclamation": true
+  },
+  "13,-31": {
+    "hasExclamation": true
+  },
+  "16,67": {
+    "hasExclamation": true
+  },
+  "8,-3": {
+    "hasExclamation": true
+  },
+  "-5,-1": {
+    "hasExclamation": true
+  },
+  "25,69": {
+    "hasExclamation": true
+  },
+  "63,32": {
+    "hasExclamation": true
+  },
+  "77,1": {
+    "hasExclamation": true
+  },
+  "-88,-13": {
+    "hasExclamation": true
+  },
+  "-72,75": {
+    "hasExclamation": true
+  },
+  "-133,-86": {
+    "hasExclamation": true
+  },
+  "-10,42": {
+    "hasExclamation": true
+  },
+  "-8,68": {
+    "owner": "Tim",
+    "population": 4
+  },
+  "-44,102": {
+    "hasExclamation": true
+  },
+  "-7,47": {
+    "hasExclamation": true
+  },
+  "-12,58": {
+    "hasExclamation": true
+  },
+  "14,97": {
+    "hasExclamation": true
+  },
+  "-29,65": {
+    "hasExclamation": true
+  },
+  "-9,72": {
+    "hasExclamation": true
+  },
+  "-48,84": {
+    "hasExclamation": true
+  },
+  "-7,45": {
+    "hasExclamation": true
+  },
+  "-41,55": {
+    "hasExclamation": true
+  },
+  "-10,74": {
+    "hasExclamation": true
+  },
+  "-23,107": {
+    "hasExclamation": true
+  },
+  "-5,63": {
+    "hasExclamation": true
+  },
+  "-8,61": {
+    "hasExclamation": true
+  },
+  "-4,101": {
+    "hasExclamation": true
+  },
+  "38,63": {
+    "hasExclamation": true
+  },
+  "-12,67": {
+    "owner": "Tim",
+    "population": 3
+  },
+  "-9,68": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-5,104": {
+    "hasExclamation": true
+  },
+  "-17,99": {
+    "hasExclamation": true
+  },
+  "-24,94": {
+    "hasExclamation": true
+  },
+  "-17,35": {
+    "hasExclamation": true
+  },
+  "-14,75": {
+    "hasExclamation": true
+  },
+  "-24,51": {
+    "hasExclamation": true
+  },
+  "9,85": {
+    "hasExclamation": true
+  },
+  "-4,67": {
+    "hasExclamation": true
+  },
+  "-4,71": {
+    "hasExclamation": true
+  },
+  "-11,66": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-48,92": {
+    "hasExclamation": true
+  },
+  "-20,72": {
+    "hasExclamation": true
+  },
+  "8,70": {
+    "hasExclamation": true
+  },
+  "-1,67": {
+    "hasExclamation": true
+  },
+  "-13,71": {
+    "hasExclamation": true
+  },
+  "-40,86": {
+    "hasExclamation": true
+  },
+  "-13,68": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "18,29": {
+    "hasExclamation": true
+  },
+  "-4,37": {
+    "hasExclamation": true
+  },
+  "-7,67": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-20,29": {
+    "hasExclamation": true
+  },
+  "27,88": {
+    "hasExclamation": true
+  },
+  "-5,74": {
+    "hasExclamation": true
+  },
+  "10,53": {
+    "hasExclamation": true
+  },
+  "26,80": {
+    "hasExclamation": true
+  },
+  "-16,32": {
+    "hasExclamation": true
+  },
+  "-8,54": {
+    "hasExclamation": true
+  },
+  "-14,91": {
+    "hasExclamation": true
+  },
+  "-30,56": {
+    "hasExclamation": true
+  },
+  "-15,93": {
+    "hasExclamation": true
+  },
+  "-25,54": {
+    "hasExclamation": true
+  },
+  "-35,51": {
+    "hasExclamation": true
+  },
+  "-54,69": {
+    "hasExclamation": true
+  },
+  "-46,52": {
+    "hasExclamation": true
+  },
+  "13,86": {
+    "hasExclamation": true
+  },
+  "30,100": {
+    "hasExclamation": true
+  },
+  "22,88": {
+    "hasExclamation": true
+  },
+  "8,42": {
+    "hasExclamation": true
+  },
+  "-33,53": {
+    "hasExclamation": true
+  },
+  "-11,68": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-2,74": {
+    "hasExclamation": true
+  },
+  "-17,72": {
+    "hasExclamation": true
+  },
+  "-8,106": {
+    "hasExclamation": true
+  },
+  "22,96": {
+    "hasExclamation": true
+  },
+  "-1,73": {
+    "hasExclamation": true
+  },
+  "38,50": {
+    "hasExclamation": true
+  },
+  "30,76": {
+    "hasExclamation": true
+  },
+  "-32,71": {
+    "hasExclamation": true
+  },
+  "-26,92": {
+    "hasExclamation": true
+  },
+  "-23,110": {
+    "hasExclamation": true
+  },
+  "3,69": {
+    "hasExclamation": true
+  },
+  "20,33": {
+    "hasExclamation": true
+  },
+  "-8,111": {
+    "hasExclamation": true
+  },
+  "-6,70": {
+    "hasExclamation": true
+  },
+  "-22,68": {
+    "hasExclamation": true
+  },
+  "-23,31": {
+    "hasExclamation": true
+  },
+  "-11,64": {
+    "hasExclamation": true
+  },
+  "-38,101": {
+    "hasExclamation": true
+  },
+  "31,77": {
+    "hasExclamation": true
+  },
+  "-20,65": {
+    "hasExclamation": true
+  },
+  "16,95": {
+    "hasExclamation": true
+  },
+  "15,90": {
+    "hasExclamation": true
+  },
+  "8,43": {
+    "hasExclamation": true
+  },
+  "37,83": {
+    "hasExclamation": true
+  },
+  "-14,89": {
+    "hasExclamation": true
+  },
+  "-11,67": {
+    "owner": "Tim",
+    "population": 3
+  },
+  "-51,81": {
+    "hasExclamation": true
+  },
+  "-12,74": {
+    "hasExclamation": true
+  },
+  "-15,29": {
+    "hasExclamation": true
+  },
+  "-12,65": {
+    "hasExclamation": true
+  },
+  "8,81": {
+    "hasExclamation": true
+  },
+  "-19,67": {
+    "hasExclamation": true
+  },
+  "-45,37": {
+    "hasExclamation": true
+  },
+  "-7,54": {
+    "hasExclamation": true
+  },
+  "-15,117": {
+    "hasExclamation": true
+  },
+  "-4,64": {
+    "hasExclamation": true
+  },
+  "17,78": {
+    "hasExclamation": true
+  },
+  "-2,81": {
+    "hasExclamation": true
+  },
+  "18,49": {
+    "hasExclamation": true
+  },
+  "-15,70": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-20,97": {
+    "hasExclamation": true
+  },
+  "-8,69": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-13,22": {
+    "hasExclamation": true
+  },
+  "-5,67": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-5,66": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-6,66": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-7,68": {
+    "owner": "Tim",
+    "population": 4
+  },
+  "-6,68": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-7,66": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-8,67": {
+    "owner": "Tim",
+    "population": 3
+  },
+  "-6,69": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-8,70": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-7,70": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-9,69": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-9,70": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-9,67": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-10,68": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-10,69": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-7,65": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-8,65": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-9,66": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-10,67": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-10,66": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-10,65": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-11,65": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-12,66": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-13,67": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-12,68": {
+    "owner": "Tim",
+    "population": 4
+  },
+  "-14,68": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-14,69": {
+    "owner": "Tim",
+    "population": 3
+  },
+  "-13,69": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-12,69": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-11,69": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-15,68": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-16,69": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-16,70": {
+    "owner": "Tim",
+    "population": 2
+  },
+  "-14,70": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-16,71": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "-15,71": {
+    "owner": "Tim",
+    "population": 1
+  },
+  "96,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "80,-5": {
+    "hasExclamation": true
+  },
+  "68,13": {
+    "hasExclamation": true
+  },
+  "102,5": {
+    "hasExclamation": true
+  },
+  "69,26": {
+    "hasExclamation": true
+  },
+  "110,-10": {
+    "hasExclamation": true
+  },
+  "84,23": {
+    "hasExclamation": true
+  },
+  "95,50": {
+    "hasExclamation": true
+  },
+  "98,-8": {
+    "hasExclamation": true
+  },
+  "60,60": {
+    "hasExclamation": true
+  },
+  "97,-15": {
+    "hasExclamation": true
+  },
+  "100,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 3
+  },
+  "139,34": {
+    "hasExclamation": true
+  },
+  "103,-8": {
+    "hasExclamation": true
+  },
+  "122,26": {
+    "hasExclamation": true
+  },
+  "87,60": {
+    "hasExclamation": true
+  },
+  "125,62": {
+    "hasExclamation": true
+  },
+  "98,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "94,12": {
+    "hasExclamation": true
+  },
+  "87,23": {
+    "hasExclamation": true
+  },
+  "102,17": {
+    "hasExclamation": true
+  },
+  "101,-20": {
+    "hasExclamation": true
+  },
+  "128,52": {
+    "hasExclamation": true
+  },
+  "94,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "98,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "62,6": {
+    "hasExclamation": true
+  },
+  "112,44": {
+    "hasExclamation": true
+  },
+  "106,23": {
+    "hasExclamation": true
+  },
+  "113,29": {
+    "hasExclamation": true
+  },
+  "117,48": {
+    "hasExclamation": true
+  },
+  "99,-9": {
+    "hasExclamation": true
+  },
+  "68,60": {
+    "hasExclamation": true
+  },
+  "102,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "72,-9": {
+    "hasExclamation": true
+  },
+  "89,72": {
+    "hasExclamation": true
+  },
+  "58,33": {
+    "hasExclamation": true
+  },
+  "101,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 4
+  },
+  "59,15": {
+    "hasExclamation": true
+  },
+  "108,15": {
+    "hasExclamation": true
+  },
+  "116,16": {
+    "hasExclamation": true
+  },
+  "89,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "101,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "101,37": {
+    "hasExclamation": true
+  },
+  "143,28": {
+    "hasExclamation": true
+  },
+  "80,11": {
+    "hasExclamation": true
+  },
+  "66,27": {
+    "hasExclamation": true
+  },
+  "97,34": {
+    "hasExclamation": true
+  },
+  "97,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "123,16": {
+    "hasExclamation": true
+  },
+  "97,26": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "111,52": {
+    "hasExclamation": true
+  },
+  "87,43": {
+    "hasExclamation": true
+  },
+  "93,20": {
+    "hasExclamation": true
+  },
+  "54,1": {
+    "hasExclamation": true
+  },
+  "102,14": {
+    "hasExclamation": true
+  },
+  "111,16": {
+    "hasExclamation": true
+  },
+  "105,-7": {
+    "hasExclamation": true
+  },
+  "136,11": {
+    "hasExclamation": true
+  },
+  "140,45": {
+    "hasExclamation": true
+  },
+  "110,18": {
+    "hasExclamation": true
+  },
+  "94,49": {
+    "hasExclamation": true
+  },
+  "119,33": {
+    "hasExclamation": true
+  },
+  "79,38": {
+    "hasExclamation": true
+  },
+  "85,-12": {
+    "hasExclamation": true
+  },
+  "70,38": {
+    "hasExclamation": true
+  },
+  "89,69": {
+    "hasExclamation": true
+  },
+  "93,36": {
+    "hasExclamation": true
+  },
+  "84,3": {
+    "hasExclamation": true
+  },
+  "89,14": {
+    "hasExclamation": true
+  },
+  "82,18": {
+    "hasExclamation": true
+  },
+  "59,4": {
+    "hasExclamation": true
+  },
+  "102,-18": {
+    "hasExclamation": true
+  },
+  "99,75": {
+    "hasExclamation": true
+  },
+  "104,20": {
+    "hasExclamation": true
+  },
+  "98,27": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "72,58": {
+    "hasExclamation": true
+  },
+  "115,14": {
+    "hasExclamation": true
+  },
+  "117,-3": {
+    "hasExclamation": true
+  },
+  "71,35": {
+    "hasExclamation": true
+  },
+  "95,10": {
+    "hasExclamation": true
+  },
+  "89,27": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "77,20": {
+    "hasExclamation": true
+  },
+  "103,22": {
+    "hasExclamation": true
+  },
+  "122,42": {
+    "hasExclamation": true
+  },
+  "132,10": {
+    "hasExclamation": true
+  },
+  "98,-2": {
+    "hasExclamation": true
+  },
+  "101,33": {
+    "hasExclamation": true
+  },
+  "120,43": {
+    "hasExclamation": true
+  },
+  "117,33": {
+    "hasExclamation": true
+  },
+  "138,17": {
+    "hasExclamation": true
+  },
+  "64,3": {
+    "hasExclamation": true
+  },
+  "107,-18": {
+    "hasExclamation": true
+  },
+  "88,12": {
+    "hasExclamation": true
+  },
+  "88,18": {
+    "hasExclamation": true
+  },
+  "142,23": {
+    "hasExclamation": true
+  },
+  "97,47": {
+    "hasExclamation": true
+  },
+  "71,58": {
+    "hasExclamation": true
+  },
+  "113,-2": {
+    "hasExclamation": true
+  },
+  "98,25": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "97,67": {
+    "hasExclamation": true
+  },
+  "58,40": {
+    "hasExclamation": true
+  },
+  "75,-92": {
+    "hasExclamation": true
+  },
+  "202,-12": {
+    "hasExclamation": true
+  },
+  "-88,183": {
+    "hasExclamation": true
+  },
+  "-213,101": {
+    "hasExclamation": true
+  },
+  "128,201": {
+    "hasExclamation": true
+  },
+  "101,42": {
+    "hasExclamation": true
+  },
+  "-58,50": {
+    "hasExclamation": true
+  },
+  "59,-20": {
+    "hasExclamation": true
+  },
+  "19,83": {
+    "hasExclamation": true
+  },
+  "70,1": {
+    "hasExclamation": true
+  },
+  "-9,58": {
+    "hasExclamation": true
+  },
+  "6,99": {
+    "hasExclamation": true
+  },
+  "76,24": {
+    "hasExclamation": true
+  },
+  "100,-5": {
+    "hasExclamation": true
+  },
+  "-134,3": {
+    "hasExclamation": true
+  },
+  "-60,75": {
+    "hasExclamation": true
+  },
+  "-116,-29": {
+    "hasExclamation": true
+  },
+  "6,9": {
+    "hasExclamation": true
+  },
+  "-55,58": {
+    "hasExclamation": true
+  },
+  "114,56": {
+    "hasExclamation": true
+  },
+  "96,27": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "95,27": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "94,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "95,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "93,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "93,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "94,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "98,26": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 3
+  },
+  "99,25": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "99,24": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "98,24": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "97,25": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "96,26": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "97,27": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "99,27": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "99,26": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "97,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "98,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 3
+  },
+  "93,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "92,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "92,27": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "91,27": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "90,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "90,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "91,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "90,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "89,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "88,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "88,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "90,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "88,32": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "89,32": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "87,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "89,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 3
+  },
+  "90,27": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "90,26": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "89,26": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "88,27": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "87,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "87,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "87,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "86,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "85,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "84,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "83,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "83,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "82,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "81,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "81,32": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "80,33": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "80,34": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "80,35": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "79,36": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "79,37": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "80,37": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "87,32": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "86,33": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "86,34": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "85,33": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "85,35": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "86,32": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "99,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "99,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "97,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "98,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "96,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "96,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "99,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "99,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "97,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "97,32": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "98,32": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "102,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 4
+  },
+  "103,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "103,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "102,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "101,28": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "100,29": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "100,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 3
+  },
+  "103,31": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "103,30": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "101,32": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 2
+  },
+  "102,32": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "100,32": {
+    "owner": "ExtraLongUsernameTestWhatIsItGonnaDoToTheasdflkajsdflakj",
+    "population": 1
+  },
+  "85,-113": {
+    "hasExclamation": true
+  },
+  "203,28": {
+    "hasExclamation": true
+  },
+  "-120,144": {
+    "hasExclamation": true
+  },
+  "-194,88": {
+    "hasExclamation": true
+  },
+  "145,169": {
+    "hasExclamation": true
+  },
+  "92,31": {
+    "hasExclamation": true
+  },
+  "-28,53": {
+    "hasExclamation": true
+  },
+  "7,-45": {
+    "hasExclamation": true
+  },
+  "-6,34": {
+    "hasExclamation": true
+  },
+  "12,48": {
+    "hasExclamation": true
+  },
+  "17,20": {
+    "hasExclamation": true
+  },
+  "20,99": {
+    "hasExclamation": true
+  },
+  "43,54": {
+    "hasExclamation": true
+  },
+  "79,-1": {
+    "hasExclamation": true
+  },
+  "-64,-10": {
+    "hasExclamation": true
+  },
+  "-36,77": {
+    "hasExclamation": true
+  },
+  "-91,-67": {
+    "hasExclamation": true
+  },
+  "-23,5": {
+    "hasExclamation": true
+  },
+  "10,63": {
+    "hasExclamation": true
+  },
+  "73,53": {
+    "hasExclamation": true
   }
 }

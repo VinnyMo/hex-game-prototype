@@ -161,8 +161,11 @@ function handleHexClick(x, y) {
 }
 
 function updateStats() {
+    const usernameStat = document.getElementById('usernameStat');
     const populationStat = document.getElementById('populationStat');
     const areaStat = document.getElementById('areaStat');
+
+    usernameStat.textContent = currentUser.username;
 
     let totalPopulation = 0;
     let totalArea = 0;
