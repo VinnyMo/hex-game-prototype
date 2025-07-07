@@ -112,6 +112,10 @@ const handlePointerMove = (e) => {
         cameraX += dx;
         cameraY += dy;
 
+        if (!isInitialSpawnComplete) { // Set to true on first drag
+            isInitialSpawnComplete = true;
+        }
+
         if (!animationFrameId) {
             animationFrameId = requestAnimationFrame(() => {
                 renderGrid();
@@ -242,6 +246,13 @@ mapButton.addEventListener('click', () => {
         mapCanvas.width = window.innerWidth;
         mapCanvas.height = window.innerHeight;
         // Center the map based on the current camera position
+        // Center the map based on the current main camera's world position
+        // The main camera's world center is at (-cameraX, -cameraY)
+        // We want this world point to be at the center of the mapCanvas (mapCanvas.width/2, mapCanvas.height/2)
+        // mapX = worldX * MAP_SCALE + mapCanvas.width / 2 + mapCameraX
+        // mapCanvas.width / 2 = (-cameraX) * MAP_SCALE + mapCanvas.width / 2 + mapCameraX
+        // 0 = (-cameraX) * MAP_SCALE + mapCameraX
+        // mapCameraX = cameraX * MAP_SCALE
         mapCameraX = cameraX * MAP_SCALE;
         mapCameraY = cameraY * MAP_SCALE;
         drawMap();
@@ -315,7 +326,7 @@ function handleMapPointerMove(e) {
     }
 
     lastMapPointerX = currentX;
-    lastPointerY = currentY;
+    lastMapPointerY = currentY;
 }
 
 function handleMapPointerUp(e) {

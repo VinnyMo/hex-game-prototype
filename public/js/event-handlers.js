@@ -20,7 +20,6 @@ function setupSocketEventHandlers() {
     });
 
     socket.on('initialSpawnComplete', () => {
-        isInitialSpawnComplete = true;
         renderGrid(); // Re-render to update explored tiles after initial spawn
     });
 
