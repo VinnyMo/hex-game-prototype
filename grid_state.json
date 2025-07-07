@@ -557,7 +557,7 @@
     "population": 1
   },
   "-29,37": {
-    "owner": "Swammy",
+    "owner": "cosmo",
     "population": 1
   },
   "-30,38": {
@@ -569,19 +569,19 @@
     "population": 1
   },
   "-29,39": {
-    "owner": "Swammy",
+    "owner": "cosmo",
     "population": 1
   },
   "-28,38": {
-    "owner": "Swammy",
+    "owner": "cosmo",
     "population": 1
   },
   "-28,37": {
-    "owner": "Swammy",
+    "owner": "cosmo",
     "population": 1
   },
   "-28,36": {
-    "owner": "Swammy",
+    "owner": "cosmo",
     "population": 1
   },
   "-29,36": {
@@ -604,72 +604,12 @@
     "owner": "Swammy",
     "population": 2
   },
-  "-27,36": {
-    "owner": "Swammy",
-    "population": 1
-  },
   "-27,35": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,37": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,38": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-28,39": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,39": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,40": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-28,40": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-26,39": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-26,38": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-26,37": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-26,36": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-26,35": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-25,35": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-25,34": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-26,34": {
-    "owner": "Swammy",
+    "owner": "cosmo",
     "population": 1
   },
   "-27,34": {
-    "owner": "Swammy",
+    "owner": "cosmo",
     "population": 1
   },
   "70,-99": {
@@ -763,7 +703,8 @@
     "hasExclamation": true
   },
   "69,-4": {
-    "hasExclamation": true
+    "owner": "ilikpie",
+    "population": 1
   },
   "5,48": {
     "hasExclamation": true
@@ -788,86 +729,6 @@
   },
   "61,29": {
     "owner": "WEtr",
-    "population": 1
-  },
-  "-27,51": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,41": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,42": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,43": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,44": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,45": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,46": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,47": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,48": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,49": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,50": {
-    "owner": "Swammy",
-    "population": 2
-  },
-  "-26,51": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-26,50": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-28,51": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-28,52": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-27,52": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-25,51": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-24,51": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-23,51": {
-    "owner": "Swammy",
-    "population": 1
-  },
-  "-22,50": {
-    "owner": "Swammy",
     "population": 1
   },
   "-21,50": {
@@ -1068,7 +929,8 @@
     "hasExclamation": true
   },
   "-27,29": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 2
   },
   "88,-102": {
     "owner": "ilikpie",
@@ -1143,7 +1005,8 @@
     "hasExclamation": true
   },
   "-33,41": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "82,-102": {
     "owner": "ilikpie",
@@ -1439,7 +1302,8 @@
     "hasExclamation": true
   },
   "-20,32": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 3
   },
   "59,-137": {
     "hasExclamation": true
@@ -2046,7 +1910,8 @@
     "hasExclamation": true
   },
   "-29,-11": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "37,-103": {
     "hasExclamation": true
@@ -2744,11 +2609,11 @@
   },
   "79,-9": {
     "owner": "ilikpie",
-    "population": 1
+    "population": 3
   },
   "79,-10": {
     "owner": "ilikpie",
-    "population": 1
+    "population": 2
   },
   "80,-11": {
     "owner": "ilikpie",
@@ -2839,7 +2704,8 @@
     "population": 1
   },
   "-27,-10": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "-18,-15": {
     "hasExclamation": true
@@ -3027,7 +2893,8 @@
     "hasExclamation": true
   },
   "-27,-13": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "-8,-28": {
     "hasExclamation": true
@@ -3066,7 +2933,8 @@
     "hasExclamation": true
   },
   "67,-2": {
-    "hasExclamation": true
+    "owner": "ilikpie",
+    "population": 1
   },
   "35,-34": {
     "hasExclamation": true
@@ -3291,7 +3159,8 @@
     "population": 1
   },
   "2,16": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "-9,79": {
     "hasExclamation": true
@@ -3384,7 +3253,8 @@
     "hasExclamation": true
   },
   "-13,31": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "-13,62": {
     "owner": "Splimminy",
@@ -3433,7 +3303,8 @@
     "hasExclamation": true
   },
   "-13,29": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "12,45": {
     "hasExclamation": true
@@ -3504,7 +3375,8 @@
     "hasExclamation": true
   },
   "12,22": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 2
   },
   "-18,59": {
     "owner": "Splimminy",
@@ -4246,14 +4118,16 @@
     "population": 1
   },
   "11,23": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 2
   },
   "28,-2": {
     "owner": "Twer",
     "population": 1
   },
   "-17,30": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "27,11": {
     "owner": "Twer",
@@ -4652,7 +4526,8 @@
     "hasExclamation": true
   },
   "-22,38": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "12,5": {
     "hasExclamation": true
@@ -4919,10 +4794,10 @@
   },
   "13,11": {
     "owner": "Twer",
-    "population": 2
+    "population": 1
   },
   "14,11": {
-    "owner": "Twer",
+    "owner": "cosmo",
     "population": 1
   },
   "12,10": {
@@ -4938,7 +4813,7 @@
     "population": 1
   },
   "12,12": {
-    "owner": "Twer",
+    "owner": "cosmo",
     "population": 1
   },
   "75,-111": {
@@ -5331,7 +5206,8 @@
     "hasExclamation": true
   },
   "-31,44": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "38,25": {
     "owner": "Cantaloupe",
@@ -5357,10 +5233,6 @@
   },
   "55,42": {
     "hasExclamation": true
-  },
-  "-6,20": {
-    "owner": "FlimFlam",
-    "population": 2
   },
   "23,10": {
     "owner": "Twer",
@@ -5405,7 +5277,8 @@
     "population": 2
   },
   "9,20": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "6,19": {
     "owner": "FlimFlam",
@@ -5434,7 +5307,8 @@
     "population": 1
   },
   "12,14": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "-8,21": {
     "hasExclamation": true
@@ -5452,7 +5326,8 @@
     "hasExclamation": true
   },
   "-25,40": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 2
   },
   "13,49": {
     "hasExclamation": true
@@ -5490,10 +5365,12 @@
     "hasExclamation": true
   },
   "7,15": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 2
   },
   "-7,27": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "10,27": {
     "hasExclamation": true
@@ -5503,21 +5380,19 @@
     "population": 1
   },
   "11,22": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 3
   },
   "52,31": {
     "owner": "WEtr",
     "population": 1
   },
   "3,28": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "-11,38": {
     "hasExclamation": true
-  },
-  "-6,24": {
-    "owner": "FlimFlam",
-    "population": 1
   },
   "-12,-21": {
     "hasExclamation": true
@@ -5549,7 +5424,8 @@
     "hasExclamation": true
   },
   "-8,30": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "34,-21": {
     "hasExclamation": true
@@ -5600,10 +5476,6 @@
   "-4,15": {
     "hasExclamation": true
   },
-  "-6,21": {
-    "owner": "FlimFlam",
-    "population": 1
-  },
   "2,37": {
     "hasExclamation": true
   },
@@ -5653,13 +5525,15 @@
     "hasExclamation": true
   },
   "-19,32": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 2
   },
   "-5,31": {
     "hasExclamation": true
   },
   "-28,-10": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 2
   },
   "48,15": {
     "owner": "Cantaloupe",
@@ -5679,7 +5553,8 @@
     "population": 1
   },
   "-4,19": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "9,-2": {
     "hasExclamation": true
@@ -5701,19 +5576,22 @@
     "hasExclamation": true
   },
   "8,15": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "-19,-10": {
     "hasExclamation": true
   },
   "-27,30": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "4,-6": {
     "hasExclamation": true
   },
   "-25,37": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "-28,54": {
     "hasExclamation": true
@@ -5755,7 +5633,7 @@
     "population": 1
   },
   "9,19": {
-    "owner": "FlimFlam",
+    "owner": "cosmo",
     "population": 1
   },
   "9,18": {
@@ -5767,7 +5645,7 @@
     "population": 1
   },
   "8,20": {
-    "owner": "FlimFlam",
+    "owner": "cosmo",
     "population": 1
   },
   "6,21": {
@@ -5868,7 +5746,7 @@
     "population": 1
   },
   "-3,19": {
-    "owner": "FlimFlam",
+    "owner": "cosmo",
     "population": 1
   },
   "-3,20": {
@@ -5952,59 +5830,19 @@
     "population": 1
   },
   "-5,24": {
-    "owner": "FlimFlam",
-    "population": 1
-  },
-  "-5,23": {
-    "owner": "FlimFlam",
-    "population": 1
-  },
-  "-6,23": {
-    "owner": "FlimFlam",
-    "population": 1
-  },
-  "-7,24": {
-    "owner": "FlimFlam",
-    "population": 1
+    "owner": "cosmo",
+    "population": 2
   },
   "-7,25": {
-    "owner": "FlimFlam",
-    "population": 1
+    "owner": "cosmo",
+    "population": 2
   },
   "-6,25": {
-    "owner": "FlimFlam",
+    "owner": "cosmo",
     "population": 1
-  },
-  "-5,20": {
-    "owner": "FlimFlam",
-    "population": 2
   },
   "-5,19": {
-    "owner": "FlimFlam",
-    "population": 1
-  },
-  "-6,19": {
-    "owner": "FlimFlam",
-    "population": 1
-  },
-  "-7,20": {
-    "owner": "FlimFlam",
-    "population": 1
-  },
-  "-7,21": {
-    "owner": "FlimFlam",
-    "population": 2
-  },
-  "-5,21": {
-    "owner": "FlimFlam",
-    "population": 1
-  },
-  "-7,22": {
-    "owner": "FlimFlam",
-    "population": 1
-  },
-  "-6,22": {
-    "owner": "FlimFlam",
+    "owner": "cosmo",
     "population": 1
   },
   "76,-22": {
@@ -6041,7 +5879,8 @@
     "hasExclamation": true
   },
   "-25,39": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "59,2": {
     "hasExclamation": true
@@ -6703,10 +6542,12 @@
     "hasExclamation": true
   },
   "-10,31": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "-8,26": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 2
   },
   "81,85": {
     "hasExclamation": true
@@ -6757,7 +6598,8 @@
     "hasExclamation": true
   },
   "78,-9": {
-    "hasExclamation": true
+    "owner": "ilikpie",
+    "population": 1
   },
   "67,51": {
     "hasExclamation": true
@@ -7021,7 +6863,8 @@
     "hasExclamation": true
   },
   "74,-6": {
-    "hasExclamation": true
+    "owner": "ilikpie",
+    "population": 1
   },
   "67,11": {
     "owner": "Cantaloupe",
@@ -8226,7 +8069,8 @@
     "hasExclamation": true
   },
   "-20,37": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "41,5": {
     "owner": "Cantaloupe",
@@ -8312,7 +8156,7 @@
     "hasExclamation": true
   },
   "57,8": {
-    "owner": "Cantaloupe",
+    "owner": "ilikpie",
     "population": 1
   },
   "48,9": {
@@ -8364,7 +8208,8 @@
     "population": 1
   },
   "6,15": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 2
   },
   "40,23": {
     "owner": "Cantaloupe",
@@ -8403,7 +8248,7 @@
     "hasExclamation": true
   },
   "59,6": {
-    "owner": "Cantaloupe",
+    "owner": "ilikpie",
     "population": 1
   },
   "52,43": {
@@ -8506,8 +8351,8 @@
     "population": 3
   },
   "56,9": {
-    "owner": "Cantaloupe",
-    "population": 2
+    "owner": "ilikpie",
+    "population": 1
   },
   "42,17": {
     "owner": "Cantaloupe",
@@ -8580,16 +8425,16 @@
     "hasExclamation": true
   },
   "55,10": {
-    "owner": "Cantaloupe",
-    "population": 2
+    "owner": "ilikpie",
+    "population": 1
   },
   "57,9": {
     "owner": "Cantaloupe",
     "population": 2
   },
   "58,8": {
-    "owner": "Cantaloupe",
-    "population": 1
+    "owner": "ilikpie",
+    "population": 2
   },
   "58,7": {
     "owner": "Cantaloupe",
@@ -8608,7 +8453,7 @@
     "population": 1
   },
   "56,10": {
-    "owner": "Cantaloupe",
+    "owner": "ilikpie",
     "population": 1
   },
   "57,6": {
@@ -8792,7 +8637,7 @@
     "population": 1
   },
   "60,5": {
-    "owner": "Cantaloupe",
+    "owner": "ilikpie",
     "population": 1
   },
   "59,5": {
@@ -8804,7 +8649,7 @@
     "population": 1
   },
   "59,7": {
-    "owner": "Cantaloupe",
+    "owner": "ilikpie",
     "population": 1
   },
   "62,8": {
@@ -9009,7 +8854,8 @@
     "hasExclamation": true
   },
   "8,22": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "21,127": {
     "hasExclamation": true
@@ -9724,13 +9570,15 @@
     "hasExclamation": true
   },
   "13,15": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "22,-5": {
     "hasExclamation": true
   },
   "0,14": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "65,76": {
     "hasExclamation": true
@@ -9969,7 +9817,8 @@
     "hasExclamation": true
   },
   "-31,43": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 2
   },
   "1,5": {
     "hasExclamation": true
@@ -10857,7 +10706,8 @@
     "hasExclamation": true
   },
   "13,12": {
-    "hasExclamation": true
+    "owner": "cosmo",
+    "population": 1
   },
   "14,27": {
     "hasExclamation": true
@@ -11655,7 +11505,8 @@
     "hasExclamation": true
   },
   "-90,-61": {
-    "hasExclamation": true
+    "owner": "splif",
+    "population": 1
   },
   "-69,-90": {
     "hasExclamation": true
@@ -12559,6 +12410,2031 @@
   },
   "-91,-61": {
     "owner": "splif",
+    "population": 2
+  },
+  "-89,-61": {
+    "owner": "splif",
+    "population": 1
+  },
+  "-89,-62": {
+    "owner": "splif",
+    "population": 1
+  },
+  "-90,-62": {
+    "owner": "splif",
+    "population": 1
+  },
+  "-91,-60": {
+    "owner": "splif",
+    "population": 1
+  },
+  "-90,-60": {
+    "owner": "splif",
+    "population": 1
+  },
+  "42,-114": {
+    "hasExclamation": true
+  },
+  "173,6": {
+    "hasExclamation": true
+  },
+  "-104,200": {
+    "hasExclamation": true
+  },
+  "-135,101": {
+    "hasExclamation": true
+  },
+  "152,146": {
+    "hasExclamation": true
+  },
+  "81,28": {
+    "hasExclamation": true
+  },
+  "-70,52": {
+    "hasExclamation": true
+  },
+  "23,-42": {
+    "hasExclamation": true
+  },
+  "-14,11": {
+    "hasExclamation": true
+  },
+  "18,-23": {
+    "hasExclamation": true
+  },
+  "-8,63": {
+    "hasExclamation": true
+  },
+  "12,97": {
+    "hasExclamation": true
+  },
+  "53,-5": {
+    "hasExclamation": true
+  },
+  "40,8": {
+    "hasExclamation": true
+  },
+  "-99,-34": {
+    "hasExclamation": true
+  },
+  "-86,94": {
+    "hasExclamation": true
+  },
+  "-84,-82": {
+    "hasExclamation": true
+  },
+  "78,-10": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "77,-9": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "77,-8": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "78,-8": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "76,-8": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "75,-7": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "75,-6": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "74,-7": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "73,-6": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "73,-5": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "74,-5": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "72,-5": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "71,-5": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "70,-5": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "70,-4": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "69,-5": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "68,-4": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "68,-3": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "69,-3": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "68,-2": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "67,-3": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "66,-2": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "66,-1": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "67,-1": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "65,0": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "64,1": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "63,2": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "62,3": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "61,4": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "103,-123": {
+    "hasExclamation": true
+  },
+  "161,47": {
+    "hasExclamation": true
+  },
+  "-123,172": {
+    "hasExclamation": true
+  },
+  "-181,83": {
+    "hasExclamation": true
+  },
+  "147,173": {
+    "hasExclamation": true
+  },
+  "105,53": {
+    "hasExclamation": true
+  },
+  "-32,41": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "11,-26": {
+    "hasExclamation": true
+  },
+  "-12,20": {
+    "hasExclamation": true
+  },
+  "18,16": {
+    "hasExclamation": true
+  },
+  "-9,28": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "25,70": {
+    "hasExclamation": true
+  },
+  "41,28": {
+    "hasExclamation": true
+  },
+  "36,-10": {
+    "hasExclamation": true
+  },
+  "-78,34": {
+    "hasExclamation": true
+  },
+  "-74,73": {
+    "hasExclamation": true
+  },
+  "-109,-49": {
+    "hasExclamation": true
+  },
+  "84,-10": {
+    "hasExclamation": true
+  },
+  "198,1": {
+    "hasExclamation": true
+  },
+  "-111,172": {
+    "hasExclamation": true
+  },
+  "-183,119": {
+    "hasExclamation": true
+  },
+  "143,187": {
+    "hasExclamation": true
+  },
+  "80,18": {
+    "hasExclamation": true
+  },
+  "-34,33": {
+    "hasExclamation": true
+  },
+  "-24,-31": {
+    "hasExclamation": true
+  },
+  "-64,71": {
+    "hasExclamation": true
+  },
+  "65,6": {
+    "hasExclamation": true
+  },
+  "-5,35": {
+    "hasExclamation": true
+  },
+  "43,83": {
+    "hasExclamation": true
+  },
+  "33,29": {
+    "hasExclamation": true
+  },
+  "74,-2": {
+    "hasExclamation": true
+  },
+  "-68,-10": {
+    "hasExclamation": true
+  },
+  "-29,76": {
+    "hasExclamation": true
+  },
+  "-111,-73": {
+    "hasExclamation": true
+  },
+  "89,-68": {
+    "hasExclamation": true
+  },
+  "155,31": {
+    "hasExclamation": true
+  },
+  "-107,190": {
+    "hasExclamation": true
+  },
+  "-192,49": {
+    "hasExclamation": true
+  },
+  "142,216": {
+    "hasExclamation": true
+  },
+  "76,45": {
+    "hasExclamation": true
+  },
+  "-29,4": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "29,-33": {
+    "hasExclamation": true
+  },
+  "-29,27": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "14,35": {
+    "hasExclamation": true
+  },
+  "-3,38": {
+    "hasExclamation": true
+  },
+  "80,72": {
+    "hasExclamation": true
+  },
+  "46,39": {
+    "hasExclamation": true
+  },
+  "97,14": {
+    "hasExclamation": true
+  },
+  "-99,-26": {
+    "hasExclamation": true
+  },
+  "-69,86": {
+    "hasExclamation": true
+  },
+  "-132,-88": {
+    "hasExclamation": true
+  },
+  "-28,-15": {
+    "owner": "cosmo",
+    "population": 4
+  },
+  "-27,-5": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-48,-15": {
+    "hasExclamation": true
+  },
+  "-7,26": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-18,-18": {
+    "hasExclamation": true
+  },
+  "-66,-30": {
+    "hasExclamation": true
+  },
+  "-15,12": {
+    "hasExclamation": true
+  },
+  "-16,-13": {
+    "hasExclamation": true
+  },
+  "-30,-33": {
+    "hasExclamation": true
+  },
+  "-27,-16": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-8,-26": {
+    "hasExclamation": true
+  },
+  "-35,-57": {
+    "hasExclamation": true
+  },
+  "-28,5": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-41,-1": {
+    "hasExclamation": true
+  },
+  "17,-6": {
+    "hasExclamation": true
+  },
+  "-29,-15": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-29,-35": {
+    "hasExclamation": true
+  },
+  "-18,-26": {
+    "hasExclamation": true
+  },
+  "16,-1": {
+    "hasExclamation": true
+  },
+  "-15,7": {
+    "hasExclamation": true
+  },
+  "-60,-18": {
+    "hasExclamation": true
+  },
+  "-22,-54": {
+    "hasExclamation": true
+  },
+  "-30,-20": {
+    "hasExclamation": true
+  },
+  "-33,-13": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "13,-18": {
+    "hasExclamation": true
+  },
+  "-72,-30": {
+    "hasExclamation": true
+  },
+  "-9,8": {
+    "hasExclamation": true
+  },
+  "-30,-12": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-16,-10": {
+    "hasExclamation": true
+  },
+  "-28,-16": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-17,-41": {
+    "hasExclamation": true
+  },
+  "-31,-42": {
+    "hasExclamation": true
+  },
+  "-6,-42": {
+    "hasExclamation": true
+  },
+  "-35,19": {
+    "hasExclamation": true
+  },
+  "-55,15": {
+    "hasExclamation": true
+  },
+  "-35,5": {
+    "hasExclamation": true
+  },
+  "-10,-18": {
+    "hasExclamation": true
+  },
+  "-58,6": {
+    "hasExclamation": true
+  },
+  "-56,-31": {
+    "hasExclamation": true
+  },
+  "-59,-44": {
+    "hasExclamation": true
+  },
+  "-28,-1": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-16,23": {
+    "hasExclamation": true
+  },
+  "-51,-42": {
+    "hasExclamation": true
+  },
+  "-35,-32": {
+    "hasExclamation": true
+  },
+  "-48,-2": {
+    "hasExclamation": true
+  },
+  "-35,21": {
+    "hasExclamation": true
+  },
+  "-44,-24": {
+    "hasExclamation": true
+  },
+  "-19,14": {
+    "hasExclamation": true
+  },
+  "-17,-21": {
+    "hasExclamation": true
+  },
+  "-16,-53": {
+    "hasExclamation": true
+  },
+  "-66,-12": {
+    "hasExclamation": true
+  },
+  "-50,4": {
+    "hasExclamation": true
+  },
+  "-25,-27": {
+    "hasExclamation": true
+  },
+  "-22,-21": {
+    "hasExclamation": true
+  },
+  "-22,-18": {
+    "hasExclamation": true
+  },
+  "-8,-7": {
+    "hasExclamation": true
+  },
+  "-31,-16": {
+    "hasExclamation": true
+  },
+  "-37,16": {
+    "hasExclamation": true
+  },
+  "-37,-42": {
+    "hasExclamation": true
+  },
+  "-34,-12": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-25,-16": {
+    "hasExclamation": true
+  },
+  "-8,-6": {
+    "hasExclamation": true
+  },
+  "-27,-14": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-15,-5": {
+    "hasExclamation": true
+  },
+  "5,-5": {
+    "hasExclamation": true
+  },
+  "-35,-5": {
+    "hasExclamation": true
+  },
+  "-34,-17": {
+    "hasExclamation": true
+  },
+  "-28,0": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "17,-31": {
+    "hasExclamation": true
+  },
+  "-37,-22": {
+    "hasExclamation": true
+  },
+  "-45,4": {
+    "hasExclamation": true
+  },
+  "-26,-12": {
+    "hasExclamation": true
+  },
+  "-68,9": {
+    "hasExclamation": true
+  },
+  "-19,31": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-13,-7": {
+    "hasExclamation": true
+  },
+  "-33,-32": {
+    "hasExclamation": true
+  },
+  "-35,-20": {
+    "hasExclamation": true
+  },
+  "-37,-31": {
+    "hasExclamation": true
+  },
+  "-27,20": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-31,-41": {
+    "hasExclamation": true
+  },
+  "-18,1": {
+    "hasExclamation": true
+  },
+  "-23,-41": {
+    "hasExclamation": true
+  },
+  "-71,-21": {
+    "hasExclamation": true
+  },
+  "-22,-27": {
+    "hasExclamation": true
+  },
+  "1,-38": {
+    "hasExclamation": true
+  },
+  "14,-26": {
+    "hasExclamation": true
+  },
+  "-24,-19": {
+    "hasExclamation": true
+  },
+  "-27,-6": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-50,-23": {
+    "hasExclamation": true
+  },
+  "-14,-30": {
+    "hasExclamation": true
+  },
+  "-22,-26": {
+    "hasExclamation": true
+  },
+  "-24,32": {
+    "hasExclamation": true
+  },
+  "-51,-12": {
+    "hasExclamation": true
+  },
+  "-23,-25": {
+    "hasExclamation": true
+  },
+  "-37,-8": {
+    "hasExclamation": true
+  },
+  "-23,-11": {
+    "hasExclamation": true
+  },
+  "-44,-19": {
+    "hasExclamation": true
+  },
+  "-69,8": {
+    "hasExclamation": true
+  },
+  "-30,-50": {
+    "hasExclamation": true
+  },
+  "-45,23": {
+    "hasExclamation": true
+  },
+  "-51,27": {
+    "hasExclamation": true
+  },
+  "-26,-16": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-26,-17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,-17": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-27,-15": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-28,-17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,-16": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-30,-15": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-30,-14": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,-14": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,-14": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-26,-14": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-26,-15": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,-13": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-26,-13": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,-12": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-27,-12": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,-11": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-29,-12": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-30,-11": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-30,-10": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,-10": {
+    "owner": "cosmo",
+    "population": 3
+  },
+  "-26,-10": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-26,-11": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,-11": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-28,-9": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-27,-9": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,-9": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,-13": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-30,-13": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-31,-12": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-31,-11": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-31,-13": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-32,-13": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-32,-14": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-33,-14": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-34,-13": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-33,-12": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-35,-12": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-35,-11": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-34,-11": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,-8": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,-7": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-26,-6": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-26,-7": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,-6": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,-5": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-26,-5": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,-4": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,-4": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,-3": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,-3": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,-2": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-27,-1": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-27,-2": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,-1": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,0": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-27,0": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,1": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,1": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,2": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,3": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-28,4": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-28,3": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-30,4": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-30,5": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,5": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-27,5": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,4": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,6": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,6": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-30,7": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,7": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "69,-58": {
+    "hasExclamation": true
+  },
+  "125,31": {
+    "hasExclamation": true
+  },
+  "-74,181": {
+    "hasExclamation": true
+  },
+  "-170,53": {
+    "hasExclamation": true
+  },
+  "144,188": {
+    "hasExclamation": true
+  },
+  "92,9": {
+    "hasExclamation": true
+  },
+  "-63,39": {
+    "hasExclamation": true
+  },
+  "21,-16": {
+    "hasExclamation": true
+  },
+  "6,65": {
+    "hasExclamation": true
+  },
+  "14,19": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "9,24": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "56,44": {
+    "hasExclamation": true
+  },
+  "99,47": {
+    "hasExclamation": true
+  },
+  "69,0": {
+    "hasExclamation": true
+  },
+  "-87,-10": {
+    "hasExclamation": true
+  },
+  "-41,59": {
+    "hasExclamation": true
+  },
+  "-103,-111": {
+    "hasExclamation": true
+  },
+  "-18,-22": {
+    "hasExclamation": true
+  },
+  "-29,8": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,9": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,10": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,11": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,12": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,13": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,14": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,15": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,16": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,18": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,19": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,20": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,20": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-26,20": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-26,19": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,19": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,21": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,21": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,22": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,23": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,24": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,25": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,26": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-28,27": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,26": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-30,27": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-30,28": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,28": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,28": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,28": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-26,29": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-26,28": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,29": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,30": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-26,30": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,31": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,31": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,32": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,33": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-30,40": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-31,41": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-31,40": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-32,40": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-33,40": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-34,41": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-34,42": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-33,42": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-32,42": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-31,42": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-30,43": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-30,42": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-32,43": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-32,44": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-30,44": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-32,45": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-31,45": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-29,41": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-28,41": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-27,41": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-26,40": {
+    "owner": "cosmo",
+    "population": 3
+  },
+  "-24,40": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-24,39": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-24,38": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-25,38": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-26,39": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-26,41": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-25,41": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-24,37": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-24,36": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-25,36": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-26,37": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-26,38": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-23,38": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-21,38": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-21,37": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-22,37": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-23,39": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-22,39": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-19,37": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-19,36": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-20,36": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-20,38": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-20,35": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-20,34": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-20,33": {
+    "owner": "cosmo",
+    "population": 3
+  },
+  "62,-53": {
+    "hasExclamation": true
+  },
+  "202,34": {
+    "hasExclamation": true
+  },
+  "-89,197": {
+    "hasExclamation": true
+  },
+  "-194,94": {
+    "hasExclamation": true
+  },
+  "159,209": {
+    "hasExclamation": true
+  },
+  "123,8": {
+    "hasExclamation": true
+  },
+  "-22,80": {
+    "hasExclamation": true
+  },
+  "25,-19": {
+    "hasExclamation": true
+  },
+  "-52,22": {
+    "hasExclamation": true
+  },
+  "40,46": {
+    "hasExclamation": true
+  },
+  "12,17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "56,71": {
+    "hasExclamation": true
+  },
+  "34,53": {
+    "hasExclamation": true
+  },
+  "65,-2": {
+    "hasExclamation": true
+  },
+  "-94,-8": {
+    "hasExclamation": true
+  },
+  "-61,112": {
+    "hasExclamation": true
+  },
+  "-65,-81": {
+    "hasExclamation": true
+  },
+  "-61,13": {
+    "hasExclamation": true
+  },
+  "-18,32": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-18,31": {
+    "owner": "cosmo",
+    "population": 3
+  },
+  "-18,30": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-19,30": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-20,31": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-19,33": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-21,32": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-21,33": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-16,30": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-16,29": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-17,29": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-17,31": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-15,30": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-14,29": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-12,29": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-12,28": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-13,28": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-14,30": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-13,30": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-11,28": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-10,27": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-9,27": {
+    "owner": "cosmo",
+    "population": 3
+  },
+  "-6,26": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-8,27": {
+    "owner": "cosmo",
+    "population": 4
+  },
+  "-6,27": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-8,28": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-7,28": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-8,25": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-9,26": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-4,23": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-4,22": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-4,21": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-4,20": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-3,18": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-4,18": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-2,17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-1,16": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "0,15": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "1,14": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "1,13": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "0,13": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-1,14": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-1,15": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "1,15": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "1,16": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "3,16": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "3,15": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "2,15": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "1,17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "2,17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "3,17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "4,17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "5,17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "6,16": {
+    "owner": "cosmo",
+    "population": 3
+  },
+  "9,15": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "9,14": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "8,14": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "7,16": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "8,16": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "7,14": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "6,14": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "5,15": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "5,16": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "10,14": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "11,14": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "13,14": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "13,13": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "12,13": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "11,15": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "12,15": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "14,15": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "14,14": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "12,16": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "13,16": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "13,17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "11,17": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "11,18": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "12,18": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "10,17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "9,17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "9,16": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "6,17": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "10,19": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "10,20": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "8,21": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "9,21": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "9,22": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "7,22": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "7,23": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "8,23": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "13,18": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "14,18": {
+    "owner": "cosmo",
+    "population": 3
+  },
+  "15,19": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "15,18": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "13,19": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "13,20": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "14,20": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "12,21": {
+    "owner": "cosmo",
+    "population": 3
+  },
+  "13,22": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "13,21": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "12,23": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "10,23": {
+    "owner": "cosmo",
+    "population": 3
+  },
+  "10,24": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "11,24": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "11,21": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "10,22": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "9,23": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "8,24": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "8,25": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "9,25": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "7,24": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "6,25": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "5,26": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "4,27": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "4,28": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "3,27": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "2,28": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "2,29": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "3,29": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "14,12": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "111,-95": {
+    "hasExclamation": true
+  },
+  "171,19": {
+    "hasExclamation": true
+  },
+  "-119,193": {
+    "hasExclamation": true
+  },
+  "-137,84": {
+    "hasExclamation": true
+  },
+  "137,175": {
+    "hasExclamation": true
+  },
+  "72,20": {
+    "hasExclamation": true
+  },
+  "-35,44": {
+    "hasExclamation": true
+  },
+  "11,-15": {
+    "hasExclamation": true
+  },
+  "-17,60": {
+    "hasExclamation": true
+  },
+  "7,-6": {
+    "hasExclamation": true
+  },
+  "-5,9": {
+    "hasExclamation": true
+  },
+  "45,77": {
+    "hasExclamation": true
+  },
+  "64,27": {
+    "hasExclamation": true
+  },
+  "-5,23": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-81,-9": {
+    "hasExclamation": true
+  },
+  "-57,67": {
+    "hasExclamation": true
+  },
+  "-71,-40": {
+    "hasExclamation": true
+  },
+  "38,40": {
+    "hasExclamation": true
+  },
+  "-5,22": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-6,23": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-6,24": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-10,28": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-10,29": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-9,29": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-8,29": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-7,30": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-7,29": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-9,30": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-9,31": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-8,31": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-10,30": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-11,31": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-11,32": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-10,32": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-12,31": {
+    "owner": "cosmo",
+    "population": 2
+  },
+  "-12,30": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-14,31": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-14,32": {
+    "owner": "cosmo",
+    "population": 1
+  },
+  "-13,32": {
+    "owner": "cosmo",
     "population": 1
   }
 }

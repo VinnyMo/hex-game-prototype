@@ -126,7 +126,9 @@ function renderGrid() {
     }
 
     // Merge the currently visible hexes with the persistently explored tiles
-    exploredTiles = new Set([...exploredTiles, ...currentFrameVisibleHexes]);
+    if (isInitialSpawnComplete) {
+        exploredTiles = new Set([...exploredTiles, ...currentFrameVisibleHexes]);
+    }
 
     if (currentUser) {
         drawEnemyArrows();

@@ -67,6 +67,8 @@ function initializeSocket(io) {
                         attempts++;
                     }
                 }
+                // Emit event to client that initial spawn is complete
+                socket.emit('initialSpawnComplete');
                 setUsers(users);
                 setGridState(gridState);
                 

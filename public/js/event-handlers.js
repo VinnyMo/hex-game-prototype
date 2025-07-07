@@ -19,6 +19,11 @@ function setupSocketEventHandlers() {
         loginError.textContent = message;
     });
 
+    socket.on('initialSpawnComplete', () => {
+        isInitialSpawnComplete = true;
+        renderGrid(); // Re-render to update explored tiles after initial spawn
+    });
+
     // --- Start of Optimized Event Handlers ---
 
     // This event now only fires once on login

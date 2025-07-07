@@ -43,6 +43,7 @@ let leaderboard = {};
 let currentUser = null;
 
 let exploredTiles = new Set();
+let isInitialSpawnComplete = false; // New flag
 
 function syncExploredTiles() {
     if (currentUser) {
