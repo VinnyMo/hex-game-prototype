@@ -762,9 +762,7 @@ function drawMap() {
         let hexColor = tile && users[tile.owner] ? users[tile.owner].color : '#FFFFFF'; // Default to white for unowned tiles
         mapCtx.fillStyle = hexColor;
         mapCtx.fill();
-        mapCtx.strokeStyle = 'black';
-        mapCtx.lineWidth = 0.5;
-        mapCtx.stroke();
+        
 
         // Draw capitol stars on the map
         if (Object.values(users).some(user => user.capitol === key)) {
