@@ -2,53 +2,8 @@ const { getGridState, getUsers, setGridState, setUsers } = require('./gameState'
 const { getHexNeighbors, hexDistance, generateRandomColor } = require('./utils');
 const { log, error } = require('./logging');
 
-const MIN_SPAWN_DISTANCE = 150;
 const EXCLAMATION_SPAWN_INTERVAL = 60 * 1000; // 1 minute
 const EXCLAMATION_SPAWN_RADIUS = 100; // Radius in hexes
-
-function findRandomSpawn() {
-    let q, r, key;
-    let attempts = 0;
-    const MAX_ATTEMPTS = 10000; // Prevent infinite loops
-    const gridState = getGridState();
-
-    while (attempts < MAX_ATTEMPTS) {
-        q = Math.floor(Math.random() * 400) - 200; // Increased range for better distribution
-        r = Math.floor(Math.random() * 400) - 200; // Increased range for better distribution
-        key = `${q},${r}`;
-
-        // Check if the tile is occupied or has an exclamation mark
-        if (gridState[key] && (gridState[key].owner || gridState[key].hasExclamation)) {
-            attempts++;
-            continue;
-        }
-
-        let tooClose = false;
-        for (const existingKey in gridState) {
-            const existingTile = gridState[existingKey];
-            if (existingTile.owner || existingTile.hasExclamation) {
-                const [eq, er] = existingKey.split(',').map(Number);
-                if (hexDistance(q, r, eq, er) < MIN_SPAWN_DISTANCE) {
-                    tooClose = true;
-                    break;
-                }
-            }
-        }
-
-        if (!tooClose) {
-            return key;
-        }
-        attempts++;
-    }
-    log('Server: Could not find a suitable spawn point after many attempts. Spawning at a less ideal location.');
-    // Fallback to original random spawn if no ideal spot is found
-    do {
-        q = Math.floor(Math.random() * 200) - 100;
-        r = Math.floor(Math.random() * 200) - 100;
-        key = `${q},${r}`;
-    } while (gridState[key]);
-    return key;
-}
 
 function calculateLeaderboard() {
     const playerStats = {};
@@ -284,7 +239,6 @@ function generateExclamationMark(io) {
 }
 
 module.exports = {
-    findRandomSpawn,
     calculateLeaderboard,
     getConnectedTiles,
     isAdjacentToUserTerritory,
