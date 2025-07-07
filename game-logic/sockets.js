@@ -14,6 +14,11 @@ function initializeSocket(io) {
                 socket.emit('loginError', 'Username must be alphanumeric.');
                 return;
             }
+            if (username.length > 20) {
+                log(`Server: Login error - Username "${username}" exceeds 20 characters.`);
+                socket.emit('loginError', 'Username cannot exceed 20 characters.');
+                return;
+            }
             let users = getUsers();
             let gridState = getGridState();
             if (users[username]) {
