@@ -3,6 +3,12 @@ function setupSocketEventHandlers() {
         currentUser = user;
         loginContainer.style.display = 'none';
         gameContainer.style.display = 'block';
+        
+        // Load explored tiles from server
+        if (user.exploredTiles) {
+            exploredTiles = new Set(user.exploredTiles);
+        }
+        syncExploredTiles(); // Immediately sync after login to ensure server has latest
         // The 'gameState' event will handle the rest
     });
 
@@ -17,12 +23,12 @@ function setupSocketEventHandlers() {
         hexStates = state.gridState;
         users = state.users;
         leaderboard = state.leaderboard;
-        renderGrid();
         if (currentUser) {
             updateStats();
             updateLeaderboard();
             recenterCapitol();
         }
+        renderGrid(); // Render after recentering
     });
 
     // Handle single tile updates

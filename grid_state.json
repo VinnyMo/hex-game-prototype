@@ -1,720 +1,5326 @@
 {
-  "23,48": {
+  "81,-105": {
     "owner": "ilikpie",
-    "population": 3
+    "population": 1
   },
-  "22,48": {
+  "81,-106": {
     "owner": "ilikpie",
-    "population": 3
+    "population": 1
   },
-  "21,48": {
+  "82,-106": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "82,-105": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-104": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-104": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-105": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "114,-153": {
+    "hasExclamation": true
+  },
+  "82,-104": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-103": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "82,-103": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "83,-103": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "84,-104": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "83,-104": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "84,-105": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "83,-105": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "83,-106": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "84,-109": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "83,-107": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "82,-107": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "83,-108": {
     "owner": "ilikpie",
     "population": 2
   },
+  "85,-109": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "85,-110": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "84,-110": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "83,-109": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "84,-108": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "84,-107": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "84,-106": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "85,-107": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "85,-108": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "82,-108": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-107": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-106": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-105": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-104": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-103": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-103": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "85,-105": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "85,-106": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-102": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "78,-101": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "77,-100": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "77,-99": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "76,-98": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "75,-97": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "75,-96": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "74,-95": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "73,-94": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "73,-93": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "72,-92": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "71,-91": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "71,-90": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "70,-89": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "69,-88": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "69,-87": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "68,-86": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "67,-85": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "173,21": {
+    "owner": "BlimBlom",
+    "population": 1
+  },
+  "68,-120": {
+    "hasExclamation": true
+  },
+  "173,20": {
+    "owner": "BlimBlom",
+    "population": 1
+  },
+  "172,21": {
+    "owner": "BlimBlom",
+    "population": 1
+  },
+  "172,22": {
+    "owner": "BlimBlom",
+    "population": 1
+  },
+  "-101,-70": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-100,-70": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-101,-69": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-102,-69": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-99,-70": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-98,-70": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-99,-69": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-98,-69": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-98,-68": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-97,-68": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-96,-69": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-95,-69": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-95,-68": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-94,-69": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-93,-69": {
+    "owner": "BloopBloop",
+    "population": 1
+  },
+  "-84,-94": {
+    "hasExclamation": true
+  },
+  "78,-203": {
+    "hasExclamation": true
+  },
+  "-40,-64": {
+    "hasExclamation": true
+  },
+  "-110,182": {
+    "owner": "TipTap",
+    "population": 1
+  },
+  "-137,-115": {
+    "hasExclamation": true
+  },
+  "-192,83": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-191,82": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-190,82": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-189,82": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-188,81": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-187,80": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-186,80": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-185,79": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-184,79": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-183,78": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-183,79": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-182,78": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-181,78": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-180,77": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-179,77": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-178,77": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-177,77": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-176,77": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-176,78": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-175,77": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-175,78": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-174,78": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-173,77": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-172,76": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-171,75": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-170,74": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-169,73": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-168,73": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-167,73": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-166,73": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-165,72": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-164,71": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-164,72": {
+    "owner": "CreamCrum",
+    "population": 1
+  },
+  "-75,-118": {
+    "hasExclamation": true
+  },
+  "86,-108": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "86,-109": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "86,-107": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "86,-106": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "85,-104": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "86,-105": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-102": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "78,-103": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "150,190": {
+    "owner": "BloopBlop",
+    "population": 1
+  },
+  "-181,-71": {
+    "hasExclamation": true
+  },
+  "82,33": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "83,33": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "84,33": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "84,34": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "83,34": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "82,34": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "82,35": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "83,35": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "84,35": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "83,36": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "82,36": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "81,36": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "81,37": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "82,37": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "81,35": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "81,34": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "83,32": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "82,32": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "81,33": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "85,32": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "84,32": {
+    "owner": "Smithy",
+    "population": 1
+  },
+  "55,-111": {
+    "hasExclamation": true
+  },
+  "-114,194": {
+    "hasExclamation": true
+  },
+  "-180,3": {
+    "hasExclamation": true
+  },
+  "-29,38": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-29,37": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-30,38": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-30,39": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-29,39": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-28,38": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-28,37": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-28,36": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-29,36": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-29,35": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-30,36": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-30,37": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-28,35": {
+    "owner": "Swammy",
+    "population": 2
+  },
+  "-27,36": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,35": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,37": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,38": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-28,39": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,39": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,40": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-28,40": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-26,39": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-26,38": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-26,37": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-26,36": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-26,35": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-25,35": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-25,34": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-26,34": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,34": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "70,-99": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "140,12": {
+    "hasExclamation": true
+  },
+  "-91,-53": {
+    "hasExclamation": true
+  },
+  "-99,208": {
+    "hasExclamation": true
+  },
+  "-208,66": {
+    "hasExclamation": true
+  },
+  "153,193": {
+    "hasExclamation": true
+  },
+  "78,43": {
+    "hasExclamation": true
+  },
+  "71,-96": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "200,30": {
+    "hasExclamation": true
+  },
+  "-122,-94": {
+    "hasExclamation": true
+  },
+  "-68,163": {
+    "hasExclamation": true
+  },
+  "-180,40": {
+    "hasExclamation": true
+  },
+  "187,183": {
+    "hasExclamation": true
+  },
+  "57,31": {
+    "hasExclamation": true
+  },
+  "-42,62": {
+    "hasExclamation": true
+  },
+  "75,-113": {
+    "hasExclamation": true
+  },
+  "136,1": {
+    "hasExclamation": true
+  },
+  "-96,-107": {
+    "hasExclamation": true
+  },
+  "-108,207": {
+    "hasExclamation": true
+  },
+  "-175,66": {
+    "hasExclamation": true
+  },
+  "121,225": {
+    "hasExclamation": true
+  },
+  "103,11": {
+    "hasExclamation": true
+  },
+  "-12,18": {
+    "hasExclamation": true
+  },
+  "32,-119": {
+    "hasExclamation": true
+  },
+  "168,10": {
+    "hasExclamation": true
+  },
+  "-85,-73": {
+    "hasExclamation": true
+  },
+  "-116,157": {
+    "hasExclamation": true
+  },
+  "-186,122": {
+    "hasExclamation": true
+  },
+  "171,214": {
+    "hasExclamation": true
+  },
+  "69,-4": {
+    "hasExclamation": true
+  },
+  "5,48": {
+    "hasExclamation": true
+  },
+  "104,-134": {
+    "hasExclamation": true
+  },
+  "215,28": {
+    "hasExclamation": true
+  },
+  "-128,-107": {
+    "hasExclamation": true
+  },
+  "-125,176": {
+    "hasExclamation": true
+  },
+  "-184,46": {
+    "hasExclamation": true
+  },
+  "165,198": {
+    "hasExclamation": true
+  },
+  "61,29": {
+    "hasExclamation": true
+  },
+  "-27,51": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,41": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,42": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,43": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,44": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,45": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,46": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,47": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,48": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,49": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,50": {
+    "owner": "Swammy",
+    "population": 2
+  },
+  "-26,51": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-26,50": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-28,51": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-28,52": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-27,52": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-25,51": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-24,51": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-23,51": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-22,50": {
+    "owner": "Swammy",
+    "population": 1
+  },
+  "-21,50": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-19,49": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "97,-103": {
+    "hasExclamation": true
+  },
+  "166,48": {
+    "hasExclamation": true
+  },
+  "-62,-60": {
+    "hasExclamation": true
+  },
+  "-119,183": {
+    "hasExclamation": true
+  },
+  "-168,79": {
+    "hasExclamation": true
+  },
+  "187,176": {
+    "hasExclamation": true
+  },
+  "123,62": {
+    "hasExclamation": true
+  },
+  "-17,50": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-16,50": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-13,51": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-12,51": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-9,51": {
+    "owner": "Splimminy",
+    "population": 1,
+    "isDisconnected": false
+  },
+  "89,-146": {
+    "hasExclamation": true
+  },
+  "155,43": {
+    "hasExclamation": true
+  },
+  "-131,-63": {
+    "hasExclamation": true
+  },
+  "-76,184": {
+    "hasExclamation": true
+  },
+  "-167,78": {
+    "hasExclamation": true
+  },
+  "151,191": {
+    "hasExclamation": true
+  },
+  "74,32": {
+    "hasExclamation": true
+  },
+  "-14,57": {
+    "owner": "Splimminy",
+    "population": 3
+  },
+  "51,-88": {
+    "hasExclamation": true
+  },
+  "126,13": {
+    "hasExclamation": true
+  },
+  "-99,-72": {
+    "hasExclamation": true
+  },
+  "-89,140": {
+    "hasExclamation": true
+  },
+  "-198,79": {
+    "hasExclamation": true
+  },
+  "146,193": {
+    "hasExclamation": true
+  },
+  "102,31": {
+    "hasExclamation": true
+  },
+  "-49,36": {
+    "hasExclamation": true
+  },
+  "67,-70": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "170,10": {
+    "hasExclamation": true
+  },
+  "-74,-49": {
+    "hasExclamation": true
+  },
+  "-150,210": {
+    "hasExclamation": true
+  },
+  "-188,74": {
+    "hasExclamation": true
+  },
+  "143,160": {
+    "hasExclamation": true
+  },
+  "104,45": {
+    "hasExclamation": true
+  },
+  "-59,24": {
+    "hasExclamation": true
+  },
+  "82,-101": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "187,28": {
+    "hasExclamation": true
+  },
+  "-97,-74": {
+    "hasExclamation": true
+  },
+  "-74,203": {
+    "hasExclamation": true
+  },
+  "-198,46": {
+    "hasExclamation": true
+  },
+  "197,180": {
+    "hasExclamation": true
+  },
+  "82,44": {
+    "hasExclamation": true
+  },
+  "-15,9": {
+    "hasExclamation": true
+  },
+  "60,-113": {
+    "hasExclamation": true
+  },
+  "128,6": {
+    "hasExclamation": true
+  },
+  "-90,-75": {
+    "hasExclamation": true
+  },
+  "-83,163": {
+    "hasExclamation": true
+  },
+  "-155,74": {
+    "hasExclamation": true
+  },
+  "168,168": {
+    "hasExclamation": true
+  },
+  "57,30": {
+    "hasExclamation": true
+  },
+  "-17,16": {
+    "hasExclamation": true
+  },
+  "56,-97": {
+    "hasExclamation": true
+  },
+  "163,32": {
+    "hasExclamation": true
+  },
+  "-59,-81": {
+    "hasExclamation": true
+  },
+  "-108,191": {
+    "hasExclamation": true
+  },
+  "-216,57": {
+    "hasExclamation": true
+  },
+  "102,180": {
+    "hasExclamation": true
+  },
+  "86,37": {
+    "hasExclamation": true
+  },
+  "-27,29": {
+    "hasExclamation": true
+  },
+  "88,-102": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "175,-12": {
+    "hasExclamation": true
+  },
+  "-102,-54": {
+    "hasExclamation": true
+  },
+  "-94,195": {
+    "hasExclamation": true
+  },
+  "-172,87": {
+    "hasExclamation": true
+  },
+  "151,214": {
+    "hasExclamation": true
+  },
+  "69,42": {
+    "hasExclamation": true
+  },
+  "-46,65": {
+    "hasExclamation": true
+  },
+  "67,-68": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "172,45": {
+    "hasExclamation": true
+  },
+  "-105,-64": {
+    "hasExclamation": true
+  },
+  "-104,201": {
+    "hasExclamation": true
+  },
+  "-201,73": {
+    "hasExclamation": true
+  },
+  "154,165": {
+    "hasExclamation": true
+  },
+  "74,59": {
+    "hasExclamation": true
+  },
+  "-29,86": {
+    "hasExclamation": true
+  },
+  "62,-98": {
+    "hasExclamation": true
+  },
+  "196,56": {
+    "hasExclamation": true
+  },
+  "-100,-24": {
+    "hasExclamation": true
+  },
+  "-70,164": {
+    "hasExclamation": true
+  },
+  "-187,83": {
+    "hasExclamation": true
+  },
+  "160,206": {
+    "hasExclamation": true
+  },
+  "122,5": {
+    "hasExclamation": true
+  },
+  "-33,41": {
+    "hasExclamation": true
+  },
+  "82,-102": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "83,-101": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "83,-102": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-101": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-100": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "82,-100": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "86,-104": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "86,-103": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "87,-103": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "88,-103": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "89,-102": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "89,-103": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "87,-102": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "87,-101": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "88,-101": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "74,-96": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "73,-96": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "72,-96": {
+    "owner": "ilikpie",
+    "population": 3
+  },
+  "72,-97": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "71,-97": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "70,-96": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "70,-95": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "71,-95": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "71,-98": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "70,-98": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "71,-99": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "71,-100": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "70,-100": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "69,-99": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "69,-98": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "70,-97": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "105,-91": {
+    "hasExclamation": true
+  },
+  "205,22": {
+    "hasExclamation": true
+  },
+  "-82,-67": {
+    "hasExclamation": true
+  },
+  "-104,188": {
+    "hasExclamation": true
+  },
+  "-183,47": {
+    "hasExclamation": true
+  },
+  "158,238": {
+    "hasExclamation": true
+  },
+  "65,-14": {
+    "hasExclamation": true
+  },
+  "-12,77": {
+    "hasExclamation": true
+  },
+  "59,-80": {
+    "hasExclamation": true
+  },
+  "177,67": {
+    "hasExclamation": true
+  },
+  "-85,-46": {
+    "hasExclamation": true
+  },
+  "-100,138": {
+    "hasExclamation": true
+  },
+  "-164,77": {
+    "hasExclamation": true
+  },
+  "141,145": {
+    "hasExclamation": true
+  },
+  "108,-2": {
+    "hasExclamation": true
+  },
+  "-17,51": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "50,-111": {
+    "hasExclamation": true
+  },
+  "210,16": {
+    "hasExclamation": true
+  },
+  "-120,-72": {
+    "hasExclamation": true
+  },
+  "-91,203": {
+    "hasExclamation": true
+  },
+  "-180,60": {
+    "hasExclamation": true
+  },
+  "171,193": {
+    "hasExclamation": true
+  },
+  "51,22": {
+    "hasExclamation": true
+  },
+  "-52,12": {
+    "hasExclamation": true
+  },
+  "73,-100": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "139,24": {
+    "hasExclamation": true
+  },
+  "-99,-67": {
+    "hasExclamation": true
+  },
+  "-88,177": {
+    "hasExclamation": true
+  },
+  "-177,73": {
+    "hasExclamation": true
+  },
+  "137,168": {
+    "hasExclamation": true
+  },
+  "91,28": {
+    "hasExclamation": true
+  },
+  "-64,58": {
+    "hasExclamation": true
+  },
+  "95,-67": {
+    "hasExclamation": true
+  },
+  "168,23": {
+    "hasExclamation": true
+  },
+  "-79,-50": {
+    "hasExclamation": true
+  },
+  "-126,172": {
+    "hasExclamation": true
+  },
+  "-157,93": {
+    "hasExclamation": true
+  },
+  "141,239": {
+    "hasExclamation": true
+  },
+  "77,56": {
+    "hasExclamation": true
+  },
+  "-13,45": {
+    "hasExclamation": true
+  },
+  "72,-100": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "74,-100": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "74,-101": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "73,-101": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "72,-99": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "73,-99": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "55,-112": {
+    "hasExclamation": true
+  },
+  "174,6": {
+    "hasExclamation": true
+  },
+  "-110,-86": {
+    "hasExclamation": true
+  },
+  "-98,155": {
+    "hasExclamation": true
+  },
+  "-185,100": {
+    "hasExclamation": true
+  },
+  "119,209": {
+    "hasExclamation": true
+  },
+  "80,36": {
+    "hasExclamation": true
+  },
+  "-20,32": {
+    "hasExclamation": true
+  },
+  "59,-137": {
+    "hasExclamation": true
+  },
+  "214,10": {
+    "hasExclamation": true
+  },
+  "-46,-64": {
+    "hasExclamation": true
+  },
+  "-98,190": {
+    "hasExclamation": true
+  },
+  "-179,98": {
+    "hasExclamation": true
+  },
+  "142,169": {
+    "hasExclamation": true
+  },
+  "61,22": {
+    "hasExclamation": true
+  },
+  "-36,64": {
+    "hasExclamation": true
+  },
+  "81,-115": {
+    "hasExclamation": true
+  },
+  "200,47": {
+    "hasExclamation": true
+  },
+  "-98,-79": {
+    "hasExclamation": true
+  },
+  "-103,207": {
+    "hasExclamation": true
+  },
+  "-184,95": {
+    "hasExclamation": true
+  },
+  "177,197": {
+    "hasExclamation": true
+  },
+  "107,33": {
+    "hasExclamation": true
+  },
+  "-29,51": {
+    "hasExclamation": true
+  },
+  "95,-95": {
+    "hasExclamation": true
+  },
+  "174,20": {
+    "hasExclamation": true
+  },
+  "-56,-61": {
+    "hasExclamation": true
+  },
+  "-109,175": {
+    "hasExclamation": true
+  },
+  "-191,75": {
+    "hasExclamation": true
+  },
+  "151,193": {
+    "hasExclamation": true
+  },
+  "86,40": {
+    "hasExclamation": true
+  },
+  "-58,51": {
+    "hasExclamation": true
+  },
+  "76,-130": {
+    "hasExclamation": true
+  },
+  "194,26": {
+    "hasExclamation": true
+  },
+  "-74,-38": {
+    "hasExclamation": true
+  },
+  "-127,174": {
+    "hasExclamation": true
+  },
+  "-184,78": {
+    "hasExclamation": true
+  },
+  "159,221": {
+    "hasExclamation": true
+  },
+  "127,21": {
+    "hasExclamation": true
+  },
+  "-52,60": {
+    "hasExclamation": true
+  },
+  "50,-126": {
+    "hasExclamation": true
+  },
+  "158,32": {
+    "hasExclamation": true
+  },
+  "-128,-40": {
+    "hasExclamation": true
+  },
+  "-90,188": {
+    "hasExclamation": true
+  },
+  "-154,89": {
+    "hasExclamation": true
+  },
+  "131,216": {
+    "hasExclamation": true
+  },
+  "115,4": {
+    "hasExclamation": true
+  },
+  "-42,18": {
+    "hasExclamation": true
+  },
+  "114,-105": {
+    "hasExclamation": true
+  },
+  "146,4": {
+    "hasExclamation": true
+  },
+  "-94,-118": {
+    "hasExclamation": true
+  },
+  "-102,159": {
+    "hasExclamation": true
+  },
+  "-198,78": {
+    "hasExclamation": true
+  },
+  "182,156": {
+    "hasExclamation": true
+  },
+  "88,76": {
+    "hasExclamation": true
+  },
+  "-42,19": {
+    "hasExclamation": true
+  },
+  "66,-133": {
+    "hasExclamation": true
+  },
+  "158,3": {
+    "hasExclamation": true
+  },
+  "-118,-36": {
+    "hasExclamation": true
+  },
+  "-66,198": {
+    "hasExclamation": true
+  },
+  "-201,56": {
+    "hasExclamation": true
+  },
+  "158,175": {
+    "hasExclamation": true
+  },
+  "105,62": {
+    "hasExclamation": true
+  },
+  "-38,57": {
+    "hasExclamation": true
+  },
+  "114,-79": {
+    "hasExclamation": true
+  },
+  "175,57": {
+    "hasExclamation": true
+  },
+  "-98,-80": {
+    "hasExclamation": true
+  },
+  "-117,176": {
+    "hasExclamation": true
+  },
+  "-172,59": {
+    "hasExclamation": true
+  },
+  "154,167": {
+    "hasExclamation": true
+  },
+  "79,48": {
+    "hasExclamation": true
+  },
+  "-74,17": {
+    "hasExclamation": true
+  },
+  "77,-135": {
+    "hasExclamation": true
+  },
+  "200,62": {
+    "hasExclamation": true
+  },
+  "-97,-116": {
+    "hasExclamation": true
+  },
+  "-100,160": {
+    "hasExclamation": true
+  },
+  "-179,80": {
+    "hasExclamation": true
+  },
+  "129,217": {
+    "hasExclamation": true
+  },
+  "74,40": {
+    "hasExclamation": true
+  },
+  "-50,11": {
+    "hasExclamation": true
+  },
+  "117,-90": {
+    "hasExclamation": true
+  },
+  "189,22": {
+    "hasExclamation": true
+  },
+  "-96,-54": {
+    "hasExclamation": true
+  },
+  "-138,144": {
+    "hasExclamation": true
+  },
+  "-177,114": {
+    "hasExclamation": true
+  },
+  "156,184": {
+    "hasExclamation": true
+  },
+  "93,75": {
+    "hasExclamation": true
+  },
+  "-62,7": {
+    "hasExclamation": true
+  },
+  "88,-109": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "178,22": {
+    "hasExclamation": true
+  },
+  "-77,-65": {
+    "hasExclamation": true
+  },
+  "-138,175": {
+    "hasExclamation": true
+  },
+  "-183,88": {
+    "hasExclamation": true
+  },
+  "133,176": {
+    "hasExclamation": true
+  },
+  "93,11": {
+    "hasExclamation": true
+  },
+  "32,33": {
+    "hasExclamation": true
+  },
+  "45,-105": {
+    "hasExclamation": true
+  },
+  "175,55": {
+    "hasExclamation": true
+  },
+  "-68,-101": {
+    "hasExclamation": true
+  },
+  "-90,178": {
+    "hasExclamation": true
+  },
+  "-197,33": {
+    "hasExclamation": true
+  },
+  "131,155": {
+    "hasExclamation": true
+  },
+  "107,21": {
+    "hasExclamation": true
+  },
+  "-42,78": {
+    "hasExclamation": true
+  },
+  "48,-121": {
+    "hasExclamation": true
+  },
+  "180,29": {
+    "hasExclamation": true
+  },
+  "-86,-74": {
+    "hasExclamation": true
+  },
+  "-119,174": {
+    "hasExclamation": true
+  },
+  "-167,84": {
+    "hasExclamation": true
+  },
+  "151,195": {
+    "hasExclamation": true
+  },
+  "95,28": {
+    "hasExclamation": true
+  },
+  "-59,34": {
+    "hasExclamation": true
+  },
+  "98,-110": {
+    "hasExclamation": true
+  },
+  "211,-2": {
+    "hasExclamation": true
+  },
+  "-99,-81": {
+    "hasExclamation": true
+  },
+  "-103,166": {
+    "hasExclamation": true
+  },
+  "-173,74": {
+    "hasExclamation": true
+  },
+  "136,177": {
+    "hasExclamation": true
+  },
+  "86,38": {
+    "hasExclamation": true
+  },
+  "7,70": {
+    "hasExclamation": true
+  },
+  "54,-65": {
+    "hasExclamation": true
+  },
+  "199,61": {
+    "hasExclamation": true
+  },
+  "-124,-55": {
+    "hasExclamation": true
+  },
+  "-100,203": {
+    "hasExclamation": true
+  },
+  "-172,78": {
+    "hasExclamation": true
+  },
+  "151,206": {
+    "hasExclamation": true
+  },
+  "104,57": {
+    "hasExclamation": true
+  },
+  "12,53": {
+    "hasExclamation": true
+  },
+  "64,-92": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "174,12": {
+    "hasExclamation": true
+  },
+  "-61,-91": {
+    "hasExclamation": true
+  },
+  "-108,165": {
+    "hasExclamation": true
+  },
+  "-192,73": {
+    "hasExclamation": true
+  },
+  "117,192": {
+    "hasExclamation": true
+  },
+  "82,31": {
+    "hasExclamation": true
+  },
+  "-38,55": {
+    "hasExclamation": true
+  },
+  "72,-95": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "167,59": {
+    "hasExclamation": true
+  },
+  "-108,-33": {
+    "hasExclamation": true
+  },
+  "-77,214": {
+    "hasExclamation": true
+  },
+  "-155,88": {
+    "hasExclamation": true
+  },
+  "151,189": {
+    "hasExclamation": true
+  },
+  "89,31": {
+    "hasExclamation": true
+  },
+  "-44,52": {
+    "hasExclamation": true
+  },
+  "80,-137": {
+    "hasExclamation": true
+  },
+  "197,12": {
+    "hasExclamation": true
+  },
+  "-101,-71": {
+    "hasExclamation": true
+  },
+  "-109,134": {
+    "hasExclamation": true
+  },
+  "-130,59": {
+    "hasExclamation": true
+  },
+  "192,213": {
+    "hasExclamation": true
+  },
+  "108,58": {
+    "hasExclamation": true
+  },
+  "-55,12": {
+    "hasExclamation": true
+  },
+  "87,-80": {
+    "hasExclamation": true
+  },
+  "163,-26": {
+    "hasExclamation": true
+  },
+  "-107,-21": {
+    "hasExclamation": true
+  },
+  "-118,197": {
+    "hasExclamation": true
+  },
+  "-172,44": {
+    "hasExclamation": true
+  },
+  "107,191": {
+    "hasExclamation": true
+  },
+  "48,65": {
+    "hasExclamation": true
+  },
   "20,48": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "19,48": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "19,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "18,48": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "18,49": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "17,48": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "18,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "19,49": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "20,49": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "20,50": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "21,50": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "21,49": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "22,49": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "22,50": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "23,49": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "43,129": {
     "hasExclamation": true
   },
-  "17,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "16,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "15,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "14,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "14,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "13,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "12,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "13,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "14,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "15,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "15,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "16,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "16,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "12,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "17,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "17,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "18,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "18,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "19,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "19,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "20,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "20,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "20,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "20,44": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "19,44": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "20,43": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "21,43": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "11,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "10,48": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "10,49": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "10,50": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "10,51": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "10,52": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "10,53": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "11,53": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "11,54": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "10,55": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "9,56": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "8,57": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "7,58": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "7,59": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "6,60": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "20,42": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "20,41": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "20,40": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "20,39": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "20,38": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "21,37": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "21,36": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "22,35": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "22,34": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "22,33": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "21,33": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "21,32": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "-42,55": {
+  "45,-88": {
     "hasExclamation": true
   },
-  "20,32": {
+  "148,23": {
+    "hasExclamation": true
+  },
+  "-98,-71": {
+    "hasExclamation": true
+  },
+  "-97,161": {
+    "hasExclamation": true
+  },
+  "-171,78": {
+    "hasExclamation": true
+  },
+  "152,195": {
+    "hasExclamation": true
+  },
+  "64,33": {
+    "hasExclamation": true
+  },
+  "-16,95": {
+    "hasExclamation": true
+  },
+  "35,-109": {
+    "hasExclamation": true
+  },
+  "166,52": {
+    "hasExclamation": true
+  },
+  "-53,-45": {
+    "hasExclamation": true
+  },
+  "-132,166": {
+    "hasExclamation": true
+  },
+  "-135,41": {
+    "hasExclamation": true
+  },
+  "160,194": {
+    "hasExclamation": true
+  },
+  "83,47": {
+    "hasExclamation": true
+  },
+  "-45,30": {
+    "hasExclamation": true
+  },
+  "86,-80": {
+    "hasExclamation": true
+  },
+  "189,-3": {
+    "hasExclamation": true
+  },
+  "-89,-73": {
+    "hasExclamation": true
+  },
+  "-98,207": {
+    "hasExclamation": true
+  },
+  "-157,119": {
+    "hasExclamation": true
+  },
+  "157,217": {
+    "hasExclamation": true
+  },
+  "90,69": {
+    "hasExclamation": true
+  },
+  "35,41": {
+    "hasExclamation": true
+  },
+  "65,-84": {
     "owner": "ilikpie",
     "population": 1
   },
-  "20,33": {
+  "145,16": {
+    "hasExclamation": true
+  },
+  "-65,-41": {
+    "hasExclamation": true
+  },
+  "-140,211": {
+    "hasExclamation": true
+  },
+  "-147,87": {
+    "hasExclamation": true
+  },
+  "153,165": {
+    "hasExclamation": true
+  },
+  "82,24": {
+    "hasExclamation": true
+  },
+  "-28,46": {
+    "hasExclamation": true
+  },
+  "53,-112": {
+    "hasExclamation": true
+  },
+  "171,14": {
+    "hasExclamation": true
+  },
+  "-82,-102": {
+    "hasExclamation": true
+  },
+  "-124,197": {
+    "hasExclamation": true
+  },
+  "-194,48": {
+    "hasExclamation": true
+  },
+  "189,177": {
+    "hasExclamation": true
+  },
+  "66,36": {
+    "hasExclamation": true
+  },
+  "-36,-10": {
+    "hasExclamation": true
+  },
+  "101,-100": {
+    "hasExclamation": true
+  },
+  "154,30": {
+    "hasExclamation": true
+  },
+  "-68,-82": {
+    "hasExclamation": true
+  },
+  "-113,169": {
+    "hasExclamation": true
+  },
+  "-148,81": {
+    "hasExclamation": true
+  },
+  "171,184": {
+    "hasExclamation": true
+  },
+  "43,57": {
+    "hasExclamation": true
+  },
+  "-29,-11": {
+    "hasExclamation": true
+  },
+  "37,-103": {
+    "hasExclamation": true
+  },
+  "168,26": {
+    "hasExclamation": true
+  },
+  "-61,-92": {
+    "hasExclamation": true
+  },
+  "-109,186": {
+    "hasExclamation": true
+  },
+  "-194,39": {
+    "hasExclamation": true
+  },
+  "145,149": {
+    "hasExclamation": true
+  },
+  "81,24": {
+    "hasExclamation": true
+  },
+  "-5,44": {
+    "hasExclamation": true
+  },
+  "87,-109": {
+    "owner": "ilikpie",
+    "population": 3
+  },
+  "89,-109": {
     "owner": "ilikpie",
     "population": 1
   },
-  "19,33": {
+  "89,-110": {
     "owner": "ilikpie",
     "population": 1
   },
-  "18,33": {
+  "88,-110": {
     "owner": "ilikpie",
     "population": 1
   },
-  "19,32": {
+  "87,-108": {
     "owner": "ilikpie",
     "population": 1
   },
-  "17,33": {
+  "88,-108": {
     "owner": "ilikpie",
     "population": 1
   },
-  "18,32": {
+  "73,-95": {
     "owner": "ilikpie",
     "population": 1
   },
-  "17,32": {
+  "71,-94": {
     "owner": "ilikpie",
     "population": 1
   },
-  "16,33": {
+  "72,-94": {
     "owner": "ilikpie",
     "population": 1
   },
-  "15,33": {
+  "66,-85": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "66,-84": {
     "owner": "ilikpie",
     "population": 1
   },
-  "14,33": {
+  "65,-85": {
     "owner": "ilikpie",
     "population": 1
   },
-  "14,34": {
+  "64,-84": {
     "owner": "ilikpie",
     "population": 1
   },
-  "13,34": {
+  "64,-83": {
     "owner": "ilikpie",
     "population": 1
   },
-  "12,35": {
+  "65,-83": {
     "owner": "ilikpie",
     "population": 1
   },
-  "12,34": {
+  "69,-95": {
     "owner": "ilikpie",
     "population": 1
   },
-  "11,35": {
+  "68,-95": {
     "owner": "ilikpie",
     "population": 1
   },
-  "10,35": {
+  "67,-94": {
     "owner": "ilikpie",
     "population": 1
   },
-  "10,34": {
+  "66,-93": {
     "owner": "ilikpie",
     "population": 1
   },
-  "9,34": {
+  "65,-93": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "65,-92": {
     "owner": "ilikpie",
     "population": 1
   },
-  "8,34": {
+  "64,-93": {
     "owner": "ilikpie",
     "population": 1
   },
-  "8,33": {
+  "63,-92": {
     "owner": "ilikpie",
     "population": 1
   },
-  "7,34": {
+  "63,-91": {
     "owner": "ilikpie",
     "population": 1
   },
-  "7,33": {
+  "64,-91": {
     "owner": "ilikpie",
     "population": 1
   },
-  "6,33": {
+  "69,-97": {
     "owner": "ilikpie",
     "population": 1
   },
-  "6,32": {
+  "69,-96": {
     "owner": "ilikpie",
     "population": 1
   },
-  "5,33": {
+  "68,-85": {
     "owner": "ilikpie",
     "population": 1
   },
-  "5,32": {
+  "68,-84": {
     "owner": "ilikpie",
     "population": 1
   },
-  "4,32": {
+  "68,-83": {
     "owner": "ilikpie",
     "population": 1
   },
-  "5,31": {
+  "69,-83": {
     "owner": "ilikpie",
     "population": 1
   },
-  "4,31": {
+  "82,-140": {
+    "hasExclamation": true
+  },
+  "149,46": {
+    "hasExclamation": true
+  },
+  "-98,-49": {
+    "hasExclamation": true
+  },
+  "-139,163": {
+    "hasExclamation": true
+  },
+  "-207,93": {
+    "hasExclamation": true
+  },
+  "136,143": {
+    "hasExclamation": true
+  },
+  "97,5": {
+    "hasExclamation": true
+  },
+  "9,43": {
+    "hasExclamation": true
+  },
+  "69,-82": {
     "owner": "ilikpie",
     "population": 1
   },
-  "3,31": {
+  "70,-82": {
     "owner": "ilikpie",
     "population": 1
   },
-  "3,30": {
+  "70,-81": {
     "owner": "ilikpie",
     "population": 1
   },
-  "2,30": {
+  "71,-81": {
     "owner": "ilikpie",
     "population": 1
   },
-  "2,29": {
+  "70,-80": {
     "owner": "ilikpie",
     "population": 1
   },
-  "2,28": {
+  "71,-80": {
     "owner": "ilikpie",
     "population": 1
   },
-  "1,28": {
+  "70,-79": {
     "owner": "ilikpie",
     "population": 1
   },
-  "1,27": {
+  "71,-79": {
     "owner": "ilikpie",
     "population": 1
   },
-  "1,26": {
+  "71,-78": {
     "owner": "ilikpie",
     "population": 1
   },
-  "1,25": {
+  "71,-77": {
     "owner": "ilikpie",
     "population": 1
   },
-  "1,24": {
+  "70,-76": {
     "owner": "ilikpie",
     "population": 1
   },
-  "1,23": {
+  "69,-75": {
     "owner": "ilikpie",
     "population": 1
   },
-  "0,23": {
+  "69,-74": {
     "owner": "ilikpie",
     "population": 1
   },
-  "0,22": {
+  "68,-73": {
     "owner": "ilikpie",
     "population": 1
   },
-  "0,21": {
+  "67,-72": {
     "owner": "ilikpie",
     "population": 1
   },
-  "0,20": {
+  "67,-71": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "68,-70": {
     "owner": "ilikpie",
     "population": 1
   },
-  "-1,20": {
+  "68,-71": {
     "owner": "ilikpie",
     "population": 1
   },
-  "-1,19": {
+  "66,-70": {
     "owner": "ilikpie",
     "population": 1
+  },
+  "66,-69": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "67,-69": {
+    "owner": "ilikpie",
+    "population": 2
+  },
+  "68,-68": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "68,-69": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "66,-68": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "66,-67": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "67,-67": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "68,-67": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "69,-67": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "69,-66": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "70,-66": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "70,-65": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "70,-64": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "71,-64": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "72,-64": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "72,-63": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "72,-62": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "72,-61": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "72,-60": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "72,-59": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "72,-58": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "72,-57": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "72,-56": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "73,-56": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "73,-55": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "73,-54": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "73,-53": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "74,-53": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "74,-52": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "74,-51": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "74,-50": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "74,-49": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "74,-48": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "74,-47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "75,-47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "76,-47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "76,-46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "76,-45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "77,-45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "77,-44": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "77,-43": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "77,-42": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "78,-42": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "78,-41": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "78,-40": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "78,-39": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "78,-38": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "78,-37": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "78,-36": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "78,-35": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "78,-34": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-34": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-33": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-32": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-31": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-30": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-29": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-29": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-28": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-27": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-26": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-25": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "63,-71": {
+    "hasExclamation": true
+  },
+  "176,21": {
+    "hasExclamation": true
+  },
+  "-106,-95": {
+    "hasExclamation": true
+  },
+  "-85,195": {
+    "hasExclamation": true
+  },
+  "-211,64": {
+    "hasExclamation": true
+  },
+  "116,171": {
+    "hasExclamation": true
+  },
+  "77,7": {
+    "hasExclamation": true
+  },
+  "-22,48": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "80,-24": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-23": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-22": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-21": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-20": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-19": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-19": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-18": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-17": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-16": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-15": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-14": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-13": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-12": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-11": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-10": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "81,-9": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "44,-80": {
+    "hasExclamation": true
+  },
+  "185,26": {
+    "hasExclamation": true
+  },
+  "-119,-63": {
+    "hasExclamation": true
+  },
+  "-65,168": {
+    "hasExclamation": true
+  },
+  "-187,49": {
+    "hasExclamation": true
+  },
+  "148,185": {
+    "hasExclamation": true
+  },
+  "61,48": {
+    "hasExclamation": true
+  },
+  "-35,42": {
+    "hasExclamation": true
+  },
+  "75,-64": {
+    "hasExclamation": true
+  },
+  "165,58": {
+    "hasExclamation": true
+  },
+  "-87,-57": {
+    "hasExclamation": true
+  },
+  "-100,175": {
+    "hasExclamation": true
+  },
+  "-132,47": {
+    "hasExclamation": true
+  },
+  "156,157": {
+    "hasExclamation": true
+  },
+  "106,5": {
+    "hasExclamation": true
+  },
+  "-50,42": {
+    "hasExclamation": true
+  },
+  "81,-8": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "82,-9": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "82,-10": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "83,-10": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-9": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-8": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-8": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "66,-57": {
+    "hasExclamation": true
+  },
+  "178,18": {
+    "hasExclamation": true
+  },
+  "-102,-52": {
+    "hasExclamation": true
+  },
+  "-118,188": {
+    "hasExclamation": true
+  },
+  "-175,87": {
+    "hasExclamation": true
+  },
+  "148,164": {
+    "hasExclamation": true
+  },
+  "80,28": {
+    "hasExclamation": true
   },
   "-2,19": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "-3,19": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "-4,19": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "-4,18": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "-54,30": {
     "hasExclamation": true
   },
-  "-31,58": {
+  "80,-10": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-9": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-10": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-11": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "79,-11": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "80,-12": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "82,-13": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "83,-13": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "83,-12": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "82,-12": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "82,-11": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "83,-11": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "95,-59": {
     "hasExclamation": true
   },
-  "22,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "23,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "23,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "22,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "21,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "11,55": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "12,54": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "10,56": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "9,57": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "8,58": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "8,59": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "9,58": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "10,57": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "11,56": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "12,55": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "10,54": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "9,55": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "39,128": {
+  "173,64": {
     "hasExclamation": true
   },
-  "8,56": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "7,57": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "6,58": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "6,59": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "21,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "21,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "21,44": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "22,44": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "22,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "43,-25": {
+  "-107,-96": {
     "hasExclamation": true
   },
-  "85,96": {
+  "-110,190": {
     "hasExclamation": true
   },
-  "-11,81": {
+  "-201,100": {
     "hasExclamation": true
   },
-  "6,61": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "6,62": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "6,63": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "6,64": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "6,65": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "6,66": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "6,67": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "6,68": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "6,69": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "6,70": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "23,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "24,45": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "24,46": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "24,47": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "24,48": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "24,49": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "23,50": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "84,-11": {
+  "144,144": {
     "hasExclamation": true
   },
-  "-5,42": {
+  "98,54": {
     "hasExclamation": true
   },
-  "-62,91": {
+  "-5,59": {
     "hasExclamation": true
   },
-  "68,83": {
+  "90,-33": {
     "hasExclamation": true
   },
-  "86,36": {
+  "158,58": {
     "hasExclamation": true
   },
-  "95,82": {
+  "-112,-86": {
     "hasExclamation": true
   },
-  "82,-25": {
+  "-110,173": {
     "hasExclamation": true
   },
-  "73,103": {
+  "-193,53": {
     "hasExclamation": true
   },
-  "19,0": {
+  "152,178": {
     "hasExclamation": true
   },
-  "95,36": {
+  "87,65": {
+    "hasExclamation": true
+  },
+  "-43,46": {
+    "hasExclamation": true
+  },
+  "22,-18": {
+    "owner": "SprewNickle",
+    "population": 1
+  },
+  "-27,-10": {
+    "hasExclamation": true
+  },
+  "-18,-15": {
+    "hasExclamation": true
+  },
+  "22,-19": {
+    "hasExclamation": true
+  },
+  "-8,-23": {
+    "hasExclamation": true
+  },
+  "40,4": {
+    "hasExclamation": true
+  },
+  "57,-13": {
+    "hasExclamation": true
+  },
+  "7,-32": {
+    "hasExclamation": true
+  },
+  "36,-46": {
+    "hasExclamation": true
+  },
+  "26,-17": {
+    "hasExclamation": true
+  },
+  "3,-23": {
+    "hasExclamation": true
+  },
+  "37,-2": {
+    "hasExclamation": true
+  },
+  "46,-49": {
+    "hasExclamation": true
+  },
+  "21,-6": {
+    "hasExclamation": true
+  },
+  "12,-30": {
+    "hasExclamation": true
+  },
+  "1,-22": {
+    "hasExclamation": true
+  },
+  "-5,-56": {
+    "hasExclamation": true
+  },
+  "-3,12": {
+    "hasExclamation": true
+  },
+  "-24,-23": {
+    "hasExclamation": true
+  },
+  "36,-11": {
+    "hasExclamation": true
+  },
+  "37,23": {
+    "hasExclamation": true
+  },
+  "33,-3": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "1,-35": {
+    "hasExclamation": true
+  },
+  "-13,-24": {
+    "hasExclamation": true
+  },
+  "-2,-4": {
+    "hasExclamation": true
+  },
+  "29,-5": {
+    "owner": "Twer",
+    "population": 3
+  },
+  "47,-8": {
+    "hasExclamation": true
+  },
+  "18,-18": {
+    "hasExclamation": true
+  },
+  "30,-19": {
+    "hasExclamation": true
+  },
+  "32,-21": {
+    "hasExclamation": true
+  },
+  "62,-35": {
+    "hasExclamation": true
+  },
+  "37,-12": {
+    "hasExclamation": true
+  },
+  "16,-21": {
+    "hasExclamation": true
+  },
+  "10,-11": {
+    "hasExclamation": true
+  },
+  "19,29": {
+    "hasExclamation": true
+  },
+  "51,-22": {
+    "hasExclamation": true
+  },
+  "44,-7": {
+    "hasExclamation": true
+  },
+  "34,-25": {
+    "hasExclamation": true
+  },
+  "24,4": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "28,-4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "23,-21": {
+    "hasExclamation": true
+  },
+  "49,16": {
+    "hasExclamation": true
+  },
+  "49,-29": {
+    "hasExclamation": true
+  },
+  "8,28": {
+    "hasExclamation": true
+  },
+  "-2,-30": {
+    "hasExclamation": true
+  },
+  "-6,-35": {
+    "hasExclamation": true
+  },
+  "23,-31": {
+    "hasExclamation": true
+  },
+  "24,27": {
+    "hasExclamation": true
+  },
+  "-7,-29": {
+    "hasExclamation": true
+  },
+  "29,-45": {
+    "hasExclamation": true
+  },
+  "37,-8": {
+    "hasExclamation": true
+  },
+  "30,-4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "-2,-23": {
+    "hasExclamation": true
+  },
+  "24,25": {
+    "hasExclamation": true
+  },
+  "63,-15": {
+    "hasExclamation": true
+  },
+  "-13,-19": {
+    "hasExclamation": true
+  },
+  "13,27": {
+    "hasExclamation": true
+  },
+  "17,-23": {
+    "hasExclamation": true
+  },
+  "12,-9": {
+    "hasExclamation": true
+  },
+  "28,-23": {
+    "hasExclamation": true
+  },
+  "56,-29": {
+    "hasExclamation": true
+  },
+  "-27,-13": {
+    "hasExclamation": true
+  },
+  "-8,-28": {
+    "hasExclamation": true
+  },
+  "30,-15": {
+    "hasExclamation": true
+  },
+  "45,-33": {
+    "hasExclamation": true
+  },
+  "15,3": {
+    "hasExclamation": true
+  },
+  "4,-16": {
+    "hasExclamation": true
+  },
+  "12,30": {
+    "hasExclamation": true
+  },
+  "12,-31": {
+    "hasExclamation": true
+  },
+  "6,-51": {
+    "hasExclamation": true
+  },
+  "55,-9": {
+    "hasExclamation": true
+  },
+  "60,-21": {
+    "hasExclamation": true
+  },
+  "50,-45": {
+    "hasExclamation": true
+  },
+  "-22,-8": {
+    "hasExclamation": true
+  },
+  "67,-2": {
+    "hasExclamation": true
+  },
+  "35,-34": {
+    "hasExclamation": true
+  },
+  "37,-6": {
+    "hasExclamation": true
+  },
+  "34,-35": {
+    "hasExclamation": true
+  },
+  "-3,25": {
+    "hasExclamation": true
+  },
+  "-1,-28": {
+    "hasExclamation": true
+  },
+  "22,-17": {
+    "hasExclamation": true
+  },
+  "-11,-29": {
+    "hasExclamation": true
+  },
+  "30,-24": {
+    "hasExclamation": true
+  },
+  "41,-2": {
+    "hasExclamation": true
+  },
+  "-20,-19": {
+    "hasExclamation": true
+  },
+  "57,-52": {
+    "hasExclamation": true
+  },
+  "57,4": {
+    "hasExclamation": true
+  },
+  "4,-7": {
+    "hasExclamation": true
+  },
+  "8,-9": {
+    "hasExclamation": true
+  },
+  "11,-46": {
+    "hasExclamation": true
+  },
+  "21,-9": {
+    "hasExclamation": true
+  },
+  "21,-20": {
+    "hasExclamation": true
+  },
+  "57,-4": {
+    "hasExclamation": true
+  },
+  "51,14": {
+    "hasExclamation": true
+  },
+  "-2,-58": {
+    "hasExclamation": true
+  },
+  "28,-46": {
+    "hasExclamation": true
+  },
+  "5,-6": {
+    "hasExclamation": true
+  },
+  "40,-56": {
+    "hasExclamation": true
+  },
+  "17,-20": {
+    "hasExclamation": true
+  },
+  "22,-50": {
+    "hasExclamation": true
+  },
+  "24,-42": {
+    "hasExclamation": true
+  },
+  "99,-103": {
+    "hasExclamation": true
+  },
+  "186,24": {
+    "hasExclamation": true
+  },
+  "-103,-71": {
+    "hasExclamation": true
+  },
+  "-154,185": {
+    "hasExclamation": true
+  },
+  "-185,87": {
+    "hasExclamation": true
+  },
+  "114,193": {
+    "hasExclamation": true
+  },
+  "84,49": {
+    "hasExclamation": true
+  },
+  "-19,92": {
+    "hasExclamation": true
+  },
+  "18,22": {
+    "hasExclamation": true
+  },
+  "67,-64": {
+    "hasExclamation": true
+  },
+  "171,30": {
+    "hasExclamation": true
+  },
+  "-106,-69": {
+    "hasExclamation": true
+  },
+  "-111,180": {
+    "hasExclamation": true
+  },
+  "-189,84": {
+    "hasExclamation": true
+  },
+  "149,192": {
+    "hasExclamation": true
+  },
+  "54,-6": {
+    "hasExclamation": true
+  },
+  "-46,77": {
+    "hasExclamation": true
+  },
+  "52,11": {
+    "hasExclamation": true
+  },
+  "78,-92": {
+    "hasExclamation": true
+  },
+  "169,24": {
+    "hasExclamation": true
+  },
+  "-91,-81": {
+    "hasExclamation": true
+  },
+  "-141,151": {
+    "hasExclamation": true
+  },
+  "-188,72": {
+    "hasExclamation": true
+  },
+  "106,180": {
+    "hasExclamation": true
+  },
+  "94,34": {
+    "hasExclamation": true
+  },
+  "34,59": {
+    "hasExclamation": true
+  },
+  "-8,1": {
+    "hasExclamation": true
+  },
+  "100,-44": {
+    "hasExclamation": true
+  },
+  "161,21": {
+    "hasExclamation": true
+  },
+  "-82,-62": {
+    "hasExclamation": true
+  },
+  "-91,174": {
+    "hasExclamation": true
+  },
+  "-184,86": {
+    "hasExclamation": true
+  },
+  "161,195": {
+    "hasExclamation": true
+  },
+  "94,-3": {
+    "hasExclamation": true
+  },
+  "18,45": {
+    "hasExclamation": true
+  },
+  "22,-32": {
+    "hasExclamation": true
+  },
+  "-20,58": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-1,27": {
+    "hasExclamation": true
+  },
+  "1,37": {
+    "hasExclamation": true
+  },
+  "-6,32": {
+    "hasExclamation": true
+  },
+  "-1,34": {
+    "hasExclamation": true
+  },
+  "-20,49": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-23,20": {
+    "hasExclamation": true
+  },
+  "-12,75": {
+    "hasExclamation": true
+  },
+  "-16,58": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "2,16": {
+    "hasExclamation": true
+  },
+  "-9,79": {
+    "hasExclamation": true
+  },
+  "-27,55": {
+    "hasExclamation": true
+  },
+  "-25,80": {
+    "hasExclamation": true
+  },
+  "18,67": {
+    "hasExclamation": true
+  },
+  "-17,44": {
+    "hasExclamation": true
+  },
+  "-35,36": {
+    "hasExclamation": true
+  },
+  "-1,81": {
+    "hasExclamation": true
+  },
+  "-3,69": {
+    "hasExclamation": true
+  },
+  "-7,69": {
+    "hasExclamation": true
+  },
+  "-9,38": {
+    "hasExclamation": true
+  },
+  "13,72": {
+    "hasExclamation": true
+  },
+  "1,78": {
+    "hasExclamation": true
+  },
+  "-21,53": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-13,57": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "11,61": {
+    "hasExclamation": true
+  },
+  "-13,52": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-25,58": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-54,48": {
+    "hasExclamation": true
+  },
+  "8,73": {
+    "hasExclamation": true
+  },
+  "-17,69": {
+    "hasExclamation": true
+  },
+  "-37,43": {
+    "hasExclamation": true
+  },
+  "5,50": {
+    "hasExclamation": true
+  },
+  "-45,97": {
+    "hasExclamation": true
+  },
+  "-25,83": {
+    "hasExclamation": true
+  },
+  "-52,69": {
+    "hasExclamation": true
+  },
+  "-24,56": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-20,56": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-16,82": {
+    "hasExclamation": true
+  },
+  "-13,31": {
+    "hasExclamation": true
+  },
+  "-13,62": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-19,73": {
+    "hasExclamation": true
+  },
+  "-33,16": {
+    "hasExclamation": true
+  },
+  "20,81": {
+    "hasExclamation": true
+  },
+  "-14,73": {
+    "hasExclamation": true
+  },
+  "-18,57": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-30,92": {
+    "hasExclamation": true
+  },
+  "-19,58": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-38,70": {
+    "hasExclamation": true
+  },
+  "-42,48": {
+    "hasExclamation": true
+  },
+  "-17,55": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-69,59": {
+    "hasExclamation": true
+  },
+  "-33,44": {
+    "hasExclamation": true
+  },
+  "-31,93": {
+    "hasExclamation": true
+  },
+  "-13,29": {
+    "hasExclamation": true
+  },
+  "12,45": {
+    "hasExclamation": true
+  },
+  "24,43": {
+    "hasExclamation": true
+  },
+  "-52,57": {
+    "hasExclamation": true
+  },
+  "-16,49": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "16,73": {
+    "hasExclamation": true
+  },
+  "-7,35": {
+    "hasExclamation": true
+  },
+  "-6,72": {
+    "hasExclamation": true
+  },
+  "24,34": {
+    "hasExclamation": true
+  },
+  "-21,60": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-24,75": {
+    "hasExclamation": true
+  },
+  "-6,42": {
+    "hasExclamation": true
+  },
+  "5,42": {
+    "hasExclamation": true
+  },
+  "-44,99": {
+    "hasExclamation": true
+  },
+  "-18,66": {
+    "hasExclamation": true
+  },
+  "-8,66": {
+    "hasExclamation": true
+  },
+  "2,77": {
+    "hasExclamation": true
+  },
+  "-13,56": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-56,81": {
+    "hasExclamation": true
+  },
+  "-23,58": {
+    "owner": "Splimminy",
+    "population": 3
+  },
+  "-15,60": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-1,87": {
+    "hasExclamation": true
+  },
+  "12,22": {
+    "hasExclamation": true
+  },
+  "-18,59": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "6,51": {
+    "hasExclamation": true
+  },
+  "21,68": {
+    "hasExclamation": true
+  },
+  "-17,56": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-41,85": {
+    "hasExclamation": true
+  },
+  "-38,82": {
+    "hasExclamation": true
+  },
+  "-58,64": {
+    "hasExclamation": true
+  },
+  "2,39": {
+    "hasExclamation": true
+  },
+  "-41,93": {
+    "hasExclamation": true
+  },
+  "-22,57": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-23,59": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-24,59": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-45,65": {
+    "hasExclamation": true
+  },
+  "-18,99": {
+    "hasExclamation": true
+  },
+  "-37,30": {
+    "hasExclamation": true
+  },
+  "-45,18": {
+    "hasExclamation": true
+  },
+  "26,61": {
+    "hasExclamation": true
+  },
+  "14,89": {
+    "hasExclamation": true
+  },
+  "-37,61": {
+    "hasExclamation": true
+  },
+  "-42,90": {
+    "hasExclamation": true
+  },
+  "-58,72": {
+    "hasExclamation": true
+  },
+  "-49,68": {
+    "hasExclamation": true
+  },
+  "13,74": {
+    "hasExclamation": true
+  },
+  "-55,90": {
+    "hasExclamation": true
+  },
+  "-50,72": {
+    "hasExclamation": true
+  },
+  "-19,57": {
+    "owner": "Splimminy",
+    "population": 3
+  },
+  "-18,58": {
+    "owner": "Splimminy",
+    "population": 3
+  },
+  "-17,57": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-16,56": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-16,55": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-16,54": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-17,54": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-18,55": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-18,56": {
+    "owner": "Splimminy",
+    "population": 3
+  },
+  "-20,59": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-19,59": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-17,59": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-17,58": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-19,60": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-18,60": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-15,58": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-15,57": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-16,57": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-16,59": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-12,57": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-12,56": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-12,55": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-13,55": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-14,56": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-14,58": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-13,58": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-20,57": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-19,56": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-19,55": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-20,55": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-21,56": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-21,57": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-22,56": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-23,57": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-22,58": {
+    "owner": "Splimminy",
+    "population": 3
+  },
+  "-24,58": {
+    "owner": "Splimminy",
+    "population": 3
+  },
+  "-22,59": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-24,60": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-23,60": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-25,59": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-25,60": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-21,58": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-21,59": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-20,60": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-22,60": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-22,61": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-21,61": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-24,57": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-25,57": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-26,58": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-26,59": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-23,56": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-23,55": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-24,55": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-25,56": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-22,54": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-20,53": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-20,52": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-21,52": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-22,53": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-21,54": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-19,52": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-18,51": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-16,51": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-18,52": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-17,52": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-15,51": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-16,52": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-15,52": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-14,52": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-12,52": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-14,53": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-13,53": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-15,53": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-16,53": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-17,53": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-18,53": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-19,53": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-20,54": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-21,55": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-22,55": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-19,54": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-18,54": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-15,54": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-14,54": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-15,55": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-15,56": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-14,55": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-13,54": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-12,53": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-11,52": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "49,-111": {
+    "hasExclamation": true
+  },
+  "145,26": {
+    "hasExclamation": true
+  },
+  "-81,-102": {
+    "hasExclamation": true
+  },
+  "-108,179": {
+    "hasExclamation": true
+  },
+  "-200,106": {
+    "hasExclamation": true
+  },
+  "161,193": {
+    "hasExclamation": true
+  },
+  "84,77": {
+    "hasExclamation": true
+  },
+  "-14,19": {
+    "hasExclamation": true
+  },
+  "18,-11": {
+    "hasExclamation": true
+  },
+  "-37,88": {
+    "hasExclamation": true
+  },
+  "-11,53": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-11,54": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-10,52": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-9,52": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-10,51": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-11,51": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-10,50": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-9,50": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-12,54": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-15,59": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-14,60": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-14,59": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-16,60": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-16,61": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-15,61": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-14,61": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-13,61": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-12,62": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-12,61": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-14,62": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-14,63": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-13,63": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-21,51": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-19,48": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-20,48": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-21,49": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-18,48": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-17,48": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-17,49": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-15,49": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-15,48": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-16,48": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-22,51": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-22,49": {
+    "owner": "Splimminy",
+    "population": 2
+  },
+  "-21,48": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-21,47": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-22,47": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-23,48": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-23,49": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "-23,50": {
+    "owner": "Splimminy",
+    "population": 1
+  },
+  "27,8": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "42,26": {
+    "hasExclamation": true
+  },
+  "7,6": {
+    "hasExclamation": true
+  },
+  "62,-1": {
+    "hasExclamation": true
+  },
+  "39,15": {
+    "hasExclamation": true
+  },
+  "21,-4": {
+    "hasExclamation": true
+  },
+  "50,16": {
+    "hasExclamation": true
+  },
+  "23,3": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "25,7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "7,-7": {
+    "hasExclamation": true
+  },
+  "19,6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "17,41": {
+    "hasExclamation": true
+  },
+  "2,1": {
+    "hasExclamation": true
+  },
+  "11,0": {
+    "hasExclamation": true
+  },
+  "41,-29": {
+    "hasExclamation": true
+  },
+  "42,3": {
+    "hasExclamation": true
+  },
+  "-10,-9": {
+    "hasExclamation": true
+  },
+  "12,11": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "71,11": {
+    "hasExclamation": true
+  },
+  "27,-19": {
+    "hasExclamation": true
+  },
+  "25,43": {
+    "hasExclamation": true
+  },
+  "42,49": {
+    "hasExclamation": true
+  },
+  "48,45": {
+    "hasExclamation": true
+  },
+  "62,-11": {
+    "hasExclamation": true
+  },
+  "47,-34": {
+    "hasExclamation": true
+  },
+  "42,0": {
+    "hasExclamation": true
+  },
+  "15,-1": {
+    "hasExclamation": true
+  },
+  "52,24": {
+    "hasExclamation": true
+  },
+  "65,28": {
+    "hasExclamation": true
+  },
+  "45,24": {
+    "hasExclamation": true
+  },
+  "11,23": {
+    "hasExclamation": true
+  },
+  "28,-2": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "-17,30": {
+    "hasExclamation": true
+  },
+  "27,11": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "60,8": {
+    "hasExclamation": true
+  },
+  "6,-18": {
+    "hasExclamation": true
+  },
+  "9,3": {
+    "hasExclamation": true
+  },
+  "15,-24": {
+    "hasExclamation": true
+  },
+  "32,-1": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "6,-25": {
+    "hasExclamation": true
+  },
+  "31,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "16,41": {
+    "hasExclamation": true
+  },
+  "27,13": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "14,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "33,-5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "19,31": {
+    "hasExclamation": true
+  },
+  "63,8": {
+    "hasExclamation": true
+  },
+  "30,2": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "38,53": {
+    "hasExclamation": true
+  },
+  "36,19": {
+    "hasExclamation": true
+  },
+  "38,20": {
+    "hasExclamation": true
+  },
+  "28,9": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "23,4": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "33,0": {
+    "hasExclamation": true
+  },
+  "-2,-31": {
+    "hasExclamation": true
+  },
+  "45,46": {
+    "hasExclamation": true
+  },
+  "64,34": {
+    "hasExclamation": true
+  },
+  "43,7": {
+    "hasExclamation": true
+  },
+  "52,26": {
+    "hasExclamation": true
+  },
+  "21,4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "42,22": {
+    "hasExclamation": true
+  },
+  "23,18": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "50,-5": {
+    "hasExclamation": true
+  },
+  "49,21": {
+    "hasExclamation": true
+  },
+  "0,40": {
+    "hasExclamation": true
+  },
+  "71,8": {
+    "hasExclamation": true
+  },
+  "17,-30": {
+    "hasExclamation": true
+  },
+  "29,-6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "67,20": {
+    "hasExclamation": true
+  },
+  "19,8": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "35,19": {
+    "hasExclamation": true
+  },
+  "31,50": {
+    "hasExclamation": true
+  },
+  "28,10": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "13,-16": {
+    "hasExclamation": true
+  },
+  "58,10": {
+    "hasExclamation": true
+  },
+  "28,8": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "40,17": {
+    "hasExclamation": true
+  },
+  "43,-30": {
+    "hasExclamation": true
+  },
+  "25,-10": {
+    "hasExclamation": true
+  },
+  "51,-15": {
+    "hasExclamation": true
+  },
+  "23,-32": {
+    "hasExclamation": true
+  },
+  "37,9": {
+    "hasExclamation": true
+  },
+  "18,14": {
+    "hasExclamation": true
+  },
+  "59,-13": {
+    "hasExclamation": true
+  },
+  "36,-4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "54,-20": {
+    "hasExclamation": true
+  },
+  "34,-4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "30,8": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "9,-16": {
+    "hasExclamation": true
+  },
+  "52,40": {
+    "hasExclamation": true
+  },
+  "34,49": {
+    "hasExclamation": true
+  },
+  "29,5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "41,11": {
+    "hasExclamation": true
+  },
+  "25,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "27,4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "28,40": {
+    "hasExclamation": true
+  },
+  "25,13": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "11,-29": {
+    "hasExclamation": true
+  },
+  "35,23": {
+    "hasExclamation": true
+  },
+  "27,-30": {
+    "hasExclamation": true
+  },
+  "26,39": {
+    "hasExclamation": true
+  },
+  "29,8": {
+    "owner": "Twer",
+    "population": 3
+  },
+  "29,7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "28,7": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "27,9": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "29,9": {
+    "owner": "Twer",
+    "population": 3
+  },
+  "27,10": {
+    "owner": "Twer",
+    "population": 3
+  },
+  "29,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "28,11": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "26,11": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "26,12": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "27,12": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "31,8": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "31,7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "30,7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "30,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "26,9": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "26,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "25,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "24,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "24,11": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "25,11": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "25,12": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "26,13": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "24,13": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "24,14": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "25,14": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "28,13": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "28,12": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "26,14": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "27,14": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "29,11": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "30,10": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "69,-70": {
+    "hasExclamation": true
+  },
+  "194,18": {
+    "hasExclamation": true
+  },
+  "-91,-80": {
+    "hasExclamation": true
+  },
+  "-120,190": {
+    "hasExclamation": true
+  },
+  "-152,45": {
+    "hasExclamation": true
+  },
+  "143,188": {
+    "hasExclamation": true
+  },
+  "95,41": {
+    "hasExclamation": true
+  },
+  "-21,21": {
+    "hasExclamation": true
+  },
+  "24,26": {
+    "hasExclamation": true
+  },
+  "-22,38": {
+    "hasExclamation": true
+  },
+  "12,5": {
+    "hasExclamation": true
+  },
+  "32,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "32,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "31,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "30,11": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "31,11": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "25,8": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "26,7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "26,6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "25,6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "24,7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "24,8": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "27,6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "28,5": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "30,5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "30,4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "29,4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "28,6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "29,6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "27,7": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "26,8": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "27,5": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "28,4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "28,3": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "27,3": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "26,4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "26,5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "29,3": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "31,2": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "31,1": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "30,1": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "29,2": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "30,3": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "25,4": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "25,3": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "24,3": {
+    "owner": "Twer",
+    "population": 3
+  },
+  "24,2": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "23,2": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "22,3": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "22,4": {
+    "owner": "Twer",
+    "population": 3
+  },
+  "22,5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "23,5": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "24,5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "25,5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "21,3": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "20,4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "20,5": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "21,5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "20,6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "19,5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "18,6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "18,7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "19,7": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "20,8": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "20,7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "18,8": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "18,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "19,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "21,6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "22,6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "17,8": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "16,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "15,9": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "15,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "14,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "13,10": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "13,11": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "14,11": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "12,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "11,11": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "11,12": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "12,12": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "75,-111": {
+    "hasExclamation": true
+  },
+  "180,24": {
+    "hasExclamation": true
+  },
+  "-78,-107": {
+    "hasExclamation": true
+  },
+  "-74,160": {
+    "hasExclamation": true
+  },
+  "-148,115": {
+    "hasExclamation": true
+  },
+  "179,205": {
+    "hasExclamation": true
+  },
+  "104,71": {
+    "hasExclamation": true
+  },
+  "-9,37": {
+    "hasExclamation": true
+  },
+  "22,-21": {
+    "hasExclamation": true
+  },
+  "-24,24": {
+    "hasExclamation": true
+  },
+  "45,-26": {
+    "hasExclamation": true
+  },
+  "24,6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "23,6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "22,7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "21,7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "21,8": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "23,7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "23,8": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "22,8": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "22,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "23,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "24,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "21,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "20,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "19,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "18,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "17,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "16,10": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "17,9": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "69,-100": {
+    "hasExclamation": true
+  },
+  "185,20": {
+    "hasExclamation": true
+  },
+  "-113,-65": {
+    "hasExclamation": true
+  },
+  "-104,140": {
+    "hasExclamation": true
+  },
+  "-151,75": {
+    "hasExclamation": true
+  },
+  "142,201": {
+    "hasExclamation": true
+  },
+  "87,80": {
+    "hasExclamation": true
+  },
+  "-56,62": {
+    "hasExclamation": true
+  },
+  "-8,-50": {
+    "hasExclamation": true
+  },
+  "-18,64": {
+    "hasExclamation": true
+  },
+  "46,26": {
+    "hasExclamation": true
+  },
+  "54,-85": {
+    "hasExclamation": true
+  },
+  "188,-3": {
+    "hasExclamation": true
+  },
+  "-97,-76": {
+    "hasExclamation": true
+  },
+  "-102,139": {
+    "hasExclamation": true
+  },
+  "-186,68": {
+    "hasExclamation": true
+  },
+  "145,148": {
+    "hasExclamation": true
+  },
+  "99,54": {
+    "hasExclamation": true
+  },
+  "-35,55": {
+    "hasExclamation": true
+  },
+  "8,-11": {
+    "hasExclamation": true
+  },
+  "-47,51": {
+    "hasExclamation": true
+  },
+  "51,2": {
+    "hasExclamation": true
+  },
+  "24,15": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "23,16": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "23,17": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "24,18": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "24,17": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "22,18": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "22,19": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "23,19": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "31,0": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "33,-1": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "33,-2": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "32,-2": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "31,-1": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "32,0": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "34,-3": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "35,-4": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "35,-5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "34,-5": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "33,-4": {
+    "owner": "Twer",
+    "population": 3
+  },
+  "32,-3": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "37,-4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "37,-5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "36,-5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "35,-3": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "36,-3": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "34,-6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "33,-6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "32,-5": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "32,-4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "31,-5": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "31,-4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "30,-5": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "29,-4": {
+    "owner": "Twer",
+    "population": 3
+  },
+  "29,-3": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "30,-3": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "30,-6": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "30,-7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "29,-7": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "28,-6": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "28,-5": {
+    "owner": "Twer",
+    "population": 3
+  },
+  "27,-4": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "27,-3": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "28,-3": {
+    "owner": "Twer",
+    "population": 2
+  },
+  "29,-2": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "27,-2": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "27,-1": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "28,-1": {
+    "owner": "Twer",
+    "population": 1
+  },
+  "62,-34": {
+    "hasExclamation": true
+  },
+  "197,20": {
+    "hasExclamation": true
+  },
+  "-118,-71": {
+    "hasExclamation": true
+  },
+  "-98,216": {
+    "hasExclamation": true
+  },
+  "-161,54": {
+    "hasExclamation": true
+  },
+  "130,147": {
+    "hasExclamation": true
+  },
+  "119,17": {
+    "hasExclamation": true
+  },
+  "-54,24": {
+    "hasExclamation": true
+  },
+  "-8,-22": {
+    "hasExclamation": true
+  },
+  "-31,44": {
+    "hasExclamation": true
+  },
+  "38,25": {
     "hasExclamation": true
   }
 }

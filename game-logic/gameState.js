@@ -20,6 +20,12 @@ function loadGameState() {
     try {
         const usersData = fs.readFileSync(USERS_FILE, 'utf8');
         users = JSON.parse(usersData);
+        // Ensure each user has an exploredTiles array
+        for (const userId in users) {
+            if (!users[userId].exploredTiles) {
+                users[userId].exploredTiles = [];
+            }
+        }
         log('Server: Users loaded from file.');
     } catch (err) {
         log('Server: No existing users file found. Initializing new users object.');

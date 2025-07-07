@@ -105,14 +105,29 @@ function renderGrid() {
 
 
 
+    const currentFrameVisibleHexes = new Set();
+
     for (let q = startQ; q <= endQ; q++) {
         for (let r = startR; r <= endR; r++) {
             const key = `${q},${r}`;
-            exploredTiles.add(key); // Add to explored tiles
-            drawHex(q, r);
+            const { cx, cy } = hexToPixel(q, r);
+
+            // Check if the hex's bounding box (approximate) intersects the canvas
+            // This ensures only hexes visible within the rectangular camera view are considered 'viewed' for this frame.
+            const hexWidth = HEX_SIZE * 2;
+            const hexHeight = HEX_SIZE * Math.sqrt(3);
+
+            if (cx + hexWidth / 2 > 0 && cx - hexWidth / 2 < canvas.width &&
+                cy + hexHeight / 2 > 0 && cy - hexHeight / 2 < canvas.height) {
+                currentFrameVisibleHexes.add(key);
+                drawHex(q, r);
+            }
         }
     }
-    saveExploredTiles(); // Save explored tiles after rendering
+
+    // Merge the currently visible hexes with the persistently explored tiles
+    exploredTiles = new Set([...exploredTiles, ...currentFrameVisibleHexes]);
+
     if (currentUser) {
         drawEnemyArrows();
         drawDisconnectedArrow();

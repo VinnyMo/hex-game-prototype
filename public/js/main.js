@@ -43,18 +43,11 @@ let currentUser = null;
 
 let exploredTiles = new Set();
 
-function loadExploredTiles() {
-    const storedTiles = localStorage.getItem('exploredTiles');
-    if (storedTiles) {
-        exploredTiles = new Set(JSON.parse(storedTiles));
+function syncExploredTiles() {
+    if (currentUser) {
+        socket.emit('syncExploredTiles', Array.from(exploredTiles));
     }
 }
-
-function saveExploredTiles() {
-    localStorage.setItem('exploredTiles', JSON.stringify(Array.from(exploredTiles)));
-}
-
-loadExploredTiles();
 
 const socket = io();
 
@@ -69,6 +62,9 @@ loginButton.addEventListener('click', () => {
         loginError.textContent = 'Please enter both username and password.';
     }
 });
+
+// Periodically sync explored tiles to the server
+setInterval(syncExploredTiles, 30 * 1000); // Every 30 seconds
 
 let flashState = false;
 // Toggle flashState every 500ms and re-render

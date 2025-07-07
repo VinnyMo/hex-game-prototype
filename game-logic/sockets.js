@@ -20,7 +20,7 @@ function initializeSocket(io) {
                 log(`Server: User "${username}" found.`);
                 if (users[username].password === password) {
                     log(`Server: Password for "${username}" matched. Login successful.`);
-                    socket.emit('loginSuccess', { user: users[username] });
+                    socket.emit('loginSuccess', { user: users[username], exploredTiles: users[username].exploredTiles });
                     // Send full state to the connecting user ONLY
                     socket.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
                     log(`Server: Emitted initial gameState to ${username}.`);
@@ -37,13 +37,41 @@ function initializeSocket(io) {
                     color: generateRandomColor(),
                     capitol: findRandomSpawn(),
                 };
+                newUser.exploredTiles = [newUser.capitol]; // Initialize with only the capitol tile after capitol is set
                 users[username] = newUser;
                 gridState[newUser.capitol] = { owner: username, population: 1 };
+
+                // Spawn 100 '!' tiles around the new user's capitol
+                const [capitolQ, capitolR] = newUser.capitol.split(',').map(Number);
+                const SPAWN_RADIUS = 50;
+                const NUM_EXCLAMATIONS = 100;
+
+                for (let i = 0; i < NUM_EXCLAMATIONS; i++) {
+                    let attempts = 0;
+                    const MAX_ATTEMPTS = 50; // Limit attempts to find a suitable tile for each '!'
+                    let spawned = false;
+
+                    while (attempts < MAX_ATTEMPTS && !spawned) {
+                        const angle = Math.random() * 2 * Math.PI;
+                        const distance = Math.random() * SPAWN_RADIUS;
+
+                        const q = capitolQ + Math.round(distance * Math.cos(angle));
+                        const r = capitolR + Math.round(distance * Math.sin(angle));
+                        const key = `${q},${r}`;
+
+                        if (!gridState[key] || (!gridState[key].owner && !gridState[key].hasExclamation)) {
+                            gridState[key] = { hasExclamation: true };
+                            io.emit('tileUpdate', { key, tile: gridState[key] });
+                            spawned = true;
+                        }
+                        attempts++;
+                    }
+                }
                 setUsers(users);
                 setGridState(gridState);
                 
                 log(`Server: New user "${username}" created and logged in.`);
-                socket.emit('loginSuccess', { user: newUser });
+                socket.emit('loginSuccess', { user: newUser, exploredTiles: newUser.exploredTiles });
                 // Send full state to the new user
                 socket.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
                 // Announce the new user's color and capitol to others
@@ -51,6 +79,13 @@ function initializeSocket(io) {
                 io.emit('tileUpdate', { key: newUser.capitol, tile: gridState[newUser.capitol] });
                 socket.username = username;
             }
+        });
+
+        socket.on('syncExploredTiles', (tiles) => {
+            if (!socket.username) return;
+            let users = getUsers();
+            users[socket.username].exploredTiles = tiles;
+            setUsers(users);
         });
 
         socket.on('hexClick', ({ q, r }) => {
