@@ -100,6 +100,10 @@ function initializeSocket(io) {
             const isCapitol = Object.values(users).some(u => u.capitol === key);
 
             if (tile && tile.hasExclamation) {
+                if (!isAdjacentToUserTerritory(q, r, user.username)) {
+                    socket.emit('actionError', "You can only capture '!' tiles adjacent to your territory.");
+                    return;
+                }
                 applyExclamationEffect(q, r, user.username, new Set(), io);
             } else if (tile && tile.owner !== user.username) { // Attack an enemy tile
                 if (!isAdjacentToUserTerritory(q, r, user.username)) {
