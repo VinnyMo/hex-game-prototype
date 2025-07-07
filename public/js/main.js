@@ -224,7 +224,7 @@ const closeMapButton = document.getElementById('closeMapButton');
 const mapCanvas = document.getElementById('mapCanvas');
 const mapCtx = mapCanvas.getContext('2d');
 
-const MAP_SCALE = 0.02; // 1/50 scale
+const MAP_SCALE = 0.04; // 1/25 scale
 
 let mapCameraX = 0;
 let mapCameraY = 0;
