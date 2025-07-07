@@ -19,6 +19,7 @@ const loginButton = document.getElementById('loginButton');
 const usernameInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
 const loginError = document.getElementById('loginError');
+const loadingSpinner = document.getElementById('loadingSpinner');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -57,6 +58,8 @@ loginButton.addEventListener('click', () => {
     const username = usernameInput.value;
     const password = passwordInput.value;
     if (username && password) {
+        loginContainer.style.display = 'none';
+        loadingSpinner.style.display = 'flex'; // Show spinner
         socket.emit('login', { username, password });
     } else {
         loginError.textContent = 'Please enter both username and password.';
@@ -217,7 +220,7 @@ const closeMapButton = document.getElementById('closeMapButton');
 const mapCanvas = document.getElementById('mapCanvas');
 const mapCtx = mapCanvas.getContext('2d');
 
-const MAP_SCALE = 0.01; // 1/100 scale
+const MAP_SCALE = 0.02; // 1/50 scale
 
 let mapCameraX = 0;
 let mapCameraY = 0;
@@ -308,7 +311,7 @@ function handleMapPointerMove(e) {
     }
 
     lastMapPointerX = currentX;
-    lastMapPointerY = currentY;
+    lastPointerY = currentY;
 }
 
 function handleMapPointerUp(e) {

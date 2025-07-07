@@ -1,6 +1,7 @@
 function setupSocketEventHandlers() {
     socket.on('loginSuccess', ({ user }) => {
         currentUser = user;
+        loadingSpinner.style.display = 'none'; // Hide spinner on success
         loginContainer.style.display = 'none';
         gameContainer.style.display = 'block';
         
@@ -13,6 +14,8 @@ function setupSocketEventHandlers() {
     });
 
     socket.on('loginError', (message) => {
+        loadingSpinner.style.display = 'none'; // Hide spinner on error
+        loginContainer.style.display = 'flex'; // Show login form again
         loginError.textContent = message;
     });
 
