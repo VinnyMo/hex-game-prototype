@@ -41,6 +41,21 @@ let users = {};
 let leaderboard = {};
 let currentUser = null;
 
+let exploredTiles = new Set();
+
+function loadExploredTiles() {
+    const storedTiles = localStorage.getItem('exploredTiles');
+    if (storedTiles) {
+        exploredTiles = new Set(JSON.parse(storedTiles));
+    }
+}
+
+function saveExploredTiles() {
+    localStorage.setItem('exploredTiles', JSON.stringify(Array.from(exploredTiles)));
+}
+
+loadExploredTiles();
+
 const socket = io();
 
 setupSocketEventHandlers();

@@ -1,210 +1,720 @@
 {
-  "82,-66": {
+  "23,48": {
     "owner": "ilikpie",
-    "population": 1
+    "population": 3
   },
-  "83,-67": {
+  "22,48": {
     "owner": "ilikpie",
-    "population": 1
+    "population": 3
   },
-  "82,-67": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "81,-66": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "81,-65": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "82,-65": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "83,-66": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "84,-67": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "84,-68": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "83,-68": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "82,-68": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "81,-67": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "80,-66": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "80,-65": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "80,-64": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "81,-64": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "82,-64": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "83,-65": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "84,-66": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "86,-70": {
-    "owner": "ilikpie",
-    "population": 1
-  },
-  "85,-69": {
+  "21,48": {
     "owner": "ilikpie",
     "population": 2
   },
-  "87,-70": {
+  "20,48": {
     "owner": "ilikpie",
     "population": 1
   },
-  "87,-71": {
+  "19,48": {
     "owner": "ilikpie",
     "population": 1
   },
-  "86,-71": {
+  "19,47": {
     "owner": "ilikpie",
     "population": 1
   },
-  "85,-70": {
+  "18,48": {
     "owner": "ilikpie",
     "population": 1
   },
-  "86,-69": {
+  "18,49": {
     "owner": "ilikpie",
     "population": 1
   },
-  "85,-68": {
+  "17,48": {
     "owner": "ilikpie",
     "population": 1
   },
-  "84,-69": {
+  "18,47": {
     "owner": "ilikpie",
     "population": 1
   },
-  "85,-67": {
+  "19,49": {
     "owner": "ilikpie",
     "population": 1
   },
-  "83,-69": {
+  "20,49": {
     "owner": "ilikpie",
     "population": 1
   },
-  "153,-14": {
+  "20,50": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "21,50": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "21,49": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "22,49": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "22,50": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "23,49": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "43,129": {
     "hasExclamation": true
   },
-  "111,-153": {
+  "17,47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "16,47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "15,47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "14,47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "14,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "13,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "12,47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "13,45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "14,45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "15,45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "15,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "16,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "16,45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "12,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "17,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "17,45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "18,45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "18,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "19,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "19,45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "20,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "20,47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "20,45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "20,44": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "19,44": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "20,43": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "21,43": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "11,47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "10,48": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "10,49": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "10,50": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "10,51": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "10,52": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "10,53": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "11,53": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "11,54": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "10,55": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "9,56": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "8,57": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "7,58": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "7,59": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,60": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "20,42": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "20,41": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "20,40": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "20,39": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "20,38": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "21,37": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "21,36": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "22,35": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "22,34": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "22,33": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "21,33": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "21,32": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "-42,55": {
     "hasExclamation": true
   },
-  "86,-68": {
+  "20,32": {
     "owner": "ilikpie",
     "population": 1
   },
-  "87,-69": {
+  "20,33": {
     "owner": "ilikpie",
     "population": 1
   },
-  "84,-70": {
+  "19,33": {
     "owner": "ilikpie",
     "population": 1
   },
-  "85,-71": {
+  "18,33": {
     "owner": "ilikpie",
     "population": 1
   },
-  "81,-63": {
+  "19,32": {
     "owner": "ilikpie",
     "population": 1
   },
-  "80,-63": {
+  "17,33": {
     "owner": "ilikpie",
     "population": 1
   },
-  "79,-63": {
+  "18,32": {
     "owner": "ilikpie",
     "population": 1
   },
-  "79,-64": {
+  "17,32": {
     "owner": "ilikpie",
     "population": 1
   },
-  "79,-65": {
+  "16,33": {
     "owner": "ilikpie",
     "population": 1
   },
-  "78,-64": {
+  "15,33": {
     "owner": "ilikpie",
     "population": 1
   },
-  "78,-63": {
+  "14,33": {
     "owner": "ilikpie",
     "population": 1
   },
-  "78,-62": {
+  "14,34": {
     "owner": "ilikpie",
     "population": 1
   },
-  "79,-62": {
+  "13,34": {
     "owner": "ilikpie",
     "population": 1
   },
-  "80,-62": {
+  "12,35": {
     "owner": "ilikpie",
     "population": 1
   },
-  "88,-70": {
+  "12,34": {
     "owner": "ilikpie",
     "population": 1
   },
-  "88,-71": {
+  "11,35": {
     "owner": "ilikpie",
     "population": 1
   },
-  "88,-72": {
+  "10,35": {
     "owner": "ilikpie",
     "population": 1
   },
-  "87,-72": {
+  "10,34": {
     "owner": "ilikpie",
     "population": 1
   },
-  "66,-53": {
+  "9,34": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "8,34": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "8,33": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "7,34": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "7,33": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,33": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,32": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "5,33": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "5,32": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "4,32": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "5,31": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "4,31": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "3,31": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "3,30": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "2,30": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "2,29": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "2,28": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "1,28": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "1,27": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "1,26": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "1,25": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "1,24": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "1,23": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "0,23": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "0,22": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "0,21": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "0,20": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "-1,20": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "-1,19": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "-2,19": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "-3,19": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "-4,19": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "-4,18": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "-54,30": {
     "hasExclamation": true
   },
-  "86,-72": {
+  "-31,58": {
+    "hasExclamation": true
+  },
+  "22,47": {
     "owner": "ilikpie",
     "population": 1
   },
-  "94,-47": {
+  "23,47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "23,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "22,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "21,47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "11,55": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "12,54": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "10,56": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "9,57": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "8,58": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "8,59": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "9,58": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "10,57": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "11,56": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "12,55": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "10,54": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "9,55": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "39,128": {
+    "hasExclamation": true
+  },
+  "8,56": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "7,57": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,58": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,59": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "21,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "21,45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "21,44": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "22,44": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "22,45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "43,-25": {
+    "hasExclamation": true
+  },
+  "85,96": {
+    "hasExclamation": true
+  },
+  "-11,81": {
+    "hasExclamation": true
+  },
+  "6,61": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,62": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,63": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,64": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,65": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,66": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,67": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,68": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,69": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "6,70": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "23,45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "24,45": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "24,46": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "24,47": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "24,48": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "24,49": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "23,50": {
+    "owner": "ilikpie",
+    "population": 1
+  },
+  "84,-11": {
+    "hasExclamation": true
+  },
+  "-5,42": {
+    "hasExclamation": true
+  },
+  "-62,91": {
+    "hasExclamation": true
+  },
+  "68,83": {
+    "hasExclamation": true
+  },
+  "86,36": {
+    "hasExclamation": true
+  },
+  "95,82": {
+    "hasExclamation": true
+  },
+  "82,-25": {
+    "hasExclamation": true
+  },
+  "73,103": {
+    "hasExclamation": true
+  },
+  "19,0": {
+    "hasExclamation": true
+  },
+  "95,36": {
     "hasExclamation": true
   }
 }

@@ -16,7 +16,12 @@ function drawHex(q, r) {
 
     const key = `${q},${r}`;
     const tile = hexStates[key];
-    let hexColor = tile && users[tile.owner] ? users[tile.owner].color : 'white';
+    let hexColor;
+    if (tile && users[tile.owner]) {
+        hexColor = users[tile.owner].color;
+    } else {
+        hexColor = 'white'; // Default to land
+    }
 
     // Flashing red for disconnected tiles
     if (tile && tile.isDisconnected && flashState) {
@@ -102,9 +107,12 @@ function renderGrid() {
 
     for (let q = startQ; q <= endQ; q++) {
         for (let r = startR; r <= endR; r++) {
+            const key = `${q},${r}`;
+            exploredTiles.add(key); // Add to explored tiles
             drawHex(q, r);
         }
     }
+    saveExploredTiles(); // Save explored tiles after rendering
     if (currentUser) {
         drawEnemyArrows();
         drawDisconnectedArrow();
@@ -175,7 +183,7 @@ function drawEnemyArrows() {
 }
 
 function drawDisconnectedArrow() {
-    if (!currentUser || !flashState) return; // Only draw if flashState is true
+    if (!currentUser) return;
 
     const myCapitolQ = parseInt(currentUser.capitol.split(',')[0]);
     const myCapitolR = parseInt(currentUser.capitol.split(',')[1]);
@@ -235,38 +243,20 @@ function drawDisconnectedArrow() {
 
 function drawMap() {
     mapCtx.clearRect(0, 0, mapCanvas.width, mapCanvas.height);
-    mapCtx.fillStyle = 'white';
+    mapCtx.fillStyle = 'black'; // Background for unexplored areas
     mapCtx.fillRect(0, 0, mapCanvas.width, mapCanvas.height);
 
     const scaledHexSize = HEX_SIZE * MAP_SCALE;
-
-    // Find min/max q and r values from hexStates to determine map bounds
-    let minQ = Infinity, maxQ = -Infinity, minR = Infinity, maxR = -Infinity;
-    for (const key in hexStates) {
-        const [q, r] = key.split(',').map(Number);
-        minQ = Math.min(minQ, q);
-        maxQ = Math.max(maxQ, q);
-        minR = Math.min(minR, r);
-        maxR = Math.max(maxR, r);
-    }
-
-    // Calculate world dimensions of the entire map
-    const worldMinX = hexToWorld(minQ, minR).x;
-    const worldMaxX = hexToWorld(maxQ, maxR).x;
-    const worldMinY = hexToWorld(minQ, minR).y;
-    const worldMaxY = hexToWorld(maxQ, maxR).y;
-
-    const worldWidth = worldMaxX - worldMinX + HEX_WIDTH;
-    const worldHeight = worldMaxY - worldMinY + HEX_HEIGHT;
 
     // Calculate offset to center the entire map in the mapCanvas initially
     // This is adjusted by mapCameraX/Y for panning
     const offsetX = mapCanvas.width / 2 + mapCameraX;
     const offsetY = mapCanvas.height / 2 + mapCameraY;
 
-    for (const key in hexStates) {
+    // Iterate over ALL explored tiles
+    for (const key of exploredTiles) {
         const [q, r] = key.split(',').map(Number);
-        const tile = hexStates[key];
+        const tile = hexStates[key]; // Check if it's an owned tile or has an exclamation
 
         const { x: worldX, y: worldY } = hexToWorld(q, r);
 
@@ -287,10 +277,14 @@ function drawMap() {
         }
         mapCtx.closePath();
 
-        let hexColor = tile && users[tile.owner] ? users[tile.owner].color : '#FFFFFF'; // Default to white for unowned tiles
+        let hexColor;
+        if (tile && tile.owner) {
+            hexColor = users[tile.owner] ? users[tile.owner].color : '#FFFFFF'; // Owned tile color
+        } else {
+            hexColor = 'white'; // Default to land
+        }
         mapCtx.fillStyle = hexColor;
         mapCtx.fill();
-        
 
         // Draw capitol stars on the map
         if (Object.values(users).some(user => user.capitol === key)) {
