@@ -131,72 +131,8 @@ function renderGrid() {
     }
 
     if (currentUser) {
-        drawEnemyArrows();
         drawDisconnectedArrow();
     }
-}
-
-function drawEnemyArrows() {
-    if (!currentUser) return;
-
-    const myCapitolQ = parseInt(currentUser.capitol.split(',')[0]);
-    const myCapitolR = parseInt(currentUser.capitol.split(',')[1]);
-
-    const enemyCapitols = [];
-    for (const username in users) {
-        if (username !== currentUser.username) {
-            const enemyUser = users[username];
-            const [eq, er] = enemyUser.capitol.split(',').map(Number);
-            const distance = hexDistance(myCapitolQ, myCapitolR, eq, er);
-            enemyCapitols.push({ q: eq, r: er, distance: distance, color: enemyUser.color });
-        }
-    }
-
-    enemyCapitols.sort((a, b) => a.distance - b.distance);
-
-    const top3Enemies = enemyCapitols.slice(0, 3);
-
-    const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
-
-    top3Enemies.forEach(enemy => {
-        const { cx: enemyPixelX, cy: enemyPixelY } = hexToPixel(enemy.q, enemy.r);
-
-        // Check if the enemy capitol is currently visible on screen
-        if (enemyPixelX > 0 && enemyPixelX < canvas.width && enemyPixelY > 0 && enemyPixelY < canvas.height) {
-            return; // Skip drawing arrow if capitol is visible
-        }
-
-        const angle = Math.atan2(enemyPixelY - centerY, enemyPixelX - centerX);
-        const arrowLength = 50;
-        const arrowHeadSize = 15;
-
-        const startX = centerX + Math.cos(angle) * (Math.min(centerX, centerY) - arrowLength - 20);
-        const startY = centerY + Math.sin(angle) * (Math.min(centerX, centerY) - arrowLength - 20);
-        const endX = centerX + Math.cos(angle) * (Math.min(centerX, centerY) - 20);
-        const endY = centerY + Math.sin(angle) * (Math.min(centerX, centerY) - 20);
-
-        ctx.save();
-        ctx.translate(endX, endY);
-        ctx.rotate(angle);
-
-        ctx.beginPath();
-        ctx.moveTo(0, 0);
-        ctx.lineTo(-arrowHeadSize, arrowHeadSize / 2);
-        ctx.lineTo(-arrowHeadSize, -arrowHeadSize / 2);
-        ctx.closePath();
-        ctx.fillStyle = enemy.color;
-        ctx.fill();
-
-        ctx.beginPath();
-        ctx.moveTo(0, 0);
-        ctx.lineTo(-arrowLength, 0);
-        ctx.strokeStyle = enemy.color;
-        ctx.lineWidth = 5;
-        ctx.stroke();
-
-        ctx.restore();
-    });
 }
 
 function drawDisconnectedArrow() {

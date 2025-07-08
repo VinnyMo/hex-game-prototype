@@ -134,7 +134,7 @@ function initializeSocket(io) {
                     socket.emit('actionError', "You can only capture '!' tiles adjacent to your territory.");
                     return;
                 }
-                applyExclamationEffect(q, r, user.username, new Set(), io);
+                applyExclamationEffect(q, r, user.username, io);
             } else if (tile && tile.owner !== user.username) { // Attack an enemy tile
                 if (!isAdjacentToUserTerritory(q, r, user.username)) {
                     socket.emit('actionError', 'You can only attack tiles adjacent to your territory.');

@@ -128,58 +128,75 @@ function applyDisconnectionPenalty(io) {
     setGridState(gridState);
 }
 
-function applyExclamationEffect(q, r, username, visited, io) {
-    const key = `${q},${r}`;
-    if (visited.has(key)) {
-        return; // Already processed this tile in the current cascade
-    }
-    visited.add(key);
-
+function applyExclamationEffect(startQ, startR, username, io) {
     const gridState = getGridState();
-    const tile = gridState[key];
+    const users = getUsers();
+    const queue = [{ q: startQ, r: startR }];
+    const visited = new Set();
+    const changedTilesForBroadcast = {};
 
-    // Capture the exclamation tile itself
-    gridState[key] = { owner: username, population: 1 };
-    io.emit('tileUpdate', { key, tile: gridState[key] }); // Update the clicked tile
+    while (queue.length > 0) {
+        const { q, r } = queue.shift();
+        const key = `${q},${r}`;
 
-    // Process neighbors
-    const neighbors = getHexNeighbors(q, r);
-    for (const neighbor of neighbors) {
-        const neighborKey = `${neighbor.q},${neighbor.r}`;
-        const neighborTile = gridState[neighborKey];
+        if (visited.has(key)) {
+            continue;
+        }
+        visited.add(key);
 
-        if (!neighborTile) {
-            // Empty tile, capture it
-            gridState[neighborKey] = { owner: username, population: 1 };
-        } else if (neighborTile.owner === username) {
-            // Own tile, increase population
-            gridState[neighborKey].population = (neighborTile.population || 0) + 1;
-        } else {
+        const tile = gridState[key];
+
+        // Capture the exclamation tile itself
+        if (!tile || tile.hasExclamation) {
+            gridState[key] = { owner: username, population: 1 };
+            if (tile && tile.hasExclamation) {
+                delete gridState[key].hasExclamation; // Remove exclamation mark
+            }
+            changedTilesForBroadcast[key] = gridState[key];
+        }
+
+        // Process neighbors
+        const neighbors = getHexNeighbors(q, r);
+        for (const neighbor of neighbors) {
+            const neighborKey = `${neighbor.q},${neighbor.r}`;
+            const neighborTile = gridState[neighborKey];
+
             // Check if the neighbor tile is a capitol
-            const isNeighborCapitol = Object.values(getUsers()).some(u => u.capitol === neighborKey);
+            const isNeighborCapitol = Object.values(users).some(u => u.capitol === neighborKey);
 
             if (isNeighborCapitol) {
                 log(`Server: Exclamation effect skipped for capitol tile at ${neighborKey}.`);
                 continue; // Skip processing this tile if it's a capitol
             }
 
-            // Enemy tile, decrease population or capture
-            if ((neighborTile.population || 0) > 1) {
-                gridState[neighborKey].population = (neighborTile.population || 0) - 1;
+            if (!neighborTile) {
+                // Empty tile, capture it
+                gridState[neighborKey] = { owner: username, population: 1 };
+                changedTilesForBroadcast[neighborKey] = gridState[neighborKey];
+            } else if (neighborTile.owner === username) {
+                // Own tile, increase population
+                gridState[neighborKey].population = (neighborTile.population || 0) + 1;
+                changedTilesForBroadcast[neighborKey] = gridState[neighborKey];
             } else {
-                gridState[neighborKey].owner = username;
-                gridState[neighborKey].population = 1;
+                // Enemy tile, decrease population or capture
+                if ((neighborTile.population || 0) > 1) {
+                    gridState[neighborKey].population = (neighborTile.population || 0) - 1;
+                    changedTilesForBroadcast[neighborKey] = gridState[neighborKey];
+                } else {
+                    gridState[neighborKey].owner = username;
+                    gridState[neighborKey].population = 1;
+                    changedTilesForBroadcast[neighborKey] = gridState[neighborKey];
+                }
             }
-        }
-        io.emit('tileUpdate', { key: neighborKey, tile: gridState[neighborKey] }); // Update affected neighbor
 
-        // If the neighbor also has an exclamation mark, trigger its effect recursively
-        if (gridState[neighborKey] && gridState[neighborKey].hasExclamation) {
-            delete gridState[neighborKey].hasExclamation; // Remove exclamation mark to prevent re-triggering
-            applyExclamationEffect(neighbor.q, neighbor.r, username, visited, io);
+            // If the neighbor also has an exclamation mark, add it to the queue
+            if (gridState[neighborKey] && gridState[neighborKey].hasExclamation && !visited.has(neighborKey)) {
+                queue.push(neighbor);
+            }
         }
     }
     setGridState(gridState);
+    io.emit('batchTileUpdate', { changedTiles: changedTilesForBroadcast });
 }
 
 function generateExclamationMark(io) {

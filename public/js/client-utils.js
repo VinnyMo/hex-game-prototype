@@ -60,7 +60,3 @@ function getContrastingTextColor(hexColor) {
     const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
     return (yiq >= 128) ? 'black' : 'white';
 }
-
-function hexDistance(q1, r1, q2, r2) {
-    return (Math.abs(q1 - q2) + Math.abs(q1 + r1 - q2 - r2) + Math.abs(r1 - r2)) / 2;
-}
