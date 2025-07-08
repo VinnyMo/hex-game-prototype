@@ -53,20 +53,52 @@ function setupSocketEventHandlers() {
     });
 
     // Handle batch tile updates (e.g., from disconnection penalty)
+    const tileUpdateQueue = [];
+    let isProcessingQueue = false;
+
     socket.on('batchTileUpdate', ({ changedTiles }) => {
+        // Add all new changes to the queue
         for (const key in changedTiles) {
-            const tile = changedTiles[key];
+            tileUpdateQueue.push({ key, tile: changedTiles[key] });
+        }
+        // If not already processing, start the processing loop
+        if (!isProcessingQueue) {
+            processTileUpdateQueue();
+        }
+    });
+
+    function processTileUpdateQueue() {
+        isProcessingQueue = true;
+        const BATCH_SIZE = 50; // Process 50 tiles at a time
+        const DELAY = 10; // Delay between batches in milliseconds
+
+        if (tileUpdateQueue.length === 0) {
+            isProcessingQueue = false;
+            renderGrid(); // Ensure final render after all updates
+            if (currentUser) {
+                updateStats();
+            }
+            return;
+        }
+
+        let processedCount = 0;
+        while (tileUpdateQueue.length > 0 && processedCount < BATCH_SIZE) {
+            const { key, tile } = tileUpdateQueue.shift();
             if (tile) {
                 hexStates[key] = tile;
             } else {
                 delete hexStates[key];
             }
+            processedCount++;
         }
-        renderGrid();
+
+        renderGrid(); // Render after processing a batch
         if (currentUser) {
             updateStats();
         }
-    });
+
+        setTimeout(processTileUpdateQueue, DELAY);
+    }
 
     // Handle leaderboard updates
     socket.on('leaderboardUpdate', (newLeaderboard) => {
