@@ -1,16 +1,13 @@
 const { parentPort } = require('worker_threads');
-const { getGridState, getUsers, setGridState, setUsers } = require('./gameState');
 const { getHexNeighbors } = require('./utils');
 const { log, error } = require('./logging');
 
 const EXCLAMATION_SPAWN_RADIUS = 100; // Radius in hexes, from game.js
 
-function generateExclamationMark() {
-    const users = getUsers();
-    const gridState = getGridState();
+function generateExclamationMark(gridState, users) {
     const activeUsers = Object.values(users).filter(user => user.capitol); // Only consider users with a capitol
     if (activeUsers.length === 0) {
-        return null; // No users to spawn around
+        return { changedTiles: null, newGridState: gridState, newUsers: users }; // Return original state if no users
     }
 
     const changedTilesForBroadcast = {};
@@ -26,7 +23,7 @@ function generateExclamationMark() {
         }
 
         if (ownedTiles.length === 0) {
-            log(`Server: User ${user.username} has no owned tiles to spawn '!' around.`);
+            // log(`Server: User ${user.username} has no owned tiles to spawn '!' around.`);
             return; // Skip if user has no owned tiles
         }
 
@@ -52,29 +49,28 @@ function generateExclamationMark() {
             if (!gridState[key] || (!gridState[key].owner && !gridState[key].hasExclamation)) {
                 gridState[key] = { hasExclamation: true };
                 changedTilesForBroadcast[key] = gridState[key];
-                log(`Server: Spawned '!' at ${key} for user ${user.username}`); // Log for specific user
+                // log(`Server: Spawned '!' at ${key} for user ${user.username}`); // Log for specific user
                 stateChanged = true;
                 spawnedForUser = true; // Mark as spawned for this user
             }
             attempts++;
         }
         if (!spawnedForUser) {
-            log(`Server: Failed to spawn '!' for user ${user.username} after multiple attempts.`);
+            // log(`Server: Failed to spawn '!' for user ${user.username} after multiple attempts.`);
         }
     });
 
     if (stateChanged) {
-        setGridState(gridState);
-        setUsers(users); // Ensure users state is also updated if needed (e.g., if a user was added/removed)
-        return changedTilesForBroadcast;
+        return { changedTiles: changedTilesForBroadcast, newGridState: gridState, newUsers: users };
     } else {
-        return null;
+        return { changedTiles: null, newGridState: gridState, newUsers: users };
     }
 }
 
 parentPort.on('message', (message) => {
     if (message.command === 'generateExclamations') {
-        const changedTiles = generateExclamationMark();
-        parentPort.postMessage({ status: 'done', changedTiles });
+        const { gridState, users } = message;
+        const { changedTiles, newGridState, newUsers } = generateExclamationMark(gridState, users);
+        parentPort.postMessage({ status: 'done', changedTiles, newGridState, newUsers });
     }
 });

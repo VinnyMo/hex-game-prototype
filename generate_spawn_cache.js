@@ -111,30 +111,49 @@ async function generateSpawnCache() {
         // If no occupied tiles, default center is (0,0) and maxDistanceFromCenter is 0
     }
 
-    const targetRadius = maxDistanceFromCenter + MIN_SPAWN_DISTANCE;
-    console.log(`Calculated center (Cartesian): (${centerX.toFixed(2)}, ${centerY.toFixed(2)})`);
-    console.log(`Max distance from center to occupied tile: ${maxDistanceFromCenter}`);
-    console.log(`Target circumference radius: ${targetRadius}`);
+    let currentTargetRadius = maxDistanceFromCenter + MIN_SPAWN_DISTANCE;
+    let validSpawnPoints = [];
+    let retryCount = 0;
+    const MAX_RETRIES = 2; // Now two retries: +150 and +1000
 
-    const validSpawnPoints = [];
-    const pointsOnCircumference = Math.ceil((2 * Math.PI * targetRadius) / MIN_SPAWN_DISTANCE);
-    console.log(`Attempting to place ${pointsOnCircumference} points on circumference.`);
+    while (retryCount <= MAX_RETRIES) {
+        console.log(`Attempt ${retryCount + 1}: Target circumference radius: ${currentTargetRadius}`);
+        const pointsOnCircumference = Math.ceil((2 * Math.PI * currentTargetRadius) / MIN_SPAWN_DISTANCE);
+        console.log(`Attempting to place ${pointsOnCircumference} points on circumference.`);
 
-    for (let i = 0; i < pointsOnCircumference; i++) {
-        const angle = (i / pointsOnCircumference) * 2 * Math.PI;
-        const cartX = centerX + targetRadius * Math.cos(angle);
-        const cartY = centerY + targetRadius * Math.sin(angle);
+        validSpawnPoints = []; // Reset for each attempt
 
-        // Convert Cartesian back to cube, then axial, and round to nearest hex coordinate
-        const { x: cubeX, y: cubeY, z: cubeZ } = cartesianToCube(cartX, cartY);
-        const { q, r } = cubeToAxial(Math.round(cubeX), Math.round(cubeY), Math.round(cubeZ));
+        for (let i = 0; i < pointsOnCircumference; i++) {
+            const angle = (i / pointsOnCircumference) * 2 * Math.PI;
+            const cartX = centerX + currentTargetRadius * Math.cos(angle);
+            const cartY = centerY + currentTargetRadius * Math.sin(angle);
 
-        if (isValidSpawnPoint(q, r, gridState)) {
-            validSpawnPoints.push([q, r]);
+            // Convert Cartesian back to cube, then axial, and round to nearest hex coordinate
+            const { x: cubeX, y: cubeY, z: cubeZ } = cartesianToCube(cartX, cartY);
+            const { q, r } = cubeToAxial(Math.round(cubeX), Math.round(cubeY), Math.round(cubeZ));
+
+            if (isValidSpawnPoint(q, r, gridState)) {
+                validSpawnPoints.push([q, r]);
+            }
         }
+
+        console.log(`Found ${validSpawnPoints.length} valid spawn points in attempt ${retryCount + 1}.`);
+
+        if (validSpawnPoints.length > 0) {
+            break; // Found points, exit retry loop
+        } else if (retryCount < MAX_RETRIES) {
+            if (retryCount === 0) {
+                console.log(`No valid points found. Expanding radius by ${MIN_SPAWN_DISTANCE} for first retry.`);
+                currentTargetRadius += MIN_SPAWN_DISTANCE; // First retry: +150
+            } else if (retryCount === 1) {
+                console.log(`No valid points found. Expanding radius by 1000 for second retry.`);
+                currentTargetRadius += 1000; // Second retry: +1000
+            }
+        }
+        retryCount++;
     }
 
-    console.log(`Found a total of ${validSpawnPoints.length} valid spawn points.`);
+    console.log(`Final result: Found a total of ${validSpawnPoints.length} valid spawn points.`);
 
     try {
         await fs.promises.writeFile(SPAWN_CACHE_PATH, JSON.stringify(validSpawnPoints, null, 2), 'utf8');
