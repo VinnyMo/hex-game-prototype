@@ -104,7 +104,6 @@ function initializeSocket(io) {
                         io.emit('tileUpdate', { key: newUser.capitol, tile: gridState[newUser.capitol] });
                         socket.username = username;
                     }
-                    worker.terminate(); // Terminate the worker once done
                 });
 
                 worker.on('error', (err) => {
