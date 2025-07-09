@@ -46,6 +46,14 @@ function initializeSocket(io) {
                 worker.on('message', (response) => {
                     if (response.status === 'done') {
                         const spawnPoint = response.spawnPoint;
+
+                        if (!spawnPoint) {
+                            log(`Server: Failed to find a spawn point for new user "${username}".`);
+                            socket.emit('loginError', 'Could not find a suitable spawn point. Please try again later.');
+                            worker.terminate();
+                            return;
+                        }
+
                         const newUser = {
                             username,
                             password, // In a real app, hash this!

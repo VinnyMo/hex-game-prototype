@@ -1,0 +1,72 @@
+Starting spawn cache generation...
+Successfully loaded grid state from /home/maestro/hex_game_prototype/grid_state.json. Total tiles: 11599
+Calculated center (Cartesian): (29.03, 27.73)
+Max distance from center to occupied tile: 610
+Target circumference radius: 760
+Attempting to place 32 points on circumference.
+Found a total of 24 valid spawn points.
+Successfully wrote 24 spawn points to /home/maestro/hex_game_prototype/spawn_cache.json
+Spawn cache generation complete.
+Starting spawn cache generation...
+Successfully loaded grid state from /home/maestro/hex_game_prototype/grid_state.json. Total tiles: 12574
+Calculated center (Cartesian): (33.01, 35.93)
+Max distance from center to occupied tile: 618
+Target circumference radius: 768
+Attempting to place 33 points on circumference.
+Found a total of 7 valid spawn points.
+Successfully wrote 7 spawn points to /home/maestro/hex_game_prototype/spawn_cache.json
+Spawn cache generation complete.
+Starting spawn cache generation...
+Successfully loaded grid state from /home/maestro/hex_game_prototype/grid_state.json. Total tiles: 13182
+Calculated center (Cartesian): (22.33, 29.44)
+Max distance from center to occupied tile: 903
+Target circumference radius: 1053
+Attempting to place 45 points on circumference.
+Found a total of 30 valid spawn points.
+Successfully wrote 30 spawn points to /home/maestro/hex_game_prototype/spawn_cache.json
+Spawn cache generation complete.
+Starting spawn cache generation...
+Successfully loaded grid state from /home/maestro/hex_game_prototype/grid_state.json. Total tiles: 13729
+Calculated center (Cartesian): (34.77, 32.69)
+Max distance from center to occupied tile: 918
+Target circumference radius: 1068
+Attempting to place 45 points on circumference.
+Found a total of 24 valid spawn points.
+Successfully wrote 24 spawn points to /home/maestro/hex_game_prototype/spawn_cache.json
+Spawn cache generation complete.
+Starting spawn cache generation...
+Successfully loaded grid state from /home/maestro/hex_game_prototype/grid_state.json. Total tiles: 14161
+Calculated center (Cartesian): (38.09, 40.22)
+Max distance from center to occupied tile: 925
+Target circumference radius: 1075
+Attempting to place 46 points on circumference.
+Found a total of 21 valid spawn points.
+Successfully wrote 21 spawn points to /home/maestro/hex_game_prototype/spawn_cache.json
+Spawn cache generation complete.
+Starting spawn cache generation...
+Successfully loaded grid state from /home/maestro/hex_game_prototype/grid_state.json. Total tiles: 14333
+Calculated center (Cartesian): (39.77, 40.65)
+Max distance from center to occupied tile: 927
+Target circumference radius: 1077
+Attempting to place 46 points on circumference.
+Found a total of 22 valid spawn points.
+Successfully wrote 22 spawn points to /home/maestro/hex_game_prototype/spawn_cache.json
+Spawn cache generation complete.
+Starting spawn cache generation...
+Successfully loaded grid state from /home/maestro/hex_game_prototype/grid_state.json. Total tiles: 14434
+Calculated center (Cartesian): (39.63, 42.31)
+Max distance from center to occupied tile: 928
+Target circumference radius: 1078
+Attempting to place 46 points on circumference.
+Found a total of 23 valid spawn points.
+Successfully wrote 23 spawn points to /home/maestro/hex_game_prototype/spawn_cache.json
+Spawn cache generation complete.
+Starting spawn cache generation...
+Successfully loaded grid state from /home/maestro/hex_game_prototype/grid_state.json. Total tiles: 14596
+Calculated center (Cartesian): (39.88, 48.90)
+Max distance from center to occupied tile: 932
+Target circumference radius: 1082
+Attempting to place 46 points on circumference.
+Found a total of 19 valid spawn points.
+Successfully wrote 19 spawn points to /home/maestro/hex_game_prototype/spawn_cache.json
+Spawn cache generation complete.

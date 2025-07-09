@@ -2,15 +2,15 @@ const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
 const path = require('path');
+const { Worker } = require('worker_threads'); // Import Worker
 const { log, error } = require('./game-logic/logging');
-const { loadGameState, saveGameState } = require('./game-logic/gameState');
+const { loadGameState, saveGameState, getGridState, getUsers } = require('./game-logic/gameState'); // Import getGridState and getUsers
 const { initializeSocket } = require('./game-logic/sockets');
 const { 
     calculateLeaderboard, 
     applyDisconnectionPenalty, 
-    generateExclamationMark, 
     EXCLAMATION_SPAWN_INTERVAL 
-} = require('./game-logic/game');
+} = require('./game-logic/game'); // Removed generateExclamationMark
 
 const app = express();
 const server = http.createServer(app);
@@ -26,6 +26,22 @@ loadGameState();
 // Initialize socket connections
 initializeSocket(io);
 
+// Create exclamation worker
+const exclamationWorker = new Worker(path.resolve(__dirname, 'game-logic', 'exclamationWorker.js'));
+exclamationWorker.on('message', (response) => {
+    if (response.status === 'done' && response.changedTiles) {
+        io.emit('batchTileUpdate', { changedTiles: response.changedTiles });
+    }
+});
+exclamationWorker.on('error', (err) => {
+    error(`Exclamation Worker error: ${err}`);
+});
+exclamationWorker.on('exit', (code) => {
+    if (code !== 0) {
+        error(`Exclamation Worker exited with non-zero exit code: ${code}`);
+    }
+});
+
 // Periodic tasks
 setInterval(saveGameState, 30 * 1000); // Save every 30 seconds
 setInterval(() => {
@@ -33,7 +49,13 @@ setInterval(() => {
     io.emit('leaderboardUpdate', leaderboard);
 }, 5000); // Broadcast leaderboard every 5 seconds
 setInterval(() => applyDisconnectionPenalty(io), 30 * 1000); // Apply disconnection penalty every 30 seconds
-setInterval(() => generateExclamationMark(io), EXCLAMATION_SPAWN_INTERVAL); // Generate exclamation marks
+setInterval(() => { // Send message to worker to generate exclamation marks
+    exclamationWorker.postMessage({ 
+        command: 'generateExclamations',
+        gridState: getGridState(), // Pass current gridState
+        users: getUsers() // Pass current users
+    });
+}, EXCLAMATION_SPAWN_INTERVAL); 
 
 server.listen(PORT, () => {
     log(`Server running on http://localhost:${PORT}`);
