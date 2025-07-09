@@ -12,7 +12,8 @@ The back-end code has been split from a single `server.js` file into a collectio
 -   **`utils.js`**: This module contains a collection of utility functions that are used throughout the back-end, such as `generateRandomColor`, `getHexNeighbors`, and `hexDistance`.
 -   **`gameState.js`**: This module is responsible for managing the game's state. It handles loading and saving the `gridState` and `users` objects to and from their respective JSON files.
 -   **`game.js`**: This module contains the core game logic, including the main game loop, event handlers for player actions, and other game-related logic.
--   **`spawnWorker.js`**: This module runs in a separate worker thread and is responsible for CPU-intensive tasks like finding random spawn points, preventing the main server thread from blocking.
+-   **`spawnWorker.js`**: This module runs in a separate worker thread and is responsible for CPU-intensive tasks like finding random spawn points. It now prioritizes checking a pre-generated cache file (`spawn_cache.json`) for available spawn points and removes used or invalid points from this cache to optimize performance.
+-   **`generate_spawn_cache.js`**: This script is responsible for pre-calculating and generating a cache of valid spawn points (`spawn_cache.json`). It determines the current boundaries of the game grid and generates new spawn points along an expanded circumference, ensuring the map can grow infinitely. This script is intended to be run as a cron job to keep the cache updated.
 -   **`sockets.js`**: This module is responsible for handling all socket events. It contains the `io.on('connection', ...)` block and all the socket event listeners. It now utilizes `worker_threads` for tasks like finding spawn points to improve performance.
 
 ## Root Directory
