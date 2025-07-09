@@ -4,7 +4,7 @@ const socketIo = require('socket.io');
 const path = require('path');
 const { Worker } = require('worker_threads'); // Import Worker
 const { log, error } = require('./game-logic/logging');
-const { loadGameState, saveGameState, getGridState, getUsers } = require('./game-logic/gameState'); // Import getGridState and getUsers
+const { loadGameState, saveGameState, getGridState, getUsers, setGridState, setUsers } = require('./game-logic/gameState'); // Import getGridState, getUsers, setGridState, and setUsers
 const { initializeSocket } = require('./game-logic/sockets');
 const { 
     calculateLeaderboard, 
@@ -29,8 +29,13 @@ initializeSocket(io);
 // Create exclamation worker
 const exclamationWorker = new Worker(path.resolve(__dirname, 'game-logic', 'exclamationWorker.js'));
 exclamationWorker.on('message', (response) => {
-    if (response.status === 'done' && response.changedTiles) {
-        io.emit('batchTileUpdate', { changedTiles: response.changedTiles });
+    if (response.status === 'done') {
+        if (response.changedTiles) {
+            io.emit('batchTileUpdate', { changedTiles: response.changedTiles });
+        }
+        // Update main thread's gridState and users with the new state from the worker
+        setGridState(response.newGridState);
+        setUsers(response.newUsers);
     }
 });
 exclamationWorker.on('error', (err) => {
