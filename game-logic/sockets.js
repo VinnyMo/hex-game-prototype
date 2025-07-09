@@ -4,12 +4,16 @@ const { getGridState, getUsers, setGridState, setUsers } = require('./gameState'
 const { calculateLeaderboard, applyExclamationEffect, isAdjacentToUserTerritory } = require('./game');
 const { generateRandomColor } = require('./utils');
 const { log, error } = require('./logging');
+const { getDb } = require('./db'); // Import getDb
+
+// Define a radius for initial grid state sent to client
+const INITIAL_GRID_RADIUS = 10; // Send tiles within this radius of capitol
 
 function initializeSocket(io) {
     io.on('connection', (socket) => {
         log('Server: A user connected');
 
-        socket.on('login', ({ username, password }) => {
+        socket.on('login', async ({ username, password }) => { // Made async
             log(`Server: Login attempt for username: ${username}`);
             if (!/^[a-zA-Z0-9_]+$/.test(username)) {
                 log(`Server: Login error - Username "${username}" is not alphanumeric.`);
@@ -21,16 +25,21 @@ function initializeSocket(io) {
                 socket.emit('loginError', 'Username cannot exceed 20 characters.');
                 return;
             }
-            let users = getUsers();
-            let gridState = getGridState();
-            if (users[username]) {
+            
+            let users = await getUsers(); // Await getUsers
+            let user = users[username];
+
+            if (user) {
                 log(`Server: User "${username}" found.`);
-                if (users[username].password === password) {
+                if (user.password === password) {
                     log(`Server: Password for "${username}" matched. Login successful.`);
-                    socket.emit('loginSuccess', { user: users[username], exploredTiles: users[username].exploredTiles });
-                    // Send full state to the connecting user ONLY
-                    socket.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
-                    log(`Server: Emitted initial gameState to ${username}.`);
+                    socket.emit('loginSuccess', { user: user, exploredTiles: user.exploredTiles });
+                    
+                    // Send partial grid state to the connecting user
+                    const partialGridState = await getPartialGridState(user.capitol, INITIAL_GRID_RADIUS); // Get partial grid
+                    const currentLeaderboard = calculateLeaderboard();
+                    socket.emit('gameState', { gridState: partialGridState, users: users, leaderboard: currentLeaderboard });
+                    log(`Server: Emitted initial partial gameState to ${username}.`);
                     socket.username = username;
                 } else {
                     log(`Server: Invalid password for "${username}".`);
@@ -41,16 +50,16 @@ function initializeSocket(io) {
                 
                 // Create a new worker for finding a spawn point
                 const worker = new Worker(path.resolve(__dirname, 'spawnWorker.js'));
-                worker.postMessage({ command: 'findSpawn', gridState: getGridState() });
+                worker.postMessage({ command: 'findSpawn' }); // No gridState parameter
 
-                worker.on('message', (response) => {
+                worker.on('message', async (response) => { // Made async
                     if (response.status === 'done') {
                         const spawnPoint = response.spawnPoint;
 
                         if (!spawnPoint) {
                             log(`Server: Failed to find a spawn point for new user "${username}".`);
                             socket.emit('loginError', 'Could not find a suitable spawn point. Please try again later.');
-                            worker.terminate();
+                            // worker.terminate(); // Let worker manage its own exit
                             return;
                         }
 
@@ -61,8 +70,12 @@ function initializeSocket(io) {
                             capitol: spawnPoint,
                         };
                         newUser.exploredTiles = [newUser.capitol]; // Initialize with only the capitol tile after capitol is set
-                        users[username] = newUser;
-                        gridState[newUser.capitol] = { owner: username, population: 1 };
+                        
+                        // Update user in DB
+                        await setUsers({ [username]: newUser }); // Await setUsers
+
+                        // Update gridState in DB for capitol
+                        await setGridState({ [newUser.capitol]: { owner: username, population: 1 } }); // Await setGridState
 
                         // Spawn 100 '!' tiles around the new user's capitol
                         const [capitolQ, capitolR] = newUser.capitol.split(',').map(Number);
@@ -82,9 +95,11 @@ function initializeSocket(io) {
                                 const r = capitolR + Math.round(distance * Math.sin(angle));
                                 const key = `${q},${r}`;
 
-                                if (!gridState[key] || (!gridState[key].owner && !gridState[key].hasExclamation)) {
-                                    gridState[key] = { hasExclamation: true };
-                                    io.emit('tileUpdate', { key, tile: gridState[key] });
+                                // Check if the tile is unoccupied and doesn't already have an exclamation mark (from DB)
+                                const existingTile = await getTileFromDb(q, r); // Get tile from DB
+                                if (!existingTile || (!existingTile.owner && existingTile.hasExclamation !== 1)) {
+                                    await setGridState({ [key]: { hasExclamation: true } }); // Update DB
+                                    io.emit('tileUpdate', { key, tile: { hasExclamation: true } });
                                     spawned = true;
                                 }
                                 attempts++;
@@ -92,18 +107,22 @@ function initializeSocket(io) {
                         }
                         // Emit event to client that initial spawn is complete
                         socket.emit('initialSpawnComplete');
-                        setUsers(users);
-                        setGridState(gridState);
                         
                         log(`Server: New user "${username}" created and logged in.`);
                         socket.emit('loginSuccess', { user: newUser, exploredTiles: newUser.exploredTiles });
-                        // Send full state to the new user
-                        socket.emit('gameState', { gridState, users, leaderboard: calculateLeaderboard() });
+                        
+                        // Send partial grid state to the new user
+                        const partialGridState = await getPartialGridState(newUser.capitol, INITIAL_GRID_RADIUS); // Get partial grid
+                        const updatedUsers = await getUsers(); // Get updated users for gameState
+                        const currentLeaderboard = calculateLeaderboard();
+                        socket.emit('gameState', { gridState: partialGridState, users: updatedUsers, leaderboard: currentLeaderboard });
+                        
                         // Announce the new user's color and capitol to others
-                        io.emit('userUpdate', { users });
-                        io.emit('tileUpdate', { key: newUser.capitol, tile: gridState[newUser.capitol] });
+                        io.emit('userUpdate', { users: updatedUsers });
+                        io.emit('tileUpdate', { key: newUser.capitol, tile: await getTileFromDb(capitolQ, capitolR) }); // Get tile from DB
                         socket.username = username;
                     }
+                    // worker.terminate(); // Let worker manage its own exit
                 });
 
                 worker.on('error', (err) => {
@@ -118,32 +137,34 @@ function initializeSocket(io) {
             }
         });
 
-        socket.on('syncExploredTiles', (tiles) => {
+        socket.on('syncExploredTiles', async (tiles) => { // Made async
             if (!socket.username) return;
-            let users = getUsers();
-            users[socket.username].exploredTiles = tiles;
-            setUsers(users);
+            let users = await getUsers(); // Await getUsers
+            if (users[socket.username]) {
+                users[socket.username].exploredTiles = tiles;
+                await setUsers({ [socket.username]: users[socket.username] }); // Update only this user in DB
+            }
         });
 
-        socket.on('hexClick', ({ q, r }) => {
+        socket.on('hexClick', async ({ q, r }) => { // Made async
             if (!socket.username) return;
 
             const key = `${q},${r}`;
-            let users = getUsers();
-            let gridState = getGridState();
+            let users = await getUsers(); // Await getUsers
+            let gridState = await getGridState(); // Await getGridState (will be full grid for now)
             const user = users[socket.username];
-            const tile = gridState[key];
+            let tile = await getTileFromDb(q, r); // Get tile from DB
 
             const isCapitol = Object.values(users).some(u => u.capitol === key);
 
-            if (tile && tile.hasExclamation) {
-                if (!isAdjacentToUserTerritory(q, r, user.username)) {
+            if (tile && tile.hasExclamation) { // Check for boolean true
+                if (!await isAdjacentToUserTerritory(q, r, user.username)) { // Await isAdjacentToUserTerritory
                     socket.emit('actionError', "You can only capture '!' tiles adjacent to your territory.");
                     return;
                 }
-                applyExclamationEffect(q, r, user.username, io);
+                await applyExclamationEffect(q, r, user.username, io); // Await applyExclamationEffect
             } else if (tile && tile.owner !== user.username) { // Attack an enemy tile
-                if (!isAdjacentToUserTerritory(q, r, user.username)) {
+                if (!await isAdjacentToUserTerritory(q, r, user.username)) { // Await isAdjacentToUserTerritory
                     socket.emit('actionError', 'You can only attack tiles adjacent to your territory.');
                     return;
                 }
@@ -152,28 +173,90 @@ function initializeSocket(io) {
                     return;
                 }
                 if (tile.population > 1) {
-                    gridState[key].population--;
+                    tile.population--;
+                    await setGridState({ [key]: tile }); // Update DB
                 } else {
-                    gridState[key].owner = user.username;
+                    tile.owner = user.username;
+                    tile.population = 1; // Reset population to 1 when captured
+                    await setGridState({ [key]: tile }); // Update DB
                 }
             } else { // Conquer or reinforce own tile
                 if (!tile) { // New tile
-                    if (!isAdjacentToUserTerritory(q, r, user.username)) {
+                    if (!await isAdjacentToUserTerritory(q, r, user.username)) { // Await isAdjacentToUserTerritory
                         socket.emit('actionError', 'You can only claim tiles adjacent to your territory.');
                         return;
                     }
-                    gridState[key] = { owner: user.username, population: 1 };
+                    await setGridState({ [key]: { owner: user.username, population: 1 } }); // Update DB
                 } else if (tile.owner === user.username) { // Own tile
-                    gridState[key].population++;
+                    tile.population++;
+                    await setGridState({ [key]: tile }); // Update DB
                 }
             }
-            setGridState(gridState);
-            io.emit('tileUpdate', { key, tile: gridState[key] });
+            // io.emit('tileUpdate', { key, tile: await getTileFromDb(q, r) }); // Get updated tile from DB and emit
+            // Instead of emitting single tileUpdate, let's rely on batch updates or full state for now
+            // For immediate feedback, we might need to re-evaluate this.
+            // For now, we'll just emit the updated tile directly from the object we have
+            io.emit('tileUpdate', { key, tile: await getTileFromDb(q, r) });
         });
 
         socket.on('disconnect', () => {
             
         });
+    });
+}
+
+// Helper to get a single tile from DB
+async function getTileFromDb(q, r) {
+    const db = getDb();
+    return new Promise((resolve, reject) => {
+        db.get("SELECT q, r, owner, population, hasExclamation, isDisconnected FROM tiles WHERE q = ? AND r = ?", [q, r], (err, row) => {
+            if (err) return reject(err);
+            if (!row) return resolve(null);
+            const tile = {
+                owner: row.owner,
+                population: row.population,
+                hasExclamation: row.hasExclamation === 1,
+                isDisconnected: row.isDisconnected === 1
+            };
+            if (tile.owner === null) delete tile.owner;
+            if (tile.population === null) delete tile.population;
+            if (tile.hasExclamation === false) delete tile.hasExclamation;
+            if (tile.isDisconnected === false) delete tile.isDisconnected;
+            resolve(tile);
+        });
+    });
+}
+
+// Helper to get partial grid state for initial client load
+async function getPartialGridState(centerCapitolKey, radius) {
+    const [centerQ, centerR] = centerCapitolKey.split(',').map(Number);
+    const db = getDb();
+    return new Promise((resolve, reject) => {
+        // This query is approximate for a hex grid, but good enough for initial load
+        // It fetches tiles within a square bounding box around the center
+        db.all(
+            `SELECT q, r, owner, population, hasExclamation, isDisconnected FROM tiles
+             WHERE q BETWEEN ? AND ? AND r BETWEEN ? AND ?`,
+            [centerQ - radius, centerQ + radius, centerR - radius, centerR + radius],
+            (err, rows) => {
+                if (err) return reject(err);
+                const partialGrid = {};
+                rows.forEach(row => {
+                    const key = `${row.q},${row.r}`;
+                    partialGrid[key] = {
+                        owner: row.owner,
+                        population: row.population,
+                        hasExclamation: row.hasExclamation === 1,
+                        isDisconnected: row.isDisconnected === 1
+                    };
+                    if (partialGrid[key].owner === null) delete partialGrid[key].owner;
+                    if (partialGrid[key].population === null) delete partialGrid[key].population;
+                    if (partialGrid[key].hasExclamation === false) delete partialGrid[key].hasExclamation;
+                    if (partialGrid[key].isDisconnected === false) delete partialGrid[key].isDisconnected;
+                });
+                resolve(partialGrid);
+            }
+        );
     });
 }
 

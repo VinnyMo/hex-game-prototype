@@ -20,7 +20,7 @@ const PORT = 3000;
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Load initial game state
+// Load initial game state (connects to DB)
 loadGameState();
 
 // Initialize socket connections
@@ -33,9 +33,7 @@ exclamationWorker.on('message', (response) => {
         if (response.changedTiles) {
             io.emit('batchTileUpdate', { changedTiles: response.changedTiles });
         }
-        // Update main thread's gridState and users with the new state from the worker
-        setGridState(response.newGridState);
-        setUsers(response.newUsers);
+        // No need to update gridState/users here, worker updates DB directly
     }
 });
 exclamationWorker.on('error', (err) => {
@@ -48,17 +46,15 @@ exclamationWorker.on('exit', (code) => {
 });
 
 // Periodic tasks
-setInterval(saveGameState, 30 * 1000); // Save every 30 seconds
-setInterval(() => {
-    const leaderboard = calculateLeaderboard();
+setInterval(async () => {
+    const leaderboard = await calculateLeaderboard();
     io.emit('leaderboardUpdate', leaderboard);
 }, 5000); // Broadcast leaderboard every 5 seconds
 setInterval(() => applyDisconnectionPenalty(io), 30 * 1000); // Apply disconnection penalty every 30 seconds
 setInterval(() => { // Send message to worker to generate exclamation marks
     exclamationWorker.postMessage({ 
-        command: 'generateExclamations',
-        gridState: getGridState(), // Pass current gridState
-        users: getUsers() // Pass current users
+        command: 'generateExclamations'
+        // No need to pass gridState/users, worker accesses DB directly
     });
 }, EXCLAMATION_SPAWN_INTERVAL); 
 

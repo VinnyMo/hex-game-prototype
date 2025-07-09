@@ -8,9 +8,11 @@ The back-end code has been split from a single `server.js` file into a collectio
 
 ### `game-logic/`
 
+-   **`db.js`**: This module handles the connection and initialization of the SQLite database (`game.db`).
+-   **`exclamationWorker.js`**: This module runs in a separate worker thread and is responsible for periodically generating new '!' tiles on the map within the database.
 -   **`logging.js`**: This module is responsible for all logging-related functionalities. It sets up file-based logging for both server and client-side events.
 -   **`utils.js`**: This module contains a collection of utility functions that are used throughout the back-end, such as `generateRandomColor`, `getHexNeighbors`, and `hexDistance`.
--   **`gameState.js`**: This module is responsible for managing the game's state. It handles loading and saving the `gridState` and `users` objects to and from their respective JSON files.
+-   **`gameState.js`**: This module is responsible for managing the game's state by providing functions to query and update the SQLite database for tile and user data. It abstracts the database interactions for the rest of the application.
 -   **`game.js`**: This module contains the core game logic, including the main game loop, event handlers for player actions, and other game-related logic.
 -   **`spawnWorker.js`**: This module runs in a separate worker thread and is responsible for CPU-intensive tasks like finding random spawn points. It now prioritizes checking a pre-generated cache file (`spawn_cache.json`) for available spawn points and removes used or invalid points from this cache to optimize performance.
 -   **`generate_spawn_cache.js`**: This script is responsible for pre-calculating and generating a cache of valid spawn points (`spawn_cache.json`). It determines the current boundaries of the game grid and generates new spawn points along an expanded circumference, ensuring the map can grow infinitely. This script is intended to be run as a cron job to keep the cache updated.
