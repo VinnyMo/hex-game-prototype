@@ -59,7 +59,11 @@ setInterval(async () => {
     const leaderboard = await calculateLeaderboard();
     io.emit('leaderboardUpdate', leaderboard);
 }, 5000); // Broadcast leaderboard every 5 seconds
-setInterval(() => applyDisconnectionPenalty(io), 30 * 1000); // Apply disconnection penalty every 30 seconds
+setInterval(async () => {
+    // Add small random delay to prevent race conditions with exclamation effects
+    await new Promise(resolve => setTimeout(resolve, Math.random() * 1000));
+    applyDisconnectionPenalty(io);
+}, 30 * 1000); // Apply disconnection penalty every 30 seconds (plus random delay)
 setInterval(async () => {
     try {
         const response = await exclamationWorkerPool.executeTask({ 

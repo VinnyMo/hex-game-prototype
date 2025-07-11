@@ -1,4 +1,4 @@
-const { getGridState, getUsers, setGridState, setUsers, getTile, getTilesInRegion } = require('./gameState');
+const { getGridState, getUsers, setGridState, setUsers, getTile, getTilesInRegion, flushPendingOperations } = require('./gameState');
 const { calculateLeaderboard, applyExclamationEffect, isAdjacentToUserTerritory } = require('./game');
 const { generateRandomColor } = require('./utils');
 const { log, error } = require('./logging');
@@ -150,6 +150,8 @@ function initializeSocket(io) {
                     return;
                 }
                 await applyExclamationEffect(q, r, user.username, io); // Await applyExclamationEffect
+                // Flush pending operations immediately to prevent disconnection penalty race condition
+                await flushPendingOperations();
             } else if (tile && tile.owner !== user.username) { // Attack an enemy tile
                 if (!await isAdjacentToUserTerritory(q, r, user.username)) { // Await isAdjacentToUserTerritory
                     socket.emit('actionError', 'You can only attack tiles adjacent to your territory.');
