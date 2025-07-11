@@ -26,6 +26,15 @@ function setupSocketEventHandlers() {
         renderGrid(); // Re-render to update explored tiles after initial spawn
     });
 
+    // Handle extended tiles loading in background
+    socket.on('extendedTiles', (state) => {
+        // Merge extended tiles with existing state
+        Object.assign(hexStates, state.gridState);
+        ownedTilesCache.needsUpdate = true; // Update cache with new tiles
+        debouncedRenderGrid(); // Render with new tiles
+        console.log(`Loaded ${Object.keys(state.gridState).length} extended tiles`);
+    });
+
     // --- Start of Optimized Event Handlers ---
 
     // This event now only fires once on login
@@ -48,6 +57,12 @@ function setupSocketEventHandlers() {
             hexStates[key] = tile;
         } else {
             delete hexStates[key];
+        }
+        
+        // Mark cache for update if this affects owned tiles
+        if (currentUser && (tile?.owner === currentUser.username || 
+                           (hexStates[key] && hexStates[key].owner === currentUser.username))) {
+            ownedTilesCache.needsUpdate = true;
         }
         debouncedRenderGrid(); // Use debounced render for performance
         if (currentUser) {

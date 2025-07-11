@@ -45,10 +45,96 @@ let currentUser = null;
 let exploredTiles = new Set();
 let isInitialSpawnComplete = false; // New flag
 
+// Cache for owned tiles to avoid expensive per-frame calculations
+let ownedTilesCache = {
+    tiles: new Set(),
+    radiusTiles: new Set(),
+    needsUpdate: true,
+    lastUpdateTime: 0
+};
+
 function syncExploredTiles() {
     if (currentUser) {
         socket.emit('syncExploredTiles', Array.from(exploredTiles));
     }
+}
+
+function updateOwnedTilesCache() {
+    if (!currentUser) return;
+    
+    const newOwnedTiles = new Set();
+    for (const key in hexStates) {
+        const tile = hexStates[key];
+        if (tile.owner === currentUser.username) {
+            newOwnedTiles.add(key);
+        }
+    }
+    
+    // Only recalculate radius if owned tiles changed
+    const tilesChanged = newOwnedTiles.size !== ownedTilesCache.tiles.size || 
+                        ![...newOwnedTiles].every(tile => ownedTilesCache.tiles.has(tile));
+    
+    if (tilesChanged) {
+        console.log(`Updating owned tiles cache: ${newOwnedTiles.size} tiles`);
+        ownedTilesCache.tiles = newOwnedTiles;
+        
+        const radius = 5;
+        const radiusTiles = new Set();
+        
+        // Calculate radius tiles in batches to avoid blocking
+        let processed = 0;
+        const batchSize = 50;
+        
+        const processBatch = () => {
+            const tilesToProcess = [...newOwnedTiles].slice(processed, processed + batchSize);
+            
+            tilesToProcess.forEach(tileKey => {
+                const [q, r] = tileKey.split(',').map(Number);
+                const queue = [{ q, r, dist: 0 }];
+                const visited = new Set();
+                
+                while (queue.length > 0) {
+                    const { q: currentQ, r: currentR, dist } = queue.shift();
+                    const currentKey = `${currentQ},${currentR}`;
+                    
+                    if (visited.has(currentKey) || dist > radius) {
+                        continue;
+                    }
+                    visited.add(currentKey);
+                    radiusTiles.add(currentKey);
+                    
+                    if (dist < radius) {
+                        const neighbors = getHexNeighbors(currentQ, currentR);
+                        neighbors.forEach(neighbor => {
+                            queue.push({ q: neighbor.q, r: neighbor.r, dist: dist + 1 });
+                        });
+                    }
+                }
+            });
+            
+            processed += batchSize;
+            
+            if (processed < newOwnedTiles.size) {
+                // Process next batch asynchronously
+                setTimeout(processBatch, 0);
+            } else {
+                ownedTilesCache.radiusTiles = radiusTiles;
+                ownedTilesCache.lastUpdateTime = Date.now();
+                console.log(`Cache updated: ${radiusTiles.size} radius tiles calculated`);
+            }
+        };
+        
+        processBatch();
+    }
+    
+    ownedTilesCache.needsUpdate = false;
+}
+
+// Debounced rendering for performance
+let renderTimeout = null;
+function debouncedRenderGrid() {
+    if (renderTimeout) clearTimeout(renderTimeout);
+    renderTimeout = setTimeout(renderGrid, 16); // ~60fps max
 }
 
 const socket = io();

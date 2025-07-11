@@ -115,13 +115,7 @@ class SmartSpawnManager {
 
     // Fast spawn point validation using spatial optimization
     async isValidSpawnPoint(q, r) {
-        // Check if tile is directly occupied
-        const tile = await getTile(q, r);
-        if (tile && (tile.owner || tile.hasExclamation)) {
-            return false;
-        }
-
-        // Spatial optimization: only check tiles in nearby sectors
+        // First check spatial optimization without database call
         const sectorKey = this.getSectorKey(q, r);
         const neighboringSectors = this.getNeighboringSectors(sectorKey);
         
@@ -135,6 +129,13 @@ class SmartSpawnManager {
                     return false;
                 }
             }
+        }
+
+        // Only check direct tile occupation if spatial check passes
+        // This reduces database calls significantly
+        const tile = await getTile(q, r);
+        if (tile && (tile.owner || tile.hasExclamation)) {
+            return false;
         }
 
         return true;
@@ -327,16 +328,29 @@ class SmartSpawnManager {
             }
         }
 
-        // Return a spawn point
-        if (this.spawnCache.length > 0) {
+        // Return a spawn point with real-time validation
+        while (this.spawnCache.length > 0) {
             const spawnPoint = this.spawnCache.pop();
             
-            // Save updated cache periodically
-            if (this.spawnCache.length % 50 === 0) {
-                this.saveSpawnCache();
+            // Validate that this spawn point is still available
+            const isValid = await this.isValidSpawnPoint(spawnPoint[0], spawnPoint[1]);
+            if (isValid) {
+                // Save updated cache periodically
+                if (this.spawnCache.length % 50 === 0) {
+                    this.saveSpawnCache();
+                }
+                
+                return `${spawnPoint[0]},${spawnPoint[1]}`;
+            } else {
+                // This spawn point is now occupied, discard it and try the next one
+                log(`SmartSpawnManager: Discarded occupied spawn point ${spawnPoint[0]},${spawnPoint[1]}`);
             }
-            
-            return `${spawnPoint[0]},${spawnPoint[1]}`;
+        }
+
+        // If all cached points are invalid, force regeneration
+        if (!this.isGenerating) {
+            await this.generateSpawnPoints();
+            return this.getSpawnPoint(); // Recursive call with fresh cache
         }
 
         return null;
@@ -351,6 +365,32 @@ class SmartSpawnManager {
             queuedRequests: this.generationQueue.length,
             lastSectorUpdate: new Date(this.lastSectorUpdate).toISOString()
         };
+    }
+
+    // Invalidate cached spawn points near a specific location
+    invalidateSpawnPointsNear(q, r, radius = MIN_SPAWN_DISTANCE) {
+        const initialSize = this.spawnCache.length;
+        this.spawnCache = this.spawnCache.filter(point => {
+            const distance = hexDistance(q, r, point[0], point[1]);
+            return distance >= radius;
+        });
+        
+        const removed = initialSize - this.spawnCache.length;
+        if (removed > 0) {
+            log(`SmartSpawnManager: Invalidated ${removed} spawn points near ${q},${r}`);
+            this.saveSpawnCache();
+        }
+    }
+
+    // Called when a new user is spawned to invalidate nearby cached points
+    onUserSpawned(q, r) {
+        this.invalidateSpawnPointsNear(q, r);
+        // Update sector map to include the new occupied tile
+        const sectorKey = this.getSectorKey(q, r);
+        if (!this.sectorMap.has(sectorKey)) {
+            this.sectorMap.set(sectorKey, []);
+        }
+        this.sectorMap.get(sectorKey).push({ q, r });
     }
 
     // Periodic maintenance - call this from server intervals

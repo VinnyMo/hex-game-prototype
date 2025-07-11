@@ -128,45 +128,21 @@ function renderGrid() {
     // Merge the currently visible hexes with the persistently explored tiles
     if (isInitialSpawnComplete) {
         exploredTiles = new Set([...exploredTiles, ...currentFrameVisibleHexes]);
+        
+        // Limit explored tiles size for performance (keep most recent 5000 tiles)
+        if (exploredTiles.size > 5000) {
+            const recentTiles = [...exploredTiles].slice(-5000);
+            exploredTiles = new Set(recentTiles);
+        }
     }
 
-    // Add owned tiles and their 5-block radius to exploredTiles
-    if (currentUser) {
-        const ownedTiles = [];
-        for (const key in hexStates) {
-            const tile = hexStates[key];
-            if (tile.owner === currentUser.username) {
-                ownedTiles.push(key);
-            }
-        }
-
-        const radius = 5;
-        const tilesToAdd = new Set();
-
-        ownedTiles.forEach(tileKey => {
-            const [q, r] = tileKey.split(',').map(Number);
-            const queue = [{ q, r, dist: 0 }];
-            const visited = new Set();
-
-            while (queue.length > 0) {
-                const { q: currentQ, r: currentR, dist } = queue.shift();
-                const currentKey = `${currentQ},${currentR}`;
-
-                if (visited.has(currentKey) || dist > radius) {
-                    continue;
-                }
-                visited.add(currentKey);
-                tilesToAdd.add(currentKey);
-
-                if (dist < radius) {
-                    const neighbors = getHexNeighbors(currentQ, currentR);
-                    neighbors.forEach(neighbor => {
-                        queue.push({ q: neighbor.q, r: neighbor.r, dist: dist + 1 });
-                    });
-                }
-            }
-        });
-        exploredTiles = new Set([...exploredTiles, ...tilesToAdd]);
+    // Add owned tiles and their 5-block radius to exploredTiles (optimized with caching)
+    if (currentUser && ownedTilesCache.needsUpdate) {
+        updateOwnedTilesCache();
+    }
+    
+    if (currentUser && ownedTilesCache.radiusTiles.size > 0) {
+        exploredTiles = new Set([...exploredTiles, ...ownedTilesCache.radiusTiles]);
     }
 }
 

@@ -33,11 +33,18 @@ function initializeSocket(io) {
                     log(`Server: Password for "${username}" matched. Login successful.`);
                     socket.emit('loginSuccess', { user: user, exploredTiles: user.exploredTiles });
                     
-                    // Send partial grid state to the connecting user
+                    // Send initial game state with minimal tiles for fast loading
                     const [capitolQ, capitolR] = user.capitol.split(',').map(Number);
-                    const partialGridState = await getTilesInRegion(capitolQ, capitolR, INITIAL_GRID_RADIUS);
+                    // Send only essential tiles first - just owned tiles + nearby tiles
+                    const essentialTiles = await getTilesInRegion(capitolQ, capitolR, 3); // Smaller initial radius
                     const currentLeaderboard = await calculateLeaderboard();
-                    socket.emit('gameState', { gridState: partialGridState, users: users, leaderboard: currentLeaderboard });
+                    socket.emit('gameState', { gridState: essentialTiles, users: users, leaderboard: currentLeaderboard });
+                    
+                    // Then send remaining tiles in background
+                    setTimeout(async () => {
+                        const extendedTiles = await getTilesInRegion(capitolQ, capitolR, INITIAL_GRID_RADIUS);
+                        socket.emit('extendedTiles', { gridState: extendedTiles });
+                    }, 100);
                     log(`Server: Emitted initial partial gameState to ${username}.`);
                     socket.username = username;
                 } else {
@@ -73,8 +80,11 @@ function initializeSocket(io) {
                         // Update gridState in DB for capitol
                         await setGridState({ [newUser.capitol]: { owner: username, population: 1 } }); // Await setGridState
 
-                        // Spawn 100 '!' tiles around the new user's capitol
+                        // Invalidate nearby spawn cache points
                         const [capitolQ, capitolR] = newUser.capitol.split(',').map(Number);
+                        global.smartSpawnManager.onUserSpawned(capitolQ, capitolR);
+
+                        // Spawn 100 '!' tiles around the new user's capitol
                         const SPAWN_RADIUS = 50;
                         const NUM_EXCLAMATIONS = 100;
 

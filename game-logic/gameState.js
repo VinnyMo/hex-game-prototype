@@ -280,7 +280,9 @@ async function getTilesInRegion(centerQ, centerR, radius) {
         return new Promise((resolve, reject) => {
             db.all(
                 `SELECT q, r, owner, population, hasExclamation, isDisconnected FROM tiles
-                 WHERE q BETWEEN ? AND ? AND r BETWEEN ? AND ?`,
+                 WHERE q BETWEEN ? AND ? AND r BETWEEN ? AND ?
+                 AND (owner IS NOT NULL OR hasExclamation = 1 OR isDisconnected = 1)
+                 LIMIT 1000`,
                 [centerQ - radius, centerQ + radius, centerR - radius, centerR + radius],
                 (err, rows) => {
                     if (err) {
@@ -306,6 +308,7 @@ async function getTilesInRegion(centerQ, centerR, radius) {
                             cache.tiles.set(key, { ...tile, timestamp: now });
                         });
                         
+                        log(`getTilesInRegion: Loaded ${rows.length} tiles in region (${centerQ - radius},${centerR - radius}) to (${centerQ + radius},${centerR + radius})`);
                         resolve(tiles);
                     }
                 }

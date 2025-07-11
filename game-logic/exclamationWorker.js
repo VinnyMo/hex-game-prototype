@@ -7,6 +7,7 @@ const { log, error } = require('./logging');
 const DB_PATH = path.join(__dirname, '..', 'game.db');
 const EXCLAMATION_SPAWN_RADIUS = 50;
 const MAX_EXCLAMATIONS_PER_BATCH = 3; // Limit exclamations per generation
+const EXCLAMATION_DENSITY_LIMIT = 0.025; // 2.5% density cap around player territory
 
 let db;
 let isConnected = false;
@@ -39,6 +40,65 @@ async function getDbConnection() {
     return db;
 }
 
+// Check if exclamation density around user territory is above threshold
+async function checkExclamationDensity(username) {
+    const db = await getDbConnection();
+    
+    try {
+        // Get all tiles owned by the user
+        const ownedTiles = await new Promise((resolve, reject) => {
+            db.all("SELECT q, r FROM tiles WHERE owner = ?", [username], (err, rows) => {
+                if (err) return reject(err);
+                resolve(rows);
+            });
+        });
+        
+        if (ownedTiles.length === 0) return false;
+        
+        // Find bounding box of user's territory
+        const minQ = Math.min(...ownedTiles.map(t => t.q));
+        const maxQ = Math.max(...ownedTiles.map(t => t.q));
+        const minR = Math.min(...ownedTiles.map(t => t.r));
+        const maxR = Math.max(...ownedTiles.map(t => t.r));
+        
+        // Expand bounding box by spawn radius to check surrounding area
+        const checkMinQ = minQ - EXCLAMATION_SPAWN_RADIUS;
+        const checkMaxQ = maxQ + EXCLAMATION_SPAWN_RADIUS;
+        const checkMinR = minR - EXCLAMATION_SPAWN_RADIUS;
+        const checkMaxR = maxR + EXCLAMATION_SPAWN_RADIUS;
+        
+        // Count exclamation tiles in the surrounding area
+        const exclamationCount = await new Promise((resolve, reject) => {
+            db.get(`
+                SELECT COUNT(*) as count 
+                FROM tiles 
+                WHERE q BETWEEN ? AND ? 
+                AND r BETWEEN ? AND ? 
+                AND hasExclamation = 1
+                AND owner IS NULL
+            `, [checkMinQ, checkMaxQ, checkMinR, checkMaxR], (err, row) => {
+                if (err) return reject(err);
+                resolve(row.count || 0);
+            });
+        });
+        
+        // Calculate total possible tiles in the area (rough approximation)
+        const areaWidth = checkMaxQ - checkMinQ + 1;
+        const areaHeight = checkMaxR - checkMinR + 1;
+        const totalPossibleTiles = areaWidth * areaHeight;
+        
+        // Calculate density
+        const density = exclamationCount / totalPossibleTiles;
+        
+        log(`EW: User ${username} exclamation density: ${(density * 100).toFixed(1)}% (${exclamationCount}/${totalPossibleTiles})`);
+        
+        return density >= EXCLAMATION_DENSITY_LIMIT;
+    } catch (err) {
+        error('EW: Error checking exclamation density:', err);
+        return false;
+    }
+}
+
 async function generateExclamationMark() {
     log('EW: generateExclamationMark started.');
     const db = await getDbConnection();
@@ -68,6 +128,13 @@ async function generateExclamationMark() {
         for (const user of shuffledUsers) {
             if (exclamationsGenerated >= MAX_EXCLAMATIONS_PER_BATCH) {
                 break;
+            }
+
+            // Check exclamation density before generating more
+            const densityTooHigh = await checkExclamationDensity(user.username);
+            if (densityTooHigh) {
+                log(`EW: Skipping user ${user.username} - exclamation density above ${EXCLAMATION_DENSITY_LIMIT * 100}% threshold`);
+                continue;
             }
 
             log(`EW: Processing user ${user.username} with capitol at ${user.capitol}.`);

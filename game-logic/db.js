@@ -83,7 +83,12 @@ function createIndexes() {
             'CREATE INDEX IF NOT EXISTS idx_tiles_owner ON tiles(owner);',
             'CREATE INDEX IF NOT EXISTS idx_tiles_hasExclamation ON tiles(hasExclamation);',
             'CREATE INDEX IF NOT EXISTS idx_tiles_coordinates ON tiles(q, r);',
-            'CREATE INDEX IF NOT EXISTS idx_users_capitol ON users(capitol);'
+            'CREATE INDEX IF NOT EXISTS idx_users_capitol ON users(capitol);',
+            // Performance indexes for spawn validation and leaderboards
+            'CREATE INDEX IF NOT EXISTS idx_tiles_population ON tiles(population);',
+            'CREATE INDEX IF NOT EXISTS idx_tiles_owner_population ON tiles(owner, population);',
+            'CREATE INDEX IF NOT EXISTS idx_tiles_exclamation_owner ON tiles(hasExclamation, owner);',
+            'CREATE INDEX IF NOT EXISTS idx_tiles_owner_not_null ON tiles(owner) WHERE owner IS NOT NULL;'
         ];
 
         let completed = 0;
