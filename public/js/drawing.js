@@ -1,5 +1,39 @@
 function drawHex(q, r) {
     const { cx: x, cy: y } = hexToPixel(q, r);
+    const key = `${q},${r}`;
+    
+    // Check for animation state
+    let animationScale = 1;
+    let animationBrightness = 1;
+    if (window.tileAnimations && window.tileAnimations.has(key)) {
+        const animation = window.tileAnimations.get(key);
+        const elapsed = Date.now() - animation.startTime;
+        const progress = Math.min(elapsed / animation.duration, 1);
+        
+        // Easing function for smooth animation
+        const easedProgress = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+        
+        // Animation effects: scale pulse and brightness
+        if (progress <= 0.5) {
+            // First half: scale up and brighten
+            animationScale = 1 + (easedProgress * 2) * 0.1; // Scale up to 1.1
+            animationBrightness = 1 + (easedProgress * 2) * 0.5; // Brighten to 1.5
+        } else {
+            // Second half: scale back down and return to normal brightness
+            const secondHalf = (easedProgress - 0.5) * 2;
+            animationScale = 1.1 - secondHalf * 0.1; // Scale back to 1
+            animationBrightness = 1.5 - secondHalf * 0.5; // Return to 1
+        }
+    }
+
+    ctx.save();
+    
+    // Apply animation scaling
+    if (animationScale !== 1) {
+        ctx.translate(x, y);
+        ctx.scale(animationScale, animationScale);
+        ctx.translate(-x, -y);
+    }
 
     ctx.beginPath();
     for (let i = 0; i < 6; i++) {
@@ -14,7 +48,6 @@ function drawHex(q, r) {
     }
     ctx.closePath();
 
-    const key = `${q},${r}`;
     const tile = hexStates[key];
     let hexColor;
     if (tile && users[tile.owner]) {
@@ -28,6 +61,31 @@ function drawHex(q, r) {
         hexColor = 'red';
     }
 
+    // Apply animation brightness
+    if (animationBrightness !== 1) {
+        // Handle different color formats
+        let r, g, b;
+        if (hexColor.startsWith('#')) {
+            // Hex color
+            r = parseInt(hexColor.slice(1, 3), 16);
+            g = parseInt(hexColor.slice(3, 5), 16);
+            b = parseInt(hexColor.slice(5, 7), 16);
+        } else if (hexColor === 'white') {
+            r = g = b = 255;
+        } else if (hexColor === 'red') {
+            r = 255; g = b = 0;
+        } else {
+            // Default fallback for other named colors
+            r = g = b = 128;
+        }
+        
+        const newR = Math.min(255, Math.round(r * animationBrightness));
+        const newG = Math.min(255, Math.round(g * animationBrightness));
+        const newB = Math.min(255, Math.round(b * animationBrightness));
+        
+        hexColor = `rgb(${newR}, ${newG}, ${newB})`;
+    }
+
     ctx.fillStyle = hexColor;
     ctx.fill();
 
@@ -35,7 +93,25 @@ function drawHex(q, r) {
     ctx.lineWidth = 2;
     ctx.stroke();
 
-    if (Object.values(users).some(user => user.capitol === key)) {
+    // Performance: Cache capitol positions to avoid O(n) lookup per tile
+    if (!window.capitolCache) {
+        window.capitolCache = new Set();
+        window.capitolCacheLastUpdate = 0;
+    }
+    
+    // Update cache every 5 seconds or if users changed
+    const now = Date.now();
+    if (now - window.capitolCacheLastUpdate > 5000 || window.capitolCache.size === 0) {
+        window.capitolCache.clear();
+        Object.values(users).forEach(user => {
+            if (user.capitol) {
+                window.capitolCache.add(user.capitol);
+            }
+        });
+        window.capitolCacheLastUpdate = now;
+    }
+    
+    if (window.capitolCache.has(key)) {
         drawStar(x, y, HEX_SIZE * 0.4, 5, 0.5);
     }
 
@@ -53,6 +129,8 @@ function drawHex(q, r) {
         ctx.textBaseline = 'middle';
         ctx.fillText('!', x, y);
     }
+    
+    ctx.restore();
 }
 
 function drawStar(cx, cy, outerRadius, numPoints, innerRadiusRatio) {

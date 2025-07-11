@@ -54,11 +54,11 @@ exclamationWorkerPool.initialize().catch(err => {
     error('Failed to initialize exclamation worker pool:', err);
 });
 
-// Periodic tasks
+// Periodic tasks - Reduced frequency for better performance with 500+ users
 setInterval(async () => {
     const leaderboard = await calculateLeaderboard();
     io.emit('leaderboardUpdate', leaderboard);
-}, 5000); // Broadcast leaderboard every 5 seconds
+}, 15000); // Increased from 5 seconds to 15 seconds to reduce server load
 setInterval(async () => {
     // Add small random delay to prevent race conditions with exclamation effects
     await new Promise(resolve => setTimeout(resolve, Math.random() * 1000));

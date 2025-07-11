@@ -88,7 +88,12 @@ function createIndexes() {
             'CREATE INDEX IF NOT EXISTS idx_tiles_population ON tiles(population);',
             'CREATE INDEX IF NOT EXISTS idx_tiles_owner_population ON tiles(owner, population);',
             'CREATE INDEX IF NOT EXISTS idx_tiles_exclamation_owner ON tiles(hasExclamation, owner);',
-            'CREATE INDEX IF NOT EXISTS idx_tiles_owner_not_null ON tiles(owner) WHERE owner IS NOT NULL;'
+            'CREATE INDEX IF NOT EXISTS idx_tiles_owner_not_null ON tiles(owner) WHERE owner IS NOT NULL;',
+            // Critical performance indexes for large empires
+            'CREATE INDEX IF NOT EXISTS idx_tiles_owner_coords ON tiles(owner, q, r) WHERE owner IS NOT NULL;',
+            'CREATE INDEX IF NOT EXISTS idx_tiles_spatial_range ON tiles(q, r, owner, hasExclamation);',
+            'CREATE INDEX IF NOT EXISTS idx_tiles_minimap ON tiles(owner, hasExclamation) WHERE owner IS NOT NULL OR hasExclamation = 1;',
+            'CREATE INDEX IF NOT EXISTS idx_tiles_disconnected ON tiles(owner, isDisconnected) WHERE owner IS NOT NULL;'
         ];
 
         let completed = 0;

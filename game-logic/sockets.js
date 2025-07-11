@@ -35,16 +35,16 @@ function initializeSocket(io) {
                     
                     // Send initial game state with minimal tiles for fast loading
                     const [capitolQ, capitolR] = user.capitol.split(',').map(Number);
-                    // Send only essential tiles first - just owned tiles + nearby tiles
-                    const essentialTiles = await getTilesInRegion(capitolQ, capitolR, 3); // Smaller initial radius
+                    // Send only essential tiles first - just owned tiles + immediate neighbors
+                    const essentialTiles = await getTilesInRegion(capitolQ, capitolR, 2); // Further reduced radius
                     const currentLeaderboard = await calculateLeaderboard();
                     socket.emit('gameState', { gridState: essentialTiles, users: users, leaderboard: currentLeaderboard });
                     
-                    // Then send remaining tiles in background
+                    // Then send remaining tiles in background with longer delay to reduce server load
                     setTimeout(async () => {
-                        const extendedTiles = await getTilesInRegion(capitolQ, capitolR, INITIAL_GRID_RADIUS);
+                        const extendedTiles = await getTilesInRegion(capitolQ, capitolR, 5); // Reduced from INITIAL_GRID_RADIUS
                         socket.emit('extendedTiles', { gridState: extendedTiles });
-                    }, 100);
+                    }, 500); // Increased delay from 100ms to 500ms
                     log(`Server: Emitted initial partial gameState to ${username}.`);
                     socket.username = username;
                 } else {
@@ -84,42 +84,12 @@ function initializeSocket(io) {
                         const [capitolQ, capitolR] = newUser.capitol.split(',').map(Number);
                         global.smartSpawnManager.onUserSpawned(capitolQ, capitolR);
 
-                        // Spawn 100 '!' tiles around the new user's capitol
-                        const SPAWN_RADIUS = 50;
-                        const NUM_EXCLAMATIONS = 100;
-
-                        for (let i = 0; i < NUM_EXCLAMATIONS; i++) {
-                            let attempts = 0;
-                            const MAX_ATTEMPTS = 50; // Limit attempts to find a suitable tile for each '!'
-                            let spawned = false;
-
-                            while (attempts < MAX_ATTEMPTS && !spawned) {
-                                const angle = Math.random() * 2 * Math.PI;
-                                const distance = Math.random() * SPAWN_RADIUS;
-
-                                const q = capitolQ + Math.round(distance * Math.cos(angle));
-                                const r = capitolR + Math.round(distance * Math.sin(angle));
-                                const key = `${q},${r}`;
-
-                                // Check if the tile is unoccupied and doesn't already have an exclamation mark
-                                const existingTile = await getTile(q, r);
-                                if (!existingTile || (!existingTile.owner && !existingTile.hasExclamation)) {
-                                    await setGridState({ [key]: { hasExclamation: true } }); // Update DB
-                                    io.emit('tileUpdate', { key, tile: { hasExclamation: true } });
-                                    spawned = true;
-                                }
-                                attempts++;
-                            }
-                        }
-                        // Emit event to client that initial spawn is complete
-                        socket.emit('initialSpawnComplete');
-                        
-                        log(`Server: New user "${username}" created and logged in.`);
+                        // Emit success immediately to unblock login UI
                         socket.emit('loginSuccess', { user: newUser, exploredTiles: newUser.exploredTiles });
                         
                         // Send partial grid state to the new user
                         const [newCapitolQ, newCapitolR] = newUser.capitol.split(',').map(Number);
-                        const partialGridState = await getTilesInRegion(newCapitolQ, newCapitolR, INITIAL_GRID_RADIUS);
+                        const partialGridState = await getTilesInRegion(newCapitolQ, newCapitolR, 2); // Reduced radius
                         const updatedUsers = await getUsers();
                         const currentLeaderboard = await calculateLeaderboard();
                         socket.emit('gameState', { gridState: partialGridState, users: updatedUsers, leaderboard: currentLeaderboard });
@@ -127,7 +97,53 @@ function initializeSocket(io) {
                         // Announce the new user's color and capitol to others
                         io.emit('userUpdate', { users: updatedUsers });
                         io.emit('tileUpdate', { key: newUser.capitol, tile: await getTile(capitolQ, capitolR) });
-                    socket.username = username;
+                        socket.username = username;
+                        
+                        // Spawn exclamations asynchronously without blocking login
+                        setImmediate(async () => {
+                            try {
+                                const SPAWN_RADIUS = 30; // Reduced from 50
+                                const NUM_EXCLAMATIONS = 25; // Reduced from 100 for faster spawn
+                                const spawnedTiles = new Map();
+
+                                for (let i = 0; i < NUM_EXCLAMATIONS; i++) {
+                                    let attempts = 0;
+                                    const MAX_ATTEMPTS = 20; // Reduced attempts
+                                    let spawned = false;
+
+                                    while (attempts < MAX_ATTEMPTS && !spawned) {
+                                        const angle = Math.random() * 2 * Math.PI;
+                                        const distance = Math.random() * SPAWN_RADIUS;
+
+                                        const q = capitolQ + Math.round(distance * Math.cos(angle));
+                                        const r = capitolR + Math.round(distance * Math.sin(angle));
+                                        const key = `${q},${r}`;
+
+                                        // Check if the tile is unoccupied and doesn't already have an exclamation mark
+                                        const existingTile = await getTile(q, r);
+                                        if (!existingTile || (!existingTile.owner && !existingTile.hasExclamation)) {
+                                            spawnedTiles.set(key, { hasExclamation: true });
+                                            spawned = true;
+                                        }
+                                        attempts++;
+                                    }
+                                }
+                                
+                                // Batch update all spawned tiles for better performance
+                                if (spawnedTiles.size > 0) {
+                                    await setGridState(Object.fromEntries(spawnedTiles));
+                                    // Emit batch update instead of individual updates
+                                    io.emit('batchTileUpdate', { changedTiles: Object.fromEntries(spawnedTiles) });
+                                }
+                                
+                                socket.emit('initialSpawnComplete');
+                                log(`Server: Spawned ${spawnedTiles.size} exclamations for ${username} asynchronously.`);
+                            } catch (err) {
+                                error(`Error spawning exclamations for ${username}:`, err);
+                            }
+                        });
+                        
+                        log(`Server: New user "${username}" created and logged in.`);
                 } catch (err) {
                     error(`Smart spawn manager error: ${err}`);
                     socket.emit('loginError', 'Failed to create user due to server error.');

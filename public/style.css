@@ -199,3 +199,22 @@ canvas {
     background-color: #4CAF50;
     color: white;
 }
+
+.cascade-capture {
+    animation: cascadeCapture 0.3s ease-out;
+}
+
+@keyframes cascadeCapture {
+    0% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    50% {
+        transform: scale(1.1);
+        filter: brightness(1.5) drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+    }
+    100% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+}

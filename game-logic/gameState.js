@@ -131,7 +131,13 @@ async function setGridState(gridStateUpdates) {
     
     pendingOperations.batchTimeout = setTimeout(() => {
         flushPendingOperations();
-    }, 100); // Batch operations for 100ms
+    }, 250); // Increased from 100ms to 250ms for better batching with large operations
+    
+    // Force flush if we have too many pending operations to prevent memory issues
+    if (pendingOperations.tiles.size > 500) {
+        clearTimeout(pendingOperations.batchTimeout);
+        setImmediate(() => flushPendingOperations());
+    }
     
     return Promise.resolve();
 }
@@ -226,7 +232,7 @@ async function setUsers(userUpdates) {
     
     pendingOperations.batchTimeout = setTimeout(() => {
         flushPendingOperations();
-    }, 100); // Batch operations for 100ms
+    }, 250); // Increased from 100ms to 250ms for better batching with large operations
     
     return Promise.resolve();
 }

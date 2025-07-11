@@ -10,24 +10,31 @@ async function calculateLeaderboard() {
     return dbSafeOp(() => {
         const db = getDb();
         return new Promise((resolve, reject) => {
-            db.all("SELECT owner, population FROM tiles WHERE owner IS NOT NULL", [], (err, rows) => {
+            // Optimized query using GROUP BY for better performance with large datasets
+            db.all(`
+                SELECT 
+                    owner,
+                    SUM(COALESCE(population, 0)) as total_population,
+                    COUNT(*) as area
+                FROM tiles 
+                WHERE owner IS NOT NULL 
+                GROUP BY owner
+                ORDER BY total_population DESC, area DESC
+                LIMIT 10
+            `, [], (err, rows) => {
                 if (err) {
                     error('Error calculating leaderboard:', err);
                     return reject(err);
                 }
-                const playerStats = {};
-                rows.forEach(row => {
-                    if (!playerStats[row.owner]) {
-                        playerStats[row.owner] = { username: row.owner, population: 0, area: 0 };
-                    }
-                    // Handle null/undefined population values safely
-                    const population = row.population || 0;
-                    playerStats[row.owner].population += population;
-                    playerStats[row.owner].area++;
-                });
+                
+                const playerStats = rows.map(row => ({
+                    username: row.owner,
+                    population: row.total_population || 0,
+                    area: row.area || 0
+                }));
 
-                const sortedByPopulation = Object.values(playerStats).sort((a, b) => b.population - a.population).slice(0, 5);
-                const sortedByArea = Object.values(playerStats).sort((a, b) => b.area - a.area).slice(0, 5);
+                const sortedByPopulation = [...playerStats].sort((a, b) => b.population - a.population).slice(0, 5);
+                const sortedByArea = [...playerStats].sort((a, b) => b.area - a.area).slice(0, 5);
 
                 resolve({ population: sortedByPopulation, area: sortedByArea });
             });
@@ -142,7 +149,7 @@ async function applyExclamationEffect(startQ, startR, username, io) {
             }
         }
     }
-    io.emit('batchTileUpdate', { changedTiles: changedTilesForBroadcast });
+    io.emit('batchTileUpdate', { changedTiles: changedTilesForBroadcast, cascadeOrigin: `${startQ},${startR}` });
 }
 
 async function applyDisconnectionPenalty(io) {
