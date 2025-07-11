@@ -256,6 +256,35 @@ function initializeSocket(io) {
             }
         });
 
+        socket.on('requestPlayerStats', async () => {
+            if (!socket.username) return;
+            
+            try {
+                // Get accurate stats directly from database
+                const playerStats = await safeDbOperation(() => {
+                    const db = getDb();
+                    return new Promise((resolve, reject) => {
+                        db.all("SELECT population FROM tiles WHERE owner = ?", [socket.username], (err, rows) => {
+                            if (err) return reject(err);
+                            let totalPopulation = 0;
+                            let totalArea = rows.length;
+                            
+                            rows.forEach(row => {
+                                const population = row.population || 0;
+                                totalPopulation += population;
+                            });
+                            
+                            resolve({ population: totalPopulation, area: totalArea });
+                        });
+                    });
+                });
+                
+                socket.emit('playerStatsData', playerStats);
+            } catch (err) {
+                error('Error getting player stats:', err);
+            }
+        });
+
         socket.on('disconnect', () => {
             
         });

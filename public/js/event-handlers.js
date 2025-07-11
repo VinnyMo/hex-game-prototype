@@ -131,6 +131,11 @@ function setupSocketEventHandlers() {
         debouncedRenderGrid(); // Use debounced render for performance
     });
     
+    // Handle player stats from server
+    socket.on('playerStatsData', (stats) => {
+        updateStatsFromServer(stats);
+    });
+    
     // Debounced rendering for performance optimization
     let renderTimeout = null;
     function debouncedRenderGrid() {

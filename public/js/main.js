@@ -204,24 +204,19 @@ function handleHexClick(x, y) {
 
 function updateStats() {
     const usernameStat = document.getElementById('usernameStat');
-    const populationStat = document.getElementById('populationStat');
-    const areaStat = document.getElementById('areaStat');
-
+    
     usernameStat.textContent = currentUser.username;
 
-    let totalPopulation = 0;
-    let totalArea = 0;
+    // Request accurate stats from server instead of calculating from incomplete cache
+    socket.emit('requestPlayerStats');
+}
 
-    for (const key in hexStates) {
-        const tile = hexStates[key];
-        if (tile.owner === currentUser.username) {
-            totalPopulation += tile.population;
-            totalArea++;
-        }
-    }
-
-    populationStat.textContent = totalPopulation;
-    areaStat.textContent = totalArea;
+function updateStatsFromServer(stats) {
+    const populationStat = document.getElementById('populationStat');
+    const areaStat = document.getElementById('areaStat');
+    
+    populationStat.textContent = stats.population;
+    areaStat.textContent = stats.area;
 }
 
 function updateLeaderboard() {

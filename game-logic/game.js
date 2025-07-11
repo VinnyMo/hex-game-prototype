@@ -3,7 +3,7 @@ const { getHexNeighbors, hexDistance, generateRandomColor } = require('./utils')
 const { log, error } = require('./logging');
 const { getDb, safeDbOperation: dbSafeOp } = require('./db');
 
-const EXCLAMATION_SPAWN_INTERVAL = 60 * 1000; // 1 minute
+const EXCLAMATION_SPAWN_INTERVAL = 30 * 1000; // 30 seconds
 const EXCLAMATION_SPAWN_RADIUS = 100; // Radius in hexes
 
 async function calculateLeaderboard() {
@@ -20,7 +20,9 @@ async function calculateLeaderboard() {
                     if (!playerStats[row.owner]) {
                         playerStats[row.owner] = { username: row.owner, population: 0, area: 0 };
                     }
-                    playerStats[row.owner].population += row.population;
+                    // Handle null/undefined population values safely
+                    const population = row.population || 0;
+                    playerStats[row.owner].population += population;
                     playerStats[row.owner].area++;
                 });
 
