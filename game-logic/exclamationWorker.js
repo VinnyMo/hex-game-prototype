@@ -104,64 +104,95 @@ async function generateExclamationMark() {
     const db = await getDbConnection();
     
     try {
-        // Get active users more efficiently
-        const users = await new Promise((resolve, reject) => {
-            db.all("SELECT username, capitol FROM users WHERE capitol IS NOT NULL", [], (err, rows) => {
+        // Get active users and their tiles in a single optimized query
+        const userTilesData = await new Promise((resolve, reject) => {
+            db.all(`
+                SELECT 
+                    u.username, 
+                    u.capitol,
+                    t.q,
+                    t.r
+                FROM users u
+                LEFT JOIN tiles t ON u.username = t.owner
+                WHERE u.capitol IS NOT NULL
+                ORDER BY u.username
+            `, [], (err, rows) => {
                 if (err) return reject(err);
-                resolve(rows);
+                
+                // Group tiles by user
+                const userMap = new Map();
+                rows.forEach(row => {
+                    if (!userMap.has(row.username)) {
+                        userMap.set(row.username, {
+                            username: row.username,
+                            capitol: row.capitol,
+                            tiles: []
+                        });
+                    }
+                    if (row.q !== null && row.r !== null) {
+                        userMap.get(row.username).tiles.push({ q: row.q, r: row.r });
+                    }
+                });
+                
+                resolve([...userMap.values()]);
             });
         });
         
-        if (users.length === 0) {
+        if (userTilesData.length === 0) {
             log('EW: No active users found.');
             return { status: 'done', changedTiles: [] };
         }
         
-        log(`EW: Processing ${users.length} active users.`);
+        log(`EW: Processing ${userTilesData.length} active users.`);
+        
+        // Parallel density checks for better performance
+        const BATCH_SIZE = 50; // Process users in batches
+        const userBatches = [];
+        for (let i = 0; i < userTilesData.length; i += BATCH_SIZE) {
+            userBatches.push(userTilesData.slice(i, i + BATCH_SIZE));
+        }
+        
+        const allValidUsers = [];
+        
+        // Process density checks in parallel batches
+        for (const batch of userBatches) {
+            const densityCheckPromises = batch.map(async (userData) => {
+                const densityTooHigh = await checkExclamationDensity(userData.username);
+                return { userData, densityTooHigh };
+            });
+            
+            const batchResults = await Promise.all(densityCheckPromises);
+            
+            batchResults.forEach(({ userData, densityTooHigh }) => {
+                if (!densityTooHigh && userData.tiles.length > 0) {
+                    allValidUsers.push(userData);
+                } else if (densityTooHigh) {
+                    log(`EW: Skipping user ${userData.username} - exclamation density above ${EXCLAMATION_DENSITY_LIMIT * 100}% threshold`);
+                } else {
+                    log(`EW: User ${userData.username} has no owned tiles. Skipping.`);
+                }
+            });
+        }
+        
+        // Randomize valid users for fair distribution
+        const shuffledValidUsers = allValidUsers.sort(() => Math.random() - 0.5);
         
         const changedTiles = [];
         let exclamationsGenerated = 0;
-
-        // Process users randomly to distribute exclamations fairly
-        const shuffledUsers = users.sort(() => Math.random() - 0.5);
-
-        for (const user of shuffledUsers) {
-            if (exclamationsGenerated >= MAX_EXCLAMATIONS_PER_BATCH) {
-                break;
-            }
-
-            // Check exclamation density before generating more
-            const densityTooHigh = await checkExclamationDensity(user.username);
-            if (densityTooHigh) {
-                log(`EW: Skipping user ${user.username} - exclamation density above ${EXCLAMATION_DENSITY_LIMIT * 100}% threshold`);
-                continue;
-            }
-
-            log(`EW: Processing user ${user.username} with capitol at ${user.capitol}.`);
+        
+        // Process exclamation generation in parallel for valid users
+        const exclamationPromises = shuffledValidUsers.slice(0, MAX_EXCLAMATIONS_PER_BATCH).map(async (userData) => {
+            log(`EW: Processing user ${userData.username} with capitol at ${userData.capitol}.`);
             
-            // Get owned tiles for this user
-            const ownedTiles = await new Promise((resolve, reject) => {
-                db.all("SELECT q, r FROM tiles WHERE owner = ?", [user.username], (err, rows) => {
-                    if (err) return reject(err);
-                    resolve(rows);
-                });
-            });
-
-            if (ownedTiles.length === 0) {
-                log(`EW: User ${user.username} has no owned tiles. Skipping.`);
-                continue;
-            }
-
             // Pick a random owned tile as spawn center
-            const randomTile = ownedTiles[Math.floor(Math.random() * ownedTiles.length)];
+            const randomTile = userData.tiles[Math.floor(Math.random() * userData.tiles.length)];
             const spawnCenterQ = randomTile.q;
             const spawnCenterR = randomTile.r;
 
             let attempts = 0;
             const MAX_ATTEMPTS = 10;
-            let spawned = false;
 
-            while (attempts < MAX_ATTEMPTS && !spawned && exclamationsGenerated < MAX_EXCLAMATIONS_PER_BATCH) {
+            while (attempts < MAX_ATTEMPTS) {
                 const angle = Math.random() * 2 * Math.PI;
                 const distance = Math.random() * EXCLAMATION_SPAWN_RADIUS;
 
@@ -181,38 +212,37 @@ async function generateExclamationMark() {
                     // Place exclamation using transaction
                     const success = await new Promise((resolve, reject) => {
                         db.serialize(() => {
-                            db.run("BEGIN TRANSACTION");
                             db.run("INSERT OR REPLACE INTO tiles (q, r, hasExclamation) VALUES (?, ?, 1)", [q, r], (err) => {
                                 if (err) {
-                                    db.run("ROLLBACK");
                                     resolve(false);
                                 } else {
-                                    db.run("COMMIT", (commitErr) => {
-                                        if (commitErr) {
-                                            resolve(false);
-                                        } else {
-                                            resolve(true);
-                                        }
-                                    });
+                                    resolve(true);
                                 }
                             });
                         });
                     });
                     
                     if (success) {
-                        changedTiles.push({ key, tile: { hasExclamation: true } });
-                        spawned = true;
-                        exclamationsGenerated++;
-                        log(`EW: Spawned '!' at ${key} for user ${user.username}.`);
+                        log(`EW: Spawned '!' at ${key} for user ${userData.username}.`);
+                        return { key, tile: { hasExclamation: true } };
                     }
                 }
                 attempts++;
             }
 
-            if (!spawned) {
-                log(`EW: Failed to spawn '!' for user ${user.username} after ${MAX_ATTEMPTS} attempts.`);
+            log(`EW: Failed to spawn '!' for user ${userData.username} after ${MAX_ATTEMPTS} attempts.`);
+            return null;
+        });
+        
+        // Wait for all exclamation generation to complete
+        const results = await Promise.all(exclamationPromises);
+        
+        // Filter out null results and add to changedTiles
+        results.forEach(result => {
+            if (result) {
+                changedTiles.push(result);
             }
-        }
+        });
 
         log(`EW: generateExclamationMark completed. Generated ${changedTiles.length} exclamations.`);
         return { status: 'done', changedTiles };

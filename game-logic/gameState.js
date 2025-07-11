@@ -151,7 +151,6 @@ async function flushPendingOperations() {
         const db = getDb();
         return new Promise((resolve, reject) => {
             db.serialize(() => {
-                db.run("BEGIN TRANSACTION;");
                 
                 // Process tile updates
                 if (pendingOperations.tiles.size > 0) {
@@ -196,16 +195,10 @@ async function flushPendingOperations() {
                     pendingOperations.users.clear();
                 }
                 
-                db.run("COMMIT;", (err) => {
-                    if (err) {
-                        error('Error committing batched transaction:', err);
-                        reject(err);
-                    } else {
-                        cache.lastTileUpdate = Date.now();
-                        cache.lastUserUpdate = Date.now();
-                        resolve();
-                    }
-                });
+                // Transaction auto-commits with serialize()
+                cache.lastTileUpdate = Date.now();
+                cache.lastUserUpdate = Date.now();
+                resolve();
             });
         });
     });
