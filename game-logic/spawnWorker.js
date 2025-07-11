@@ -9,15 +9,24 @@ const MIN_SPAWN_DISTANCE = 150; // Define here as it's used by findRandomSpawn
 
 let db; // Database connection for this worker
 
+let isConnected = false;
+
 // Helper function to establish DB connection for the worker
 function connectDb() {
     return new Promise((resolve, reject) => {
-        db = new sqlite3.Database(DB_PATH, sqlite3.OPEN_READONLY, (err) => { // Open as READONLY
+        if (isConnected && db) {
+            resolve(db);
+            return;
+        }
+
+        db = new sqlite3.Database(DB_PATH, sqlite3.OPEN_READONLY, (err) => {
             if (err) {
                 console.error('SW: Database connection error:', err.message);
                 reject(err);
             } else {
                 console.log('SW: Connected to SQLite database (READONLY).');
+                db.run('PRAGMA busy_timeout=5000');
+                isConnected = true;
                 resolve(db);
             }
         });
@@ -70,9 +79,8 @@ async function isValidSpawnPoint(q, r) {
     });
 }
 
-// Function to get or create DB connection for the worker
 async function getDbConnection() {
-    if (!db) {
+    if (!isConnected) {
         await connectDb();
     }
     return db;

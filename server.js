@@ -2,15 +2,16 @@ const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
 const path = require('path');
-const { Worker } = require('worker_threads'); // Import Worker
 const { log, error } = require('./game-logic/logging');
-const { loadGameState, saveGameState, getGridState, getUsers, setGridState, setUsers } = require('./game-logic/gameState'); // Import getGridState, getUsers, setGridState, and setUsers
+const { loadGameState, flushPendingOperations } = require('./game-logic/gameState');
 const { initializeSocket } = require('./game-logic/sockets');
+const { exclamationWorkerPool } = require('./game-logic/workerPool');
+const SmartSpawnManager = require('./game-logic/smartSpawnManager');
 const { 
     calculateLeaderboard, 
     applyDisconnectionPenalty, 
     EXCLAMATION_SPAWN_INTERVAL 
-} = require('./game-logic/game'); // Removed generateExclamationMark
+} = require('./game-logic/game');
 
 const app = express();
 const server = http.createServer(app);
@@ -20,29 +21,37 @@ const PORT = 3000;
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Load initial game state (connects to DB)
-loadGameState();
-
-// Initialize socket connections
-initializeSocket(io);
-
-// Create exclamation worker
-const exclamationWorker = new Worker(path.resolve(__dirname, 'game-logic', 'exclamationWorker.js'));
-exclamationWorker.on('message', (response) => {
-    if (response.status === 'done') {
-        if (response.changedTiles) {
-            io.emit('batchTileUpdate', { changedTiles: response.changedTiles });
-        }
-        // No need to update gridState/users here, worker updates DB directly
+// Initialize everything in proper order
+async function initializeServer() {
+    try {
+        // Load initial game state (connects to DB)
+        await loadGameState();
+        log('Database initialization completed');
+        
+        // Initialize smart spawn manager after DB is ready
+        const smartSpawnManager = new SmartSpawnManager();
+        await smartSpawnManager.initialize();
+        log('Smart spawn manager initialized');
+        
+        // Make spawn manager available globally for sockets
+        global.smartSpawnManager = smartSpawnManager;
+        
+        // Initialize socket connections
+        initializeSocket(io);
+        log('Socket connections initialized');
+        
+    } catch (err) {
+        error('Server initialization failed:', err);
+        process.exit(1);
     }
-});
-exclamationWorker.on('error', (err) => {
-    error(`Exclamation Worker error: ${err}`);
-});
-exclamationWorker.on('exit', (code) => {
-    if (code !== 0) {
-        error(`Exclamation Worker exited with non-zero exit code: ${code}`);
-    }
+}
+
+// Start server initialization
+initializeServer();
+
+// Initialize worker pools
+exclamationWorkerPool.initialize().catch(err => {
+    error('Failed to initialize exclamation worker pool:', err);
 });
 
 // Periodic tasks
@@ -51,12 +60,54 @@ setInterval(async () => {
     io.emit('leaderboardUpdate', leaderboard);
 }, 5000); // Broadcast leaderboard every 5 seconds
 setInterval(() => applyDisconnectionPenalty(io), 30 * 1000); // Apply disconnection penalty every 30 seconds
-setInterval(() => { // Send message to worker to generate exclamation marks
-    exclamationWorker.postMessage({ 
-        command: 'generateExclamations'
-        // No need to pass gridState/users, worker accesses DB directly
-    });
-}, EXCLAMATION_SPAWN_INTERVAL); 
+setInterval(async () => {
+    try {
+        const response = await exclamationWorkerPool.executeTask({ 
+            command: 'generateExclamations'
+        });
+        
+        if (response.status === 'done' && response.changedTiles) {
+            io.emit('batchTileUpdate', { changedTiles: response.changedTiles });
+        }
+    } catch (err) {
+        error('Exclamation generation error:', err);
+    }
+}, EXCLAMATION_SPAWN_INTERVAL);
+
+// Periodic database flush to ensure data persistence
+setInterval(async () => {
+    try {
+        await flushPendingOperations();
+    } catch (err) {
+        error('Database flush error:', err);
+    }
+}, 5000); // Flush every 5 seconds
+
+// Initialize maintenance intervals after server is ready
+setTimeout(() => {
+    // Spawn cache maintenance - every 2 minutes
+    setInterval(async () => {
+        try {
+            if (global.smartSpawnManager) {
+                await global.smartSpawnManager.performMaintenance();
+            }
+        } catch (err) {
+            error('Spawn manager maintenance error:', err);
+        }
+    }, 120000); // Maintenance every 2 minutes
+
+    // Log spawn manager stats every 5 minutes
+    setInterval(() => {
+        try {
+            if (global.smartSpawnManager) {
+                const stats = global.smartSpawnManager.getStats();
+                log(`Spawn Manager Stats: Cache=${stats.cacheSize}, Sectors=${stats.sectorsTracked}, Generating=${stats.isGenerating}`);
+            }
+        } catch (err) {
+            error('Spawn manager stats error:', err);
+        }
+    }, 300000); // Stats every 5 minutes
+}, 5000); // Wait 5 seconds after server start 
 
 server.listen(PORT, () => {
     log(`Server running on http://localhost:${PORT}`);

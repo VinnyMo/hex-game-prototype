@@ -10,6 +10,9 @@ function setupSocketEventHandlers() {
             exploredTiles = new Set(user.exploredTiles);
         }
         syncExploredTiles(); // Immediately sync after login to ensure server has latest
+        
+        // Request full map data for minimap
+        socket.emit('requestFullMap');
         // The 'gameState' event will handle the rest
     });
 
@@ -36,6 +39,7 @@ function setupSocketEventHandlers() {
             recenterCapitol();
         }
         renderGrid(); // Render after recentering
+        requestViewportTiles(); // Request tiles for current viewport
     });
 
     // Handle single tile updates
@@ -45,8 +49,7 @@ function setupSocketEventHandlers() {
         } else {
             delete hexStates[key];
         }
-        // We could optimize rendering to only redraw the affected hex, but for now, a full rerender is simpler.
-        renderGrid(); 
+        debouncedRenderGrid(); // Use debounced render for performance
         if (currentUser) {
             updateStats();
         }
@@ -69,12 +72,12 @@ function setupSocketEventHandlers() {
 
     function processTileUpdateQueue() {
         isProcessingQueue = true;
-        const BATCH_SIZE = 50; // Process 50 tiles at a time
-        const DELAY = 10; // Delay between batches in milliseconds
+        const BATCH_SIZE = 100; // Increased batch size for better performance
+        const DELAY = 16; // ~60fps timing
 
         if (tileUpdateQueue.length === 0) {
             isProcessingQueue = false;
-            renderGrid(); // Ensure final render after all updates
+            debouncedRenderGrid(); // Use debounced render
             if (currentUser) {
                 updateStats();
             }
@@ -92,7 +95,7 @@ function setupSocketEventHandlers() {
             processedCount++;
         }
 
-        renderGrid(); // Render after processing a batch
+        debouncedRenderGrid(); // Use debounced render
         if (currentUser) {
             updateStats();
         }
@@ -111,6 +114,30 @@ function setupSocketEventHandlers() {
     // Handle user list updates (e.g., new player joins)
     socket.on('userUpdate', (data) => {
         users = data.users;
-        renderGrid(); // Rerender to show new user's colors
+        debouncedRenderGrid(); // Use debounced render for performance
     });
+    
+    // Handle full map data for minimap
+    socket.on('fullMapData', ({ tiles }) => {
+        // Update hexStates with full map data for minimap
+        Object.assign(hexStates, tiles);
+        renderGrid(); // Immediate render for full map data
+    });
+    
+    // Handle view tiles data for real-time loading
+    socket.on('viewTilesData', ({ tiles }) => {
+        // Update hexStates with view tiles
+        Object.assign(hexStates, tiles);
+        debouncedRenderGrid(); // Use debounced render for performance
+    });
+    
+    // Debounced rendering for performance optimization
+    let renderTimeout = null;
+    function debouncedRenderGrid() {
+        if (renderTimeout) clearTimeout(renderTimeout);
+        renderTimeout = setTimeout(() => {
+            renderGrid();
+            renderTimeout = null;
+        }, 50); // 50ms debounce
+    }
 }

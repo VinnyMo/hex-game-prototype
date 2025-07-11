@@ -1,8 +1,0 @@
-Starting spawn cache generation...
-GSC: Connected to SQLite database (READONLY).
-GSC: Attempt 1: Target circumference radius: 1490
-GSC: Attempting to place 63 points on circumference.
-GSC: Found 60 valid spawn points in attempt 1.
-GSC: Final result: Found a total of 60 valid spawn points.
-GSC: Successfully wrote 60 spawn points to /home/maestro/hex_game_prototype/spawn_cache.json
-Spawn cache generation complete.

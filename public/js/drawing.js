@@ -46,7 +46,7 @@ function drawHex(q, r) {
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText(tile.population, x, y);
-    } else if (tile && tile.hasExclamation) {
+    } else if (tile && tile.hasExclamation === true) {
         ctx.fillStyle = 'red'; // Color for the exclamation mark
         ctx.font = 'bold 30px Arial';
         ctx.textAlign = 'center';
@@ -280,7 +280,7 @@ function drawMap() {
         }
 
         // Draw exclamation mark on the map
-        if (tile && tile.hasExclamation) {
+        if (tile && tile.hasExclamation === true) {
             mapCtx.fillStyle = 'red'; // Color for the exclamation mark
             mapCtx.font = 'bold ' + (scaledHexSize * 0.8) + 'px Arial';
             mapCtx.textAlign = 'center';

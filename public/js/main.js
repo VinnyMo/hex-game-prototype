@@ -70,6 +70,43 @@ loginButton.addEventListener('click', () => {
 // Periodically sync explored tiles to the server
 setInterval(syncExploredTiles, 30 * 1000); // Every 30 seconds
 
+// Track viewport and request tiles as needed
+let lastViewportUpdate = 0;
+const VIEWPORT_UPDATE_THROTTLE = 1000; // 1 second
+let lastViewBounds = null;
+
+function requestViewportTiles() {
+    if (!currentUser) return;
+    
+    const now = Date.now();
+    if (now - lastViewportUpdate < VIEWPORT_UPDATE_THROTTLE) return;
+    
+    // Calculate viewport bounds in hex coordinates
+    const viewRadius = Math.max(canvas.width, canvas.height) / (HEX_SIZE * 2) + 5; // Add buffer
+    const centerHex = pixelToHex(canvas.width / 2, canvas.height / 2);
+    
+    const minQ = Math.floor(centerHex.q - viewRadius);
+    const maxQ = Math.ceil(centerHex.q + viewRadius);
+    const minR = Math.floor(centerHex.r - viewRadius);
+    const maxR = Math.ceil(centerHex.r + viewRadius);
+    
+    // Check if view bounds have changed significantly
+    const currentBounds = { minQ, maxQ, minR, maxR };
+    if (lastViewBounds && 
+        Math.abs(currentBounds.minQ - lastViewBounds.minQ) < 10 &&
+        Math.abs(currentBounds.maxQ - lastViewBounds.maxQ) < 10 &&
+        Math.abs(currentBounds.minR - lastViewBounds.minR) < 10 &&
+        Math.abs(currentBounds.maxR - lastViewBounds.maxR) < 10) {
+        return; // View hasn't changed enough
+    }
+    
+    lastViewBounds = currentBounds;
+    lastViewportUpdate = now;
+    
+    // Request tiles in view
+    socket.emit('requestTilesInView', { minQ, maxQ, minR, maxR });
+}
+
 let flashState = false;
 // Toggle flashState every 500ms and re-render
 setInterval(() => {
@@ -119,6 +156,7 @@ const handlePointerMove = (e) => {
         if (!animationFrameId) {
             animationFrameId = requestAnimationFrame(() => {
                 renderGrid();
+                requestViewportTiles(); // Request tiles for new viewport
                 animationFrameId = null;
             });
         }
@@ -220,6 +258,7 @@ function recenterCapitol() {
     cameraX = -capitolWorldX;
     cameraY = -capitolWorldY;
     renderGrid();
+    requestViewportTiles(); // Request tiles for new viewport
 }
 
 const mapButton = document.getElementById('mapButton');
