@@ -7,8 +7,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile */
     position: relative; /* For canvas positioning */
-    overscroll-behavior-y: contain;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+    touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    /* iOS safe area support */
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
 }
 
 #loginContainer {
@@ -97,8 +108,8 @@ body {
 
 #rightPanel {
     position: absolute;
-    top: 2vh;
-    right: 2vw;
+    top: max(2vh, env(safe-area-inset-top) + 10px);
+    right: max(2vw, env(safe-area-inset-right) + 10px);
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -144,30 +155,42 @@ canvas {
     width: 100%;
     height: 100%;
     z-index: 1; /* Ensure canvas is behind other UI elements */
+    touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #recenterButton {
     position: absolute;
-    top: 2vh;
-    left: 2vw;
+    top: max(2vh, env(safe-area-inset-top) + 10px);
+    left: max(2vw, env(safe-area-inset-left) + 10px);
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     z-index: 100;
     background-color: #4CAF50;
     color: white;
+    border: none;
+    border-radius: 5px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #mapButton {
     position: absolute;
-    top: calc(2vh + 50px); /* Adjust based on recenterButton height */
-    left: 2vw;
+    top: calc(max(2vh, env(safe-area-inset-top) + 10px) + 50px); /* Adjust based on recenterButton height */
+    left: max(2vw, env(safe-area-inset-left) + 10px);
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     z-index: 100;
     background-color: #4CAF50;
     color: white;
+    border: none;
+    border-radius: 5px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #mapOverlay {
@@ -190,14 +213,18 @@ canvas {
 
 #closeMapButton {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: max(20px, env(safe-area-inset-top) + 10px);
+    left: max(20px, env(safe-area-inset-left) + 10px);
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     z-index: 201;
     background-color: #4CAF50;
     color: white;
+    border: none;
+    border-radius: 5px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .cascade-capture {
@@ -216,5 +243,61 @@ canvas {
     100% {
         transform: scale(1);
         filter: brightness(1);
+    }
+}
+
+/* iOS-specific optimizations */
+@supports (-webkit-touch-callout: none) {
+    body {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-text-size-adjust: none;
+    }
+    
+    /* Prevent rubber band scrolling */
+    html, body {
+        overscroll-behavior: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 768px) {
+    #rightPanel {
+        font-size: 14px;
+        gap: 8px;
+    }
+    
+    #statsContainer, #leaderboardContainer {
+        padding: 8px;
+        border-radius: 8px;
+    }
+    
+    #recenterButton, #mapButton {
+        padding: 12px 16px;
+        font-size: 14px;
+        min-height: 44px; /* iOS minimum touch target */
+        min-width: 44px;
+    }
+    
+    #closeMapButton {
+        padding: 12px 16px;
+        font-size: 14px;
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    #loginContainer {
+        padding: 30px 20px;
+        margin: 20px;
+        max-width: calc(100vw - 40px);
+    }
+    
+    #loginContainer input {
+        width: 100%;
+        max-width: 280px;
+        box-sizing: border-box;
     }
 }

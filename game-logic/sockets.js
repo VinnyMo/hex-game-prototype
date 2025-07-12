@@ -207,9 +207,37 @@ function initializeSocket(io) {
                     await setGridState({ [key]: tile }); // Update DB
                 }
             }
-            // Emit the updated tile for immediate feedback
+            // Batch tile updates for better network efficiency
             const updatedTile = await getTile(q, r);
-            io.emit('tileUpdate', { key, tile: updatedTile });
+            
+            // Use existing batching system instead of immediate emission
+            if (!global.pendingSocketUpdates) {
+                global.pendingSocketUpdates = new Map();
+                global.socketUpdateTimeout = null;
+            }
+            
+            global.pendingSocketUpdates.set(key, { tile: updatedTile, animate: true });
+            
+            // Clear existing timeout and set new one for batching
+            if (global.socketUpdateTimeout) {
+                clearTimeout(global.socketUpdateTimeout);
+            }
+            
+            global.socketUpdateTimeout = setTimeout(() => {
+                if (global.pendingSocketUpdates.size > 0) {
+                    const batchedUpdates = {};
+                    global.pendingSocketUpdates.forEach((data, tileKey) => {
+                        batchedUpdates[tileKey] = data.tile;
+                    });
+                    
+                    io.emit('batchTileUpdate', { 
+                        changedTiles: batchedUpdates,
+                        animate: true 
+                    });
+                    
+                    global.pendingSocketUpdates.clear();
+                }
+            }, 50); // 50ms batching window for user actions
         });
 
         socket.on('requestFullMap', async () => {

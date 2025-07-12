@@ -24,6 +24,24 @@ const loadingSpinner = document.getElementById('loadingSpinner');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+// Handle window resize for mobile orientation changes
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    renderGrid();
+    requestViewportTiles();
+});
+
+// Handle orientation change specifically for mobile
+window.addEventListener('orientationchange', () => {
+    setTimeout(() => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        renderGrid();
+        requestViewportTiles();
+    }, 100); // Small delay to ensure viewport has updated
+});
+
 const HEX_SIZE = 40;
 const HEX_WIDTH = HEX_SIZE * 2;
 const HEX_HEIGHT = Math.sqrt(3) * HEX_SIZE;
@@ -139,6 +157,48 @@ function debouncedRenderGrid() {
 
 const socket = io();
 
+// Prevent iOS system gestures and behaviors
+function preventIOSGestures() {
+    // Prevent default touch behaviors globally for game area
+    document.addEventListener('touchstart', (e) => {
+        // Only prevent if target is canvas or game elements
+        if (e.target.closest('#gameContainer') || e.target.closest('#mapOverlay')) {
+            if (e.touches.length > 1) {
+                e.preventDefault(); // Prevent multi-touch gestures
+            }
+        }
+    }, { passive: false });
+    
+    document.addEventListener('touchmove', (e) => {
+        // Prevent pull-to-refresh and bounce scrolling
+        if (e.target.closest('#gameContainer') || e.target.closest('#mapOverlay')) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+    
+    // Prevent double-tap zoom
+    document.addEventListener('dblclick', (e) => {
+        if (e.target.closest('#gameContainer') || e.target.closest('#mapOverlay')) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+    
+    // Prevent context menu on long press
+    document.addEventListener('contextmenu', (e) => {
+        if (e.target.closest('#gameContainer') || e.target.closest('#mapOverlay')) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+    
+    // Prevent selection on touch
+    document.addEventListener('selectstart', (e) => {
+        if (e.target.closest('#gameContainer') || e.target.closest('#mapOverlay')) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+}
+
+preventIOSGestures();
 setupSocketEventHandlers();
 
 loginButton.addEventListener('click', () => {
@@ -278,9 +338,33 @@ canvas.addEventListener('mouseout', () => {
     pointerDownY = undefined;
 });
 
-canvas.addEventListener('touchstart', handlePointerDown, { passive: false });
-canvas.addEventListener('touchmove', handlePointerMove, { passive: false });
-canvas.addEventListener('touchend', handlePointerUp, { passive: false });
+// Enhanced touch event handling for iOS
+canvas.addEventListener('touchstart', (e) => {
+    e.preventDefault(); // Prevent default iOS gestures
+    handlePointerDown(e);
+}, { passive: false });
+
+canvas.addEventListener('touchmove', (e) => {
+    e.preventDefault(); // Prevent default iOS gestures
+    handlePointerMove(e);
+}, { passive: false });
+
+canvas.addEventListener('touchend', (e) => {
+    e.preventDefault(); // Prevent default iOS gestures
+    handlePointerUp(e);
+}, { passive: false });
+
+// Prevent additional iOS gestures
+canvas.addEventListener('touchcancel', (e) => {
+    e.preventDefault();
+    isDragging = false;
+    pointerDownX = undefined;
+    pointerDownY = undefined;
+}, { passive: false });
+
+canvas.addEventListener('gesturestart', (e) => e.preventDefault(), { passive: false });
+canvas.addEventListener('gesturechange', (e) => e.preventDefault(), { passive: false });
+canvas.addEventListener('gestureend', (e) => e.preventDefault(), { passive: false });
 
 function handleHexClick(x, y) {
     if (!currentUser) return;
@@ -397,9 +481,33 @@ mapCanvas.addEventListener('mouseout', () => {
     isMapDragging = false;
 });
 
-mapCanvas.addEventListener('touchstart', handleMapPointerDown, { passive: false });
-mapCanvas.addEventListener('touchmove', handleMapPointerMove, { passive: false });
-mapCanvas.addEventListener('touchend', handleMapPointerUp, { passive: false });
+// Enhanced touch event handling for map on iOS
+mapCanvas.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    handleMapPointerDown(e);
+}, { passive: false });
+
+mapCanvas.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+    handleMapPointerMove(e);
+}, { passive: false });
+
+mapCanvas.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    handleMapPointerUp(e);
+}, { passive: false });
+
+// Prevent additional iOS gestures on map
+mapCanvas.addEventListener('touchcancel', (e) => {
+    e.preventDefault();
+    isMapDragging = false;
+    mapPointerDownX = undefined;
+    mapPointerDownY = undefined;
+}, { passive: false });
+
+mapCanvas.addEventListener('gesturestart', (e) => e.preventDefault(), { passive: false });
+mapCanvas.addEventListener('gesturechange', (e) => e.preventDefault(), { passive: false });
+mapCanvas.addEventListener('gestureend', (e) => e.preventDefault(), { passive: false });
 
 function handleMapPointerDown(e) {
     isMapDragging = false; // Assume it's a click until proven a drag

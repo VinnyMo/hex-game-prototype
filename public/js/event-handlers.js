@@ -52,7 +52,7 @@ function setupSocketEventHandlers() {
     });
 
     // Handle single tile updates
-    socket.on('tileUpdate', ({ key, tile }) => {
+    socket.on('tileUpdate', ({ key, tile, animate }) => {
         if (tile) {
             hexStates[key] = tile;
         } else {
@@ -64,6 +64,12 @@ function setupSocketEventHandlers() {
                            (hexStates[key] && hexStates[key].owner === currentUser.username))) {
             ownedTilesCache.needsUpdate = true;
         }
+        
+        // Trigger animation if requested
+        if (animate) {
+            animateTileCapture(key);
+        }
+        
         debouncedRenderGrid(); // Use debounced render for performance
         if (currentUser) {
             updateStats();
@@ -233,12 +239,23 @@ function setupSocketEventHandlers() {
             return;
         }
         
-        // Start animation for this tile
+        // Start animation for this tile using object pooling
         const animationStart = Date.now();
-        window.tileAnimations.set(tileKey, {
-            startTime: animationStart,
-            duration: 200 // Reduced from 300ms to 200ms for better performance
-        });
+        
+        // Get animation object from pool or create new one
+        let animationObj;
+        if (window.animationPool && window.animationPool.length > 0) {
+            animationObj = window.animationPool.pop();
+            animationObj.startTime = animationStart;
+            animationObj.duration = 200;
+        } else {
+            animationObj = {
+                startTime: animationStart,
+                duration: 200
+            };
+        }
+        
+        window.tileAnimations.set(tileKey, animationObj);
         
         // Remove animation after duration
         setTimeout(() => {

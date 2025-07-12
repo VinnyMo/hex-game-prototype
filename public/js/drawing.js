@@ -1,8 +1,27 @@
 function drawHex(q, r) {
     const { cx: x, cy: y } = hexToPixel(q, r);
     const key = `${q},${r}`;
+    const tile = hexStates[key];
     
-    // Check for animation state
+    // Calculate population-based height with caching
+    let populationHeight = 0;
+    if (tile && tile.population > 1) {
+        // Use cached height calculation if available
+        if (!window.populationHeightCache) {
+            window.populationHeightCache = new Map();
+        }
+        
+        let cachedHeight = window.populationHeightCache.get(tile.population);
+        if (cachedHeight === undefined) {
+            // Height scales from 2-10 population, max height at 10+
+            const heightFactor = Math.min(tile.population - 1, 9); // 1-9 range
+            cachedHeight = heightFactor * 2; // 2 pixels per population level
+            window.populationHeightCache.set(tile.population, cachedHeight);
+        }
+        populationHeight = cachedHeight;
+    }
+    
+    // Check for animation state using object pooling
     let animationScale = 1;
     let animationBrightness = 1;
     if (window.tileAnimations && window.tileAnimations.has(key)) {
@@ -10,19 +29,31 @@ function drawHex(q, r) {
         const elapsed = Date.now() - animation.startTime;
         const progress = Math.min(elapsed / animation.duration, 1);
         
-        // Easing function for smooth animation
-        const easedProgress = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-        
-        // Animation effects: scale pulse and brightness
-        if (progress <= 0.5) {
-            // First half: scale up and brighten
-            animationScale = 1 + (easedProgress * 2) * 0.1; // Scale up to 1.1
-            animationBrightness = 1 + (easedProgress * 2) * 0.5; // Brighten to 1.5
+        // Remove completed animations and return to pool
+        if (progress >= 1) {
+            window.tileAnimations.delete(key);
+            // Return animation object to pool for reuse
+            if (!window.animationPool) window.animationPool = [];
+            if (window.animationPool.length < 100) { // Limit pool size
+                animation.startTime = 0;
+                animation.duration = 0;
+                window.animationPool.push(animation);
+            }
         } else {
-            // Second half: scale back down and return to normal brightness
-            const secondHalf = (easedProgress - 0.5) * 2;
-            animationScale = 1.1 - secondHalf * 0.1; // Scale back to 1
-            animationBrightness = 1.5 - secondHalf * 0.5; // Return to 1
+            // Easing function for smooth animation
+            const easedProgress = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+            
+            // Animation effects: scale pulse and brightness
+            if (progress <= 0.5) {
+                // First half: scale up and brighten
+                animationScale = 1 + (easedProgress * 2) * 0.1; // Scale up to 1.1
+                animationBrightness = 1 + (easedProgress * 2) * 0.5; // Brighten to 1.5
+            } else {
+                // Second half: scale back down and return to normal brightness
+                const secondHalf = (easedProgress - 0.5) * 2;
+                animationScale = 1.1 - secondHalf * 0.1; // Scale back to 1
+                animationBrightness = 1.5 - secondHalf * 0.5; // Return to 1
+            }
         }
     }
 
@@ -35,11 +66,42 @@ function drawHex(q, r) {
         ctx.translate(-x, -y);
     }
 
+    // Draw population height layers (3D effect)
+    if (populationHeight > 0) {
+        // Draw multiple offset layers to create depth effect
+        const layers = Math.ceil(populationHeight / 2);
+        for (let layer = layers; layer > 0; layer--) {
+            const offsetY = layer * 1.5; // Slight vertical offset for each layer
+            const layerOpacity = 0.3 + (layer / layers) * 0.4; // Darker layers at bottom
+            
+            ctx.globalAlpha = layerOpacity;
+            ctx.beginPath();
+            for (let i = 0; i < 6; i++) {
+                const angle = Math.PI / 3 * i;
+                const hx = x + HEX_SIZE * Math.cos(angle);
+                const hy = y - offsetY + HEX_SIZE * Math.sin(angle);
+                if (i === 0) {
+                    ctx.moveTo(hx, hy);
+                } else {
+                    ctx.lineTo(hx, hy);
+                }
+            }
+            ctx.closePath();
+            
+            // Use a darker shade for depth layers
+            ctx.fillStyle = '#2a2a2a';
+            ctx.fill();
+        }
+        ctx.globalAlpha = 1.0; // Reset alpha
+    }
+
+    // Draw main hex (elevated if has population)
+    const mainY = y - populationHeight;
     ctx.beginPath();
     for (let i = 0; i < 6; i++) {
         const angle = Math.PI / 3 * i;
         const hx = x + HEX_SIZE * Math.cos(angle);
-        const hy = y + HEX_SIZE * Math.sin(angle);
+        const hy = mainY + HEX_SIZE * Math.sin(angle);
         if (i === 0) {
             ctx.moveTo(hx, hy);
         } else {
@@ -48,7 +110,6 @@ function drawHex(q, r) {
     }
     ctx.closePath();
 
-    const tile = hexStates[key];
     let hexColor;
     if (tile && users[tile.owner]) {
         hexColor = users[tile.owner].color;
@@ -93,26 +154,32 @@ function drawHex(q, r) {
     ctx.lineWidth = 2;
     ctx.stroke();
 
-    // Performance: Cache capitol positions to avoid O(n) lookup per tile
+    // Optimized capitol cache with change detection
     if (!window.capitolCache) {
-        window.capitolCache = new Set();
-        window.capitolCacheLastUpdate = 0;
+        window.capitolCache = {
+            positions: new Set(),
+            lastUpdate: 0,
+            userHash: ''
+        };
     }
     
-    // Update cache every 5 seconds or if users changed
     const now = Date.now();
-    if (now - window.capitolCacheLastUpdate > 5000 || window.capitolCache.size === 0) {
-        window.capitolCache.clear();
+    const userKeys = Object.keys(users).sort().join(',');
+    
+    // Only update cache if users changed or it's been more than 10 seconds
+    if (userKeys !== window.capitolCache.userHash || now - window.capitolCache.lastUpdate > 10000) {
+        window.capitolCache.positions.clear();
         Object.values(users).forEach(user => {
             if (user.capitol) {
-                window.capitolCache.add(user.capitol);
+                window.capitolCache.positions.add(user.capitol);
             }
         });
-        window.capitolCacheLastUpdate = now;
+        window.capitolCache.lastUpdate = now;
+        window.capitolCache.userHash = userKeys;
     }
     
-    if (window.capitolCache.has(key)) {
-        drawStar(x, y, HEX_SIZE * 0.4, 5, 0.5);
+    if (window.capitolCache.positions.has(key)) {
+        drawStar(x, mainY, HEX_SIZE * 0.4, 5, 0.5);
     }
 
     if (tile && tile.population > 1) {
@@ -121,13 +188,13 @@ function drawHex(q, r) {
         ctx.font = 'bold 20px Arial';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText(tile.population, x, y);
+        ctx.fillText(tile.population, x, mainY);
     } else if (tile && tile.hasExclamation === true) {
         ctx.fillStyle = 'red'; // Color for the exclamation mark
         ctx.font = 'bold 30px Arial';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText('!', x, y);
+        ctx.fillText('!', x, mainY);
     }
     
     ctx.restore();
@@ -184,7 +251,9 @@ function renderGrid() {
 
 
     const currentFrameVisibleHexes = new Set();
+    const visibleTilesToDraw = [];
 
+    // First pass: collect all visible tiles and their heights
     for (let q = startQ; q <= endQ; q++) {
         for (let r = startR; r <= endR; r++) {
             const key = `${q},${r}`;
@@ -198,19 +267,71 @@ function renderGrid() {
             if (cx + hexWidth / 2 > 0 && cx - hexWidth / 2 < canvas.width &&
                 cy + hexHeight / 2 > 0 && cy - hexHeight / 2 < canvas.height) {
                 currentFrameVisibleHexes.add(key);
-                drawHex(q, r);
+                
+                // Calculate tile height for z-index sorting
+                const tile = hexStates[key];
+                const height = (tile && tile.population > 1) ? Math.min(tile.population - 1, 9) : 0;
+                
+                visibleTilesToDraw.push({ q, r, height });
             }
         }
+    }
+
+    // Sort tiles by height (shortest first, tallest last) for proper z-index rendering
+    visibleTilesToDraw.sort((a, b) => a.height - b.height);
+
+    // Second pass: draw tiles in height order
+    for (const { q, r } of visibleTilesToDraw) {
+        drawHex(q, r);
     }
 
     // Merge the currently visible hexes with the persistently explored tiles
     if (isInitialSpawnComplete) {
         exploredTiles = new Set([...exploredTiles, ...currentFrameVisibleHexes]);
         
-        // Limit explored tiles size for performance (keep most recent 5000 tiles)
-        if (exploredTiles.size > 5000) {
-            const recentTiles = [...exploredTiles].slice(-5000);
-            exploredTiles = new Set(recentTiles);
+        // More intelligent tile cache cleanup based on distance from user
+        if (exploredTiles.size > 4000) { // Reduced from 5000 to 4000 for better memory management
+            const userCenter = currentUser && currentUser.capitol ? currentUser.capitol.split(',').map(Number) : [0, 0];
+            const [userQ, userR] = userCenter;
+            
+            // Sort tiles by distance from user, keeping closer ones
+            const tilesWithDistance = [...exploredTiles].map(tile => {
+                const [q, r] = tile.split(',').map(Number);
+                const distance = Math.abs(q - userQ) + Math.abs(r - userR);
+                return { tile, distance };
+            });
+            
+            // Keep closest 3000 tiles + all owned tiles + all tiles with exclamations
+            tilesWithDistance.sort((a, b) => a.distance - b.distance);
+            const priorityTiles = new Set();
+            
+            // Always keep owned tiles and important tiles
+            [...exploredTiles].forEach(tile => {
+                const tileData = hexStates[tile];
+                if (tileData && (tileData.owner === (currentUser ? currentUser.username : null) || tileData.hasExclamation)) {
+                    priorityTiles.add(tile);
+                }
+            });
+            
+            // Add closest tiles up to limit
+            let count = 0;
+            const maxNormalTiles = 3000 - priorityTiles.size;
+            for (const item of tilesWithDistance) {
+                if (count >= maxNormalTiles) break;
+                if (!priorityTiles.has(item.tile)) {
+                    priorityTiles.add(item.tile);
+                    count++;
+                }
+            }
+            
+            exploredTiles = priorityTiles;
+            
+            // Clean up hexStates cache for removed tiles
+            Object.keys(hexStates).forEach(key => {
+                if (!exploredTiles.has(key) && !currentFrameVisibleHexes.has(key)) {
+                    delete hexStates[key];
+                }
+            });
         }
     }
 
