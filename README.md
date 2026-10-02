@@ -1,181 +1,78 @@
-# 🎮 Hex Game Prototype
+# Hex Game Prototype
 
-A real-time multiplayer hexagonal tile-based strategy game built with Node.js, SQLite, and Socket.io. Players expand their territory by capturing tiles and exclamation marks in a persistent hex world.
+A browser-based multiplayer territory game on a hex grid. Claim adjacent tiles, build population, capture `!` tiles, and watch the world update through Socket.IO.
 
-## 🌟 Features
+The project combines a Node.js server, a Canvas client, and SQLite persistence. It's a local-play prototype with room to keep developing the game mechanics and multiplayer experience.
 
-### Core Gameplay
-- **Real-time multiplayer** territory expansion on a hexagonal grid
-- **Persistent world** with SQLite database storage
-- **Smart spawn system** with intelligent collision avoidance
-- **Exclamation tile mechanics** for strategic resource gathering
-- **Population growth** and territory management
-- **Capitol protection** with disconnection penalties
-- **Live leaderboards** with population and area rankings
+[Run locally](#run-locally) · [How to play](#how-to-play) · [Source guide](#source-guide) · [Prototype limits](#prototype-limits)
 
-### Technical Highlights
-- **Performance optimized** for 1000+ players and 20,000+ tiles
-- **Intelligent caching** with spatial optimization
-- **Density-based exclamation control** (2.5% cap around territories)
-- **Chunked tile loading** for fast initial experience
-- **Real-time collision detection** and spawn validation
-- **Database indexes** for sub-millisecond queries
-- **Memory management** with explored tile limits
+## What it explores
 
-## 🚀 Quick Start
+- Real-time territory expansion and population-based combat
+- Persistent tiles and player state in SQLite
+- Spawn placement with cached candidate locations and collision checks
+- Background workers for exclamation-tile generation
+- Viewport-based tile requests, a minimap, and live leaderboards
 
-### Prerequisites
-- Node.js 16+ 
-- npm or yarn
+The repository also contains implementation notes and diagnostic scripts for spawn behavior, synchronization, and database performance. Those experiments do not establish a tested player-capacity or frame-rate guarantee.
 
-### Installation
+## Run locally
+
+Use Node.js and npm compatible with the locked dependencies. The package does not declare a supported Node.js version range.
+
 ```bash
 git clone https://github.com/VinnyMo/hex-game-prototype.git
 cd hex-game-prototype
-npm install
+npm ci
+node server.js
 ```
 
-### Running the Game
-```bash
-npm start
-```
-Visit `http://localhost:3000` to play!
+Open <http://localhost:3000>. `server.js` is the main server entry point; the repository does not define a `start` script in `package.json`.
 
-## 🎯 How to Play
+**Use disposable test credentials and a local development environment.** The prototype stores passwords in plaintext and includes user objects in multiplayer messages, so authentication needs work before use with real players. The server listener is not explicitly limited to localhost; keep it isolated from public access.
 
-1. **Create Account**: Enter a username and password to spawn in the world
-2. **Expand Territory**: Click adjacent tiles to claim them for your empire
-3. **Capture Exclamations**: Click red "!" tiles to gain population boosts
-4. **Grow Population**: Click your own tiles to increase their population
-5. **Strategic Planning**: Balance expansion vs. fortification
-6. **Compete**: Climb the leaderboards for population and territory size
+The server reads and writes `game.db` in the project root. The included database and SQLite sidecar files preserve existing test-world state; the accounts were created with disposable test credentials. Work in a copy if you'd like to keep that starting world intact.
 
-### Game Mechanics
-- **Adjacency Rule**: Can only claim tiles adjacent to your territory
-- **Capitol Immunity**: Your starting capitol cannot be attacked
-- **Population Combat**: Attack enemy tiles to reduce their population
-- **Disconnection Penalty**: Offline tiles become vulnerable over time
-- **Exclamation Spawning**: New "!" tiles appear around active players
+## How to play
 
-## 🏗️ Architecture
+1. Enter a disposable username and password. A new username creates a player and a starting capitol.
+2. Click adjacent unclaimed tiles to expand your territory.
+3. Click your own tiles to increase their population.
+4. Capture adjacent `!` tiles for their population effect.
+5. Attack adjacent enemy tiles, reducing their population until you can take them.
+6. Follow the population and area leaderboards as the map changes.
 
-### Backend Stack
-- **Node.js** with Express for the web server
-- **Socket.io** for real-time multiplayer communication  
-- **SQLite** with WAL mode for persistent data storage
-- **Worker threads** for background exclamation generation
-- **Smart caching** with spatial sector mapping
+Capitol tiles are protected from attack. The game also includes a periodic territory-disconnection penalty; the rules live in [`game-logic/game.js`](game-logic/game.js).
 
-### Frontend Stack
-- **Vanilla JavaScript** with Canvas API for hex rendering
-- **Real-time updates** via Socket.io client
-- **Viewport culling** and chunked loading for performance
-- **Minimap** with full territory overview
-- **Responsive design** for desktop and mobile
+## Source guide
 
-### Performance Features
-- **Database indexes** on coordinates, ownership, and population
-- **Spatial optimization** with 200x200 hex sectors
-- **Cached spawn points** with real-time validation  
-- **Debounced rendering** at 60fps max
-- **Memory limits** on explored tile tracking
-- **Chunked initial loading** for sub-5-second startup
+| Path | Purpose |
+| --- | --- |
+| [`server.js`](server.js) | Express/Socket.IO server and recurring game tasks |
+| [`game-logic/sockets.js`](game-logic/sockets.js) | Login, player actions, and map messages |
+| [`game-logic/game.js`](game-logic/game.js) | Game rules, effects, and leaderboard calculations |
+| [`game-logic/gameState.js`](game-logic/gameState.js) | Game-state reads and batched persistence |
+| [`game-logic/db.js`](game-logic/db.js) | SQLite schema, indexes, and queued operations |
+| [`game-logic/smartSpawnManager.js`](game-logic/smartSpawnManager.js) | Spawn selection and cache management |
+| [`game-logic/workerPool.js`](game-logic/workerPool.js) | Background worker coordination |
+| [`public/`](public/) | Browser interface, rendering, and styles |
 
-## 🔧 Development
+### Implementation notes
 
-### Project Structure
-```
-hex-game-prototype/
-├── game-logic/           # Core game engine
-│   ├── db.js            # Database connection and queries
-│   ├── gameState.js     # Game state management  
-│   ├── smartSpawnManager.js # Intelligent spawn system
-│   ├── sockets.js       # Socket.io event handlers
-│   ├── game.js          # Game rules and mechanics
-│   └── exclamationWorker.js # Background tile generation
-├── public/              # Client-side code
-│   ├── js/             # JavaScript modules
-│   ├── style.css       # Game styling
-│   └── index.html      # Main game page
-├── check-density.js    # Density analysis tool
-├── db-analysis.js      # Database performance tool
-└── README.md          # This file
-```
+- [Modularization](MODULARIZATION.md)
+- [Smart spawn system](SMART_SPAWN_SYSTEM.md)
+- [Spawn cache optimization](SPAWN_CACHE_OPTIMIZATION.md)
+- [Exclamation synchronization](EXCLAMATION_SYNC_FIX.md)
+- [Optimization notes](OPTIMIZATION_SUMMARY.md)
 
-### Key Configuration
-- **Spawn Distance**: 150 hex minimum between players
-- **Exclamation Density**: 2.5% cap around territories  
-- **Cache Size**: 500 pre-validated spawn points
-- **Tile Limit**: 1000 tiles per region query
-- **Explored Limit**: 5000 tiles per client
+These documents capture development work and design choices. Treat their numerical targets and historical measurements as notes to recheck in your own environment.
 
-### Analysis Tools
-```bash
-# Check exclamation density around players
-node check-density.js
+## Prototype limits
 
-# Analyze database performance 
-node db-analysis.js
-```
+- `npm test` is a placeholder that exits with an error, not an automated test suite
+- Standalone `test_*.js`, `performance_test.js`, and analysis scripts are development tools; inspect their server and database effects before running them
+- Performance, browser compatibility, and deployment hardening need fresh validation
 
-## 📊 Performance Metrics
+## License metadata
 
-The game is optimized to handle:
-- **Large territories**: 2000+ tiles per player
-- **Many players**: 100+ concurrent users  
-- **Fast loading**: <5 second initial load
-- **Smooth gameplay**: 60fps rendering
-- **Low memory**: Capped growth patterns
-
-### Benchmarks
-- Database queries: <1ms average
-- Spawn point generation: <300ms for 500 points
-- Initial tile loading: <3 seconds for large players
-- Memory usage: <100MB for 5000 explored tiles
-
-## 🤝 Contributing
-
-### Getting Started
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes with tests
-4. Commit using conventional commits (`git commit -m 'feat: add amazing feature'`)
-5. Push to your branch (`git push origin feature/amazing-feature`)
-6. Open a Pull Request
-
-### Development Guidelines  
-- Follow existing code style and patterns
-- Add performance considerations for new features
-- Include analysis tools for significant changes
-- Test with large datasets (1000+ tiles)
-- Document any new configuration options
-
-## 📈 Roadmap
-
-- [ ] User authentication with secure password hashing
-- [ ] Player alliances and team mechanics  
-- [ ] Advanced territory visualization and analytics
-- [ ] Mobile app with native performance
-- [ ] Automated balancing based on player metrics
-- [ ] Tournament and competitive play modes
-
-## 🐛 Known Issues
-
-- Database files grow large over time (mitigated with WAL cleanup)
-- Very large territories (5000+ tiles) may have minor lag spikes
-- Mobile touch controls need refinement for precision
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Built with performance optimization techniques for real-time gaming
-- Inspired by classic territory expansion games
-- Uses efficient hex grid algorithms for spatial calculations
-- Optimized for both casual and competitive play styles
-
----
-
-**🎯 Ready to conquer the hex world? Start playing at `http://localhost:3000`!**
+[`package.json`](package.json) declares ISC. A standalone license file is not included in the repository.
