@@ -2,7 +2,7 @@
 
 A browser-based multiplayer territory game on a hex grid. Claim adjacent tiles, build population, capture `!` tiles, and watch the world update through Socket.IO.
 
-The project combines a Node.js server, a Canvas client, and SQLite persistence. It is a prototype for local experimentation; the account system needs security work before any public deployment.
+The project combines a Node.js server, a Canvas client, and SQLite persistence. It's a local-play prototype with room to keep developing the game mechanics and multiplayer experience.
 
 [Run locally](#run-locally) · [How to play](#how-to-play) · [Source guide](#source-guide) · [Prototype limits](#prototype-limits)
 
@@ -29,9 +29,9 @@ node server.js
 
 Open <http://localhost:3000>. `server.js` is the main server entry point; the repository does not define a `start` script in `package.json`.
 
-**Use disposable test credentials only.** Passwords are currently stored and compared in plaintext, and user objects are included in multiplayer messages. Do not reuse a real password or expose this server to the public internet. The listener does not explicitly restrict itself to localhost, so use an isolated development environment or appropriate network controls.
+**Use disposable test credentials and a local development environment.** The prototype stores passwords in plaintext and includes user objects in multiplayer messages, so authentication needs work before use with real players. The server listener is not explicitly limited to localhost; keep it isolated from public access.
 
-The server reads and writes `game.db` in the project root. This repository includes database and SQLite sidecar files, so a checkout contains existing state rather than a guaranteed empty world. Work in a disposable copy if you want to experiment without changing that state.
+The server reads and writes `game.db` in the project root. The included database and SQLite sidecar files preserve existing test-world state; the accounts were created with disposable test credentials. Work in a copy if you'd like to keep that starting world intact.
 
 ## How to play
 
@@ -69,8 +69,6 @@ These documents capture development work and design choices. Treat their numeric
 
 ## Prototype limits
 
-- Authentication and user-data handling are unsuitable for real accounts
-- Existing database state and test scripts need care when experimenting
 - `npm test` is a placeholder that exits with an error, not an automated test suite
 - Standalone `test_*.js`, `performance_test.js`, and analysis scripts are development tools; inspect their server and database effects before running them
 - Performance, browser compatibility, and deployment hardening need fresh validation
